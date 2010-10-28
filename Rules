@@ -73,10 +73,10 @@ end
 # Home page uses a different layout
 compile '/' do
   filter :erb
-  layout '/home/'
+  layout '/default/'
   #filter :relativize_paths, :type => :html
   #filter :rubypants
-end
+end if false
 
 # Free request pages use a different layout
 compile '/free*/*' do
@@ -129,8 +129,9 @@ end
 
 route '/stylesheets/*/' do
   item.identifier.chop + '.css'
-  # path with version
+  # path with version for cache busting
   #'/assets/style/style' + '-v' + rep.item[:version].to_s + '.css'
+  nil  # not using scss/compass
 end
 
 # route rest of assets preserving the current file extersion
