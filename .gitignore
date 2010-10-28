@@ -1,0 +1,16 @@
+# See http://www.kernel.org/pub/software/scm/git/docs/gitignore.html
+# nanoc generated output
+output
+# nanoc temporary files
+tmp
+# sass temporary files
+.sass-cache
+# vi/vim temp files
+.*.swp
+# other
+content/stylesheets
+_3rdparty
+# ignore media files
+*.mp3
+*.ogg
+*.swf

@@ -1,0 +1,634 @@
+---
+title:  Free Tracts Request Page
+scripts: |
+  <script type="text/javascript">
+  $(document).ready(
+    function(){
+    // update the tract page to open all links in a new window
+    $(".tract-iframe").load(function() {
+        var doc = null;
+        if (this.contentDocument) {          
+          doc = this.contentDocument; // firefox, opera   
+    }
+        else if (this.contentWindow) {          
+          doc = this.contentWindow.document; // internet explorer
+    }
+        else if (this.document) {          
+          doc = this.document; // others?
+    }
+    if (doc != null) {
+          var links = doc.getElementsByTagName("a");
+          for ( var i=0; i < links.length; i++ ) {
+      links[i].setAttribute("target", "_blank");
+          }       
+    }
+      });
+        
+    // load and display the appropriate tract and languages
+      $("form input[name=tract_type]:radio").click(
+        function() {
+      var tract = $(this).attr("id");
+        loadTract(tract);
+        });
+    
+    // make sure the form is set accurately based on which tract is selected
+    loadTract($("form input[name=tract_type]:checked").attr("id"));
+    });
+  
+  function loadTract(tract) {
+    var src = "";
+    if (tract == "tract_may21") {
+      src = "may21/index_nopdf.html";
+      $("#WeCanKnow-languages").hide().find("select").each(function(i) {
+        $("#"+this.id+" :first-child").attr("selected","selected");
+      });
+      $("#DGDFY-languages").hide().find("select").each(function(i) {        
+        $("#"+this.id+" :first-child").attr("selected","selected");
+      });
+      $("#May21-languages").show();
+    }
+    else if (tract == "tract_wecanknow") {
+      src = "/wecanknow/index_nopdf.html";
+      $("#May21-languages").hide().find("select").each(function(i) {
+        $("#"+this.id+" :first-child").attr("selected","selected");
+      });
+      $("#DGDFY-languages").hide().find("select").each(function(i) {        
+        $("#"+this.id+" :first-child").attr("selected","selected");
+      });
+      $("#WeCanKnow-languages").show();
+    }
+    else {
+      src = "/didgoddieforyou/DGDFY_web_10.23.08_nopdf.htm";
+      $("#May21-languages").hide().find("select").each(function(i) {
+        $("#"+this.id+" :first-child").attr("selected","selected");
+      });
+      $("#WeCanKnow-languages").hide().find("select").each(function(i) {        
+        $("#"+this.id+" :first-child").attr("selected","selected");
+      });
+      $("#DGDFY-languages").show();
+    }
+    $(".tract-iframe").attr("src", src);
+  }
+  </script>
+---
+        <h1>EBible Fellowship Free Tracts Request Form</h1>
+        <p class="required">*Required</p>
+        
+        <form name="request" method="POST" action="/phorm/phorm.php?l=free_tracts&amp;p=index">
+      <div class="tractbar-top"></div>
+      <div class="tractbar-mid">
+        <h2>Tract Selection</h2>
+        <p>Please select the tract you wish to receive:<span class="required_asterisk"> *</span></p>
+        <p>
+        <input type="radio" name="tract_type" id="tract_may21" value="May 21, 2011" checked>    
+          <label for="tract_may21">May 21, 2011 - Judgment Day!</label><br>  
+
+          <script type="text/javascript">
+          document.write("<input type='radio' name='tract_type' id='tract_wecanknow' value='We Can Know'><label for='tract_wecanknow'>&nbsp;We Can Know</label><br>");
+          </script>
+          <noscript><a href="/free_tracts/index.html?tract=wecanknow">We Can Know</a><br></noscript>
+
+          <script type="text/javascript">
+          document.write("<input type='radio' name='tract_type' id='tract_dgdfy' value='Did God Die For You?'><label for='tract_dgdfy'>&nbsp;Did God Die For You?</label><br>");
+          </script>
+          <noscript><a href="/free_tracts/index.html?tract=dgdfy">Did God Die For You?</a><br></noscript>
+          </p></div>
+        <div class="tractbar-bottom"></div>
+        <p>If you wish for us to send you these free tracts that you may distribute to others, we ask that you first read this tract and make sure <strong>you understand and agree with what it says</strong>.</p>
+        
+        <iframe src="may21/index_nopdf.html" class="tract-iframe">
+          <p><a href="may21/index_nopdf.html" target="tract"><em>read this tract</em></a></p>
+          </iframe>
+<!--
+<p>To request these tracts, please select the answer that best describes
+  how you feel about God's judgment on all churches and congregations:</p>
+<p><input type="radio" name="tract_answer" id="answer1" value="yes">
+  <label for="answer1">Yes, I agree and want to distribute this tract</label></p>
+<p><input type="radio" name="tract_answer" id="answer2" value="maybe">
+  <label for="answer2"></label></p>
+<p><input type="radio" name="tract_answer" id="answer3" value="no">
+  <label for="answer3">No, I disagree with this teaching</label></p>
+ -->
+
+        <p><strong>If you agree with this teaching and would like to distribute these tracts to alert others</strong>, please fill out this form.  As mailing any substantial quantity of these tracts is expensive, we reserve the right to only send them to those people that we think will distribute them wisely.</p>
+        
+        <p class="orange-gradient">With the many requests we are receiving for tracts, we welcome anyone who would like to support our ministry with a <a href="#">donation</a>.</p>
+
+<p class="blue-gradient"<em>We ask you only make <strong>a request for tracts once every 2 weeks.</strong></em></p>
+  
+  <!--
+<fieldset>
+<legend>E-Mail Address</legend>
+<div class="inner">
+  <p class="required">You must enter a valid email address or we will
+    discard your request.</p>
+  <p><label for="email">E-Mail:<span class="required">*</span></label>
+    <input class="input" type="text" name="email" id="email"
+        size="35" maxlength="64"></p>
+   Phorm Messages email 
+</div>
+</fieldset>
+-->
+
+<div class="tractbar-top"></div>
+<div class="tractbar-mid">
+  <h2>Language and Quantity Selection</h2>
+  <p style="color: brown;">As postage costs are high for overseas requests, please limit your selection to a combined total of no more than 70 tracts.  For requests from the USA, you may select up to 250 English tracts.</p>
+  <p>Select the quantities of tracts in each language you would like: <span class="required_asterisk">*</span></p>
+  
+  <div id="May21-languages">
+  
+  <table border="0" style="padding: 0; margin-left: 45px;">
+    <tr>
+      <td><label for="english_tracts">English Tracts: </label></td>
+      <td><select name="english_tracts" id="english_tracts">
+        <option selected>0</option>
+
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+        <option value="100">100 (USA only)</option>
+
+        <option value="150">150 (USA only)</option>
+        <option value="200">200 (USA only)</option>
+        <option value="250">250 (USA only)</option>
+      </select></td>
+  </tr>
+    <tr>
+      <td><label for="afrikaans_tracts">Afrikaans Tracts: </label></td>
+
+      <td><select name="afrikaans_tracts" id="afrikaans_tracts">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="arabic_tracts">Arabic (<span lang="ar" dir="rtl" style="font-size:110%;">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span>) Tracts: </label></td>
+      <td><select name="arabic_tracts" id="arabic_tracts">
+        <option selected>0</option>
+
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+
+    </tr>
+  <tr>
+      <td><label for="bengali_tracts">Bengali (<span lang="bn" style="font-size:110%;">&#2476;&#2494;&#2434;&#2482;&#2494;</span>) Tracts: </label></td>
+      <td><select name="bengali_tracts" id="bengali_tracts">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr> 
+  <tr>
+      <td><label for="chinese_tracts">Chinese (<span lang="zh">&#20013;&#25991;</span>) Tracts: </label></td>
+
+      <td><select name="chinese_tracts" id="chinese_tracts">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+
+        <option>70</option>
+      </select></td>
+    </tr> 
+  <tr>
+      <td><label for="farsi_tracts">F&#257;rsi/Persian (<span lang="fa" dir="rtl" style="font-size:110%;">&#1601;&#1575;&#1585;&#1587;&#1740;&#8206;</span>) Tracts: </label></td>
+      <td><select name="farsi_tracts" id="farsi_tracts">
+        <option selected>0</option>
+
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+
+    </tr>
+    <tr>
+      <td><label for="french_tracts">French (<span lang="fr">Fran&ccedil;ais</span>) Tracts: </label></td>
+      <td><select name="french_tracts" id="french_tracts">
+        <option selected>0</option>
+        <option>3</option>
+
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+
+      <td><label for="german_tracts">German (<span lang="de">Deutsch</span>) Tracts: </label></td>
+      <td><select name="german_tracts" id="german_tracts">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr> 
+  <tr>
+      <td><label for="hindi_tracts">Hindi (<span lang="hi">&#x939;&#x93F;&#x928;&#x94D;&#x200D;&#x926;&#x940;</span>) Tracts: </label></td>
+      <td><select name="hindi_tracts" id="hindi_tracts">
+
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="indonesian_tracts">Indonesian Tracts: </label></td>
+      <td><select name="indonesian_tracts" id="indonesian_tracts">
+        <option selected>0</option>
+        <option>3</option>
+
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+
+      <td><label for="japanese_tracts">Japanese (<span lang="ja">&#26085;&#26412;&#35486;</span>) Tracts: </label></td>
+      <td><select name="japanese_tracts" id="japanese_tracts">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="korean_tracts">Korean (<span lang="ko">&#54620;&#44397;&#50612;</span>) Tracts: </label></td>
+      <td><select name="korean_tracts" id="korean_tracts">
+
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="polish_tracts">Polish (<span lang="pl">Polska</span>) Tracts: </label></td>
+      <td><select name="polish_tracts" id="polish_tracts">
+        <option selected>0</option>
+        <option>3</option>
+
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr> 
+  <tr>
+
+      <td><label for="portuguese_tracts">Portuguese (<span lang="pt">Portugu&ecirc;s</span>) Tracts: </label></td>
+      <td><select name="portuguese_tracts" id="portuguese_tracts">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="romanian_tracts">Romanian (<span lang="ro">Rom&acirc;n&#259;</span>) Tracts: </label></td>
+
+      <td><select name="romanian_tracts" id="romanian_tracts">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="russian_tracts">Russian (<span lang="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span>) Tracts: </label></td>
+      <td><select name="russian_tracts" id="russian_tracts">
+        <option selected>0</option>
+
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+
+    </tr>
+  <tr>
+      <td><label for="spanish_tracts">Spanish (<span lang="es">Espa&ntilde;ol</span>) Tracts: </label></td>
+      <td><select name="spanish_tracts" id="spanish_tracts">
+        <option selected>0</option>
+        <option>3</option>
+
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+
+      <td><label for="tagalog_tracts">Tagalog Tracts: </label></td>
+      <td><select name="tagalog_tracts" id="tagalog_tracts">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="thai_tracts">Thai (<span lang="th">&#3652;&#3607;&#3618;</span>) Tracts: </label></td>
+      <td><select name="thai_tracts" id="thai_tracts">
+
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="turkish_tracts">Turkish (<span lang="tr">T&#252;rk&#231;e</span>) Tracts: </label></td>
+      <td><select name="turkish_tracts" id="turkish_tracts">
+        <option selected>0</option>
+
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>      
+  </tr>
+
+  </table>  
+</div>
+<div id="WeCanKnow-languages" style="display: none;">
+  
+  <table border="0" style="padding: 0; margin-left: 45px">
+    <tr>
+      <td><label for="english_tracts_wecanknow">English Tracts: </label></td>
+      <td><select name="english_tracts_wecanknow" id="english_tracts_wecanknow">
+        <option selected>0</option>
+        <option>3</option>
+
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+        <option value="100">100 (USA only)</option>
+      </select></td>
+
+    </tr>
+    <tr>
+      <td><label for="afrikaans_tracts_wecanknow">Afrikaans Tracts: </label></td>
+      <td><select name="afrikaans_tracts_wecanknow" id="afrikaans_tracts_wecanknow">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="arabic_tracts_wecanknow">Arabic (<span lang="ar" dir="rtl" style="font-size:110%;">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span>) Tracts: </label></td>
+
+      <td><select name="arabic_tracts_wecanknow" id="arabic_tracts_wecanknow">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="bengali_tracts_wecanknow">Bengali (<span lang="bn" style="font-size:110%;">&#2476;&#2494;&#2434;&#2482;&#2494;</span>) Tracts: </label></td>
+      <td><select name="bengali_tracts_wecanknow" id="bengali_tracts_wecanknow">
+        <option selected>0</option>
+
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+
+    </tr> 
+  <tr>
+      <td><label for="chinese_tracts_wecanknow">Chinese (<span lang="zh">&#20013;&#25991;</span>) Tracts: </label></td>
+      <td><select name="chinese_tracts_wecanknow" id="chinese_tracts_wecanknow">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr> 
+  <tr>
+      <td><label for="farsi_tracts_wecanknow">F&#257;rsi/Persian (<span lang="fa" dir="rtl" style="font-size:110%;">&#1601;&#1575;&#1585;&#1587;&#1740;&#8206;</span>) Tracts: </label></td>
+
+      <td><select name="farsi_tracts_wecanknow" id="farsi_tracts_wecanknow">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+
+        <option>70</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td><label for="french_tracts_wecanknow">French (<span lang="fr">Fran&ccedil;ais</span>) Tracts: </label></td>
+      <td><select name="french_tracts_wecanknow" id="french_tracts_wecanknow">
+
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="hindi_tracts_wecanknow">Hindi (<span lang="hi">&#x939;&#x93F;&#x928;&#x94D;&#x200D;&#x926;&#x940;</span>) Tracts: </label></td>
+      <td><select name="hindi_tracts_wecanknow" id="hindi_tracts_wecanknow">
+        <option selected>0</option>
+        <option>3</option>
+
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+
+      <td><label for="italian_tracts_wecanknow">Italian (<span lang="it">Italiano</span>) Tracts: </label></td>
+      <td><select name="italian_tracts_wecanknow" id="italian_tracts_wecanknow">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+    </tr>
+  <tr>
+      <td><label for="polish_tracts_wecanknow">Polish (<span lang="pl">Polska</span>) Tracts: </label></td>
+
+      <td><select name="polish_tracts_wecanknow" id="polish_tracts_wecanknow">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+
+        <option>70</option>
+      </select></td>
+    </tr> 
+  <tr>
+      <td><label for="russian_tracts_wecanknow">Russian (<span lang="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span>) Tracts: </label></td>
+      <td><select name="russian_tracts_wecanknow" id="russian_tracts_wecanknow">
+        <option selected>0</option>
+
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+
+    </tr>
+  </table>  
+</div>
+<div id="DGDFY-languages" style="display: none;">
+  <table border="0" style="padding: 0; margin-left: 45px;">
+    <tr>
+      <td><label for="english_tracts_dgdfy">English Tracts: </label></td>
+      <td><select name="english_tracts_dgdfy" id="english_tracts_dgdfy">
+        <option selected>0</option>
+
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+        <option value="100">100 (USA only)</option>
+
+        <option value="150">150 (USA only)</option>
+        <option value="200">200 (USA only)</option>
+        <option value="250">250 (USA only)</option>
+      </select></td>
+  </tr>
+  <tr>
+      <td><label for="polish_tracts_dgdfy">Polish Tracts: </label></td>
+
+      <td><select name="polish_tracts_dgdfy" id="polish_tracts_dgdfy">
+        <option selected>0</option>
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+
+        <option>70</option>
+      </select></td>
+  </tr>
+  <tr>
+      <td><label for="russian_tracts_dgdfy">Russian Tracts: </label></td>
+      <td><select name="russian_tracts_dgdfy" id="russian_tracts_dgdfy">
+        <option selected>0</option>
+
+        <option>3</option>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+        <option>70</option>
+      </select></td>
+
+    </tr>
+  </table>  
+    <select name="french_tracts_dgdfy" id="french_tracts_dgdfy" style="display: none">
+      <option selected>0</option>
+      <option>3</option>
+      <option>10</option>
+      <option>25</option>
+
+      <option>50</option>
+      <option>70</option>
+      <option>100</option>
+      <option>150</option>
+      <option>200</option>
+      <option>250</option>
+
+    </select>
+  </div>
+<!-- Phorm Messages tracts -->
+
+<p>Please enter some comments as to why you think it's important to distribute these tracts, where you would distribute them and to whom you would give them: <span class="required_asterisk">*</span></p>
+<textarea class="requestcomment" name="request_comment" id="request_comment" rows="5" cols="60"></textarea>
+<!-- Phorm Messages request_comment -->
+<p style="color: brown;"><em>Note: When you are distributing these tracts, we would encourage you to share them in person, hand to hand.  Please do not leave them on vehicle windshields or in doors/mailslots, etc.  Thank you.</em></p>
+</div>
+<div class="tractbar-bottom"></div>
+
+<p class="required">* Required information</p>
+
+<p style="text-align: center">Enter your address on the next page ...</p>
+
+<p style="text-align: center">
+  <input type="submit" value="Continue ..."> <input type="reset" id="reset_button"></p>
+
+<hr width="55%">
+
+<input type="hidden" name="referrer" value="http://ebiblefellowship.com/index.html">
+<input type="hidden" name="guid" value="0c2f62abc208dc16904de20610bc9b0f">
+<input type="hidden" name="PHORM_NAME" value="Free_Tracts">
+<input type="hidden" name="PHORM_CONFIG" value="request_config.php">
+
+</form>
+

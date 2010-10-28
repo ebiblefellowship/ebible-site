@@ -1,0 +1,22 @@
+
+<%
+ # partial: _media_bar
+ # usage: render('_media_bar', :item => item, :list => {true|false}
+%>
+      <div class="contentbar-top"></div>
+      <div class="contentbar-mid">
+        <ul class="audio-sprite">
+          <% if item[:audio] %><li class="hphones"><a href="#" title="Listen"></a></li>
+          <li class="download"><a href="<%= item[:audio][:url] %>" title="Download"></a></li>
+          <% end %><li class="transcript"><a href="<%= item[:audio][:url] %>" title="Transcript"></a></li>
+          <% if item[:video] %><li class="video"><a href="<%= item[:video][:url] %>" title="Video"></a></li><% end %>
+        </ul>
+        <h2><%= list ? link_to(item[:title], item.path) : item[:title] %></h2>
+        <p class="bottom"><%= item[:date] %> | <%= item[:speaker] %></p>
+        <% if item[:text] %><p><%= item[:text] %></p><% end %>
+        <% if item[:audio] %><p>Audio: Length: <%= item[:audio][:length] %> Size: <%= item[:audio][:size] %></p><% end %>
+        <% if item[:summary] %><p><%= item[:summary] %></p><% end %>
+      </div>
+<% if true %>
+      <div class="contentbar-bottom"></div>
+<% end %>

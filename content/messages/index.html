@@ -1,0 +1,10 @@
+---
+title: Bible Messages
+---
+<h1><%= @item[:title] %></h1>
+
+<%= render('_years_bar', :item => @item) %>
+
+<% sorted_messages(25).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>

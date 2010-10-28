@@ -1,0 +1,38 @@
+
+<%
+ # partial: _menu
+ submenu = false
+%>
+        <ul>
+          <li><a href="#">Join</a></li>
+          <li><%= link_to('Messages', '/messages/') %></a>
+<% if submenu %>
+            <dl>
+              <dt><%= link_to('Sunday Messages', '/messages/bc2/') %></dt>
+              <dd>Messages given Sunday mornings the <br>
+                  second hour at Delco Bible Fellowship</dd>
+              <dt><%= link_to('Sunday Studies', '/messages/bc1/') %></dt>
+              <dd>Studies given Sunday mornings the <br>
+                  first hour at Delco Bible Fellowship</dd>
+            </dl>
+<% end %>
+          </li>
+          <li><%= link_to('Videos', '/videos/') %></li>
+          <li><a href="#">Bible</a></li>
+          <li><%= link_to('Free Materials', '/free/') %>
+<% if submenu %>
+            <dl>
+              <dt><a href="#">Free Bible Request Form</a></dt>
+              <dd>Request a free Bible to have a copy of <br>
+                  God&rsquo;s Word for yourself.</dd>
+              <dt><%= link_to('Free CD Request Form', '/free_cd/') %></dt>
+              <dd>Request a free MP3 or audio CD containing <br>
+                  various Biblical teachings and other material.</dd>
+              <dt><%= link_to('Free Tracts Request Form', '/free_tracts/') %></dt>
+              <dd>Request free tracts to distribute to people <br>
+                  in your area.</dd>
+            </dl>
+<% end %>
+          </li>
+          <li><a href="#">Donate</a></li>
+        </ul>
