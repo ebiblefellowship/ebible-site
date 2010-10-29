@@ -1,14 +1,51 @@
 
 <%
- # partial: _years_bar
- # usage: render('_years_bar', :item => @item)
+ # partial: _date_bar
+ #
+ # Outputs years and if the current item contains a year, a month selection as well.
+ # Selector is context sensitive and outputs plain text for the year or month that is
+ # the current one and links for the rest.
+ #
+ # usage: render('_date_bar', :item => @item)
+ # TODO: add prefix: :prefix => '/messages'
+ # TODO: the list of available years should be found by querying so a link is 
+ #   displayed only if content is actually available
+ # TODO: the list of available months should be found by querying so a link is
+ #   displayed only if content is actually available
 %>
 <div class="years">
 <% years = %w{ 2010 2009 2008 2007 }
-   years.each do |year| %>
+   years.each do |year|
+     # if the current items path contains the current year, then
+     # just output the year text, otherwise output a link to the year.
+     if item.path.start_with? "/messages/#{year}/" %>
+  <p><%= year %>
+<%   else %>
   <p><%= link_to(year, "/messages/#{year}/") %></p>
-  <!-- <p class="months" style="font-size: 65%">1 2 3 4 5 6 7 8 9 10 11 12</p> -->
-    <% unless year == years.last %><img src="<%= images_url %>/breadcrumbs_pipe.png"><% end %>
+<%   end
+     # only output delimiter if not the last year
+     unless year == years.last %>    <img src="<%= images_url %>/breadcrumbs_pipe.png"><% end %>
 <% end %>
 </div>
+<%
+   # if the current items path contains a year, then it possible to list the
+   # links for the associated months, otherwise, dont display the month links.
+   if item.path =~ %r{^/messages/(\d\d\d\d)/}
+   year = $1 %>
+<div class="months">
+<%
+     months = %w{ 01 02 03 04 05 06 07 08 09 10 11 12 }
+     months.each do |month|
+       # if the current items path contains the current year and month, then
+       # just output the month text, otherwise output a link to the month.
+       if item.path.start_with? "/messages/#{year}/#{month}/" %>
+  <p><%= to_month_full_s(month) %>
+<%     else %>
+  <p><%= link_to(to_month_full_s(month), "/messages/#{year}/#{month}/") %></p>
+<%     end
+       # only output delimiter if not the last month
+       unless month == months.last %>    <img src="<%= images_url %>/breadcrumbs_pipe.png"><% end %>
+<%   end %>
+</div>
+<% end %>
 

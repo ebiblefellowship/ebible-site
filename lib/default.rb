@@ -23,7 +23,11 @@ def formatted_date(date)
 end
 
 def to_month_s(month)
-  Date.new(2010, month).strftime("%B")
+  Date.new(2010, month).strftime("%b")
+end
+
+def to_month_full_s(month)
+  Date.new(2010, month.is_a?(String) ? month.to_i : month).strftime("%B")
 end
 
 def sorted_articles(relevant_articles, limit = 25)
@@ -34,8 +38,9 @@ def sorted_articles(relevant_articles, limit = 25)
   end.reverse.first(limit)
 end
 
+# Messages always have a date as part of the filename, normally in YYYY.DD.MM format
 def select_messages
-  @items.select { |i| i.identifier =~ %r{^/messages/\d\d\d\d/} }
+  @items.select { |i| i.identifier =~ %r{\d\d\d\d[.-]\d\d[.-]\d\d} }
 end
 
 def sorted_messages(limit = 25)

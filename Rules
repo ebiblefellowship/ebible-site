@@ -140,26 +140,33 @@ end
 #end
 
 # traslate input names to output
-route '/messages/\d\d\d\d/*/' do
+route '/messages/*' do
   require 'date'
   # Get filename part from identifier
   file = item.identifier.chop.split('/')[-1]
-  file_title = file.split('_-_')[-1]
-  slug = item[:slug]
-  if slug.nil? 
-    slug = item[:title] || ''
-    slug = slug.gsub(' ','-').downcase
+  if file =~ %r{^\d\d\d\d\.\d\d\.\d\d}
+    # if the file starts with a date, then its a content item and the filename
+    # needs to be translated.
+    file_title = file.split('_-_')[-1]
+    slug = item[:slug]
+    if slug.nil? 
+      slug = item[:title] || ''
+      slug = slug.gsub(' ','-').downcase
+    end
+    # clean slug of punctuation characters
+    slug.gsub!(/[,:?'"]/,'')
+    # get the date from the attribute or file identifier
+    date = '1980/1/1'  # init
+    date = item[:date]
+    # if no date attribute, parse from item identifier
+    if date.nil? and item.identifier =~ /(\d\d\d\d).(\d\d).(\d\d)/
+      date = Date.new($1, $2, $3)
+    end
+    "/messages/#{date.strftime('%Y/%m/%d')}/#{slug}/index.html"
+  else
+    # default naming
+    rep.item.identifier + 'index.html'
   end
-  # clean slug of punctuation characters
-  slug.gsub!(/[,:?'"]/,'')
-  # get the date from the attribute or file identifier
-  date = '1980/1/1'  # init
-  date = item[:date]
-  # if no date attribute, parse from item identifier
-  if date.nil? and item.identifier =~ /(\d\d\d\d).(\d\d).(\d\d)/
-    date = Date.new($1, $2, $3)
-  end
-  "/messages/#{date.strftime('%Y/%m/%d')}/#{slug}/index.html"
 end
 
 route '*' do
