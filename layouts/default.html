@@ -67,7 +67,7 @@
 
       <div id="main">
         
-        <%= render('_twitter_bar') %>
+        <%= render('_twitter_bar') if home_page? %>
 
 <% unless home_page? %>
         <div class="breadcrumbs">
