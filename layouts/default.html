@@ -73,10 +73,10 @@
         <div class="breadcrumbs">
         <% breadcrumbs_trail.each do |item|
            if @item == item %>
-         <p><%= @item[:title] %></p><%
+         <p><%= @item[:nav] || @item[:title] %></p><%
            else
              if item  # skip nil items which are gaps in the path
-         %><p><%= link_to(item[:title], item.rep_named(:default)) %></p>
+         %><p><%= link_to(item[:nav] || item[:title], item.rep_named(:default)) %></p>
            <img src="<%= images_url %>/breadcrumbs_pipe.png">
          <%  end
            end

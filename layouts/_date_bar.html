@@ -19,7 +19,7 @@
      # if the current items path contains the current year, then
      # just output the year text, otherwise output a link to the year.
      if item.path.start_with? "/messages/#{year}/" %>
-  <p><%= year %>
+  <p><%= year %></p>
 <%   else %>
   <p><%= link_to(year, "/messages/#{year}/") %></p>
 <%   end
@@ -39,7 +39,7 @@
        # if the current items path contains the current year and month, then
        # just output the month text, otherwise output a link to the month.
        if item.path.start_with? "/messages/#{year}/#{month}/" %>
-  <p><%= to_month_full_s(month) %>
+  <p><%= to_month_full_s(month) %></p>
 <%     else %>
   <p><%= link_to(to_month_full_s(month), "/messages/#{year}/#{month}/") %></p>
 <%     end
