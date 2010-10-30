@@ -1,11 +1,11 @@
 ---
-title: Bible Messages for 2010
+title: Archives for 2010
 nav: 2010
 ---
 <h1><%= @item[:title] %></h1>
 
 <%= render('_date_bar', :item => @item) %>
 
-<% sorted_messages(25).each do |item| %>
+<% select_messages_from_current(25).each do |item| %>
   <%= render('_media_bar', :item => item, :list => true) %>
 <% end %>

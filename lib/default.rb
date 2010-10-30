@@ -2,6 +2,9 @@
 # before nanoc starts compiling.
 require "bundler/setup"
 
+# All content has a filename with a date
+CONTENT_SELECTION = %r{\d\d\d\d[.-]\d\d[.-]\d\d}
+
 def base_url
   @site.config[:base_url]
 end
@@ -40,7 +43,13 @@ end
 
 # Messages always have a date as part of the filename, normally in YYYY.DD.MM format
 def select_messages
-  @items.select { |i| i.identifier =~ %r{\d\d\d\d[.-]\d\d[.-]\d\d} }
+  @items.select { |i| i.identifier =~ CONTENT_SELECTION }
+end
+
+# Messages always have a date as part of the filename, normally in YYYY.DD.MM format
+def select_messages_from_current(limit = 25)
+  sorted_articles(@items.select { |i| i.identifier =~ CONTENT_SELECTION and 
+                                      i.path.to_s.start_with? @item.path.to_s }, limit)
 end
 
 def sorted_messages(limit = 25)
