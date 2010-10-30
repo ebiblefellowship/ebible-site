@@ -2,19 +2,28 @@
 <%
  # partial: _date_bar
  #
- # Outputs years and if the current item contains a year, a month selection as well.
- # Selector is context sensitive and outputs plain text for the year or month that is
- # the current one and links for the rest.
+ # Outputs years, months and days depending on the current location of the item.  
+ # If the current item contains a year, a months selection is displayed.  
+ # If the current item contains a month, the days selection is displayed.
+ #
+ # Since the years, months and days are generated from the actual items, links
+ # will be generated only if an index exists for each year, month and day.
+ #
+ # The selectors are context sensitive and will output plain text for the year, 
+ # month or day that is the current one and creates links for the rest.
  #
  # usage: render('_date_bar', :item => @item)
  # TODO: add prefix: :prefix => '/messages'
- # TODO: the list of available years should be found by querying so a link is 
- #   displayed only if content is actually available
- # TODO: the list of available months should be found by querying so a link is
- #   displayed only if content is actually available
+ # TODO: way too much logic in this file--move out most
 %>
+<div id="date-bar">
 <div class="years">
-<% years = %w{ 2010 2009 2008 2007 }
+<%
+   ##years = %w{ 2010 2009 2008 2007 }  # for testing
+   # select all item paths that are years
+   items = @items.select { |i| i.path =~ %r{^/messages/\d\d\d\d/$} }
+   # return the list of days from the items
+   years = items.collect { |i| i.path.chop.split('/')[-1] }.sort
    years.each do |year|
      # if the current items path contains the current year, then
      # just output the year text, otherwise output a link to the year.
@@ -26,26 +35,62 @@
      # only output delimiter if not the last year
      unless year == years.last %>    <img src="<%= images_url %>/breadcrumbs_pipe.png"><% end %>
 <% end %>
-</div>
+</div>  <!-- .years -->
 <%
    # if the current items path contains a year, then it possible to list the
    # links for the associated months, otherwise, dont display the month links.
    if item.path =~ %r{^/messages/(\d\d\d\d)/}
-   year = $1 %>
+     year = $1 %>
 <div class="months">
 <%
-     months = %w{ 01 02 03 04 05 06 07 08 09 10 11 12 }
+     months = %w{ 01 02 03 04 05 06 07 08 09 10 11 12 }  # for testing
      months.each do |month|
+       item_path = "/messages/#{year}/#{month}/"
+       # try to find the item for this year and month
+       is_item_found = @items.find { |i| i.path == item_path }
        # if the current items path contains the current year and month, then
-       # just output the month text, otherwise output a link to the month.
-       if item.path.start_with? "/messages/#{year}/#{month}/" %>
+       # just output the month text.
+       if item.path.start_with? item_path %>
   <p><%= to_month_full_s(month) %></p>
-<%     else %>
-  <p><%= link_to(to_month_full_s(month), "/messages/#{year}/#{month}/") %></p>
+<%     # else if the item was not found output no link and a disabled style
+       elsif not is_item_found %>
+  <p class="disabled"><%= to_month_full_s(month) %></p>
+<%     # else, the item exists and is not the current one so output a link
+       else %>
+  <p><%= link_to(to_month_full_s(month), item_path) %></p>
 <%     end
        # only output delimiter if not the last month
        unless month == months.last %>    <img src="<%= images_url %>/breadcrumbs_pipe.png"><% end %>
 <%   end %>
-</div>
+</div>  <!-- .months -->
 <% end %>
+<%
+   # if the current items path contains a month, then it possible to list the
+   # links for the associated days, otherwise, dont display the days links.
+   if item.path =~ %r{^/messages/(\d\d\d\d)/(\d\d)/}
+     year, month = $1, $2 %>
+<div class="days">
+<%
+     days = %w{ 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 }
+     days.each do |day|
+       day_str = day.sub(/^0/,'')  # strip leading zero
+       item_path = "/messages/#{year}/#{month}/#{day}/"
+       # try to find the item for this year and month
+       is_item_found = @items.find { |i| i.path == item_path }
+       # if the current items path contains the current year and month, then
+       # just output the month text.
+       if item.path.start_with? item_path %>
+  <p><%= day_str %></p>
+<%     # else if the item was not found output no link and a disabled style
+       elsif not is_item_found %>
+  <p class="disabled"><%= day_str %></p>
+<%     else %>
+  <p><%= link_to(day_str, item_path) %></p>
+<%     end
+       # only output delimiter if not the last day
+       unless day == days.last %>    <img src="<%= images_url %>/breadcrumbs_pipe.png"><% end %>
+<%   end %>
+</div>  <!-- .days -->
+<% end %>
+</div>  <!-- #date-bar -->
 
