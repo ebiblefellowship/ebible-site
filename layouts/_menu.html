@@ -4,7 +4,7 @@
  submenu = false
 %>
         <ul>
-          <li><a href="#">Join</a></li>
+          <li><%= link_to('Join', '/join/') %></li>
           <li><%= link_to('Messages', '/messages/') %></a>
 <% if submenu %>
             <dl>
@@ -34,5 +34,5 @@
             </dl>
 <% end %>
           </li>
-          <li><a href="#">Donate</a></li>
+          <li><%= link_to('Donate', '/donate/') %></li>
         </ul>
