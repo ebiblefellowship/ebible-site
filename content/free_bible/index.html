@@ -1,0 +1,294 @@
+---
+title: Free Bible Request Form
+nav: Bible Request Form
+head_links: |
+    <link rel="alternate" title="EBible Fellowship English Bibles RSS" href="rss_english.xml" type="application/rss+xml">
+    <link rel="alternate" title="EBible Fellowship Russian Bibles RSS" href="rss_russian.xml" type="application/rss+xml">
+scripts: |
+  <script type="text/javascript" src="jquery/jquery.js"></script>
+  <script type="text/javascript">
+  $(document).ready(
+    function(){   
+      $("#countdown").countdown({until: new Date(2011, 5 - 1, 21, 23, 59, 59), format: 'Od', layout: '{on} {ol}{d<} and {dn} {dl}{d>} Remaining'});
+    
+    // create the language page display
+    var div = document.createElement("div");
+    div.setAttribute("id", "lang-page");
+    // hide the language page to start
+    div.style.display = "none";
+        
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("id", "lang-page-iframe");
+    iframe.setAttribute("name", "iframe");
+    iframe.setAttribute("src", "blank.html");     
+        
+    div.appendChild(iframe);
+    document.body.appendChild(div);
+    
+    // update the language page to open all links in a new window
+    $("#lang-page-iframe").load(function() {
+        var doc = null;
+        if (this.contentDocument) {          
+          doc = this.contentDocument; // firefox, opera   
+    }
+        else if (this.contentWindow) {          
+          doc = this.contentWindow.document; // internet explorer
+    }
+        else if (this.document) {          
+          doc = this.document; // others?
+    }
+    if (doc != null) {
+          var links = doc.getElementsByTagName("a");
+          for ( var i=0; i < links.length; i++ ) {
+      links[i].setAttribute("target", "_blank");
+          }       
+    }
+      });
+                       
+    // load and display the appropriate language homepage when a radio button is clicked
+      var lang = "en";        
+      $("form :radio").click(
+        function() {
+      // get which language they picked               
+      var newLang = $(this).next().children("span").attr("lang");
+      if (newLang == null) newLang = "en";
+      // check if it is a language that we don't have a homepage for yet
+      switch (newLang) {
+        case "el": case "he": case "hu": case "und": 
+        newLang = "";
+        break;
+      }
+      if (newLang == "") {
+        // hide the page display since we don't have a homepage in that language
+        $("#lang-page").slideUp("fast");
+      if (lang != "") {
+        $("#lang-page-iframe").attr("src", "blank.html");     
+      }
+      }
+      else if (lang != newLang) {       
+        // first hide the page
+      $("#lang-page").slideUp("fast");
+      // then load the new language page
+      $("#lang-page-iframe").attr("src", ((newLang == "en") ? "" : "/" + newLang) + "/index.html");
+      // then move the display to after the new language and display it again
+      $("#lang-page").insertAfter($(this).nextAll("br").eq(0)).slideDown("fast");
+          }
+      // save the current language for next time
+          lang = newLang;
+        });
+
+  // added on 8/18/09 to display message in user's language
+  var ulang = 'en';
+  $('<div class="pullout" style="display: none;"><p class="may21" id="en-may21" style="display: none;"><a href="/may21/index.html"><span class="big">May 21, 2011 - Judgment Day!, October 21, 2011 - The End of the World<\/span><\/a> &ndash; The purpose of this tract is to inform you of the great urgency there now is in the world for each and every person to be reconciled to God.<\/p><p class="may21" id="lang-may21" style="display: none;"><\/p>'+(ulang=='en'?'':'<p id="lang-links"><span class="lang">'+ulang+'<\/span> | <span class="lang link">en<\/span><\/p>')+'<\/div>').insertAfter('#errors');
+  $('.lang').click(function(){
+    $('.may21').toggle();
+    $('.lang').toggleClass('link');
+  });       
+  if (ulang == 'en') {
+    $('#en-may21').show().parent().show();
+  }
+  else {
+    $.ajaxSetup({ cache: false });
+    var page = 'index.html';
+    switch (ulang) {
+      case 'af': case 'es': case 'fr': case 'id': case 'pt': case 'tl': 
+        page = 'index.html_utf8';
+        break;
+    }
+    $('#lang-may21').load('/'+ulang+'/'+page+' p[title*=May 21]', function(){
+      var may21 = $(this);        
+      var link = $('a:first-child', may21);
+      var href = link.attr('href');
+      var path = new Array(); // the array is an IE fix, jquery doesn't 'normalize' the href attribute for some reason
+      path = href.split('/');
+      if (path.length > 1) link.attr('href', '/'+ulang+'/'+path.slice(-1));
+      else link.attr('href', '/'+ulang+'/'+href);
+      may21.show().parent().show();
+    });
+  } 
+    });
+  </script>    
+---
+        <h1 class="center">EBible Fellowship Free Bible Request Form</h1>
+        
+<p class="languages">Free Bible Selection &middot;
+  <span lang="ar" title="Arabic" class="nowrap">&#1575;&#1582;&#1578;&#1610;&#1575;&#1585; &#1575;&#1604;&#1573;&#1606;&#1580;&#1610;&#1604; &#1605;&#1580;&#1575;&#1606;&#1610;</span> &middot;
+  <span lang="zh" title="Chinese" class="nowrap">&#20813;&#36153;&#22307;&#32463;</span> &middot;
+  <span lang="fr" title="French" class="nowrap">Choix Libre De Bible</span> &middot;
+
+  <span lang="de" title="German" class="nowrap">Freie Bibel-Vorw&auml;hler</span> &middot;
+  <span lang="el" title="Greek" class="nowrap">&#917;&#955;&#949;&#973;&#952;&#949;&#961;&#951; &#949;&#960;&#953;&#955;&#959;&#947;&#942; &#914;&#943;&#946;&#955;&#969;&#957;</span> &middot;
+
+<!-- commenting out Hungarian 1/20/2009 due to lack of requests and lack of supply (mike g.)  
+<span lang="hu" title="Hungarian" class="nowrap">Szabad Biblia Kereslet</span> &middot;
+-->
+  <span lang="pl" title="Polish" class="nowrap">Gratis Biblia Wyb&oacute;r</span> &middot;
+
+  <span lang="pt" title="Portuguese" class="nowrap">Sele&ccedil;&atilde;o Livre Do Bible</span> &middot;
+ <!-- commenting out Romanian 7/18/2010 due to unavailability of this Bible from supplieers (mike g.)
+ <span lang="ro" title="Romanian" class="nowrap">Drum liber Biblie A cere</span> &middot;
+ -->
+  <span lang="ru" title="Russian" class="nowrap">&#1047;&#1072;&#1082;&#1072;&#1079;&#1072;&#1090;&#1100; &#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1091;&#1102; &#1041;&#1080;&#1073;&#1083;&#1080;&#1102;</span> &middot;
+ 
+  <span lang="es" title="Spanish" class="nowrap">Selecci&oacute;n Libre De la Biblia</span>
+  <!-- &middot; <span lang="uk" title="Ukranian" class="nowrap">&#1074;&#1110;&#1083;&#1100;&#1085;&#1080;&#1081; &#1073;&#1110;&#1073;&#1083;&#1110;&#1103; &#1074;&#1080;&#1073;&#1110;&#1088;</span> -->
+
+</p>
+        
+<p><cite>EBible Fellowship</cite> is sending Bibles to needy recipients.
+  If you cannot afford to purchase your own Bible or cannot obtain one
+  and are <em>sincerely
+  interested in learning more about the Word of God</em>, please fill out 
+  this form and we will consider your request.  As purchasing and mailing
+  costs are rather high, we reserve the right to only send Bibles
+  to those who most need them and only send one Bible to each household 
+  address.</p>
+
+<p>Currently, we are receiving <em>far more requests than we can fulfill</em>. 
+  Because of this, we place a great weight on what you type in for the
+  reason you would like a Bible.  <!-- Requests with single word comments
+  like, "Thanks" are discarded immediately.  --><em>Please enter a meaningful
+  comment for us to consider your request</em>.</p>
+
+<p>You can monitor the availability of free Bibles in English and Russian
+  by subscribing to one of these
+  <abbr title="Really Simple Syndication">RSS</abbr>
+
+  feeds. You can learn more about RSS feeds
+  <a href="../help/rss.html">here</a>.</p>
+<p style="margin-left: 5em;"><a href="rss_english.xml"
+  title="Link to monitor availability of English Bibles"><img src="<%= images_url %>/xml.gif" alt="XML icon" border="0" height="14" width="36"></a>&nbsp;<b>RSS feed to monitor English Bible availability</b><br>
+  <a href="rss_russian.xml"
+  title="Link to monitor availability of Russian Bibles"><img src="<%= images_url %>/xml.gif" alt="XML icon" border="0" height="14" width="36"></a>&nbsp;<b>RSS feed to monitor Russian Bible availability</b>
+</p>
+
+<p class="red-gradient">
+  Due to overwhelming demand and limited funds, <u>we can no longer
+  accept new requests for <em>Portuguese Bibles</em> at this time</u>. 
+  <br><br>
+  <u>We plan to start accepting requests again starting next month
+  so please check back at that time.</u></p>
+
+<p class="orange-gradient">With the many requests we are receiving for Bibles,
+  we welcome anyone who would like to support our ministry with a
+  <a href="/donate/">donation</a>.</p>
+
+<p class="blue-gradient"><em>We ask you only make <strong>one request
+  for free materials per month</strong>.  If you have made a request
+  for some other item on our site within the past month, please wait
+  30 days before requesting another item.</em></p>
+
+<form name="request" method="POST" action="/phorm/phorm.php?l=free_bible&amp;p=index">
+
+<!-- Comment out this paragraph, US mailing now uses only first class - jmg 9/2/07
+<p style="color: brown;">Please note that many Bibles are mailed from the U.S.
+  These overseas mailings will be sent surface which can take 16 to 20
+  weeks or longer.</p>
+-->
+
+
+<p class="required">* Required Information</p>
+        
+<div class="contentbar-top"></div>
+<div class="contentbar-mid">
+
+  <h2>Bible Selection</h2>
+<p>Please select the language of the Bible you wish to receive:<span class="required_asterisk">*</span></p>
+<p>
+    <input type="radio" name="bible_language" id="bible_english" value="English" checked>
+    <label for="bible_english">English (King James Version)</label><br>
+  
+  <input type="radio" name="bible_language" id="bible_arabic" value="Arabic">
+    <label for="bible_arabic">Arabic (<span lang="ar" dir="rtl">
+&#1578;&#1585;&#1580;&#1605;&#1577;
+<!--&#1577;&#1610;&#1576;&#1585;&#1593;&#1604;&#1575;--></span>):
+      <span lang="ar" dir="rtl">
+
+&#1575;&#1575;&#1604;&#1603;&#1578;&#1575;&#1576;  &#1575;&#1604;&#1605;&#1602;&#1583;&#1587;
+<!--&#1587;&#1583;&#1602;&#1605;&#1604;&#1575;  &#1576;&#1575;&#1578;&#1603;&#1604;&#1575;-->
+</span>
+      (<span lang="ar" dir="rtl">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;
+
+<!--&#1577;&#1605;&#1580;&#1585;&#1578;--></span> Van-Dijk)</label><br>
+  <input type="radio" name="bible_language" id="bible_chinese" value="Chinese">
+    <label for="bible_chinese">Chinese (<span lang="zh">&#20013;&#25991;</span>): Union Version (Simplified Script)</label><br>
+
+  <input type="radio" name="bible_language" id="bible_french" value="French">
+    <label for="bible_french">French <span lang="fr">(Fran&ccedil;ais): La Sainte Bible (Louis Segond 1910, r&eacute;vis&eacute;e)</span></label><br>
+  <input type="radio" name="bible_language" id="bible_german" value="German">
+    <label for="bible_german">German <span lang="de">(Deutsch): Die Heilige Bibel (LutherBibel 1912 + 1998)</span></label><br>
+  <input type="radio" name="bible_language" id="bible_greek" value="Greek">
+
+    <label for="bible_greek">Greek Bambas <span lang="el">(&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;): &#919; &#953;&#949;&#961;&#942; &#914;&#943;&#946;&#955;&#959;&#962;</span> (<u>modern Greek</u>)</label> <span class="required_asterisk">**</span><br>
+  <input type="radio" name="bible_language" id="bible_hebrew" value="Hebrew">
+    <label for="bible_hebrew">Hebrew (<span lang="he" dir="rtl">&#1514;&#1512;&#1497;&#1489;&#1506;</span>): (<u>modern Hebrew</u>, Ginsburg/Delitzsch version)</label> <span class="required_asterisk">**</span><br>
+
+<!-- commenting out Hungarian 1/20/2009 due to lack of demand and lack of supply (mike g.)
+  <input type="radio" name="bible_language" id="bible_hungarian" value="Hungarian">
+    <label for="bible_hungarian">Hungarian <span lang="hu">(Magyar): Szent Biblia (K&aacute;roli)</span></label><br>
+-->
+  <input type="radio" name="bible_language" id="bible_kisanga" value="Kisanga">
+    <label for="bible_kisanga">Kisanga <span lang="und">(Congo): Mukanda Wa Leza</span></label><br>
+<!-- commenting out Polish requests due to temporary out of stock at supplier (mikeg) -->
+<!--  <input type="radio" name="bible_language" id="bible_polish" value="Polish">
+    <label for="bible_polish">Polish <span lang="pl">(Polska): Biblia Gda&#324;ska (1632)</span></label><br>
+-->
+  <input type="radio" name="bible_language" id="bible_polish" value="Polish" disabled="true">
+    <label for="bible_polish"><strike>Polish <span lang="pl">(Polska): Biblia Gda&#324;ska (1632)</span></strike> chwilowo brak </label> <br>
+
+    <input type="radio" name="bible_language" id="bible_portuguese" value="Portuguese" disabled="true">
+    <label for="bible_portuguese"><strike>Portuguese <span lang="pt">(Portugu&ecirc;s): B&iacute;blia Sagrada (Almeida - Corrigida e Revisada Fiel ao Original)</span></strike></label> <br>
+   <!-- <input type="radio" name="bible_language" id="bible_romanian" value="Romanian">
+    <label for="bible_romanian">Romanian <span lang="ro">(Rom&acirc;n&#259;): Sfinta Biblie (Cornilescu 1921, rev&#259;zut SBT)</span></label><br>  -->
+    <input type="radio" name="bible_language" id="bible_russian" value="Russian">
+    <label for="bible_russian">Russian (<span lang="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span>): Synodal Version (<span lang="ru">&#1057;&#1074;&#1103;&#1090;&#1077;&#1081;&#1096;&#1072;&#1103; &#1073;&#1080;&#1073;&#1083;&#1080;&#1103;, &#1074;&#1072;&#1088;&#1080;&#1072;&#1085;&#1090; &#1057;&#1080;&#1085;&#1086;&#1076;&#1072;&#1083;&#1100;&#1085;&#1086;&#1081;</span>)</label><br>
+
+  
+  <input type="radio" name="bible_language" id="bible_spanish" value="Spanish">
+    <label for="bible_spanish">Spanish <span lang="es">(Espa&ntilde;ol): Santa Biblia (Version Reina-Valera 1960)</span></label><br>
+  <!-- <input type="radio" name="bible_language" id="bible_ukranian" value="Ukranian">
+    <label for="bible_ukranian">Ukrainian <span lang="uk">(&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;): &#1057;&#1074;&#1103;&#1090;&#1077; &#1041;&#1110;&#1073;&#1083;&#1110;&#1103;</span></label> -->
+  <!-- Phorm Messages bible_language -->
+</p>
+<p><span class="required_asterisk">**</span> NOTE: These Bibles are NOT original language Greek or Hebrew Bible study tools.  They are translations for modern day Greek and Hebrew speakers.</p>
+
+<p>Please enter some comments as to how you would use a Bible
+  and why you would like one:
+  (Why? &middot;
+  <span lang="ar" title="Arabic" class="nowrap">&#1575;&#1584;&#1575;&#1605;&#1604;</span> &middot;
+  <span lang="zh" title="Chinese" class="nowrap">&#28858;&#20160;&#40636;</span> &middot;
+  <span lang="fr" title="French" class="nowrap">Pourquoi</span> &middot;
+  <span lang="de" title="German" class="nowrap">Warum</span> &middot;
+  <span lang="el" title="Greek" class="nowrap">&#915;&#953;&#945;&#964;&#943;</span> &middot;
+
+  <span lang="he" title="Hebrew" class="nowrap">&#1502;&#1463;&#1491;&#1468;&#1493;&#1468;&#1506;&#1463;?</span> &middot;
+  <span lang="hu" title="Hungarian" class="nowrap">mi&eacute;rt</span> &middot;
+  <span lang="und" title="Kisanga" class="nowrap">Porque</span> &middot;
+  <span lang="pl" title="Polish" class="nowrap">Dlaczego</span> &middot;
+
+  <span lang="pt" title="Portuguese" class="nowrap">spune-mi de ce</span> &middot;
+  <span lang="ru" title="Russian" class="nowrap">&#1055;&#1086;&#1095;&#1077;&#1084;&#1091;</span> &middot;
+  <span lang="es" title="Spanish" class="nowrap">Porqu&eacute;</span>)
+  <!-- &middot; <span lang="uk" title="Ukranian" class="nowrap">&#1095;&#1086;&#1084;&#1091;</span>) -->
+  <span class="required_asterisk">*</span></p>
+  <textarea class="requestcomment" name="request_comment" id="bible_comment" rows="5" cols="60"></textarea>
+
+</div>
+<div class="contentbar-bottom"></div>
+
+<p class="required">* Required information</p>
+
+<p style="text-align: center">Enter your address on the next page ...</p>
+
+<p style="text-align: center">
+  <input type="submit" value="Continue ..."> <input type="reset" id="reset_button"></p>
+
+<hr width="55%">
+
+<input type="hidden" name="referrer" value="http://ebiblefellowship.com/">
+
+<input type="hidden" name="guid" value="21085311bae75945f1f43407ee82a9ac">
+<input type="hidden" name="PHORM_NAME" value="Free_Bible">
+<input type="hidden" name="PHORM_CONFIG" value="request_config.php"> 
+
+</form>

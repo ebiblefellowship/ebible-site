@@ -1,68 +1,22 @@
 ---
 title: Videos
+head_links: |
+    <link rel="stylesheet" type="text/css" href="css/video.css">
+scripts: |
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="jquery/jquery.parsequery.js"></script>
+    <script type="text/javascript" src="jquery/video.js"></script>        
 ---
-        <h1>EBible Fellowship&rsquo;s Video Page</h1>
+        <h1>EBible Fellowship's Video Page</h1>
         <h3>Links to videos by various authors on Biblical topics such as the Rapture, the end of the world, the end of the church age, the timeline of history, etc.</h3>
-                
-      <div class="tractbar-top"></div>
-      <div class="tractbar-mid">
-        <h2>EBible Fellowship Videos</h2>
-        <div class="vimeoBadge">
-          
-          <div class="clip">
-            <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15466988" title="Heaven Part 5 - Revelation 2:7 He that hath an ear, let him hear what the Spirit saith unto the churches; To him that overcometh will I give to eat of the tree of life, which is in the midst of the paradise of God.">
-              <img src="images/gunther_01.jpg" width="120px" border="0" height="90px">
-            </a>
-            <div class="caption">
-              <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15466988">Heaven Part 5</a>
-              <p>Time: 59:10</p>
-            </div>
-          </div>
-          
-          <div class="clip">
-            <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15228506" title="A Prudent Man Foresees the Evil Part 4 - Proverbs 27:12 A prudent man foreseeth the evil, and hideth himself; but the simple pass on, and are punished.">
-              <img src="images/chris_01.jpg" width="120px" border="0" height="90px">
-            </a>
-            <div class="caption">
-              <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15228506">A Prudent Man Foresees the Evil Part 4</a>
-              <p>Time: 58:27</p>
-            </div>
-          </div>
-          
-          <div class="clip">
-            <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15466988" title="Heaven Part 5 - Revelation 2:7 He that hath an ear, let him hear what the Spirit saith unto the churches; To him that overcometh will I give to eat of the tree of life, which is in the midst of the paradise of God.">
-              <img src="images/gunther_01.jpg" width="120px" border="0" height="90px">
-            </a>
-            <div class="caption">
-              <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15466988">Heaven Part 5</a>
-              <p>Time: 59:10</p>
-            </div>
-          </div>
-          
-          <div class="clip">
-            <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15228506" title="A Prudent Man Foresees the Evil Part 4 - Proverbs 27:12 A prudent man foreseeth the evil, and hideth himself; but the simple pass on, and are punished.">
-              <img src="images/chris_01.jpg" width="120px" border="0" height="90px">
-            </a>
-            <div class="caption">
-              <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15228506">A Prudent Man Foresees the Evil Part 4</a>
-              <p>Time: 58:27</p>
-            </div>
-          </div> 
-          
-          <div class="clip">
-            <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15466988" title="Heaven Part 5 - Revelation 2:7 He that hath an ear, let him hear what the Spirit saith unto the churches; To him that overcometh will I give to eat of the tree of life, which is in the midst of the paradise of God.">
-              <img src="images/gunther_01.jpg" width="120px" border="0" height="90px">
-            </a>
-            <div class="caption">
-              <a href="http://www.ebiblefellowship.com/ebible_video.html?type=v&video=15466988">Heaven Part 5</a>
-              <p>Time: 59:10</p>
-            </div>
-          </div>     
-           
-          <div class="clear"></div>
-          <div id="vimeo_badge_logo"></div>
-        </div> <!--#vimeobadge -->
-
-      </div> <!-- .tractbar-mid-->
-      <div class="tractbar-bottom"></div>
-    
+      
+      <h4 id="loading">
+        <img src="<%= images_url %>/loading.gif" width="16" height="16" id="loading-image" alt="">&nbsp;Loading videos...
+      </h4>
+      <div id="all-videos">
+      <!-- videos will be inserted here -->
+      </div>
+      <div id="video-player">
+      </div>
+      <noscript><p>This page uses Javascript. Your browser either doesn't support Javascript or you have it turned off.</p>
+      </noscript>
