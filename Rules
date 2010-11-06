@@ -67,6 +67,10 @@ compile '/stylesheets/*/' do
 end
 
 # compile/copy the rest of the assets
+compile '/audio/*' do
+end
+
+# compile/copy the rest of the assets
 #compile '/assets/*/' do
 #end
 
@@ -132,6 +136,11 @@ route '/stylesheets/*/' do
   # path with version for cache busting
   #'/assets/style/style' + '-v' + rep.item[:version].to_s + '.css'
   nil  # not using scss/compass
+end
+
+#  /audio folder is just an extract from mp3 files and not used to create pages
+route '/audio/*' do
+  nil
 end
 
 # route rest of assets preserving the current file extersion
