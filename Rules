@@ -90,7 +90,8 @@ compile '/free*/*' do
 end
 
 compile '*' do
-  filter :erb  #if item[:is_dynamic]
+  keep_file_raw = item[:extension] != 'html'
+  filter :erb unless keep_file_raw
 
   # TODO: we don't use any of these formats so strip out what we don't use
   case item[:extension]
@@ -109,10 +110,12 @@ compile '*' do
     filter :rdiscount
   end
 
-  ##snapshot :before_sections
-  ##filter :add_sections
-  layout '/default/'
-  filter :relativize_paths, :type => :html unless item[:is_partial] || item[:kind] == 'article'
+  unless keep_file_raw
+    ##snapshot :before_sections
+    ##filter :add_sections
+    layout '/default/'
+    filter :relativize_paths, :type => :html unless item[:is_partial] || item[:kind] == 'article'
+  end
 end
 
 ### Routing ##################################################################
@@ -180,7 +183,7 @@ end
 
 route '*' do
   # does this work?
-  if item.binary?
+  if item.binary? or item[:extension] != 'html'
     item.identifier.chop + '.' + item[:extension]
   elsif item[:is_partial] || item[:kind] == 'article'
     nil  # Don’t output partial items (e.g. sub-stylesheets)
