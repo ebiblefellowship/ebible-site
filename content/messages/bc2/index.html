@@ -1,13 +1,8 @@
 ---
 title: Sunday Bible Messages (Bible Class II)
 ---
-      <h1><%= @item[:title] %></h1>
+<h1><%= @item[:title] %></h1>
 
-      <div class="years" style="display: none">
-        <p class="year"><%= link_to('2010','/messages/2010/') %></p>
-        <!-- <p class="months" style="font-size: 65%">1 2 3 4 5 6 7 8 9 10 11 12</p> -->
-<img src="images/breadcrumbs_pipe.png"><p><%= link_to('2009','/messages/2009/') %></p><img src="images/breadcrumbs_pipe.png"><p><%= link_to('2008','/messages/2008/') %></p><img src="images/breadcrumbs_pipe.png"><p><%= link_to('2007','/messages/2007/') %></p>
-      </div>
-      <% sorted_messages_for_event('bc2', 25).each do |item| %>
-         <%= render('_media_bar', :item => item, :list => true) %>
-      <% end %>
+<% sorted_messages_for_event('bc2', 25).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>
