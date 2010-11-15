@@ -10,7 +10,8 @@ tmp
 # other
 content/stylesheets
 _3rdparty
+layouts/home*.html
+*_save*
 # ignore media files
 *.mp3
-*.ogg
 *.swf
