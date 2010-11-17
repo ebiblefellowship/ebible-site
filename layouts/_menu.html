@@ -5,21 +5,23 @@
 %>
         <ul>
           <li><%= link_to('Join', '/join/') %></li>
-          <li><%= link_to('Messages', '/messages/') %></a>
+          <li><%= link_to('Studies', '/studies/') %></a>
 <% if submenu %>
             <dl>
-              <dt><%= link_to('Sunday Messages', '/messages/bc2/') %></dt>
+              <dt><%= link_to('Sunday Messages', '/studies/bc2/') %></dt>
               <dd>Messages given Sunday mornings the <br>
                   second hour at Delco Bible Fellowship</dd>
-              <dt><%= link_to('Sunday Studies', '/messages/bc1/') %></dt>
+              <dt><%= link_to('Sunday Studies', '/studies/bc1/') %></dt>
               <dd>Studies given Sunday mornings the <br>
                   first hour at Delco Bible Fellowship</dd>
             </dl>
 <% end %>
           </li>
           <li><%= link_to('Videos', '/videos/') %></li>
+          <li><%= link_to('Questions', '/questions/') %></li>
+          <li><%= link_to('Outreach', '/outreach/') %></li>
           <li><%= link_to('Bible', '/bible_reading/') %></li>
-          <li><%= link_to('Free Materials', '/free/') %>
+          <li><%= link_to('Free', '/free/') %>
 <% if submenu %>
             <dl>
               <dt><a href="#">Free Bible Request Form</a></dt>
@@ -34,5 +36,4 @@
             </dl>
 <% end %>
           </li>
-          <li><%= link_to('Donate', '/donate/') %></li>
         </ul>
