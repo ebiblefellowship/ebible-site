@@ -33,7 +33,7 @@ def to_month_full_s(month)
   Date.new(2010, month.is_a?(String) ? month.to_i : month).strftime("%B")
 end
 
-def sorted_articles(relevant_articles, limit = 25)
+def sorted_articles(relevant_articles, limit = 100)
   require 'time'
   sorted_relevant_articles = relevant_articles.sort_by do |a|
     time = a[:created_at]
@@ -56,10 +56,8 @@ def sorted_messages(limit = 25)
   sorted_articles(select_messages, limit)
 end
 
-def sorted_messages_for_event(event, limit = 25)
-  sorted_articles(@items.select { |i| 
-    i.identifier =~ %r{^/messages/\d\d\d\d/} and 
-    i[:event] == event })
+def sorted_articles_for_category(category, limit = 100)
+  sorted_articles(@items.select { |i| i[:category] == category }, limit)
 end
 
 # From: http://github.com/mgutz/nanoc3_blog/blob/master/lib/helpers.rb
