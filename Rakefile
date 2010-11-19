@@ -9,6 +9,8 @@ require 'yaml'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
 require 'audio_file'
+require 'to_slug'
+String.send(:include, ToSlug)  # add to_slug method to String class
 
 MP3_ROOT = '/var/www/html'
 META_ROOT =  '/var/www/sandbox/sitegen/content/audio'
@@ -38,7 +40,7 @@ def update_meta_from_mp3(mp3_file, meta_file)
   mp3_mtime = File.mtime(mp3_file)
   meta_mtime = File.exists?(meta_file) ? File.mtime(meta_file) : nil
   # determine if meta file should be updated
-  next if mp3_mtime == meta_mtime
+  ##return if mp3_mtime == meta_mtime
   # gxtract metadata
   puts "reading file #{mp3_file}"
   mp3 = AudioFile.new(mp3_file)
@@ -71,15 +73,18 @@ def parse_dated_file(file)
     meta['created_at'] = $1.tr('.','-')
     meta['speaker'] = 'Chris McCann'
     meta['title'] = "Fellowship Hour for #{meta['created_at']}"
+    meta['slug'] = 'fellowship-hour'
   elsif file =~ %r{^(\d\d\d\d\.\d\d\.\d\d)_(\w+)_-_(.+)}
     meta['created_at'] = $1.tr('.','-')
     meta['speaker'] = SPEAKERS[$2] || $2
     meta['title'] = $3.tr('_',' ')
+    meta['slug'] = meta['title'].to_slug
     meta['title'] = meta['title'] + ' for ' + meta['created_at'] if meta['title'] =~ /Open Forum/
   elsif file =~ %r{^(\d\d\d\d\.\d\d\.\d\d)_-_(.+)}
     meta['created_at'] = $1.tr('.','-')
     meta['speaker'] = 'Chris McCann'
     meta['title'] = $2.tr('_',' ')
+    meta['slug'] = meta['title'].to_slug
   end
   meta
 end
@@ -106,6 +111,7 @@ rule %r{^#{CONTENT_ROOT}.*\.html$} => [
     'title' => yaml_meta['title'] || file_meta['title'],
     'speaker' => yaml_meta['speaker'] || file_meta['speaker'],
     'created_at' => file_meta['created_at'],
+    'slug' => file_meta['slug'],
     'audio' => [ t.source.sub(%r{^#{META_ROOT.sub(%r{/audio$},'')}}, '') ]
   }
 
