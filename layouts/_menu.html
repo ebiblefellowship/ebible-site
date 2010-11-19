@@ -4,8 +4,8 @@
  submenu = false
 %>
         <ul>
-          <li><%= link_to('Join', '/join/') %></li>
-          <li><%= link_to('Studies', '/studies/') %></a>
+          <li class="join"><%= link_to('Join', '/join/') %></li>
+          <li class="studies"><%= link_to('Studies', '/studies/') %></a>
 <% if submenu %>
             <dl>
               <dt><%= link_to('Sunday Messages', '/studies/bc2/') %></dt>
@@ -17,11 +17,11 @@
             </dl>
 <% end %>
           </li>
-          <li><%= link_to('Videos', '/videos/') %></li>
-          <li><%= link_to('Questions', '/questions/') %></li>
-          <li><%= link_to('Outreach', '/outreach/') %></li>
-          <li><%= link_to('Bible', '/bible_reading/') %></li>
-          <li><%= link_to('Free', '/free/') %>
+          <li class="vids"><%= link_to('Videos', '/videos/') %></li>
+          <li class="questions"><%= link_to('Questions', '/questions/') %></li>
+          <li class="outreach"><%= link_to('Outreach', '/outreach/') %></li>
+          <li class="bible"><%= link_to('Bible', '/bible_reading/') %></li>
+          <li class="free"><%= link_to('Free', '/free/') %>
 <% if submenu %>
             <dl>
               <dt><a href="#">Free Bible Request Form</a></dt>
