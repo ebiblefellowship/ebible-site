@@ -36,7 +36,7 @@ end
 def sorted_articles(relevant_articles, limit = 25)
   require 'time'
   sorted_relevant_articles = relevant_articles.sort_by do |a|
-    time = a[:created_at] || a[:date]
+    time = a[:created_at]
     time.is_a?(String) ? Time.parse(time) : time
   end.reverse.first(limit)
 end
@@ -69,7 +69,7 @@ def articles_by_year_month(relevant_articles)
   current_year = current_month = year_h = month_a = nil
 
   sorted_articles(relevant_articles).each do |item|
-    d = item[:created_at] || item[:date]
+    d = item[:created_at]
     d = d.is_a?(String) ? Date.parse(d) : d
     if current_year != d.year
       current_month = nil
