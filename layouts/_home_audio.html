@@ -1,0 +1,17 @@
+<%
+ # partial: _home_audio
+ # usage: render('_home_audio', :category_id => 'studies.bc2',
+ #                              :category_desc => 'Sunday Bible Message')
+ #
+ # return first ten items in selected category selecting first with audio
+item = sorted_articles_for_category(category_id, 10).select { |i| i[:audio] }.first
+%>
+        <div class="audio">
+          <ul class="homemedia-sprite">
+            <li class="hphones"><a href="<%= item[:audio][:url].sub(/mp3$/,'m3u') %>" title="Listen"></a></li>
+            <li class="download"><a href="<%= item[:audio][:url] %>" title="Download"></a></li>
+          </ul>
+          <h4><%= category_desc %></h4>
+          <p><%= link_to(item[:title], item.path) %><br>
+            <%= item[:created_at] %> | <%= item[:speaker] %></p>
+        </div>

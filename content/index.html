@@ -204,30 +204,12 @@ head_scripts: |
       <div id="audio-container">
         <div class="container-top">New Audio Studies</div>
       <div class="container-mid">
-        <div class="audio">
-        <ul class="homemedia-sprite">
-          <li class="hphones"><a href="#" title="Listen"></a></li>
-          <li class="download"><a href="#" title="Download"></a></li>
-        </ul>
-        <h4>Sunday Bible Message</h4>
-        <p>Information for the study</p>
-        </div>
-        <div class="audio">
-        <ul class="homemedia-sprite">
-          <li class="hphones"><a href="#" title="Listen"></a></li>
-          <li class="download"><a href="#" title="Download"></a></li>
-        </ul>
-        <h4>Fellowship Hour</h4>
-        <p>Information for the study</p>
-        </div>
-        <div class="audio">
-        <ul class="homemedia-sprite">
-          <li class="hphones"><a href="#" title="Listen"></a></li>
-          <li class="download"><a href="#" title="Download"></a></li>
-        </ul>
-        <h4>Sunday Open Forum</h4>
-        <p>Information for the study</p>
-        </div>
+        <%= render('_home_audio', :category_id => 'studies.bc2',
+                                  :category_desc => 'Sunday Bible Class II') %>
+        <%= render('_home_audio', :category_id => 'studies.bc1',
+                                  :category_desc => 'Sunday Bible Class I') %>
+        <%= render('_home_audio', :category_id => 'questions.of',
+                                  :category_desc => 'Sunday Open Forum') %>
         <div class="more-sprite">
         <div class="more-icon"><a href="studies/" title="Go to Audio Page"></a></div>
         </div>
