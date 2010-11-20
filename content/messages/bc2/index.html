@@ -1,8 +1,0 @@
----
-title: Sunday Bible Messages (Bible Class II)
----
-<h1><%= @item[:title] %></h1>
-
-<% sorted_messages_for_event('bc2', 25).each do |item| %>
-  <%= render('_media_bar', :item => item, :list => true) %>
-<% end %>

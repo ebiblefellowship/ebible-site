@@ -1,0 +1,11 @@
+---
+title: Archives for 2009
+nav: 2009
+---
+<h1><%= @item[:title] %></h1>
+
+<%= render('_date_bar', :item => @item) %>
+
+<% select_messages_from_current(100).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>
