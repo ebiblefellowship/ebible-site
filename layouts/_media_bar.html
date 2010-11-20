@@ -7,7 +7,7 @@
         <ul class="media-sprite">
           <% if item[:audio] %><li class="hphones"><a href="<%= item[:audio][:url].sub(/mp3$/,'m3u') %>" title="Listen"></a></li>
           <li class="download"><a href="<%= item[:audio][:url] %>" title="Download"></a></li>
-          <% end %><li class="transcript"><a href="<%= item[:audio][:url] %>" title="Transcript"></a></li>
+          <% end %><% if list and item.raw_content.length > 40 %><li class="transcript"><a href="<%= item.path %>" title="Transcript"></a></li><% end %>
           <% if item[:video] %><li class="video"><a href="<%= item[:video][:url] %>" title="Video"></a></li><% end %>
         </ul>
         <h2><%= list ? link_to(item[:title], item.path) : item[:title] %></h2>
@@ -15,7 +15,7 @@
           <li><%= item[:created_at] %> | <%= item[:speaker] %></li>
           <% if item[:text] %><li><%= item[:text] %></li><% end %>
           <% if item[:audio] %><li>Audio: Length: <%= item[:audio][:length] %> Size: <%= item[:audio][:size] %></li><% end %>
-          <% if item[:summary] %><li><%= item[:summary] %></li><% end %>
+          <% if item[:excerpt] %><li><%= item[:excerpt] %></li><% end %>
         </ul>
       </div>
       <div class="contentbar-bottom"></div>
