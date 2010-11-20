@@ -1,0 +1,10 @@
+---
+title: Questions from the Website
+---
+<h1><%= @item[:title] %></h1>
+
+<%= render('_date_bar', :item => @item) %>
+
+<% sorted_articles_for_category('questions.web', 100).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>
