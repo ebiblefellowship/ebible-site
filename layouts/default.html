@@ -16,11 +16,13 @@
     <link rel="stylesheet" type="text/css" href="<%= css_url %>/defaults.css">
     <link rel="stylesheet" type="text/css" href="<%= css_url %>/homecontent.css">
     <link rel="stylesheet" type="text/css" href="<%= css_url %>/form.css">
-    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="<%= css_url %>/ie7.css"><![endif]-->
     <!-- http://code.google.com/p/ie7-js/ -->
     <!--[if lt IE 9]>
-    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script type="text/javascript">IE7_PNG_SUFFIX=".png";</script>
+    <script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="<%= css_url %>/ie7.css"><![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="<%= css_url %>/ie6.css"><![endif]-->
     <link rel="alternate" title="EBible Fellowship News RSS" href="<%= base_url %>/rss.xml" type="application/rss+xml">
     <link rel="shortcut icon" href="<%= base_url %>/favicon.ico">
 
