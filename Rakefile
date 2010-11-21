@@ -139,7 +139,6 @@ end
 =end
 
 desc 'Update audio meta data files'
-#task :update => meta_files
 task :update do
   MP3_META_DIRS_MAP.each do |d|
     Dir.glob(File.join(MP3_ROOT, d[:mp3], MP3_SELECT_GLOB)).each do |mp3_file|
@@ -158,20 +157,8 @@ task :create do
   end
 end
 
-task :create2 do
-  FileList[META_ROOT + '/**/*.yaml'].each do |src_file|
-    dest_file = CONTENT_ROOT + src_file.pathmap("%n.html")
-    file dest_file => [ src_file, CONTENT_ROOT ] do |t|
-      #metadata = extract_audio_metadata(src_file)
-      #write_metadata(dest_file, metadata)
-puts ":create2: #{t.name}"
-    end
-    task :create2 => [ dest_file ]
-  end
-end
-
 desc 'Issue a nanoc compile'
 task :compile do
-  system('umask 002; nanoc compile')
+  system('umask 002; nanoc compile |egrep -v identical')
 end
 
