@@ -1,0 +1,52 @@
+---
+title: Internal Server Error
+hidden_comment: |
+  Adapted from http://projects.stoneship.org/hg/sites-nanoc/file/3b25596173cb/content/404.html
+---
+<h1><%= @item[:title] %></h1>
+
+<p>The server encountered an internal error or misconfiguration and was unable to complete
+your request.</p>
+
+<p>Please contact the server administrator, webservant@ebiblefellowship.com and inform them of
+the time the error occurred, and anything you might have done that may have caused the error.</p>
+
+<?php
+
+########## CONFIGURATION #####################################################
+
+// E-mail settings
+$src_email_address = 'apache@ebiblefellowship.com';
+$dst_email_address = 'webservant@ebiblefellowship.com';
+
+// The name of the site
+$site_name = 'eBible Fellowship';
+
+// Should a mail be sent if there is no referrer?
+$send_mail_if_no_referrer = false;
+
+########## DO NOT CHANGE BELOW THIS LINE #####################################
+
+// Get path and URL of this page
+$this_path = $_SERVER['REQUEST_URI'];
+$this_url  = 'http://' . $_SERVER['SERVER_NAME'] . $this_path;
+
+// Check whether page has referrer
+$has_referrer = isset($_SERVER['HTTP_REFERER']);
+
+// Send mail if necessary
+$should_send_mail = true;
+if(!$has_referrer && !$send_mail_if_no_referrer)
+	$should_send_mail = false;
+if($should_send_mail)
+{
+	$subject = '404 @ ' . $site_name . ': ' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+	$message = 'The following URL caused a 404 error on ' . $site_name . ':' . "\n\n" .
+		'URL:      ' . 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . "\n" .
+		'Referrer: ' . $_SERVER['HTTP_REFERER'];
+	$headers = 'From: ' . $src_email_address;
+
+	mail($dst_email_address, $subject, $message, $headers);
+}
+
+?>

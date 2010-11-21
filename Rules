@@ -76,6 +76,20 @@ end
 compile '/static/*/' do
 end
 
+compile %r{^/error-\d\d\d/$} do
+  filter :erb
+  layout '/default/'
+end
+
+compile '/css/*' do
+  filter :erb
+  #filter :relativize_paths, :type => :css
+  #filter :rainpress
+end
+
+compile '/javascript/*' do
+end
+
 compile '/stylesheets/_*/' do
   # Don't compile partials
 end
@@ -84,17 +98,15 @@ compile '/stylesheets/*/' do
   # compile scss or sass unless it's a .css file
   filter :sass, Compass.sass_engine_options unless
          item[:extension] == 'css'
-  #filter :relativize_paths, :type => :css
-  #filter :rainpress
 end
 
-# compile/copy the rest of the assets
+# compile audio with no layout
 compile '/audio/*' do
 end
 
 # compile/copy the rest of the assets
-#compile '/assets/*/' do
-#end
+compile '/assets/*/' do
+end
 
 # Home page uses a different layout
 compile '/' do
@@ -108,7 +120,7 @@ end if false
 compile '/free*/*' do
   filter :erb
   layout '/default/'
-  filter :relativize_paths, :type => :html
+  #filter :relativize_paths, :type => :html
 end
 
 compile '*' do
@@ -134,7 +146,7 @@ compile '*' do
 
   unless keep_file_raw
     layout '/default/'
-    filter :relativize_paths, :type => :html unless item[:is_partial] || item[:kind] == 'article'
+    ##filter :relativize_paths, :type => :html unless item[:is_partial] || item[:kind] == 'article'
   end
 end
 
@@ -150,6 +162,10 @@ route '/static/*/' do
   item.identifier[7..-2] #+ '.' + item.identifier[:extension]
 end
 
+route %r{^/error-\d\d\d/$} do
+  item.identifier.chop + '.php'
+end 
+
 route '/stylesheets/_*/' do
   nil  # Don't output partials
 end
@@ -161,15 +177,23 @@ route '/stylesheets/*/' do
   nil  # not using scss/compass
 end
 
+route '/css/*' do
+  item.identifier.chop + '.css'
+end
+
+route '/javascript/*' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
 #  /audio folder is just an extract from mp3 files and not used to create pages
 route '/audio/*' do
   nil
 end
 
 # route rest of assets preserving the current file extersion
-#route '/assets/*/' do
-#  item.identifier.chop + '.' + item[:extension]
-#end
+route '/assets/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
 
 route '*' do
   # does this work?
