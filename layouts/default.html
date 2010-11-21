@@ -110,6 +110,10 @@
     </div><!--#container -->
    
     </div><!--#header-wrap -->
+<% if @config[:google_analytics] == true %>
+    <script type="text/javascript" src="/javascript/jquery.google-analytics.js"></script>
+    <script type="text/javascript" src="/javascript/ebible.google-analytics.js"></script
+<% end %>
   </body>
 </html>
 
