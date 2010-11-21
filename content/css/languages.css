@@ -42,7 +42,7 @@
   width: 18px;
   height: 18px;
   position: relative;
-  background: url(../images/language_icon_sprite.png) no-repeat;
+  background: url(<%= images_url %>/language_icon_sprite.png) no-repeat;
   margin: 0;
   padding: 0;
   display: inline;
@@ -51,7 +51,7 @@
 .language-sprite li a { 
   position: absolute;
   height: 18px;
-  background: url(../images/language_icon_sprite.png) no-repeat;
+  background: url(<%= images_url %>/language_icon_sprite.png) no-repeat;
 }
 
 li#language-back a {
@@ -81,7 +81,7 @@ li#language-forward a:hover {
 }
 
 #langs {
-  background: url(../images/homegradient_top.gif) repeat-x; 
+  background: url(<%= images_url %>/homegradient_top.gif) repeat-x; 
   border-top: 1px solid #c0c0c0;
 }
 

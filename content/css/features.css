@@ -12,7 +12,7 @@
 #billboard-background {  
   border-left: 1px solid #003366;
   border-right: 1px solid #003366;
-  background: url("../images/billboard_bground.jpg") repeat-x;
+  background: url("<%= images_url %>/billboard_bground.jpg") repeat-x;
   opacity: 0.7;
   filter: alpha(opacity=70);
   position: absolute;
@@ -141,14 +141,14 @@ div#billboard-sprite-wrap {
 
 .billboard-sprite {
   position: relative;
-  background: url(../images/billboard_sprite.png) no-repeat;
+  background: url(<%= images_url %>/billboard_sprite.png) no-repeat;
   margin: -247px 0 0 715px;
 }
 
 .billboard-sprite li a { 
   position: absolute;
   height: 22px;
-  background: url(../images/billboard_sprite.png) no-repeat;
+  background: url(<%= images_url %>/billboard_sprite.png) no-repeat;
 }
 
 li#back-button a {

@@ -1,6 +1,6 @@
 /* Home page content area */
 #wecanknow { 
-  background: url(../images/homegradient_top.gif) repeat-x; 
+  background: url(<%= images_url %>/homegradient_top.gif) repeat-x; 
   border-top: 1px solid #c0c0c0;
   padding: 10px 0 10px 20px; 
 }
@@ -36,7 +36,7 @@
 }
 
 #jday-gradient { 
-  background: url(../images/jday_gradient.png) repeat-x; 
+  background: url(<%= images_url %>/jday_gradient.png) repeat-x; 
   position: absolute; 
   width: 100%;
   height: 18px;

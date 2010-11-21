@@ -8,7 +8,7 @@
 }
 
 .container-mid-news  { 
-  background-image: url(../images/homegradient_mid.gif); 
+  background-image: url(<%= images_url %>/homegradient_mid.gif); 
   margin: auto;
   height: 250px; 
   border-right: 1px solid #c0c0c0; 
@@ -81,7 +81,7 @@ p.pub-id {
   width: 118px;
   height: 40px;
   position: relative;
-  background: url(../images/pubs_arrows_sprite.png) no-repeat;
+  background: url(<%= images_url %>/pubs_arrows_sprite.png) no-repeat;
   margin: 30px 0 0 44px;
   padding: 0; 
 }
@@ -89,7 +89,7 @@ p.pub-id {
 .pubs-sprite li a { 
   position: absolute;
   height: 40px;
-  background: url(../images/pubs_arrows_sprite.png) no-repeat;
+  background: url(<%= images_url %>/pubs_arrows_sprite.png) no-repeat;
 }
 
 .billboard-sprite li, .more-sprite li, .pubs-sprite li, .language-sprite li {  

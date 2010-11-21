@@ -2,11 +2,11 @@
 
 
 #header-wrap {
-  background: url(../images/colored_bars.jpg) repeat-x left top;
+  background: url(<%= images_url %>/colored_bars.jpg) repeat-x left top;
 }
 
 #header-wrap-home {
-  background: url(../images/colored_bars_home.jpg) repeat-x left top;
+  background: url(<%= images_url %>/colored_bars_home.jpg) repeat-x left top;
 }
 
 #menu {
