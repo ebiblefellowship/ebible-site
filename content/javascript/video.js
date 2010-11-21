@@ -38,7 +38,7 @@
   }
 
   function startErUp(userName) {
-    $('<div class="videos" id="videos-'+userName+'"><div class="contentbar-top"><\/div><div class="contentbar-mid" id="contentbar-mid-'+userName+'"><h2>'+fullNames[userName]+' Videos<\/h2><div class="plus-icon" id="plus-icon-'+userName+'"><span class="plus"><img src="/images/plus-icon.jpg"><\/span><p>view<br>all<\/p><\/div><div class="vimeoBadge" id="vimeoBadge-'+userName+'"><\/div><\/div>').appendTo(allContainerElement);
+    $('<div class="videos" id="videos-'+userName+'"><div class="contentbar-top"><\/div><div class="contentbar-mid" id="contentbar-mid-'+userName+'"><h2>'+fullNames[userName]+' Videos<\/h2><div class="plus-icon" id="plus-icon-'+userName+'"><span class="plus"><img src="/assets/images/plus-icon.jpg"><\/span><p>view<br>all<\/p><\/div><div class="vimeoBadge" id="vimeoBadge-'+userName+'"><\/div><\/div>').appendTo(allContainerElement);
   }
 
   function slideEm(userName) {
@@ -46,7 +46,7 @@
     if (active[userName]) return;   
     active[userName] = true;
     var img = $('#plus-icon-'+userName+'>span>img');            
-    img.attr('src', (img.attr("src").toLowerCase() == '/images/plus-icon.jpg') ? '/images/minus-icon.jpg' : '/images/plus-icon.jpg');
+    img.attr('src', (img.attr("src").toLowerCase() == '/assets/images/plus-icon.jpg') ? '/assets/images/minus-icon.jpg' : '/assets/images/plus-icon.jpg');
     var p = $('#plus-icon-'+userName+'>p');            
     p.html((p.html().toLowerCase() == 'view<br>all') ? 'hide' : 'view<br>all');
     var div = $('#contentbar-mid-'+userName);
