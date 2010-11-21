@@ -68,3 +68,4 @@ base_url: http://sandbox.ebiblefellowship.com
 css_url: /generated/css
 images_url: /generated/assets/images
 
+google_analytics: false
