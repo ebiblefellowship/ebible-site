@@ -51,6 +51,7 @@ body {
   padding-bottom: 0px; }
   /* line 114, content/stylesheets/screen.scss */
   #menu-home > ul, #menu > ul {
+    cursor: pointer;
     margin: 0;
     padding: 0;
     border: 0;
@@ -86,7 +87,9 @@ body {
         background: url('<%= images_url %>/button_base1.png?1283907218') repeat-x top right; }
       /* line 146, content/stylesheets/screen.scss */
       #menu-home > ul > li a, #menu > ul > li a {
-        color: #fff; }
+        color: #fff;
+        display: block;
+        width: 100% }
         /* line 148, content/stylesheets/screen.scss */
         #menu-home > ul > li a:hover, #menu > ul > li a:hover {
           text-decoration: none; }
