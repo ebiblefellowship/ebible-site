@@ -153,7 +153,8 @@ end
 ### Routing ##################################################################
 
 route '/sitemap/' do
-  '/sitemap.xml'
+  #'/sitemap.xml'
+  nil
 end
 
 route '/static/*/' do
