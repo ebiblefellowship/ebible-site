@@ -135,6 +135,7 @@ li#forward-arrow a:hover {
 .audio p { 
   text-align: left; 
   margin-left: 10px; 
+  margin-right: 125px;
   position: relative; 
   bottom: 15px;
   margin-bottom: 0px;
