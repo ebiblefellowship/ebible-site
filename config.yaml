@@ -65,6 +65,6 @@ deploy:
     options: ['-ave ssh', '--exclude=.DS_Store', '--exclude=*~']
 
 base_url: http://sandbox.ebiblefellowship.com
-css_url: http://sandbox.ebiblefellowship.com/generated/css
-images_url: http://sandbox.ebiblefellowship.com/generated/images
+css_url: /generated/css
+images_url: /generated/assets/images
 
