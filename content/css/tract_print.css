@@ -1,0 +1,18 @@
+/* printable CSS settings used in conjunction with standard CSS settings */
+body {
+  background-color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+}
+div#all_content {
+  margin: 0;
+  border-style: none;
+  padding: 0;
+}
+.breadcrumbs,
+.printer-friendly,
+.hide-when-printing {
+  display: none;
+}
+
+/* End CSS */

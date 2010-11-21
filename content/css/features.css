@@ -1,0 +1,200 @@
+/* Feature photos for billboards, comments, etc. */
+.billboard {
+  width: 834px;
+  height: 272px;
+  margin-left: 10px; 
+  padding: 15px 20px 0 20px;
+  display: none;  
+  opacity: 1;
+  filter: alpha(opacity=100);  
+}
+
+#billboard-background {  
+  border-left: 1px solid #003366;
+  border-right: 1px solid #003366;
+  background: url("../images/billboard_bground.jpg") repeat-x;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  position: absolute;
+  margin-left: 10px;
+  height: 287px;
+  width: 874px;  
+}
+
+#first-billboard {
+  display: block;
+  position: relative;  
+}
+
+.three-image-container {
+  float: left;
+  width: 31%;
+  margin-right: 15px;
+}
+
+.billboard img {
+  border: 2px solid white;
+  margin-right: 15px; 
+  float: left; 
+}
+
+.billboard img.flag {
+  border:none;
+  float: none;
+  vertical-align: middle; 
+}
+
+.billboard img:hover.flag {
+  border:none; 
+}
+
+.billboard img:hover {
+  border: 2px solid #006699;
+}
+
+.billboard img.three-image {
+  margin: 0px 0 5px 10px;   
+}
+
+.billboard h1 { 
+  color: #dacdb0;
+  text-align: center; 
+  margin: 70px 0 20px 5px; 
+}
+
+.billboard h1.comments {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  margin-top: 30px;
+}
+
+.billboard h1.top {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.billboard h3 {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: white;
+  margin: 0 20px 0 15px;  
+}  
+
+.billboard h3.location {
+  font-weight: bold;
+  margin: 0 20px 0 0;
+  text-align: right;
+}  
+
+.billboard p { 
+  color: white; 
+  margin: 0; 
+  text-align: center 
+}
+
+.billboard h3.left { 
+  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+  color: #dACDB0;
+  margin: 0 0 0 20px;
+  text-align: center;
+}
+
+.billboard a {
+  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+  text-decoration: none;
+  color: #dACDB0;   
+}
+
+.billboard a:hover {
+  text-decoration: underline;
+  color: #dACDB0;
+}
+
+.billboard ul {
+  text-align: center; 
+}
+
+.billboard li {
+  list-style: none;
+  font-size: 12pt; 
+  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+  color: #dACDB0;
+  display: inline;
+  padding-left: 15px;  
+}
+
+.billboard li a {
+  text-decoration: none;
+  color: #dACDB0;   
+}
+
+.billboard li a:hover {
+  text-decoration: underline;
+  color: #dACDB0;
+}
+
+div#billboard-sprite-wrap {
+  position: absolute;
+  top: 405px;
+  margin-left: 90px;
+  z-index: 20;  
+}
+
+.billboard-sprite {
+  position: relative;
+  background: url(../images/billboard_sprite.png) no-repeat;
+  margin: -247px 0 0 715px;
+}
+
+.billboard-sprite li a { 
+  position: absolute;
+  height: 22px;
+  background: url(../images/billboard_sprite.png) no-repeat;
+}
+
+li#back-button a {
+  left: 0;
+  width: 21px;
+  background-position: 0 -1px;
+}
+
+li#pause-button a {
+  left: 26px;
+  width: 22px;
+  background-position: -22px -1px;
+}
+
+li#forward-button a {
+  left: 52px;
+  width: 21px;
+  background-position: -44px -1px;
+}
+
+li#play-button a {
+  left: 26px;
+  width: 22px;
+  background-position: -66px -1px;  
+}
+
+li#back-button a:hover {
+  background-position: 0 -23px;
+}
+
+li#pause-button a:hover {
+  background-position: -22px -23px;
+}
+
+li#forward-button a:hover {
+  background-position: -44px -23px;
+}
+
+li#play-button a:hover {
+  background-position: -66px -23px;
+}
+
+li#back-button a:active {
+  background-position: 0 -45px;
+}
+
+li#forward-button a:active {
+  background-position: -44px -45px;
+}

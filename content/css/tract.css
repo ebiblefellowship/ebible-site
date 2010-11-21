@@ -1,0 +1,285 @@
+/* ebiblefellowship.com tract formatting */
+/* jmg - added type p.Box for tracts, changed indent on verse, made verse justified */
+body {
+  /* content in a centered box */
+  padding: 0px;
+  text-align: left; 
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* Links to parent pages, i.e. Home, etc. */
+.breadcrumbs {
+  text-align: left;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 70%;
+}
+div#all_content {
+  margin: 20px 10% 20px 10%;  /* top left bottom right */
+  border: 2px solid #000;
+  /*margin: 0px;*/
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+div#contents p {
+  margin-top: 1em;
+  margin-left: 0;
+}
+div#contact_info {
+  text-align: center;
+}
+div#contact_info p {
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+.yahoo-group {  
+  margin: 20px 10%;
+  font-weight: bold;
+  text-align: center;  
+}
+h1 {
+  margin-top: .2em;
+  margin-bottom: 25px;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 275%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #000;
+}
+.h1-subtitle {
+  font-size: 50%; font-weight: normal; font-variant: normal;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #000;
+}
+h2 {
+  margin-top: .2em;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 200%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #000;
+}
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #000;  
+}
+p {
+  margin-top: 0.1em; 
+  margin-left: 1.5em;
+  margin-bottom: 0.1em;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #000;
+}
+p.q {
+  margin-top: 1em;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+  font-weight: bold;
+}
+p.a {
+  margin-top: 0em;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
+}
+p.a:first-letter {
+  font-weight: bold;
+}
+p.qrt {
+  /* jmg - right-aligned for arabic questions */
+  direction: rtl;
+  text-align: right;
+  font-size: 125%;
+  margin-top: 1em;
+  margin-right: 1.5em;
+  text-indent: -1.5em;
+  font-weight: bold;
+}
+p.art {
+  /* jmg - right-aligned for arabic answers */
+  direction: rtl;
+  text-align: right;
+  font-size: 125%;
+  margin-top: 0em;
+  margin-right: 1.5em;
+  text-indent: -1.5em;
+}
+p.art:first-letter {
+  font-weight: bold;
+}
+p.verse {
+  margin-top: 0.6em;
+  margin-bottom: 0;
+  text-indent: 0em;
+  margin-left: 3em;
+  margin-right: 2em;
+  text-align: justify;
+  font-style: italic;
+}
+p.verseb {
+  /* jmg - bold verse class */
+  margin-top: 0.6em;
+  margin-bottom: 0;
+  text-indent: 0em;
+  margin-left: 3em;
+  margin-right: 2em;
+  text-align: justify;
+  font-style: italic;
+  font-weight: bold;
+}
+p.text1 {
+  /* jmg - for tract body paragraphs */
+  margin-top: 1em;
+}
+p.text1rt {
+  /* jmg - added for arabic rt-to-lft text */
+  margin-top: 1em;
+  text-align: right;
+  font-size: 125%;
+}
+p.text2rt {
+  /* jmg - added for arabic rt-to-lft bold text */
+  margin-top: 1em;
+  text-align: right;
+  font-size: 125%;
+  font-weight: bold;
+}
+p.versert {
+  /* jmg - added for arabic rt-to-lft verses */
+  margin-top: 1em;
+  margin-left: 0.25in;
+  margin-right: 0.25in;
+  text-align: right;
+  font-style: italic;
+  font-size: 125%;
+}
+p.versebrt {
+  /* jmg - bold verse class, right-aligned for arabic*/
+  margin-top: 0.6em;
+  margin-bottom: 0;
+  text-indent: 0em;
+  margin-left: 3em;
+  margin-right: 2em;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 125%;
+}
+p.text2 {
+  /* jmg - for tract punch lines */
+  margin-top: 1em;
+  font-weight: bold;
+}
+p.verseref {
+  margin-top: 0;
+  margin-right: 2em;
+  margin-bottom: 0.3em;
+  /*text-indent: 3em;*/
+  text-align: right;
+  font-weight: bold;
+}
+.vref {
+/* jmg - for inline verse refs */
+  font-style: normal;
+  font-weight: bold;
+}
+.vrefrt {
+/* jmg - for arabic inline verse refs */
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  text-size: 200%;
+}
+.norm {
+/* jmg - force normal style (no bold, no itallic) */
+  font-style: normal;
+  font-weight: normal;
+}
+p.summary {
+  margin: 1em 8% 1em 8%;
+  border: 1px solid #000;
+  padding: 0.5em;
+  background-color: #c0c0c0;
+  text-align: center;
+  text-indent: 0;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 150%;
+}
+p.Box { 
+  background-color:#fcfcfc; 
+  margin-left: 0.25in;
+  margin-right: 0.25in; 
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em; 
+  text-indent: 0in; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-top: 8px; 
+  padding-bottom: 8px; 
+  border-width: 1px; 
+  border-style:solid; 
+  border-color:#000000; 
+}
+p.Boxrt { 
+  /* jmg - right-aligned for arabic */
+  background-color:#fcfcfc; 
+  text-align: right;
+  font-size: 125%;
+  margin-left: 0.25in;
+  margin-right: 0.25in; 
+  margin-top: 0.5em; 
+  margin-bottom: 0.5em; 
+  text-indent: 0in; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-top: 8px; 
+  padding-bottom: 8px; 
+  border-width: 1px; 
+  border-style:solid; 
+  border-color:#000000; 
+}
+address {
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+p.revised {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70%;
+}
+hr {
+  width:85%;
+  height: 2px;
+  text-align: center;
+}
+.underline {
+  text-decoration: underline;
+}
+.alignright {
+	text-align: right;
+}
+.alignleft {
+	text-align: left;
+}
+.TextSmall {
+	font-size: 60%;
+	font-family:"Times New Roman";
+/*	mso-fareast-font-family:"Times New Roman"; */
+	color:windowtext;
+/*	mso-fareast-language:EN-US; */
+}
+.TextMed {
+	font-size: 80%;
+	font-family:"Times New Roman";
+/*	mso-fareast-font-family:"Times New Roman"; */
+	color:windowtext;
+/*	mso-fareast-language:EN-US; */
+}
+.ltgrey {
+	background-color: #E0E0E0
+} 
+.medgrey { 
+	background-color: #C0C0C0
+} 
+/* CSS end */

@@ -1,0 +1,101 @@
+h2 {
+  float: left;
+}
+
+.vimeoBadge { 
+  margin: 0; 
+  padding: 0;
+  clear: both;  
+}
+
+.vimeoBadge img { 
+  margin-left: 35px; 
+  border-width: 3px; 
+  border-color: #a9a9a9; 
+}
+
+.vimeoBadge img:hover { 
+  border-width: 3px; 
+  border-color: #069; 
+}
+  
+.vimeoBadge a { 
+  color: #069; 
+  text-decoration: none; 
+  cursor: pointer; 
+}
+  
+.vimeoBadge .clip { 
+  float:left;
+  height: 162px; 
+}
+
+.vimeoBadge .caption { 
+  font: normal 11px verdana,sans-serif; 
+  margin-left: 29px; 
+  text-align: center; 
+  width: 135px; 
+  line-height: 13px; 
+}
+
+.vimeoBadge .caption p { 
+  margin: 2px 0 0 0; 
+  text-align: center; 
+  font-size: 11px; 
+}
+
+.plus-icon {  
+  float: right;
+  cursor: pointer;
+}
+.plus-icon p {
+  font-size: 65%;
+  margin-left: 5px;
+  margin-top: 2px;
+  float: left;
+  text-align: center;  
+}
+
+.plus img {
+  border: none;
+  float: left;
+}
+
+#loading {
+  text-align: center;  
+  margin: -6px 0;
+  display: none;  
+}
+
+#loading-image {
+	border: none;
+	vertical-align: middle;
+}
+
+#video-player {
+	margin: 30px auto 25px;
+	text-align: center;
+	clear: both;
+}
+
+#video-player p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	margin-bottom: 0;	
+}
+
+.upload-date {
+  display: none;
+}
+
+.contentbar-bottom {
+  margin-bottom: 10px;
+}
+
+.videos {
+  visibility: hidden;
+}
+
+.youtube-title {  
+  margin-left: 0;
+}

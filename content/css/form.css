@@ -1,0 +1,63 @@
+/* Request Form CSS */
+.inner {
+  color: #666; 
+  font-size: 10pt; 
+  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.input {
+  font-family: Courier-New, Courier, monospace;
+  font-size: 80%;
+}
+
+/* Validation errors at the top of the page.  Can't show up when no errors. */
+#errors {
+  padding: 0;
+  background-color: #fff;
+}
+/* Individual error */
+.error {
+  margin: 0;
+  padding: 5px;
+  padding-left: 2em;
+  color: red;
+  background-color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Begin Bible Request Form  */
+div.pullout {
+  margin: 1em 0;  /* T,R B,L */
+  border: 1px solid #799;
+  padding: 3px 1em;
+  font-weight: bold;
+  text-align: justify;
+  background-color: #c99;
+}
+/* if javascript is enabled, these are used for the display of the appropriate language homepage */
+#lang-page {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#lang-page-iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+/* added on 8/18/09 - this is for the links that switch the language of the pullout message */
+#lang-links {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-size: 75%;
+  font-weight: normal;
+}
+.link {
+  color: blue;  
+  text-decoration: underline;  
+  cursor: pointer;
+}
+/* End Bible Request Form */

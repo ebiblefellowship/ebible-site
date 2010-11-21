@@ -1,0 +1,53 @@
+/* Home page content area */
+#wecanknow { 
+  background: url(../images/homegradient_top.gif) repeat-x; 
+  border-top: 1px solid #c0c0c0;
+  padding: 10px 0 10px 20px; 
+}
+
+#wecanknow h1  { 
+  font-size: 18pt; 
+  font-weight: bold; 
+  margin: 0; 
+  padding: 0; 
+}
+
+#wecanknow a { 
+  color: #696969; 
+  font-size: 18pt; 
+  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; 
+  font-weight: bold; 
+  text-decoration: underline; 
+  margin-left: 10px; 
+}
+
+#wecanknow a:hover { 
+  color: #c0c0c0 
+}
+
+
+/* Judgment Day Countdown*/
+#jday {
+  margin: 15px auto;
+  text-align: center;
+  font: bold 200%/100% "Lucida Grande";
+  bottom: 0;
+  position: relative;
+}
+
+#jday-gradient { 
+  background: url(../images/jday_gradient.png) repeat-x; 
+  position: absolute; 
+  width: 100%;
+  height: 18px;
+}
+
+#jday-link {
+  color: #cc0000;
+  text-decoration: none;
+}
+
+#countdown { 
+  font-size: 75%;  
+}
+

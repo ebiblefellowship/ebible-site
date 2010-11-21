@@ -1,0 +1,10 @@
+/* You can modify these CSS styles */
+.vimeoBadge { margin: 0; padding: 6px; font: normal 11px verdana,sans-serif; }
+.vimeoBadge img { border-width: 3px; border-color: #a9a9a9; }
+.vimeoBadge img:hover { border-width: 3px; border-color: #069; }
+.vimeoBadge a { color: #069; text-decoration: none; cursor: pointer; }
+.vimeoBadge #vimeo_badge_logo { visibility: hidden; width: 57px; height: 16px; }
+.vimeoBadge .credit { font: normal 11px verdana,sans-serif; }
+.vimeoBadge .clip { padding-left: 5px; float:left; margin:0 20px 0 20px; width:100px; line-height:0; }
+.vimeoBadge .caption { font: normal 11px verdana,sans-serif; text-align: center; overflow:hidden; width:100px; height: auto; }
+.vimeoBadge .clear { display: block; clear: both; visibility: hidden; }

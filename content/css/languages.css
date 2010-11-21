@@ -1,0 +1,94 @@
+/* Languages selection */
+#languages { 
+  padding: 7px;
+  height: auto;
+  text-align: center;
+  margin: auto;
+} 
+
+#languages p { 
+  font-size: 80%; 
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, san-serif; 
+  font-weight: normal; 
+  display: inline;
+  margin: 0; 
+}
+
+#languages p.delim { 
+  font-size: 100%; 
+  color: #006699;
+  padding-left: .2em;
+  padding-right: .2em; 
+}
+
+#languages a {
+  color: #006699; 
+  text-decoration: none;
+}
+
+#languages a:hover   { 
+  color: #c0c0c0; 
+}
+
+/* Obsolete JQuery transition & buttons sprite*/
+#languages img {
+  text-decoration: none;
+  margin-right: 0.2em;
+  vertical-align: middle;
+  border: none;
+}
+
+.language-sprite {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  background: url(../images/language_icon_sprite.png) no-repeat;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.language-sprite li a { 
+  position: absolute;
+  height: 18px;
+  background: url(../images/language_icon_sprite.png) no-repeat;
+}
+
+li#language-back a {
+  left: 0;
+  width: 18px;
+  background-position: 0 0;
+  margin: 15px 13px; 
+}
+
+li#language-forward a {
+  left: 0;
+  width: 18px;
+  background-position: -18px 0;
+  margin: 15px 0 15px 844px;  
+}
+
+li#language-back a:hover {
+  background-position: 0 -18px;
+}
+
+li#language-forward a:hover {
+  background-position: -18px -18px;
+}
+
+.lang {  
+  display: none;  
+}
+
+#langs {
+  background: url(../images/homegradient_top.gif) repeat-x; 
+  border-top: 1px solid #c0c0c0;
+}
+
+#lang-display {
+  position: relative;
+}
+
+#first-lang {
+  display: block;
+}

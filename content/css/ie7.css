@@ -1,0 +1,16 @@
+/* IE 7 fixes */
+
+#menu {
+  margin-top: 16px;
+}
+
+#menu > ul {
+  line-height: 45px;
+}
+
+#menu > ul > li {
+  /*height:1%; display:inline; overflow-x: hidden;*/
+  zoom: 1;
+  margin-right: -1px;
+}
+
