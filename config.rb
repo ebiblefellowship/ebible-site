@@ -44,10 +44,10 @@ sass_dir     = 'content/stylesheets'
 
 # The source directory where the images are kept.
 # Relative to the project_path.
-images_dir   = 'output/images'  # use output 'cause not hosting images
+images_dir   = 'output/assets/images'  # use output 'cause not hosting images
 
 # The full http path to images on the web server.
-http_images_path = "#{http_path}/images"
+http_images_path = "#{http_path}/assets/images"
 
 # The output style for the compiled css.
 #   :nested     - Each CSS rule and property on a separate line, 
