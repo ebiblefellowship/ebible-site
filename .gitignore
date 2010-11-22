@@ -6,6 +6,8 @@ config.yaml
 output
 # nanoc temporary files
 tmp
+# nanoc compilation log
+nanoc_compile.log
 # sass temporary files
 .sass-cache
 # vi/vim temp files
@@ -13,8 +15,8 @@ tmp
 # other
 content/stylesheets
 _3rdparty
-layouts/home*.html
 *_save*
 # ignore media files
 *.mp3
+*.ra
 *.swf
