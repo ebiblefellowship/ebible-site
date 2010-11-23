@@ -461,7 +461,7 @@
     addMarker(3, "Cotonou, Benin", 6.3746, 2.3916, "/missions/togo_and_benin_mission_report.html", "/images/benin-tn.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
     addMarker(3, "Washington, DC, USA", 38.89860, -77.0367, null, "/images/tract-trip-dc-tn.jpg", 150, 113, "Washington DC Tract Trip<br>October 2010");
     addMarker(3, "Grenada", 12.1604, -61.6705, "/missions/grenada_mission_report.html", null, null, null, "Grenada Tract Trip<br>November 2010");
-    addMarker(5, "Istanbul, Turkey", 41.055, 28.976, null, null, null, null, "Family Radio Tract Trip<br>November 2010");
+    addMarker(3, "Istanbul, Turkey", 41.055, 28.976, null, null, null, null, "Family Radio Tract Trip<br>November 2010");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/images/billboard-lesotho.jpg", 150, 84);
@@ -520,10 +520,63 @@
     addMarker(4, "Bandung, Indonesia", -6.93115, 107.62601, "/gallery/v/indonesia_billboards/", "/images/pelajar-pejuang-martanegara-tn.jpg", 150, 113);
     addMarker(4, "Bandung, Indonesia", -6.91748, 107.60562, "/gallery/v/indonesia_billboards/", "/images/suniaraja-tn.jpg", 150, 113);
     addMarker(4, "Bandung, Indonesia", -6.89587, 107.60927, "/gallery/v/indonesia_billboards/", "/images/tamansari-tn.jpg", 150, 113);
-    addMarker(4, "Dar Es Salaam, Tanzania", -6.7875, 39.2114, "/gallery/v/tanzania_billboards/", "/images/tanzania-ubungo-bus-depot-tn.jpg", 150, 113);
-    addMarker(4, "Dar Es Salaam, Tanzania", -6.7777, 39.2671, "/gallery/v/tanzania_billboards/", "/images/tanzania-new-bagamoyo-road-tn.jpg", 150, 113);
-    addMarker(4, "Pugu, Tanzania", -6.8662, 39.1699, "/gallery/v/tanzania_billboards/", "/images/tanzania-pugu-tn.jpg", 150, 100);
-    addMarker(5, "Surabaya, Indonesia", -7.2478, 112.7443, "/gallery/v/indonesia_billboards/", "/images/surabaya-tn.jpg", 150, 113, "Billboards");
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.7890, 39.2011, "/gallery/v/tanzania_billboards/", "/images/tanzania-ubungo-bus-depot-tn.jpg", 150, 113);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.7801, 39.2243, "/gallery/v/tanzania_billboards/", "/images/tanzania-shekilango-tn.jpg", 150, 100);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.7778, 39.2498, "/gallery/v/tanzania_billboards/", "/images/tanzania-new-bagamoyo-road-tn.jpg", 150, 113);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.82007, 39.27650, "/gallery/v/tanzania_billboards/", "/images/tanzania-kariakoo-rooftop-tn.jpg", 150, 100);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.81717, 39.29337, "/gallery/v/tanzania_billboards/", "/images/tanzania-south-beach-ferry-tn.jpg", 150, 100);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.8608, 39.2073, "/gallery/v/tanzania_billboards/", "/images/tanzania-pugu-tn.jpg", 150, 100);
+    addMarker(4, "Mbeya, Tanzania", -8.8967, 33.4499, "/gallery/v/tanzania_billboards/", "/images/tanzania-mbeya-tn.jpg", 150, 113);
+    addMarker(4, "Arusha, Tanzania", -3.36485, 36.67442, "/gallery/v/tanzania_billboards/", "/images/tanzania-arusha-tn.jpg", 150, 113);
+    addMarker(4, "Moshi, Tanzania", -3.3350, 37.3432, "/gallery/v/tanzania_billboards/", "/images/tanzania-moshi-tn.jpg", 150, 112);
+    addMarker(4, "Mwanza, Tanzania", -2.5074, 32.8995, "/gallery/v/tanzania_billboards/", "/images/tanzania-mwanza-tn.jpg", 150, 92);
+    addMarker(4, "Surabaya, Indonesia", -7.2478, 112.7443, "/gallery/v/indonesia_billboards/", "/images/surabaya-tn.jpg", 150, 113);
+    addMarker(4, "Beaumont, Texas", 30.0966, -94.0946, null, "/images/beaumont-texas-tn.jpg", 150, 113, "2 Billboards");
+    addMarker(4, "Andheri Lokhandwala, Mumbai, India", 19.1410, 72.8263, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2287-2/Andheri_lokhandwala_20X20_ET_Lit.JPG", 150, 113);
+    addMarker(4, "Andheri Flyover, Mumbai, India", 19.1153369, 72.8450525, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2291-2/Andheri_on_flyover_bridge_facing_highway_20X2_mumbai.jpg", 150, 113);
+    addMarker(4, "Minsk Circle, Mumbai, India", 19.0289, 72.8550, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2293-2/King_Circle_At_Junction_Maheshwari_Udyan_mumbai.jpg", 150, 113);
+    addMarker(4, "Mahim Junction, Mumbai, India", 19.04067, 72.84690, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2296-2/Mahim_Opp_Church_30x4_BL_mumbai.jpg", 150, 113);
+    addMarker(4, "Nr Walkeshwar, Mumbai, India", 19.0178, 72.8026, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2299-2/Nr_+Walkeshwar+park_20X20_mumbai.jpg", 150, 113);
+    addMarker(4, "Opera Junction, Mumbai, India", 18.9529003, 72.817403, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2301-2/Opera_House_Jn__Above_Shri_Krishna_Hotel__MT___Non-ill____21_X___07.jpg", 150, 113);
+    addMarker(4, "Vikhroli Warden Road, Mumbai, India", 18.9726, 72.8047, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2304-2/Vikhroli__W__outside_Station_20X10_mumbai.jpg", 150, 113);
+    addMarker(4, "Azadpur Flyover, Delhi, India", 28.71040, 77.17573, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2251-2/Azadpur+Flyover.JPG", 150, 113);
+    addMarker(4, "Janakpuri, Delhi, India", 28.62162, 77.0949, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2255-2/janakpuri_delhi.JPG", 150, 100);
+    addMarker(4, "Lawrence Road, Delhi, India", 28.68227, 77.14756, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2257-2/Lawrence+Road+flyover+1_delhi.JPG", 150, 113);
+    addMarker(4, "Meera Bagh, Delhi, India", 28.65935, 77.08951, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2260-2/meera+bagh+_+delhi.JPG", 150, 112);
+    addMarker(4, "Naraina Flyover, Delhi, India", 28.62470, 77.13547, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2262-2/Naraina+flyover+2.JPG", 150, 113);
+    addMarker(4, "New Delhi Station, Delhi, India", 28.64243, 77.22185, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2264-2/New+delhi+rly+stn+3.jpg", 150, 113);
+    addMarker(4, "Pitampura, Delhi, India", 28.69144, 77.1310, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2266-2/pitampura_delhi.JPG", 150, 100);
+    addMarker(4, "Prashant Vihar, Delhi, India", 28.71503, 77.13256, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2268-2/Prashant+Vihar+F-Block_delhi.JPG", 150, 100);
+    addMarker(4, "Rohini, Delhi, India", 28.7204, 77.1142, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2270-2/Rohini_delhi.JPG", 150, 100);
+    addMarker(4, "Wazirpur, Delhi, India", 28.69120, 77.17380, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2273-2/wazirpur_delhi.JPG", 150, 112);
+    addMarker(4, "Zakhira Flyover, Delhi, India", 28.66880, 77.16650, "/gallery/v/india_billboards/Delhi/", "/gallery/d/2275-2/Zakhira+Flyover_1.JPG", 150, 113);
+    addMarker(4, "Baptist Hospital, Bangalore, India", 13.0377, 77.5896, "/gallery/v/india_billboards/Bangalore/", "/gallery/d/2381-2/baptist+hospital_bangalore.JPG", 150, 113);
+    addMarker(4, "Cunningham Road, Bangalore, India", 12.98761, 77.59489, "/gallery/v/india_billboards/Bangalore/", "/gallery/d/2384-2/cunnigham+rd_bangalore.JPG", 150, 113);
+    addMarker(4, "Jayanagar, Bangalore, India", 12.9234, 77.5900, "/gallery/v/india_billboards/Bangalore/", "/gallery/d/2386-2/Jayanagar+_bangalore.JPG", 150, 113);
+    addMarker(4, "Old Airport Road, Bangalore, India", 12.96051, 77.64703, "/gallery/v/india_billboards/Bangalore/", "/gallery/d/2389-2/old+airport+road_+bangalore.jpg", 150, 112);
+    addMarker(4, "Seaport Airport Road, Cochin, India", 10.0255, 76.3378, "/gallery/v/india_billboards/Cochin/", "/gallery/d/2374-2/Seaport+Airport+Road+Opp_Sunrise+Hospital+35x15_cochin_.jpg", 150, 113);
+    addMarker(4, "Thivim To Bicholim, Goa, India", 15.6193, 73.9165, "/gallery/v/india_billboards/Goa/", "/gallery/d/2355-2/30X20-tivom+to+bichlim__goa.JPG", 150, 113);
+    addMarker(4, "Agassaim Panaji To Margao, Goa, India", 15.3343, 73.9290, "/gallery/v/india_billboards/Goa/", "/gallery/d/2359-2/40x16+agasim+to+margao_goa.JPG", 150, 113);
+    addMarker(4, "VIP Road, Lucknow, India", 26.80127, 80.91304, "/gallery/v/india_billboards/Lucknow/", "/gallery/d/2316-2/VIP+road_lucknow.jpg", 150, 100);
+    addMarker(4, "Chiraiyatand Bus Stand, Patna, India", 25.60576, 85.14161, "/gallery/v/india_billboards/Patna/", "/gallery/d/2279-2/chirayantad+bus+stand+_patna.jpg", 150, 97);
+    addMarker(4, "Patna City Railway Station, Patna, India", 25.6071, 85.1354, "/gallery/v/india_billboards/Patna/", "/gallery/d/2283-2/patna+city+rly+station_patna.jpg", 150, 97);
+    addMarker(4, "22 Godam Flyover, Jaipur, India", 26.90271, 75.78942, "/gallery/v/india_billboards/Jaipur/", "/gallery/d/2329-2/22_godam__jaipur.JPG", 150, 84);
+    addMarker(4, "5th Mile, SMU, Gangtok, India", 27.31385, 88.5969, "/gallery/v/india_billboards/Gangtok/", "/gallery/d/2363-2/5th+mile_+gangtok.jpg", 150, 113);
+    addMarker(4, "Panitanki Crossing, Gangtok, India", 27.3231704, 88.6093283, "/gallery/v/india_billboards/Gangtok/", "/gallery/d/2367-2/panihouse+gangtok.jpg", 150, 113);
+    addMarker(4, "Vajra Cinema, Gangtok, India", 27.3431282, 88.613711, "/gallery/v/india_billboards/Gangtok/", "/gallery/d/2370-2/Vajra+Cinema_+Gangtok.jpg", 150, 113);
+    addMarker(4, "Petrol Pump, Kohima, India", 25.65751, 94.10000, "/gallery/v/india_billboards/Kohima/", "/gallery/d/2321-2/Kohima+Nr+Petrol+Pump-20x10.jpg", 150, 113);
+    addMarker(4, "TCP Gate, Kohima, India", 25.6712, 94.1071, "/gallery/v/india_billboards/Kohima/", "/gallery/d/2325-2/Kohima+Nr+tcp+Gate++20x10.jpg", 150, 105);
+    addMarker(4, "Naharlagun, Itanagar, India", 27.10541, 93.69346, "/gallery/v/india_billboards/Itanagar/", "/gallery/d/2334-2/Naharlagun+Nr+Stadium++20x10_itanagar.jpg", 150, 113);
+    addMarker(4, "Nirjula Cinema, Itanagar, India", 27.1014, 93.6852, "/gallery/v/india_billboards/Itanagar/", "/gallery/d/2338-2/Nirjuli++20x10_itanagar.jpg", 150, 113);
+    addMarker(4, "Agartala, India", 23.8367, 91.2888, "/gallery/v/india_billboards/Agartala/", "/gallery/d/2401-2/Agartala+Chandrapur+_B_+20x10.jpg", 150, 104);
+    addMarker(4, "Agartala, India", 23.8292, 91.2680, "/gallery/v/india_billboards/Agartala/", "/gallery/d/2405-2/Bus+stand_Tirmuhani+20_x10_Agartalla.jpg", 150, 105);
+    addMarker(4, "BT Road, Polo Ground, Imphal, India", 24.80762, 93.93643, "/gallery/v/india_billboards/Imphal/", "/gallery/d/2342-2/Imphal+BT+Road+_A_+20x10.jpg", 150, 113);
+    addMarker(4, "Head Post Office, Imphal, India", 24.80240, 93.94059, "/gallery/v/india_billboards/Imphal/", "/gallery/d/2346-2/Imphal+nr_+Governor+House++20x10.jpg", 150, 105);
+    addMarker(4, "Chandmari, Aizawl, India", 23.7460, 92.71956, "/gallery/v/india_billboards/Aizawl/", "/gallery/d/2393-2/Aizawl+Chandmari++20_x10_.jpg", 150, 105);
+    addMarker(4, "Treasury Square, Aizawl, India", 23.73543, 92.71477, "/gallery/v/india_billboards/Aizawl/", "/gallery/d/2397-2/Aizawl+Treasury+Square+20_x10_.jpg", 150, 105);
+    addMarker(4, "Guwahati, India", 26.18206, 91.74909, "/gallery/v/india_billboards/Guwahati/", "/gallery/d/2350-2/Srbatti_Opp+Cancer+Hospital++20x10_Guwahati.jpg", 150, 113);
+    addMarker(4, "Amritsar, Punjab, India", 31.6346, 74.8716, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2308-2/Realto+Chk_Amritsar.jpg", 150, 99);
+    addMarker(4, "Jagraon Bridge, Ludhiana, Punjab, India", 30.90680, 75.84677, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2312-2/Jagraon+Bridge+Ludhiana__.JPG", 150, 113);
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("http://www.ebiblefellowship.com/missions/may21progress.kmz?"+(new Date()).getDate(),{      
@@ -533,7 +586,7 @@
     });    
     google.maps.event.addListener(kmlLayer, 'click', function(kmlEvent) {
       infowindow.setOptions({
-        content: '<div style="text-align: center; overflow: hidden;"><p style="margin-top: 0; margin-bottom: 0.5em;"><b>'+kmlEvent.featureData.name+'<\/b><\/p>'+kmlEvent.featureData.description+'<\/div>',
+        content: '<div style="text-align: center; overflow: hidden;"><p style="text-align: center; margin: 0px 0px 0.5em;"><b>'+kmlEvent.featureData.name+'<\/b><\/p>'+kmlEvent.featureData.description+'<\/div>',
         position: kmlEvent.latLng
       });
       infowindow.open(map);
@@ -574,7 +627,7 @@
       }
       scheduleContent += '<\/table>';
     }
-    var locationContent = '<p style="text-align: left; margin-top: 0; margin-bottom: 0.5em;">Location: ';
+    var locationContent = '<p style="text-align: center; margin: 0px 0px 0.5em;">Location: ';
     if (link != null) locationContent += '<a href="'+link+'"><b>'+location+'<\/b><\/a><\/p>';
     else locationContent += '<b>'+location+'<\/b><\/p>';    
     var imgContent = "";
@@ -582,7 +635,7 @@
       imgContent = '<img src="'+imgPath+'" width="'+imgWidth+'" height="'+imgHeight+'" alt="Photo">';
       if (link != null) imgContent = '<a href="'+link+'">'+imgContent+'<\/a>';
     }    
-    var contentString = '<div style="text-align: center; overflow: hidden;"><p style="margin-top: 0; margin-bottom: 0.5em;"><b>'+title+'<\/b><\/p>'+locationContent+imgContent+scheduleContent+'<\/div>';
+    var contentString = '<div style="text-align: center; overflow: hidden;"><p style="text-align: center; margin: 0px 0px 0.5em;"><b>'+title+'<\/b><\/p>'+locationContent+imgContent+scheduleContent+'<\/div>';
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(lat, lng),
         map: map,
@@ -595,7 +648,7 @@
     });
     
     if (type <= 2 && coords != null) {
-      var contentStringPolygon = '<div style="text-align: center; overflow: hidden;"><p style="margin-top: 0; margin-bottom: 0.5em;"><b>Coverage Area<br>'+title+'<\/b><\/p><\/div>';
+      var contentStringPolygon = '<div style="text-align: center; overflow: hidden;"><p style="text-align: center; margin: 0px 0px 0.5em;"><b>Coverage Area<br>'+title+'<\/b><\/p><\/div>';
       var polygon = new google.maps.Polygon({
         paths: coords,
         map: map,
