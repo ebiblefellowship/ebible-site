@@ -577,6 +577,12 @@
     addMarker(4, "Guwahati, India", 26.18206, 91.74909, "/gallery/v/india_billboards/Guwahati/", "/gallery/d/2350-2/Srbatti_Opp+Cancer+Hospital++20x10_Guwahati.jpg", 150, 113);
     addMarker(4, "Amritsar, Punjab, India", 31.6346, 74.8716, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2308-2/Realto+Chk_Amritsar.jpg", 150, 99);
     addMarker(4, "Jagraon Bridge, Ludhiana, Punjab, India", 30.90680, 75.84677, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2312-2/Jagraon+Bridge+Ludhiana__.JPG", 150, 113);
+    addMarker(5, "Gaborone, Botswana", -24.66600, 25.91751, "/gallery/v/botswana_billboards/", "/gallery/d/2417-2/botswana-gaborone-kaunda-road.jpg", 150, 111, "Billboard");
+    addMarker(5, "Gaborone, Botswana", -24.6773, 25.9064, "/gallery/v/botswana_billboards/", "/gallery/d/2420-2/botswana-gaborone-old-lobatse-road.jpg", 150, 111, "Billboard");
+    addMarker(5, "Gaborone, Botswana", -24.62869, 25.93369, "/gallery/v/botswana_billboards/", "/gallery/d/2422-2/botswana-gaborone-top-boipuso-park.jpg", 150, 111, "Billboard");
+    addMarker(5, "Windhoek, Namibia", -22.5702, 17.1034, "/gallery/v/namibia_billboards/", "/gallery/d/2426-2/namibia-windhoek-omurambaweg-1.jpg", 150, 113, "Billboard");
+    addMarker(5, "Windhoek, Namibia", -22.55354, 17.07966, "/gallery/v/namibia_billboards/", "/gallery/d/2436-2/namibia-windhoek-hosea-kutako-drive-2.jpg", 150, 112, "Billboard");
+    addMarker(5, "Bridgeton, New Jersey", 39.4488, -75.2751, null, "/images/bridgeton-nj-route-49-tn.jpg", 150, 113, "Billboard");
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("http://www.ebiblefellowship.com/missions/may21progress.kmz?"+(new Date()).getDate(),{      
