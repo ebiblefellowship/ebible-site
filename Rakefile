@@ -13,8 +13,8 @@ require 'to_slug'
 String.send(:include, ToSlug)  # add to_slug method to String class
 
 MP3_ROOT = '/var/www/html'
-META_ROOT =  '/var/www/sandbox/sitegen/content/audio'
-CONTENT_ROOT =  '/var/www/sandbox/sitegen/content'
+META_ROOT =  '/var/www_staging/sitegen/content/audio'
+CONTENT_ROOT =  '/var/www_staging/sitegen/content'
 MP3_META_DIRS_MAP = [
   { :mp3 => 'sunday_bible_message',      :meta => 'studies/bc2' },
   { :mp3 => 'sunday_bible_study',        :meta => 'studies/bc1' },
