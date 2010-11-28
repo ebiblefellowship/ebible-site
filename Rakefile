@@ -30,6 +30,7 @@ SPEAKERS = {
   'Berry' => 'Guy Berry',
   'Daniels' => 'Robert Daniels',
   'Exum' => 'Ron Exum',
+  'James' => 'Oliver James',
   'McCann' => 'Chris McCann',
   'McOwen' => 'John McOwen',
   'Seifert' => 'Greg Seifert'
