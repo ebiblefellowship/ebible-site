@@ -1,6 +1,6 @@
- var map;
+  var map;
   var infowindow = new google.maps.InfoWindow();
-  function initialize() {
+  $(document).ready(function(){    
     // create map    
     var myOptions = {
       zoom: 3,
@@ -439,7 +439,7 @@
     
     // add tract trip markers
     addMarker(3, "Tokyo, Japan", 35.6894875, 139.6917064, "/gallery/v/japan/", "/images/japan-trip.jpg", 150, 113, "EBible Fellowship Tract Trip<br>May 2010");
-    addMarker(3, "São Paulo, Brazil", -23.5489433, -46.6388182, "/ebible_video.html?type=v&video=7024708", "/images/brazil-trip.jpg", 200, 150, "EBible Fellowship Tract Trip<br>July 2009");
+    addMarker(3, "São Paulo, Brazil", -23.5489433, -46.6388182, "/videos/?type=v&video=7024708", "/images/brazil-trip.jpg", 200, 150, "EBible Fellowship Tract Trip<br>July 2009");
     addMarker(3, "Montevideo, Uruguay", -34.8333333, -56.1666667, "http://www.familyradio.com/english/connect/missions/letters/uruguay.html", null, null, null, "Family Radio Tract Trip<br>May 2008");
     addMarker(3, "Georgetown, Guyana", 6.804611, -58.154831, "http://www.familyradio.com/english/connect/missions/letters/guyana.html", null, null, null, "Family Radio Tract Trip<br>August 2008");
     addMarker(3, "Honolulu, Hawaii", 21.3069444, -157.8583333, "http://www.familyradio.com/english/connect/missions/letters/hawaii.html", null, null, null, "Family Radio Tract Trip<br>October 2008");
@@ -456,13 +456,15 @@
     addMarker(3, "Johannesburg, South Africa", -26.201452, 28.045488, "http://www.familyradio.com/english/connect/missions/letters/johannesburg.html", null, null, null, "Family Radio Tract Trip<br>August 2010");
     addMarker(3, "Toronto, Canada", 43.6525, -79.3816667, null, null, null, null, "Tract Trip<br>August 2010");    
     addMarker(3, "Krakow, Poland", 50.0745, 19.9456, "http://www.familyradio.com/english/connect/missions/letters/krakow.html", null, null, null, "Family Radio Tract Trip<br>September 2010");
-    addMarker(3, "Wa, Ghana", 10.0689, -2.5001, "/missions/northern_ghana_mission_report.html", "/images/wa-ghana-tn.jpg", 150, 113, "North Ghana Tract Trip<br>August 2010");
-    addMarker(3, "Lomé, Togo", 6.1437, 1.2129, "/missions/togo_and_benin_mission_report.html", "/images/togo-tn.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
-    addMarker(3, "Cotonou, Benin", 6.3746, 2.3916, "/missions/togo_and_benin_mission_report.html", "/images/benin-tn.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
+    addMarker(3, "Wa, Ghana", 10.0689, -2.5001, "/outreach/reports/northern_ghana_mission_report.html", "/images/wa-ghana-tn.jpg", 150, 113, "North Ghana Tract Trip<br>August 2010");
+    addMarker(3, "Lomé, Togo", 6.1437, 1.2129, "/outreach/reports/togo_and_benin_mission_report.html", "/images/togo-tn.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
+    addMarker(3, "Cotonou, Benin", 6.3746, 2.3916, "/outreach/reports/togo_and_benin_mission_report.html", "/images/benin-tn.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
     addMarker(3, "Washington, DC, USA", 38.89860, -77.0367, null, "/images/tract-trip-dc-tn.jpg", 150, 113, "Tract Trip<br>October 2010");
-    addMarker(3, "Grenada", 12.1604, -61.6705, "/missions/grenada_mission_report.html", null, null, null, "Tract Trip<br>November 2010");
+    addMarker(3, "Grenada", 12.1604, -61.6705, "/outreach/reports/grenada_mission_report.html", null, null, null, "Tract Trip<br>November 2010");
     addMarker(3, "Istanbul, Turkey", 41.055, 28.976, null, null, null, null, "Family Radio Tract Trip<br>November 2010");
     addMarker(3, "Barbados", 13.1686, -59.5597, null, null, null, null, "Tract Trip<br>June 2009");
+    addMarker(5, "Cancun, Mexico", 21.192, -86.846, null, null, null, null, "Tract Trip<br>November 2010");
+    addMarker(5, "Playa del Carmen, Mexico", 20.6308, -87.0797, null, null, null, null, "Tract Trip<br>November 2010");
     addMarker(5, "Cozumel, Mexico", 20.4380, -86.9067, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(5, "Belize City, Belize", 17.5014, -88.1866, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(5, "Grand Cayman Island", 19.3304, -81.2405, null, null, null, null, "Tract Trip<br>November 2010");
@@ -589,7 +591,7 @@
     addMarker(5, "Bridgeton, New Jersey", 39.4488, -75.2751, null, "/images/bridgeton-nj-route-49-tn.jpg", 150, 113, "Billboard");
     
     // add country progress
-    var kmlLayer = new google.maps.KmlLayer("http://www.ebiblefellowship.com/missions/may21progress.kmz?"+(new Date()).getTime(),{      
+    var kmlLayer = new google.maps.KmlLayer("http://www.ebiblefellowship.com/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
       map: map,
       preserveViewport: true,
       suppressInfoWindows: true      
@@ -600,8 +602,8 @@
         position: kmlEvent.latLng
       });
       infowindow.open(map);
-    });    
-  }
+    });  
+  });
   
   function addMarker(type, location, lat, lng, link, imgPath, imgWidth, imgHeight, title, coords, schedule)
   {
