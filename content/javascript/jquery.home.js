@@ -8,8 +8,8 @@
     $("#fading-list").innerfade({
       animationtype: 'fade', 
       speed: 'slow', 
-      timeout: 13000, 
-      type: 'shuffle',
+      timeout: 'dynamic', 
+      type: 'random_start',
       containerheight: '287px',
       controlbox: true,
       controlboxid: 'billboard-sprite-wrap',

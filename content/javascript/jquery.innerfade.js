@@ -74,7 +74,7 @@
       fandr(settings.fr, elements[settings.current]);
       settings.timer = setTimeout(function() {        
         $.innerfade.next(container, elements, settings);
-      }, (settings.timeout == 'dynamic') ? getTimeout(elements[settings.current]) : settings.timeout);
+      }, (settings.timeout == 'dynamic') ? getTimeout(settings.current) : settings.timeout);
       $(elements[settings.current]).show();     
 
       if (settings.controlbox) {
@@ -171,7 +171,7 @@
     
     settings.timer = setTimeout(function() {      
       $.innerfade.next(container, elements, settings);
-    }, (settings.timeout == 'dynamic') ? getTimeout(elements[settings.current]) : settings.timeout);
+    }, (settings.timeout == 'dynamic') ? getTimeout(settings.current) : settings.timeout);
   };
 })(jQuery);
 
@@ -210,12 +210,47 @@ function fandr(fr, element) {
   if (fr != null) $(fr.find).html($(element).find(fr.replace).html());  
 }
 
-// dynamic timeout based on word count
-function getTimeout(element) {
-  var wps = 2, min = 5000, max = 45000; 
-  var words = $(element).text().split(' ').length;
-  var timeout = Math.ceil(words / wps) * 1000;  
-  if (timeout < min) timeout = min;
-  else if (timeout > max) timeout = max;
+// dynamic timeout based on the "billboard" div order
+// these timeout values need to be appropriate for the content of each "panel"
+// so if the panels are updated, update the comment description and adjust the timeout if needed
+function getTimeout(index) {
+  var timeout;  
+  switch (index) {
+    case 0: // billboards-Lesotho,Guatemala,Jamaica
+      timeout = 6000;
+      break;
+    case 1: // billboards-Mozambique,Singapore,Ghana
+      timeout = 6000;
+      break;
+    case 2: // billboards-Nigeria,Virginia,Puerto Rico
+      timeout = 6000;
+      break;      
+    case 3: // billboards-Ohio,Swaziland,Tanzania
+      timeout = 6000;
+      break;      
+    case 4: // request comments - Liuzhou, Guangxi, China
+      timeout = 13000;
+      break;      
+    case 5: // request comments - Gouldsboro PA, USA
+      timeout = 13000;
+      break;      
+    case 6: // request comments - Itanagar, Arunachal Pradesh, India
+      timeout = 13000;
+      break;      
+    case 7: // request comments - Tema, Ghana
+      timeout = 16000;
+      break;      
+    case 8: // outreach map
+      timeout = 10000;
+      break;      
+    case 9: // we can know
+      timeout = 10000;
+      break;      
+    case 10: // family radio
+      timeout = 10000;
+      break;      
+    default:
+      timeout = 15000;      
+  }  
   return timeout;
 }
