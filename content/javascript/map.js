@@ -38,7 +38,7 @@
                             '<img src="/images/coverage-ok.jpg" width="16" height="16" alt="OK" style="vertical-align: middle;"> OK<br>'+
                             '<img src="/images/coverage-poor.jpg" width="16" height="16" alt="Poor" style="vertical-align: middle;"> Poor<br>'+
                             '<img src="/images/coverage-inprogress.jpg" width="16" height="16" alt="In Progress" style="vertical-align: middle;"> In Progress<br>'+
-                            '<img src="/images/coverage-notallowed.jpg" width="16" height="16" alt="Not Allowed" style="vertical-align: middle;"> Not Allowed<br>'+
+                            //'<img src="/images/coverage-notallowed.jpg" width="16" height="16" alt="Not Allowed" style="vertical-align: middle;"> Not Allowed<br>'+
                             '<img src="/images/coverage-nothing.jpg" width="16" height="16" alt="In Progress" style="vertical-align: middle;"> Nothing';
     controlUI.appendChild(controlText);
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(controlDiv);
@@ -459,9 +459,13 @@
     addMarker(3, "Wa, Ghana", 10.0689, -2.5001, "/missions/northern_ghana_mission_report.html", "/images/wa-ghana-tn.jpg", 150, 113, "North Ghana Tract Trip<br>August 2010");
     addMarker(3, "Lomé, Togo", 6.1437, 1.2129, "/missions/togo_and_benin_mission_report.html", "/images/togo-tn.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
     addMarker(3, "Cotonou, Benin", 6.3746, 2.3916, "/missions/togo_and_benin_mission_report.html", "/images/benin-tn.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
-    addMarker(3, "Washington, DC, USA", 38.89860, -77.0367, null, "/images/tract-trip-dc-tn.jpg", 150, 113, "Washington DC Tract Trip<br>October 2010");
-    addMarker(3, "Grenada", 12.1604, -61.6705, "/missions/grenada_mission_report.html", null, null, null, "Grenada Tract Trip<br>November 2010");
+    addMarker(3, "Washington, DC, USA", 38.89860, -77.0367, null, "/images/tract-trip-dc-tn.jpg", 150, 113, "Tract Trip<br>October 2010");
+    addMarker(3, "Grenada", 12.1604, -61.6705, "/missions/grenada_mission_report.html", null, null, null, "Tract Trip<br>November 2010");
     addMarker(3, "Istanbul, Turkey", 41.055, 28.976, null, null, null, null, "Family Radio Tract Trip<br>November 2010");
+    addMarker(3, "Barbados", 13.1686, -59.5597, null, null, null, null, "Tract Trip<br>June 2009");
+    addMarker(5, "Cozumel, Mexico", 20.4380, -86.9067, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
+    addMarker(5, "Belize City, Belize", 17.5014, -88.1866, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
+    addMarker(5, "Grand Cayman Island", 19.3304, -81.2405, null, null, null, null, "Tract Trip<br>November 2010");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/images/billboard-lesotho.jpg", 150, 84);
@@ -585,7 +589,7 @@
     addMarker(5, "Bridgeton, New Jersey", 39.4488, -75.2751, null, "/images/bridgeton-nj-route-49-tn.jpg", 150, 113, "Billboard");
     
     // add country progress
-    var kmlLayer = new google.maps.KmlLayer("http://www.ebiblefellowship.com/missions/may21progress.kmz?"+(new Date()).getDate(),{      
+    var kmlLayer = new google.maps.KmlLayer("http://www.ebiblefellowship.com/missions/may21progress.kmz?"+(new Date()).getTime(),{      
       map: map,
       preserveViewport: true,
       suppressInfoWindows: true      
