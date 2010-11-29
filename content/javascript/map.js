@@ -589,6 +589,7 @@
     addMarker(5, "Windhoek, Namibia", -22.5702, 17.1034, "/gallery/v/namibia_billboards/", "/gallery/d/2426-2/namibia-windhoek-omurambaweg-1.jpg", 150, 113, "Billboard");
     addMarker(5, "Windhoek, Namibia", -22.55354, 17.07966, "/gallery/v/namibia_billboards/", "/gallery/d/2436-2/namibia-windhoek-hosea-kutako-drive-2.jpg", 150, 112, "Billboard");
     addMarker(5, "Bridgeton, New Jersey", 39.4488, -75.2751, null, "/images/bridgeton-nj-route-49-tn.jpg", 150, 113, "Billboard");
+    addMarker(5, "Vineland, New Jersey", 39.50184, -75.01038, null, "/images/vineland-nj-oak-rd-tn.jpg", 150, 113, "Billboard");
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("http://www.ebiblefellowship.com/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
