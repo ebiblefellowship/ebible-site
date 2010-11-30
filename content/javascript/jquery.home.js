@@ -22,7 +22,7 @@
     $("#countdown").countdown({until: new Date(2011, 5 - 1, 21, 23, 59, 59), format: 'Od', layout: '{on} {ol}{d<} and {dn} {dl}{d>} Remaining'});
     
     // set the width of the judgment day gradient to the width of the text
-    $("#jday-gradient").width($("#jday-link").outerWidth());
+    /* $("#jday-gradient").width($("#jday-link").outerWidth()); */
 
     /*
     $("#first-lang").hide();    
