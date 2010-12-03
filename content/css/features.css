@@ -136,7 +136,8 @@ div#billboard-sprite-wrap {
   position: absolute;
   top: 405px;
   margin-left: 90px;
-  z-index: 20;  
+  z-index: 20;
+  display: none;
 }
 
 .billboard-sprite {

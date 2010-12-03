@@ -4,25 +4,12 @@
   var active = [false, false];  
   var langIndex = 0;
   var pubIndex = 1;
-  $(document).ready(function(){  
-    $("#fading-list").innerfade({
-      animationtype: 'fade', 
-      speed: 'slow', 
-      timeout: 'dynamic', 
-      type: 'random_start',
-      containerheight: '287px',
-      controlbox: true,
-      controlboxid: 'billboard-sprite-wrap',
-      controlprevid: 'back-button',
-      controlplayid: 'play-button',
-      controlpauseid: 'pause-button',      
-      controlnextid: 'forward-button'
-    });    
+  $(document).ready(function(){     
     
     $("#countdown").countdown({until: new Date(2011, 5 - 1, 21, 23, 59, 59), format: 'Od', layout: '{on} {ol}{d<} and {dn} {dl}{d>} Remaining'});
     
     // set the width of the judgment day gradient to the width of the text
-    /* $("#jday-gradient").width($("#jday-link").outerWidth()); */
+    // $("#jday-gradient").width($("#jday-link").outerWidth());
 
     /*
     $("#first-lang").hide();    
@@ -50,6 +37,25 @@
     $("#forward-arrow").bind('click', function(){
       slideEm(pubIndex, 1);
       return false;
+    });
+
+    // load the rest of the billboards    
+    $.ajaxSetup({ cache: false });		
+    $.get('panels/index.html', function(panels) {	
+      $("#fading-list").html(panels);
+      $("#fading-list").innerfade({
+        animationtype: 'fade', 
+        speed: 'slow', 
+        timeout: 'dynamic', 
+        type: 'sequence',
+        containerheight: '287px',
+        controlbox: true,
+        controlboxid: 'billboard-sprite-wrap',
+        controlprevid: 'back-button',
+        controlplayid: 'play-button',
+        controlpauseid: 'pause-button',      
+        controlnextid: 'forward-button'
+      });      
     });
   });  
   
