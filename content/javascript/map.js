@@ -29,17 +29,17 @@
     controlText.innerHTML = '<img src="http://maps.google.com/mapfiles/marker_purple.png" width="20" height="34" alt="Purple Marker" style="vertical-align: middle;"> New Item<br>'+
                             '<img src="http://maps.google.com/mapfiles/marker_green.png" width="20" height="34" alt="Green Marker" style="vertical-align: middle;"> Billboard<br>'+
                             '<img src="http://maps.google.com/mapfiles/marker.png" width="20" height="34" alt="Red Marker" style="vertical-align: middle;"> Tract Trip<br>'+
-                            '<img src="/images/radio-station.png" width="17" height="19" alt="Dark Blue Small Marker" style="vertical-align: middle;"> Radio Station<br>'+
-                            '<img src="/images/radio-translator.png" width="17" height="19" alt="Light Blue Small Marker" style="vertical-align: middle;"> Radio Translator<br>'+
-                            '<img src="/images/coverage-circle.jpg" width="20" height="34" alt="Coverage Circle" style="vertical-align: middle;"> Radio Coverage<br>'+
+                            '<img src="<%= images_url %>/radio-station.png" width="17" height="19" alt="Dark Blue Small Marker" style="vertical-align: middle;"> Radio Station<br>'+
+                            '<img src="<%= images_url %>/radio-translator.png" width="17" height="19" alt="Light Blue Small Marker" style="vertical-align: middle;"> Radio Translator<br>'+
+                            '<img src="<%= images_url %>/coverage-circle.jpg" width="20" height="34" alt="Coverage Circle" style="vertical-align: middle;"> Radio Coverage<br>'+
                             '<p style="color: #000; text-align: center; margin: 5px 0 5px 0;"><b>Warning Coverage<\/b><\/p>'+
-                            '<img src="/images/coverage-excellent.jpg" width="16" height="16" alt="Excellent" style="vertical-align: middle;"> Excellent<br>'+
-                            '<img src="/images/coverage-good.jpg" width="16" height="16" alt="Good" style="vertical-align: middle;"> Good<br>'+
-                            '<img src="/images/coverage-ok.jpg" width="16" height="16" alt="OK" style="vertical-align: middle;"> OK<br>'+
-                            '<img src="/images/coverage-poor.jpg" width="16" height="16" alt="Poor" style="vertical-align: middle;"> Poor<br>'+
-                            '<img src="/images/coverage-inprogress.jpg" width="16" height="16" alt="In Progress" style="vertical-align: middle;"> In Progress<br>'+
-                            //'<img src="/images/coverage-notallowed.jpg" width="16" height="16" alt="Not Allowed" style="vertical-align: middle;"> Not Allowed<br>'+
-                            '<img src="/images/coverage-nothing.jpg" width="16" height="16" alt="In Progress" style="vertical-align: middle;"> Nothing';
+                            '<img src="<%= images_url %>/coverage-excellent.jpg" width="16" height="16" alt="Excellent" style="vertical-align: middle;"> Excellent<br>'+
+                            '<img src="<%= images_url %>/coverage-good.jpg" width="16" height="16" alt="Good" style="vertical-align: middle;"> Good<br>'+
+                            '<img src="<%= images_url %>/coverage-ok.jpg" width="16" height="16" alt="OK" style="vertical-align: middle;"> OK<br>'+
+                            '<img src="<%= images_url %>/coverage-poor.jpg" width="16" height="16" alt="Poor" style="vertical-align: middle;"> Poor<br>'+
+                            '<img src="<%= images_url %>/coverage-inprogress.jpg" width="16" height="16" alt="In Progress" style="vertical-align: middle;"> In Progress<br>'+
+                            //'<img src="<%= images_url %>/coverage-notallowed.jpg" width="16" height="16" alt="Not Allowed" style="vertical-align: middle;"> Not Allowed<br>'+
+                            '<img src="<%= images_url %>/coverage-nothing.jpg" width="16" height="16" alt="In Progress" style="vertical-align: middle;"> Nothing';
     controlUI.appendChild(controlText);
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(controlDiv);
 
@@ -438,8 +438,8 @@
     addMarker(1, "Kingston, Jamaica", 18.0137, -76.8278, null, null, null, null, "EBible Fellowship Programming", null, schedule);
     
     // add tract trip markers
-    addMarker(3, "Tokyo, Japan", 35.6894875, 139.6917064, "/gallery/v/japan/", "/images/japan-trip.jpg", 150, 113, "EBible Fellowship Tract Trip<br>May 2010");
-    addMarker(3, "São Paulo, Brazil", -23.5489433, -46.6388182, "/videos/?type=v&video=7024708", "/images/brazil-trip.jpg", 200, 150, "EBible Fellowship Tract Trip<br>July 2009");
+    addMarker(3, "Tokyo, Japan", 35.6894875, 139.6917064, "/gallery/v/japan/", "/gallery/d/1545-2/100_8837.JPG", 150, 113, "EBible Fellowship Tract Trip<br>May 2010");
+    addMarker(3, "São Paulo, Brazil", -23.5489433, -46.6388182, "/videos/?type=v&video=7024708", "<%= images_url %>/brazil-trip.jpg", 200, 150, "EBible Fellowship Tract Trip<br>July 2009");
     addMarker(3, "Montevideo, Uruguay", -34.8333333, -56.1666667, "http://www.familyradio.com/english/connect/missions/letters/uruguay.html", null, null, null, "Family Radio Tract Trip<br>May 2008");
     addMarker(3, "Georgetown, Guyana", 6.804611, -58.154831, "http://www.familyradio.com/english/connect/missions/letters/guyana.html", null, null, null, "Family Radio Tract Trip<br>August 2008");
     addMarker(3, "Honolulu, Hawaii", 21.3069444, -157.8583333, "http://www.familyradio.com/english/connect/missions/letters/hawaii.html", null, null, null, "Family Radio Tract Trip<br>October 2008");
@@ -456,88 +456,88 @@
     addMarker(3, "Johannesburg, South Africa", -26.201452, 28.045488, "http://www.familyradio.com/english/connect/missions/letters/johannesburg.html", null, null, null, "Family Radio Tract Trip<br>August 2010");
     addMarker(3, "Toronto, Canada", 43.6525, -79.3816667, null, null, null, null, "Tract Trip<br>August 2010");    
     addMarker(3, "Krakow, Poland", 50.0745, 19.9456, "http://www.familyradio.com/english/connect/missions/letters/krakow.html", null, null, null, "Family Radio Tract Trip<br>September 2010");
-    addMarker(3, "Wa, Ghana", 10.0689, -2.5001, "/outreach/reports/northern_ghana_mission_report.html", "/images/wa-ghana-tn.jpg", 150, 113, "North Ghana Tract Trip<br>August 2010");
-    addMarker(3, "Lomé, Togo", 6.1437, 1.2129, "/outreach/reports/togo_and_benin_mission_report.html", "/images/togo-tn.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
-    addMarker(3, "Cotonou, Benin", 6.3746, 2.3916, "/outreach/reports/togo_and_benin_mission_report.html", "/images/benin-tn.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
-    addMarker(3, "Washington, DC, USA", 38.89860, -77.0367, null, "/images/tract-trip-dc-tn.jpg", 150, 113, "Tract Trip<br>October 2010");
+    addMarker(3, "Wa, Ghana", 10.0689, -2.5001, "/outreach/reports/northern_ghana_mission_report.html", "/gallery/d/2000-2/Picture+939.jpg", 150, 113, "North Ghana Tract Trip<br>August 2010");
+    addMarker(3, "Lomé, Togo", 6.1437, 1.2129, "/outreach/reports/togo_and_benin_mission_report.html", "/gallery/d/2151-2/IMG_1360_1_.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
+    addMarker(3, "Cotonou, Benin", 6.3746, 2.3916, "/outreach/reports/togo_and_benin_mission_report.html", "/gallery/d/2154-2/Jerry+is+sharing+a+tract+to+motor+rider.jpg", 150, 113, "Togo and Benin Tract Trip<br>October 2010");
+    addMarker(3, "Washington, DC, USA", 38.89860, -77.0367, null, "<%= images_url %>/tract-trip-dc-tn.jpg", 150, 113, "Tract Trip<br>October 2010");
     addMarker(3, "Grenada", 12.1604, -61.6705, "/outreach/reports/grenada_mission_report.html", null, null, null, "Tract Trip<br>November 2010");
     addMarker(3, "Istanbul, Turkey", 41.055, 28.976, null, null, null, null, "Family Radio Tract Trip<br>November 2010");
     addMarker(3, "Barbados", 13.1686, -59.5597, null, null, null, null, "Tract Trip<br>June 2009");
-    addMarker(5, "Cancun, Mexico", 21.192, -86.846, null, null, null, null, "Tract Trip<br>November 2010");
-    addMarker(5, "Playa del Carmen, Mexico", 20.6308, -87.0797, null, null, null, null, "Tract Trip<br>November 2010");
-    addMarker(5, "Cozumel, Mexico", 20.4380, -86.9067, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
-    addMarker(5, "Belize City, Belize", 17.5014, -88.1866, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
-    addMarker(5, "Grand Cayman Island", 19.3304, -81.2405, null, null, null, null, "Tract Trip<br>November 2010");
+    addMarker(3, "Cancun, Mexico", 21.192, -86.846, null, null, null, null, "Tract Trip<br>November 2010");
+    addMarker(3, "Playa del Carmen, Mexico", 20.6308, -87.0797, null, null, null, null, "Tract Trip<br>November 2010");
+    addMarker(3, "Cozumel, Mexico", 20.4380, -86.9067, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
+    addMarker(3, "Belize City, Belize", 17.5014, -88.1866, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
+    addMarker(3, "Grand Cayman Island", 19.3304, -81.2405, null, null, null, null, "Tract Trip<br>November 2010");
     
     // add billboard markers
-    addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/images/billboard-lesotho.jpg", 150, 84);
-    addMarker(4, "Maputo, Mozambique", -25.968945, 32.569551, "/gallery/v/mozambique_billboard/", "/images/billboard-mozambique.jpg", 150, 113);
-    addMarker(4, "Mbabane, Swaziland", -26.3166667, 31.1333333, "/gallery/v/swaziland_billboards/", "/images/billboard-mbabane-swaziland.jpg", 150, 84);
-    addMarker(4, "Manzini, Swaziland", -26.49502, 31.387711, "/gallery/v/swaziland_billboards/", "/images/billboard-manzini-swaziland.jpg", 150, 84);
-    addMarker(4, "Accra, Ghana", 5.555717, -0.196306, "/gallery/v/ghana_accra_billboard/", "/images/billboard-accra-jd.jpg", 150, 113);
-    addMarker(4, "Tamale, Ghana", 9.4075, -0.8533333, "/gallery/v/ghana_tamale_billboard/", "/images/billboard-tamale.jpg", 150, 113);
-    addMarker(4, "Sunyani, Ghana", 7.3333333, -2.3333333, "/gallery/v/ghana_sunyani_billboard/", "/images/billboard-sunyani.jpg", 150, 113);
-    addMarker(4, "Kumasi, Ghana", 6.6873, -1.5950, "/gallery/v/ghana_kumasi_jd_billboard/", "/images/billboard-kumasi-jd.jpg", 150, 113);
-    addMarker(4, "Ibadan, Nigeria", 7.3963889, 3.9166667, "/gallery/v/nigeria_billboards/", "/images/billboard-ibadan-nigeria.jpg", 150, 113);
-    addMarker(4, "Abuja, Nigeria", 9.058036, 7.489061, "/gallery/v/nigeria_billboards/", "/images/billboard-abuja-nigeria.jpg", 150, 113);
-    addMarker(4, "Abeokuta, Nigeria", 7.1688084, 3.3602714, "/gallery/v/nigeria_billboards/", "/images/billboard-abeokuta-nigeria.jpg", 150, 113);
+    addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
+    addMarker(4, "Maputo, Mozambique", -25.968945, 32.569551, "/gallery/v/mozambique_billboard/", "/gallery/d/1705-2/Mozambique.jpg", 150, 113);
+    addMarker(4, "Mbabane, Swaziland", -26.3166667, 31.1333333, "/gallery/v/swaziland_billboards/", "/gallery/d/2439-2/Swaziland_+Mbabane+Nov_2010.JPG", 150, 84);
+    addMarker(4, "Manzini, Swaziland", -26.49502, 31.387711, "/gallery/v/swaziland_billboards/", "/gallery/d/2454-2/Swaziland_+Manzini_Nov_2010.JPG", 150, 84);
+    addMarker(4, "Accra, Ghana", 5.555717, -0.196306, "/gallery/v/ghana_accra_billboard/", "/gallery/d/1671-2/IMG_1519.jpg", 150, 113);
+    addMarker(4, "Tamale, Ghana", 9.4075, -0.8533333, "/gallery/v/ghana_tamale_billboard/", "/gallery/d/1046-2/Picture+2672.jpg", 150, 113);
+    addMarker(4, "Sunyani, Ghana", 7.3333333, -2.3333333, "/gallery/v/ghana_sunyani_billboard/", "/gallery/d/1070-2/IMG_0965.jpg", 150, 113);
+    addMarker(4, "Kumasi, Ghana", 6.6873, -1.5950, "/gallery/v/ghana_kumasi_jd_billboard/", "/gallery/d/1015-2/IMG_0452.jpg", 150, 113);
+    addMarker(4, "Ibadan, Nigeria", 7.3963889, 3.9166667, "/gallery/v/nigeria_billboards/", "/gallery/v/nigeria_billboards/Ibadan-Oyo-IITA+1.jpg.html", 150, 113);
+    addMarker(4, "Abuja, Nigeria", 9.058036, 7.489061, "/gallery/v/nigeria_billboards/", "/gallery/d/1700-2/SANY0036.JPG", 150, 113);
+    addMarker(4, "Abeokuta, Nigeria", 7.1688084, 3.3602714, "/gallery/v/nigeria_billboards/", "/gallery/d/1685-2/lagos-abeokuta-Sagamu+rd_7_.jpg", 150, 113);
     addMarker(4, "Port Harcourt, Nigeria", 4.7891667, 6.9986111, "/gallery/v/nigeria_billboards/");
-    addMarker(4, "Onitsha, Nigeria", 6.1666667, 6.7833333, "/gallery/v/nigeria_billboards/", "/images/billboard-onitsha-nigeria.jpg", 150, 101);
-    addMarker(4, "Kaduna, Nigeria", 10.5166667, 7.4333333, "/gallery/v/nigeria_billboards/", "/images/billboard-kaduna-nigeria.jpg", 150, 103);
-    addMarker(4, "Santo Domingo, Dominican Republic", 18.5, -69.9833333, "/gallery/v/dominican_republic_billboard/", "/images/billboard-dominican-republic.jpg", 150, 113);
-    addMarker(4, "Addis Ababa, Ethiopia", 9.022736, 38.746799, "/gallery/v/ethiopia_billboard/", "/images/billboard-ethiopia.jpg", 150, 113);
-    addMarker(4, "Kingston, Jamaica", 17.992731, -76.792009, "/gallery/v/jamaica_billboard/", "/images/billboard-jamaica.jpg", 150, 113);
-    addMarker(4, "Akron, Ohio", 41.0814447, -81.5190053, "/gallery/v/ohio_billboard/", "/images/billboard-ohio.jpg", 150, 113);
-    addMarker(4, "Roanoke, Virginia", 37.2709704, -79.9414266, "/gallery/v/roanoke_virginia_billboard/", "/images/billboard-roanoke-virginia.jpg", 150, 113);
-    addMarker(4, "Colorado Springs, Colorado", 38.8338816, -104.8213634, null, "/images/bench-ad-colorado-springs.jpg", 150, 110, "Bus Bench Ads");
-    addMarker(4, "Oklahoma City, Oklahoma", 35.4675602, -97.5164276, null, "/images/billboard-oklahoma-city.jpg", 150, 113);
-    addMarker(4, "Waco, Texas", 31.549333, -97.1466695, null, "/images/billboard-waco-texas.jpg", 150, 113);
-    addMarker(4, "Baltimore, Maryland", 39.2903848, -76.6121893, null, "/images/billboard-baltimore-maryland.jpg", 150, 112);
-    addMarker(4, "Erie, Pennsylvania", 42.1292241, -80.085059, null, "/images/billboard-erie-pennsylvania.jpg", 150, 94);
-    addMarker(4, "Franklin Township, New Jersey", 39.596231, -75.063551, null, "/images/billboard-franklin-new-jersey.jpg", 150, 113);
-    addMarker(4, "Boston, Massachusetts", 42.3584308, -71.0597732, null, "/images/bus-ad-boston.jpg", 150, 113, "Bus Ads");
-    addMarker(4, "Fresno, California", 36.7541, -119.7716, null, "/images/billboard-fresno.jpg", 150, 111);
-    addMarker(4, "Stockton, California", 37.9621, -121.2905, null, "/images/billboard-stockton.jpg", 150, 90);
-    addMarker(4, "Guatemala City, Guatemala", 14.59113, -90.54514, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala.jpg", 150, 100);
-    addMarker(4, "Guatemala City, Guatemala", 14.59498, -90.57919, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala-lobos.jpg", 150, 113);
-    addMarker(4, "Guatemala City, Guatemala", 14.64528, -90.51930, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala-nueva.jpg", 150, 113);
-    addMarker(4, "Guatemala City, Guatemala", 14.6550755, -90.4815504, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala-zona-18.jpg", 150, 100);
-    addMarker(4, "Guatemala City, Guatemala", 14.63218, -90.54675, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala-zona-5.jpg", 150, 113);
-    addMarker(4, "Guatemala City, Guatemala", 14.6578, -90.4282, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala-puerto-barrios.jpg", 150, 99);
-    addMarker(4, "Guatemala City, Guatemala", 13.996, -89.852, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala-avenida-40-47.jpg", 150, 112);
-    addMarker(4, "Guatemala City, Guatemala", 15.192, -90.283, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala-santa-elena-peten.jpg", 150, 99);
-    addMarker(4, "Guatemala City, Guatemala", 14.3411, -90.4320, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala-carretera-salvador.jpg", 150, 112);
-    addMarker(4, "Guatemala City, Guatemala", 14.397, -90.469, "/gallery/v/guatemala_billboards", "/images/billboard-guatemala-jutiapa.jpg", 150, 112);    
-    addMarker(4, "Jalan Besar Plaza, Singapore", 1.30899, 103.85811, "/gallery/v/singapore_billboards/", "/images/billboard-singapore.jpg", 113, 150);
-    addMarker(4, "People's Park Complex, Singapore", 1.284007, 103.842397, "/gallery/v/singapore_billboards/", "/images/billboard-singapore2.jpg", 112, 150);
-    addMarker(4, "Puerto Rico", 18.44787, -66.05668, "/gallery/v/puerto_rico_billboards/", "/images/Baldorioty-De-Castro-tn.jpg", 150, 113);
-    addMarker(4, "Puerto Rico", 18.3796, -65.7382, "/gallery/v/puerto_rico_billboards/", "/images/Kiosko-Luquillo-tn.jpg", 150, 113);
-    addMarker(4, "Puerto Rico", 18.33710, -67.15321, "/gallery/v/puerto_rico_billboards/", "/images/Ideal-Auto-tn.jpg", 150, 113);
-    addMarker(4, "Puerto Rico", 18.13595, -67.12587, "/gallery/v/puerto_rico_billboards/", "/images/Don-Manuel-tn.jpg", 150, 111);
-    addMarker(4, "Puerto Rico", 18.29926, -66.06020, "/gallery/v/puerto_rico_billboards/", "/images/Cantinflas-tn.jpg", 150, 113);
-    addMarker(4, "Puerto Rico", 18.48153, -66.77890, "/gallery/v/puerto_rico_billboards/", "/images/VAQUERIA-GARCIA-tn.jpg", 150, 112);
-    addMarker(4, "Puerto Rico", 17.98958, -66.61839, "/gallery/v/puerto_rico_billboards/", "/images/Taller-Alcaraz-tn.jpg", 150, 113);
-    addMarker(4, "Puerto Rico", 18.35230, -65.68434, "/gallery/v/puerto_rico_billboards/", "/images/Taller-Carrera-tn.jpg", 150, 113);
-    addMarker(4, "Puerto Rico", 18.3153, -65.6507, "/gallery/v/puerto_rico_billboards/", "/images/Agayi-tn.jpg", 150, 113);
-    addMarker(4, "Jamaica", 18.04585, -76.81858, "/gallery/v/jamaica_billboards/", "/images/billboard1-tn.jpg", 150, 116);
-    addMarker(4, "Jamaica", 17.95348, -76.88010, "/gallery/v/jamaica_billboards/", "/images/billboard2-tn.jpg", 150, 90);
-    addMarker(4, "Jamaica", 18.03446, -76.79560, "/gallery/v/jamaica_billboards/", "/images/billboard3b-tn.jpg", 150, 111);
-    addMarker(4, "Jamaica", 18.0428, -77.5310, "/gallery/v/jamaica_billboards/", "/images/billboard4-tn.jpg", 150, 111);
-    addMarker(4, "Bandung, Indonesia", -6.93115, 107.62601, "/gallery/v/indonesia_billboards/", "/images/pelajar-pejuang-martanegara-tn.jpg", 150, 113);
-    addMarker(4, "Bandung, Indonesia", -6.91748, 107.60562, "/gallery/v/indonesia_billboards/", "/images/suniaraja-tn.jpg", 150, 113);
-    addMarker(4, "Bandung, Indonesia", -6.89587, 107.60927, "/gallery/v/indonesia_billboards/", "/images/tamansari-tn.jpg", 150, 113);
-    addMarker(4, "Dar Es Salaam, Tanzania", -6.7890, 39.2011, "/gallery/v/tanzania_billboards/", "/images/tanzania-ubungo-bus-depot-tn.jpg", 150, 113);
-    addMarker(4, "Dar Es Salaam, Tanzania", -6.7801, 39.2243, "/gallery/v/tanzania_billboards/", "/images/tanzania-shekilango-tn.jpg", 150, 100);
-    addMarker(4, "Dar Es Salaam, Tanzania", -6.7778, 39.2498, "/gallery/v/tanzania_billboards/", "/images/tanzania-new-bagamoyo-road-tn.jpg", 150, 113);
-    addMarker(4, "Dar Es Salaam, Tanzania", -6.82007, 39.27650, "/gallery/v/tanzania_billboards/", "/images/tanzania-kariakoo-rooftop-tn.jpg", 150, 100);
-    addMarker(4, "Dar Es Salaam, Tanzania", -6.81717, 39.29337, "/gallery/v/tanzania_billboards/", "/images/tanzania-south-beach-ferry-tn.jpg", 150, 100);
-    addMarker(4, "Dar Es Salaam, Tanzania", -6.8608, 39.2073, "/gallery/v/tanzania_billboards/", "/images/tanzania-pugu-tn.jpg", 150, 100);
-    addMarker(4, "Mbeya, Tanzania", -8.8967, 33.4499, "/gallery/v/tanzania_billboards/", "/images/tanzania-mbeya-tn.jpg", 150, 113);
-    addMarker(4, "Arusha, Tanzania", -3.36485, 36.67442, "/gallery/v/tanzania_billboards/", "/images/tanzania-arusha-tn.jpg", 150, 113);
-    addMarker(4, "Moshi, Tanzania", -3.3350, 37.3432, "/gallery/v/tanzania_billboards/", "/images/tanzania-moshi-tn.jpg", 150, 112);
-    addMarker(4, "Mwanza, Tanzania", -2.5074, 32.8995, "/gallery/v/tanzania_billboards/", "/images/tanzania-mwanza-tn.jpg", 150, 92);
-    addMarker(4, "Surabaya, Indonesia", -7.2478, 112.7443, "/gallery/v/indonesia_billboards/", "/images/surabaya-tn.jpg", 150, 113);
-    addMarker(4, "Beaumont, Texas", 30.0966, -94.0946, null, "/images/beaumont-texas-tn.jpg", 150, 113, "2 Billboards");
+    addMarker(4, "Onitsha, Nigeria", 6.1666667, 6.7833333, "/gallery/v/nigeria_billboards/", "/gallery/d/1688-2/Onitsha_1.jpg", 150, 101);
+    addMarker(4, "Kaduna, Nigeria", 10.5166667, 7.4333333, "/gallery/v/nigeria_billboards/", "/gallery/d/1679-2/Kaduna_picx+1+017.jpg", 150, 103);
+    addMarker(4, "Santo Domingo, Dominican Republic", 18.5, -69.9833333, "/gallery/v/dominican_republic_billboard/", "/gallery/d/1994-2/pic+vallas+023.jpg", 150, 114, "Billboards");
+    addMarker(4, "Addis Ababa, Ethiopia", 9.022736, 38.746799, "/gallery/v/ethiopia_billboard/", "/gallery/d/568-2/Ethiopia1.jpg", 150, 113);
+    addMarker(4, "Kingston, Jamaica", 17.992731, -76.792009, "/gallery/v/jamaica_billboards/", "/gallery/d/1034-2/IMG_0300.JPG", 150, 113);
+    addMarker(4, "Akron, Ohio", 41.0814447, -81.5190053, "/gallery/v/ohio_billboard/", "/gallery/d/1596-2/IMG_0003+_Large_.jpg", 150, 113);
+    addMarker(4, "Roanoke, Virginia", 37.2709704, -79.9414266, "/gallery/v/roanoke_virginia_billboard/", "/gallery/d/1711-2/billboard-roanoke-virginia1.jpg", 150, 113);
+    addMarker(4, "Colorado Springs, Colorado", 38.8338816, -104.8213634, null, "<%= images_url %>/bench-ad-colorado-springs.jpg", 150, 110, "Bus Bench Ads");
+    addMarker(4, "Oklahoma City, Oklahoma", 35.4675602, -97.5164276, null, "<%= images_url %>/billboard-oklahoma-city.jpg", 150, 113);
+    addMarker(4, "Waco, Texas", 31.549333, -97.1466695, null, "<%= images_url %>/billboard-waco-texas.jpg", 150, 113);
+    addMarker(4, "Baltimore, Maryland", 39.2903848, -76.6121893, null, "<%= images_url %>/billboard-baltimore-maryland.jpg", 150, 112);
+    addMarker(4, "Erie, Pennsylvania", 42.1292241, -80.085059, null, "<%= images_url %>/billboard-erie-pennsylvania.jpg", 150, 94);
+    addMarker(4, "Franklin Township, New Jersey", 39.596231, -75.063551, null, "<%= images_url %>/billboard-franklin-new-jersey.jpg", 150, 113);
+    addMarker(4, "Boston, Massachusetts", 42.3584308, -71.0597732, null, "<%= images_url %>/bus-ad-boston.jpg", 150, 113, "Bus Ads");
+    addMarker(4, "Fresno, California", 36.7541, -119.7716, null, "<%= images_url %>/billboard-fresno.jpg", 150, 111);
+    addMarker(4, "Stockton, California", 37.9621, -121.2905, null, "<%= images_url %>/billboard-stockton.jpg", 150, 90);
+    addMarker(4, "Guatemala City, Guatemala", 14.59113, -90.54514, "/gallery/v/guatemala_billboards", "/gallery/d/2055-2/VALLA+FINAL+AVENIDA+PETAPA.JPG", 150, 100);
+    addMarker(4, "Guatemala City, Guatemala", 14.59498, -90.57919, "/gallery/v/guatemala_billboards", "/gallery/d/2058-2/VALLA+VILLA+LOBOS.JPG", 150, 113);
+    addMarker(4, "Guatemala City, Guatemala", 14.64528, -90.51930, "/gallery/v/guatemala_billboards", "/gallery/d/2060-2/VALLA+VILLA+NUEVA.JPG", 150, 113);
+    addMarker(4, "Guatemala City, Guatemala", 14.6550755, -90.4815504, "/gallery/v/guatemala_billboards", "/gallery/d/2062-2/VALLA+ZONA+18.JPG", 150, 100);
+    addMarker(4, "Guatemala City, Guatemala", 14.63218, -90.54675, "/gallery/v/guatemala_billboards", "/gallery/d/2065-2/VALLA+ZONA+5.JPG", 150, 113);
+    addMarker(4, "Guatemala City, Guatemala", 14.6578, -90.4282, "/gallery/v/guatemala_billboards", "/gallery/d/2166-2/YENDO+A+PUERTO+BARRIOS.jpg", 150, 99);
+    addMarker(4, "Guatemala City, Guatemala", 13.996, -89.852, "/gallery/v/guatemala_billboards", "/gallery/d/2168-2/AVENIDA+40-47.jpg", 150, 112);
+    addMarker(4, "Guatemala City, Guatemala", 15.192, -90.283, "/gallery/v/guatemala_billboards", "/gallery/d/2170-2/ENTRA+A+SANTA+ELENA+PETEN.jpg", 150, 99);
+    addMarker(4, "Guatemala City, Guatemala", 14.3411, -90.4320, "/gallery/v/guatemala_billboards", "/gallery/d/2172-2/VALLA++CARRETERA+SALVADOR.jpg", 150, 112);
+    addMarker(4, "Guatemala City, Guatemala", 14.397, -90.469, "/gallery/v/guatemala_billboards", "/gallery/d/2174-2/YENDO+A+JUTIAPA.jpg", 150, 112);    
+    addMarker(4, "Jalan Besar Plaza, Singapore", 1.30899, 103.85811, "/gallery/v/singapore_billboards/", "/gallery/d/2076-2/Singapore4.jpg", 113, 150);
+    addMarker(4, "People's Park Complex, Singapore", 1.284007, 103.842397, "/gallery/v/singapore_billboards/", "/gallery/d/2072-2/Singapore2.jpg", 112, 150);
+    addMarker(4, "Puerto Rico", 18.44787, -66.05668, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2102-2/Professional+Equip_+Marg_+Sur+_amp_+Ave_+Baldorioty+De+Castro+1.jpg", 150, 113);
+    addMarker(4, "Puerto Rico", 18.3796, -65.7382, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2099-2/Kiosko+Luquillo+Solar+%2316+_amp_+Carr+%233+Solar+%2316+1.jpg", 150, 113);
+    addMarker(4, "Puerto Rico", 18.33710, -67.15321, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2093-2/Ideal+Auto+Carr+%232+Km+138_5+1.jpg", 150, 113);
+    addMarker(4, "Puerto Rico", 18.13595, -67.12587, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2087-2/Don+Manuel+Auto+Carr_+%232+Al+La+_amp_+Del+Pabellon+1.jpg", 150, 111);
+    addMarker(4, "Puerto Rico", 18.29926, -66.06020, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2080-2/Cantinflas+Carr_+%231+Km+27_6+1.jpg", 150, 113);
+    addMarker(4, "Puerto Rico", 18.48153, -66.77890, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2120-2/VAQUERIA+GARCIA+1.jpg", 150, 112);
+    addMarker(4, "Puerto Rico", 17.98958, -66.61839, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2108-2/Taller+Alcaraz+Ave_+Hostos+159+_amp_+Playa+Ponce+1.jpg", 150, 113);
+    addMarker(4, "Puerto Rico", 18.35230, -65.68434, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2114-2/TALLER+CAR+Taller+Carrera+Carr+3+Bo_+Juan+1.jpg", 150, 113);
+    addMarker(4, "Puerto Rico", 18.3153, -65.6507, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2136-2/AGAYI+1.jpg", 150, 113);
+    addMarker(4, "Jamaica", 18.04585, -76.81858, "/gallery/v/jamaica_billboards/", "/gallery/d/2129-2/billboard1.jpg", 150, 116);
+    addMarker(4, "Jamaica", 17.95348, -76.88010, "/gallery/v/jamaica_billboards/", "/gallery/d/2126-2/billboard2.jpg", 150, 90);
+    addMarker(4, "Jamaica", 18.03446, -76.79560, "/gallery/v/jamaica_billboards/", "/gallery/d/2134-2/billboard3b.jpg", 150, 111);
+    addMarker(4, "Jamaica", 18.0428, -77.5310, "/gallery/v/jamaica_billboards/", "/gallery/d/2163-2/DSC00465.JPG", 150, 111);
+    addMarker(4, "Bandung, Indonesia", -6.93115, 107.62601, "/gallery/v/indonesia_billboards/", "/gallery/d/2185-2/Pelajar+Pejuang-Martanegara2.JPG", 150, 113);
+    addMarker(4, "Bandung, Indonesia", -6.91748, 107.60562, "/gallery/v/indonesia_billboards/", "/gallery/d/2178-2/SUNIARAJA.jpg", 150, 113);
+    addMarker(4, "Bandung, Indonesia", -6.89587, 107.60927, "/gallery/v/indonesia_billboards/", "/gallery/d/2188-2/tamansari.jpg", 150, 113);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.7890, 39.2011, "/gallery/v/tanzania_billboards/", "/gallery/d/2196-2/Ubungo_bus_depot.jpg", 150, 113);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.7801, 39.2243, "/gallery/v/tanzania_billboards/", "/gallery/d/2245-2/Shekilango.jpg", 150, 100);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.7778, 39.2498, "/gallery/v/tanzania_billboards/", "/gallery/d/2190-2/New_Bagamoyo_Rd.jpg", 150, 113);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.82007, 39.27650, "/gallery/v/tanzania_billboards/", "/gallery/d/2231-2/Kariakoo_Rooftop.jpg", 150, 100);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.81717, 39.29337, "/gallery/v/tanzania_billboards/", "/gallery/d/2248-2/South_Beach_Ferry.jpg", 150, 100);
+    addMarker(4, "Dar Es Salaam, Tanzania", -6.8608, 39.2073, "/gallery/v/tanzania_billboards/", "/gallery/d/2193-2/Pugu_1.jpg", 150, 100);
+    addMarker(4, "Mbeya, Tanzania", -8.8967, 33.4499, "/gallery/v/tanzania_billboards/", "/gallery/d/2228-2/Mbeya.jpg", 150, 113);
+    addMarker(4, "Arusha, Tanzania", -3.36485, 36.67442, "/gallery/v/tanzania_billboards/", "/gallery/d/2237-2/Arusha2.jpg", 150, 113);
+    addMarker(4, "Moshi, Tanzania", -3.3350, 37.3432, "/gallery/v/tanzania_billboards/", "/gallery/d/2239-2/Moshi.jpg", 150, 112);
+    addMarker(4, "Mwanza, Tanzania", -2.5074, 32.8995, "/gallery/v/tanzania_billboards/", "/gallery/d/2242-2/Mwanza.jpg", 150, 92);
+    addMarker(4, "Surabaya, Indonesia", -7.2478, 112.7443, "/gallery/v/indonesia_billboards/", "/gallery/d/2208-2/surabaya-4.jpg", 150, 113);
+    addMarker(4, "Beaumont, Texas", 30.0966, -94.0946, null, "<%= images_url %>/beaumont-texas-tn.jpg", 150, 113, "2 Billboards");
     addMarker(4, "Andheri Lokhandwala, Mumbai, India", 19.1410, 72.8263, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2287-2/Andheri_lokhandwala_20X20_ET_Lit.JPG", 150, 113);
     addMarker(4, "Andheri Flyover, Mumbai, India", 19.1153369, 72.8450525, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2291-2/Andheri_on_flyover_bridge_facing_highway_20X2_mumbai.jpg", 150, 113);
     addMarker(4, "Minsk Circle, Mumbai, India", 19.0289, 72.8550, "/gallery/v/india_billboards/Mumbai/", "/gallery/d/2293-2/King_Circle_At_Junction_Maheshwari_Udyan_mumbai.jpg", 150, 113);
@@ -583,16 +583,23 @@
     addMarker(4, "Guwahati, India", 26.18206, 91.74909, "/gallery/v/india_billboards/Guwahati/", "/gallery/d/2350-2/Srbatti_Opp+Cancer+Hospital++20x10_Guwahati.jpg", 150, 113);
     addMarker(4, "Amritsar, Punjab, India", 31.6346, 74.8716, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2308-2/Realto+Chk_Amritsar.jpg", 150, 99);
     addMarker(4, "Jagraon Bridge, Ludhiana, Punjab, India", 30.90680, 75.84677, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2312-2/Jagraon+Bridge+Ludhiana__.JPG", 150, 113);
-    addMarker(5, "Gaborone, Botswana", -24.66600, 25.91751, "/gallery/v/botswana_billboards/", "/gallery/d/2417-2/botswana-gaborone-kaunda-road.jpg", 150, 111, "Billboard");
-    addMarker(5, "Gaborone, Botswana", -24.6773, 25.9064, "/gallery/v/botswana_billboards/", "/gallery/d/2420-2/botswana-gaborone-old-lobatse-road.jpg", 150, 111, "Billboard");
-    addMarker(5, "Gaborone, Botswana", -24.62869, 25.93369, "/gallery/v/botswana_billboards/", "/gallery/d/2422-2/botswana-gaborone-top-boipuso-park.jpg", 150, 111, "Billboard");
-    addMarker(5, "Windhoek, Namibia", -22.5702, 17.1034, "/gallery/v/namibia_billboards/", "/gallery/d/2426-2/namibia-windhoek-omurambaweg-1.jpg", 150, 113, "Billboard");
-    addMarker(5, "Windhoek, Namibia", -22.55354, 17.07966, "/gallery/v/namibia_billboards/", "/gallery/d/2436-2/namibia-windhoek-hosea-kutako-drive-2.jpg", 150, 112, "Billboard");
-    addMarker(5, "Bridgeton, New Jersey", 39.4488, -75.2751, null, "/images/bridgeton-nj-route-49-tn.jpg", 150, 113, "Billboard");
-    addMarker(5, "Vineland, New Jersey", 39.50184, -75.01038, null, "/images/vineland-nj-oak-rd-tn.jpg", 150, 113, "Billboard");
+    addMarker(4, "Gaborone, Botswana", -24.66600, 25.91751, "/gallery/v/botswana_billboards/", "/gallery/d/2417-2/botswana-gaborone-kaunda-road.jpg", 150, 111);
+    addMarker(4, "Gaborone, Botswana", -24.6773, 25.9064, "/gallery/v/botswana_billboards/", "/gallery/d/2420-2/botswana-gaborone-old-lobatse-road.jpg", 150, 111);
+    addMarker(4, "Gaborone, Botswana", -24.62869, 25.93369, "/gallery/v/botswana_billboards/", "/gallery/d/2422-2/botswana-gaborone-top-boipuso-park.jpg", 150, 111);
+    addMarker(4, "Windhoek, Namibia", -22.5702, 17.1034, "/gallery/v/namibia_billboards/", "/gallery/d/2426-2/namibia-windhoek-omurambaweg-1.jpg", 150, 113);
+    addMarker(4, "Windhoek, Namibia", -22.55354, 17.07966, "/gallery/v/namibia_billboards/", "/gallery/d/2436-2/namibia-windhoek-hosea-kutako-drive-2.jpg", 150, 112);
+    addMarker(4, "Bridgeton, New Jersey", 39.4488, -75.2751, null, "<%= images_url %>/bridgeton-nj-route-49-tn.jpg", 150, 113);
+    addMarker(4, "Vineland, New Jersey", 39.50184, -75.01038, null, "<%= images_url %>/vineland-nj-oak-rd-tn.jpg", 150, 113);
+    addMarker(5, "Nashville, Tennessee", 36.16195, -86.79176, null, "<%= images_url %>/nashville-tn.jpg", 150, 92, "40 Billboards");
+    addMarker(5, "Apia, Samoa", -13.83098, -171.77279, "/gallery/v/samoa_billboards/", "/gallery/d/2459-2/SamoaLocation1.jpg", 150, 94, "Billboard");
+    addMarker(5, "Apia, Samoa", -13.83182, -171.76637, "/gallery/v/samoa_billboards/", "/gallery/d/2463-2/SamoaLocation2.jpg", 150, 106, "Billboard");
+    addMarker(5, "Apia, Samoa", -13.8369, -171.7611, "/gallery/v/samoa_billboards/", "/gallery/d/2466-2/SamoaLocation3.jpg", 150, 129, "Billboard");
+    addMarker(5, "Kumasi, Ghana", 6.70425, -1.61171, "/gallery/v/ghana_new_billboards/", "/gallery/d/2479-2/Kumasi1.jpg", 150, 113, "Billboard");
+    addMarker(5, "Tema, Ghana", 5.6558, -0.0016, "/gallery/v/ghana_new_billboards/", "/gallery/d/2492-2/TEMA-rana+motors+rdabt.jpg", 150, 113, "Billboard");
+    addMarker(5, "Takoradi, Ghana", 4.8919, -1.7525, "/gallery/v/ghana_new_billboards/", "/gallery/d/2489-2/Takoradi2.jpg", 150, 113, "Billboard");
     
     // add country progress
-    var kmlLayer = new google.maps.KmlLayer("http://www.ebiblefellowship.com/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
+    var kmlLayer = new google.maps.KmlLayer("<%= base_url %>/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
       map: map,
       preserveViewport: true,
       suppressInfoWindows: true      
@@ -613,11 +620,11 @@
     {
       case 1:
         if (title == null) title = "Radio Station";
-        icon = '/images/radio-station.png';
+        icon = '<%= images_url %>/radio-station.png';
         break;  
       case 2:
         if (title == null) title = "Radio Translator";
-        icon = '/images/radio-translator.png';
+        icon = '<%= images_url %>/radio-translator.png';
         break;
       case 3:
         if (title == null) title = "Tract Trip";

@@ -87,6 +87,10 @@ compile '/css/*' do
   #filter :rainpress
 end
 
+compile '/javascript/map' do
+  filter :erb
+end
+
 compile '/javascript/*' do
 end
 
