@@ -21,6 +21,11 @@ def home_page?
     @item.identifier == '/'
 end
 
+# convert a local time to GMT: '10:30AM' => '15:30'
+def local_to_gmt_time(t)
+  Time.parse(t).utc.strftime('%H:%M')
+end
+
 def formatted_date(date)
   Time.parse(date).strftime('%d-%b-%Y') unless date.nil?
 end

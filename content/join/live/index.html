@@ -12,36 +12,40 @@ title: Live Schedule
 
 <div class="contentbar-top"></div>
 <div class="contentbar-mid">
-<h2>Sunday (Sunday and Monday GMT Time)</h2>
+<h2>Sunday</h2>
 
 <div class="live-schedule">
 <dl>
-  <dt><strong>10:30am to 12:30pm (23:59 to 18:30 GMT)</strong> - Bible classes and Worship</dt>
+  <dt><strong>10:30am to 12:30pm
+    (<%= local_to_gmt_time('10:30AM') %> to <%= local_to_gmt_time('12:30PM') %> GMT)</strong> - Bible classes and Worship</dt>
   <dd>Live from <cite>Delco Day in the Word</cite> of Delaware County, PA
   <ul>
-
-    <!--<li>10:00 Hymn Sing and Bible reading</li>-->
-    <li>10:30 Bible Class I (Sunday 16:30 GMT)</li>
-    <li>11:15 Break</li>
-    <li>11:45 Bible Class II (Sunday 17:45 GMT)</li>
+    <li>10:15 Bible Reading (<%= local_to_gmt_time('10:15AM') %> GMT)</li>
+    <li>10:30 Bible Class I (<%= local_to_gmt_time('10:30AM') %> GMT)</li>
+    <li>11:15 Break (<%= local_to_gmt_time('11:15AM') %> GMT)</li>
+    <li>11:45 Bible Class II (<%= local_to_gmt_time('11:45AM') %> GMT)</li>
   </ul>
   </dd>
 
-  <dt><strong>4:00pm to 4:45pm (22:00 to 22:45 GMT)</strong> -
+  <dt><strong>4:00pm to 4:45pm
+    (<%= local_to_gmt_time('4:00PM') %> to <%= local_to_gmt_time('4:45PM') %> GMT)</strong> -
     Bible Ministries International
     (<a href="http://www.bmius.org">http://www.bmius.org</a>)</dt>
 
-  <dd>Live message by Gunther von Harringa. NOTE: due to technical difficulties
+  <dd>Live message by Gunther von Harringa, Sr. NOTE: due to technical difficulties
     broadcasting live, recent prerecorded messages are being played.</dd>
 
-  <dt><strong>7:00pm to 8:00pm (Monday 01:00 GMT)</strong> - Message from Bible Class II</dt>
+  <dt><strong>7:00pm to 8:00pm 
+    (Monday <%= local_to_gmt_time('7:00PM') %> to <%= local_to_gmt_time('8:00PM') %> GMT)</strong> - Message from Bible Class II</dt>
   <dd>Recorded message is played from earlier in the day.</dd>
 
-  <dt><strong>8:30pm to 9:00pm (02:30 to 03:00 GMT)</strong> - Articles and Visitor/Requestor Comments</dt>
+  <dt><strong>8:30pm to 9:00pm
+    (Monday <%= local_to_gmt_time('8:30PM') %> to <%= local_to_gmt_time('9:00PM') %> GMT)</strong> - Articles and Visitor/Requestor Comments</dt>
 
     <dd>Comments from our Bible, CD and Tract requests are read.</dd>
 
-  <dt><strong>9:00pm to 10pm (03:00 to 04:00 GMT)</strong> - The
+  <dt><strong>9:00pm to 10pm
+    (<%= local_to_gmt_time('9:00PM') %> to <%= local_to_gmt_time('10:00PM') %> GMT)</strong> - The
     <a href="../../fellowship_hour/"><cite>Fellowship Hour</cite></a></dt>
   <dd>A time where anyone can ask questions relating to the Bible.</dd>
 </dl>
