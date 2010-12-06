@@ -1,6 +1,23 @@
   var map;
   var infowindow = new google.maps.InfoWindow();
-  $(document).ready(function(){    
+  $(window).load(function(){ 
+    // enlarge the width of the map canvas if possible
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;    
+    if (viewportWidth > 1000) {
+      var mapCanvas = $("#map_canvas");
+      var offsetTop = mapCanvas.offset().top;
+      mapCanvas.wrap('<div id="map-container" />');
+      mapCanvas.before('<div id="map-corner-top"><div></div></div>').after('<div id="map-corner-bottom"><div></div></div>');
+      var mapContainer = $("#map-container");
+      mapContainer.before("<div style='height: 1px;'>&nbsp;</div>");      
+      mapContainer.css({ position: "absolute", marginLeft: 0, marginTop: 0 });
+      mapContainer.remove().appendTo("body");    
+      mapContainer.css({ top: offsetTop, left: 0, marginLeft: "2.5%" });    
+      $("#footer-border-mid").hide();
+      $("#shadow-bottom").hide();
+      $("#bottom-links").remove().appendTo("#map-container").after("<div style='font-size: 1px;'>&nbsp;</div>").css({ marginTop: "16px" });
+    }
+    
     // create map    
     var myOptions = {
       zoom: 3,
