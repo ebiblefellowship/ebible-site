@@ -8,6 +8,12 @@ hidden_comment: |
 <p>The server encountered an internal error or misconfiguration and was unable to complete
 your request.</p>
 
+<?php
+  if isset($_SERVER['REDIRECT_ERROR_NOTES']) {
+    print '<p><strong>' . $_SERVER['REDIRECT_ERROR_NOTES'] . '</strong></p>';
+  }
+?>
+
 <p>Please contact the server administrator, webservant@ebiblefellowship.com and inform them of
 the time the error occurred, and anything you might have done that may have caused the error.</p>
 
@@ -40,10 +46,11 @@ if(!$has_referrer && !$send_mail_if_no_referrer)
 	$should_send_mail = false;
 if($should_send_mail)
 {
-	$subject = '404 @ ' . $site_name . ': ' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-	$message = 'The following URL caused a 404 error on ' . $site_name . ':' . "\n\n" .
+	$subject = '500 @ ' . $site_name . ': ' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+	$message = 'The following URL caused a 500 error on ' . $site_name . ':' . "\n\n" .
 		'URL:      ' . 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . "\n" .
-		'Referrer: ' . $_SERVER['HTTP_REFERER'];
+		'Referrer: ' . $_SERVER['HTTP_REFERER'] . "\n" .
+		'Message:  ' . $_SERVER['REDIRECT_ERROR_NOTES'] . "\n";
 	$headers = 'From: ' . $src_email_address;
 
 	mail($dst_email_address, $subject, $message, $headers);
