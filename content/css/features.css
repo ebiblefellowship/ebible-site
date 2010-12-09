@@ -44,6 +44,10 @@
   margin-left: 3px;
 }
 
+.billboard img:hover.ribbon {
+  border: none;
+}
+
 .billboard img.flag {
   border:none;
   float: none;
