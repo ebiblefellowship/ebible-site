@@ -29,7 +29,7 @@
 .three-image-container {
   float: left;
   width: 31%;
-  margin-right: 15px;
+  margin: -3px 15px 0 0;
 }
 
 .billboard img {
@@ -53,7 +53,7 @@
 }
 
 .billboard img.three-image {
-  margin: 0px 0 5px 10px;   
+  margin: 0px 0 3px 10px;   
 }
 
 .billboard h1 { 
@@ -93,7 +93,8 @@
 
 .billboard h3.left { 
   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
-  color: #dACDB0;
+  font-weight: normal;
+  color: #dacdb0;
   margin: 0 0 0 20px;
   text-align: center;
 }
@@ -132,6 +133,7 @@
   color: #dACDB0;
 }
 
+/* Control Box Sprite */
 div#billboard-sprite-wrap {
   position: absolute;
   top: 405px;
@@ -199,3 +201,175 @@ li#back-button a:active {
 li#forward-button a:active {
   background-position: -44px -45px;
 }
+
+/* Continents Location Bar Sprite */
+.location-bar {
+  margin: -15px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.location-bar li {
+  padding: 0;
+  margin: 0 0 4px 0;
+  width: 202px;
+  height: 60px;
+  float: left;
+  background: transparent url(<%= images_url %>/location_bar.png) no-repeat;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */     
+  zoom: 1;
+}
+
+li.africa {
+  background-position: 0px 0;
+}
+
+li.africa-glow {
+  background-position: 0px -58px;
+}
+
+li.americas {
+  background-position: -202px 0px;
+}
+
+li.americas-glow {
+  background-position: -202px -58px;
+}
+
+li.asia {
+  background-position: -404px 0px;
+}
+
+li.asia-glow {
+  background-position: -404px -58px;
+}
+
+li.europe {
+  background-position: -606px 0px;
+}
+
+li.europe-glow {
+  background-position: -606px -58px;
+}
+
+li.oceania {
+  background-position: -808px 0px;
+}
+
+li.oceania-glow {
+  background-position: -808px -58px;
+}
+
+/* Billboard countries/flags sprite */
+.billboard-flags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 115px;
+  float: left;
+}
+
+.billboard-flags li {
+  display: block;
+  margin: 0 0 13px 0;
+  padding: 0;
+  width: 30px;
+  height: 18px;
+  background: url(<%= images_url %>/flags_sprite.png) no-repeat;
+}
+
+.billboard-flags p {
+  padding: 3px 0 0 40px;
+  white-space: nowrap;
+  color: #dacdb0;
+}
+
+#africa-sprite, #americas-sprite, #asia-sprite, #oceania-sprite {
+  margin: 0 0 10px 40px;
+  padding: 0;
+  float: left;
+  width: 230px;
+}
+
+#africa-sprite h2, #americas-sprite h2, #asia-sprite h2, #oceania-sprite h2 {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  color: #99ccff;
+  border-bottom: 1px solid #99ccff;
+}
+
+li#botswana {
+  background-position: 0 0px;
+}
+
+li#ethiopia {
+  background-position: -36px 0px;
+}
+
+li#ghana {
+  background-position: -72px 0px;
+}
+
+li#lesotho {
+  background-position: -108px 0px;
+}
+
+li#mozambique {
+  background-position: -144px 0px;
+}
+
+li#namibia {
+  background-position: -180px 0px;
+}
+
+li#nigeria {
+  background-position: -216px 0px;
+}
+
+li#swaziland {
+  background-position: -252px 0px;
+}
+
+li#tanzania {
+  background-position: -288px 0px;
+}
+
+li#dominican-republic {
+  background-position: 0px -27px;
+}
+
+li#guatemala {
+  background-position: -36px -27px;
+}
+
+li#jamaica {
+  background-position: -72px -27px;
+}
+
+li#puerto-rico {
+  background-position: -108px -27px;
+}
+
+li#usa {
+  background-position: -144px -27px;
+}
+
+li#india {
+  background-position: 0px -54px;
+}
+
+li#singapore {
+  background-position: -36px -54px;
+}
+
+li#indonesia {
+  background-position: 0px -81px;
+}
+
+li#samoa {
+  background-position: -36px -81px;
+}
+
