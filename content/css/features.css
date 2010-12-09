@@ -38,6 +38,12 @@
   float: left; 
 }
 
+.billboard img.ribbon {
+  border: none;
+  margin-top: -211px;
+  margin-left: 3px;
+}
+
 .billboard img.flag {
   border:none;
   float: none;
