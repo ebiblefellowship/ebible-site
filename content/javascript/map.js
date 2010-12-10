@@ -497,7 +497,7 @@
     addMarker(4, "Tamale, Ghana", 9.4075, -0.8533333, "/gallery/v/ghana_tamale_billboard/", "/gallery/d/1046-2/Picture+2672.jpg", 150, 113);
     addMarker(4, "Sunyani, Ghana", 7.3333333, -2.3333333, "/gallery/v/ghana_sunyani_billboard/", "/gallery/d/1070-2/IMG_0965.jpg", 150, 113);
     addMarker(4, "Kumasi, Ghana", 6.6873, -1.5950, "/gallery/v/ghana_kumasi_jd_billboard/", "/gallery/d/1015-2/IMG_0452.jpg", 150, 113);
-    addMarker(4, "Ibadan, Nigeria", 7.3963889, 3.9166667, "/gallery/v/nigeria_billboards/", "/gallery/v/nigeria_billboards/Ibadan-Oyo-IITA+1.jpg", 150, 113);
+    addMarker(4, "Ibadan, Nigeria", 7.3963889, 3.9166667, "/gallery/v/nigeria_billboards/", "/gallery/d/1439-2/Ibadan-Oyo-IITA+1.jpg", 150, 113);
     addMarker(4, "Abuja, Nigeria", 9.058036, 7.489061, "/gallery/v/nigeria_billboards/", "/gallery/d/1700-2/SANY0036.JPG", 150, 113);
     addMarker(4, "Abeokuta, Nigeria", 7.1688084, 3.3602714, "/gallery/v/nigeria_billboards/", "/gallery/d/1685-2/lagos-abeokuta-Sagamu+rd_7_.jpg", 150, 113);
     addMarker(4, "Port Harcourt, Nigeria", 4.7891667, 6.9986111, "/gallery/v/nigeria_billboards/");
