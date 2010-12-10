@@ -45,6 +45,7 @@
     controlText.style.paddingBottom = '5px';
     controlText.innerHTML = '<img src="http://maps.google.com/mapfiles/marker_purple.png" width="20" height="34" alt="Purple Marker" style="vertical-align: middle;"> New Item<br>'+
                             '<img src="http://maps.google.com/mapfiles/marker_green.png" width="20" height="34" alt="Green Marker" style="vertical-align: middle;"> Billboard<br>'+
+                            '<img src="http://maps.google.com/mapfiles/marker_yellow.png" width="20" height="34" alt="Yellow Marker" style="vertical-align: middle;"> Print Ad<br>'+
                             '<img src="http://maps.google.com/mapfiles/marker.png" width="20" height="34" alt="Red Marker" style="vertical-align: middle;"> Tract Trip<br>'+
                             '<img src="<%= images_url %>/radio-station.png" width="17" height="19" alt="Dark Blue Small Marker" style="vertical-align: middle;"> Radio Station<br>'+
                             '<img src="<%= images_url %>/radio-translator.png" width="17" height="19" alt="Light Blue Small Marker" style="vertical-align: middle;"> Radio Translator<br>'+
@@ -485,6 +486,7 @@
     addMarker(3, "Cozumel, Mexico", 20.4380, -86.9067, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(3, "Belize City, Belize", 17.5014, -88.1866, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(3, "Grand Cayman Island", 19.3304, -81.2405, null, null, null, null, "Tract Trip<br>November 2010");
+    addMarker(6, "Dakar, Senegal", 14.782, -17.335, null, null, null, null, "Family Radio Tract Trip<br>December 2010");    
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -495,7 +497,7 @@
     addMarker(4, "Tamale, Ghana", 9.4075, -0.8533333, "/gallery/v/ghana_tamale_billboard/", "/gallery/d/1046-2/Picture+2672.jpg", 150, 113);
     addMarker(4, "Sunyani, Ghana", 7.3333333, -2.3333333, "/gallery/v/ghana_sunyani_billboard/", "/gallery/d/1070-2/IMG_0965.jpg", 150, 113);
     addMarker(4, "Kumasi, Ghana", 6.6873, -1.5950, "/gallery/v/ghana_kumasi_jd_billboard/", "/gallery/d/1015-2/IMG_0452.jpg", 150, 113);
-    addMarker(4, "Ibadan, Nigeria", 7.3963889, 3.9166667, "/gallery/v/nigeria_billboards/", "/gallery/v/nigeria_billboards/Ibadan-Oyo-IITA+1.jpg.html", 150, 113);
+    addMarker(4, "Ibadan, Nigeria", 7.3963889, 3.9166667, "/gallery/v/nigeria_billboards/", "/gallery/v/nigeria_billboards/Ibadan-Oyo-IITA+1.jpg", 150, 113);
     addMarker(4, "Abuja, Nigeria", 9.058036, 7.489061, "/gallery/v/nigeria_billboards/", "/gallery/d/1700-2/SANY0036.JPG", 150, 113);
     addMarker(4, "Abeokuta, Nigeria", 7.1688084, 3.3602714, "/gallery/v/nigeria_billboards/", "/gallery/d/1685-2/lagos-abeokuta-Sagamu+rd_7_.jpg", 150, 113);
     addMarker(4, "Port Harcourt, Nigeria", 4.7891667, 6.9986111, "/gallery/v/nigeria_billboards/");
@@ -607,13 +609,20 @@
     addMarker(4, "Windhoek, Namibia", -22.55354, 17.07966, "/gallery/v/namibia_billboards/", "/gallery/d/2436-2/namibia-windhoek-hosea-kutako-drive-2.jpg", 150, 112);
     addMarker(4, "Bridgeton, New Jersey", 39.4488, -75.2751, null, "<%= images_url %>/bridgeton-nj-route-49-tn.jpg", 150, 113);
     addMarker(4, "Vineland, New Jersey", 39.50184, -75.01038, null, "<%= images_url %>/vineland-nj-oak-rd-tn.jpg", 150, 113);
-    addMarker(5, "Nashville, Tennessee", 36.16195, -86.79176, null, "<%= images_url %>/nashville-tn.jpg", 150, 92, "40 Billboards");
-    addMarker(5, "Apia, Samoa", -13.83098, -171.77279, "/gallery/v/samoa_billboards/", "/gallery/d/2459-2/SamoaLocation1.jpg", 150, 94, "Billboard");
-    addMarker(5, "Apia, Samoa", -13.83182, -171.76637, "/gallery/v/samoa_billboards/", "/gallery/d/2463-2/SamoaLocation2.jpg", 150, 106, "Billboard");
-    addMarker(5, "Apia, Samoa", -13.8369, -171.7611, "/gallery/v/samoa_billboards/", "/gallery/d/2466-2/SamoaLocation3.jpg", 150, 129, "Billboard");
-    addMarker(5, "Kumasi, Ghana", 6.70425, -1.61171, "/gallery/v/ghana_new_billboards/", "/gallery/d/2479-2/Kumasi1.jpg", 150, 113, "Billboard");
-    addMarker(5, "Tema, Ghana", 5.6558, -0.0016, "/gallery/v/ghana_new_billboards/", "/gallery/d/2492-2/TEMA-rana+motors+rdabt.jpg", 150, 113, "Billboard");
-    addMarker(5, "Takoradi, Ghana", 4.8919, -1.7525, "/gallery/v/ghana_new_billboards/", "/gallery/d/2489-2/Takoradi2.jpg", 150, 113, "Billboard");
+    addMarker(4, "Nashville, Tennessee", 36.16195, -86.79176, null, "<%= images_url %>/nashville-tn.jpg", 150, 92, "40 Billboards");
+    addMarker(4, "Apia, Samoa", -13.83098, -171.77279, "/gallery/v/samoa_billboards/", "/gallery/d/2459-2/SamoaLocation1.jpg", 150, 94);
+    addMarker(4, "Apia, Samoa", -13.83182, -171.76637, "/gallery/v/samoa_billboards/", "/gallery/d/2463-2/SamoaLocation2.jpg", 150, 106);
+    addMarker(4, "Apia, Samoa", -13.8369, -171.7611, "/gallery/v/samoa_billboards/", "/gallery/d/2466-2/SamoaLocation3.jpg", 150, 129);
+    addMarker(4, "Kumasi, Ghana", 6.70425, -1.61171, "/gallery/v/ghana_new_billboards/", "/gallery/d/2479-2/Kumasi1.jpg", 150, 113);
+    addMarker(4, "Tema, Ghana", 5.6558, -0.0016, "/gallery/v/ghana_new_billboards/", "/gallery/d/2492-2/TEMA-rana+motors+rdabt.jpg", 150, 113);
+    addMarker(4, "Takoradi, Ghana", 4.8919, -1.7525, "/gallery/v/ghana_new_billboards/", "/gallery/d/2489-2/Takoradi2.jpg", 150, 113);
+    addMarker(6, "Ho, Ghana", 6.6015, 0.4714, "/gallery/v/ghana_new_billboards/", "/gallery/d/2507-2/Ho2.jpg", 150, 113, "Billboard");
+    addMarker(6, "Ashaiman, Ghana", 5.69415, -0.03267, "/gallery/v/ghana_new_billboards/", "/gallery/d/2513-2/Ashaiman2.jpg", 150, 113, "Billboard");
+    
+    // add print ad markers (ads in newspapers, magazines, etc.)
+    addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
+    addMarker(6, "Nunavut Territory, Canada", 70.65, -83.15, null, null, null, null, "Ads in 5 Community Newspapers<br>Covering Various Parts of the Territory");
+    addMarker(6, "Northern Area of Minnesota", 48.175, -94.709, null, null, null, null, "Ads in 81 Newspapers<br>Covering the Northern Half of the State<br>Week of December 12th");
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("<%= base_url %>/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
@@ -652,6 +661,10 @@
         icon = 'http://maps.google.com/mapfiles/marker_green.png';
         break;      
       case 5:
+        if (title == null) title = "Print Ad";
+        icon = 'http://maps.google.com/mapfiles/marker_yellow.png';
+        break;
+      case 6:
         if (title == null) title = "New Item";
         icon = 'http://maps.google.com/mapfiles/marker_purple.png';
         break;
