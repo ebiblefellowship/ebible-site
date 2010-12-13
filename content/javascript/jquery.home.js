@@ -28,6 +28,7 @@
     
     $("#first-pub").hide();
     items[pubIndex] = $(".pub");
+    currentIndex[pubIndex] = Math.floor((Math.random()%1) * items[pubIndex].length);
     display[pubIndex] = $("#pub-display");
     display[pubIndex].html($(items[pubIndex][currentIndex[pubIndex]]).html());
     $("#back-arrow").bind('click', function(){
