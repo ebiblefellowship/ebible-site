@@ -121,7 +121,7 @@
 }
 
 .billboard ul {
-  text-align: center; 
+  text-align: left; 
 }
 
 .billboard li {
@@ -297,7 +297,7 @@ li.oceania-glow {
 }
 
 #africa-sprite, #americas-sprite, #asia-sprite, #oceania-sprite {
-  margin: 0 0 10px 40px;
+  margin: 0px 0px 0px 40px;
   padding: 0;
   float: left;
   width: 230px;
@@ -307,6 +307,7 @@ li.oceania-glow {
   text-align: left;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 15px;
   color: #99ccff;
   border-bottom: 1px solid #99ccff;
 }
