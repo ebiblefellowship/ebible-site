@@ -4,18 +4,21 @@
     // enlarge the width of the map canvas if possible
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;    
     if (viewportWidth > 1000) {
-      var mapCanvas = $("#map_canvas");
+      var mapCanvas = $("#map-canvas-and-disclaimer");
       var offsetTop = mapCanvas.offset().top;
       mapCanvas.wrap('<div id="map-container" />');
       mapCanvas.before('<div id="map-corner-top"><div></div></div>').after('<div id="map-corner-bottom"><div></div></div>');
       var mapContainer = $("#map-container");
-      mapContainer.before("<div style='height: 1px;'>&nbsp;</div>");      
+      var spacerDiv = "<div style='font-size: 1px; margin-top: 0px; margin-bottom: 0px;'>&nbsp;</div>";
+      mapContainer.before(spacerDiv);      
       mapContainer.css({ position: "absolute", marginLeft: 0, marginTop: 0 });
       mapContainer.remove().appendTo("body");    
       mapContainer.css({ top: offsetTop, left: 0, marginLeft: "2.5%" });    
       $("#footer-border-mid").hide();
       $("#shadow-bottom").hide();
-      $("#bottom-links").remove().appendTo("#map-container").after("<div style='font-size: 1px;'>&nbsp;</div>").css({ marginTop: "16px" });
+      $("#map-disclaimer").after(spacerDiv).css({ marginBottom: "25px" });
+      $("#map-corner-bottom").css({ marginTop: "-20px" });
+      $("#bottom-links").remove().appendTo("#map-container").after(spacerDiv).css({ marginTop: "16px" });
     }
     
     // create map    
@@ -25,7 +28,7 @@
       mapTypeControl: false,      
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);        
+    map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);        
     
     // add legend
     var controlDiv = document.createElement('DIV');
@@ -486,7 +489,9 @@
     addMarker(3, "Cozumel, Mexico", 20.4380, -86.9067, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(3, "Belize City, Belize", 17.5014, -88.1866, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(3, "Grand Cayman Island", 19.3304, -81.2405, null, null, null, null, "Tract Trip<br>November 2010");
-    addMarker(6, "Dakar, Senegal", 14.782, -17.335, null, null, null, null, "Family Radio Tract Trip<br>December 2010");    
+    addMarker(3, "Dakar, Senegal", 14.782, -17.335, "/gallery/v/senegal_tract_trip/", "/gallery/d/2545-2/photo-2.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
+    addMarker(6, "Port-au-Prince, Haiti", 18.5458, -72.3361, "/gallery/v/haiti_tract_trip/", "/gallery/d/2536-2/photo-3.jpg", 150, 113, "Tract Trip<br>December 2010");
+    addMarker(6, "Managua, Nicaragua", 12.1408, -86.2518, null, null, null, null, "Tract Trip<br>December 2010");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -602,6 +607,10 @@
     addMarker(4, "Guwahati, India", 26.18206, 91.74909, "/gallery/v/india_billboards/Guwahati/", "/gallery/d/2350-2/Srbatti_Opp+Cancer+Hospital++20x10_Guwahati.jpg", 150, 113);
     addMarker(4, "Amritsar, Punjab, India", 31.6346, 74.8716, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2308-2/Realto+Chk_Amritsar.jpg", 150, 99);
     addMarker(4, "Jagraon Bridge, Ludhiana, Punjab, India", 30.90680, 75.84677, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2312-2/Jagraon+Bridge+Ludhiana__.JPG", 150, 113);
+    addMarker(6, "Bahadurganj, Shahjahanpur, Uttar Pradesh, India", 27.88463, 79.91341, "/gallery/v/india_billboards/Shahjahanpur/", "/gallery/d/2471-2/Bahadurganj_+Shahjahanpur_+UP.JPG", 150, 100, "Billboard");
+    addMarker(6, "Town Hall, Shahjahanpur, Uttar Pradesh, India", 27.88856, 79.91090, "/gallery/v/india_billboards/Shahjahanpur/", "/gallery/d/2475-2/Town+Hall_+Shahjahanpur_+UP.JPG", 150, 100, "Billboard");
+    addMarker(6, "Shuklaganj, Uttar Pradesh, India", 26.48203, 80.38910, "/gallery/v/india_billboards/Shuklaganj/", "/gallery/d/2518-2/Shuklaganj+Crossing_+Shuklaganj.jpg", 150, 99, "Billboard");
+    addMarker(6, "Unnao, Uttar Pradesh, India", 26.55017, 80.4846, "/gallery/v/india_billboards/Unnao/", "/gallery/d/2523-2/Taxi+Stand_+Unnao.jpg", 150, 98, "Billboard");
     addMarker(4, "Gaborone, Botswana", -24.66600, 25.91751, "/gallery/v/botswana_billboards/", "/gallery/d/2417-2/botswana-gaborone-kaunda-road.jpg", 150, 111);
     addMarker(4, "Gaborone, Botswana", -24.6773, 25.9064, "/gallery/v/botswana_billboards/", "/gallery/d/2420-2/botswana-gaborone-old-lobatse-road.jpg", 150, 111);
     addMarker(4, "Gaborone, Botswana", -24.62869, 25.93369, "/gallery/v/botswana_billboards/", "/gallery/d/2422-2/botswana-gaborone-top-boipuso-park.jpg", 150, 111);
@@ -616,13 +625,13 @@
     addMarker(4, "Kumasi, Ghana", 6.70425, -1.61171, "/gallery/v/ghana_new_billboards/", "/gallery/d/2479-2/Kumasi1.jpg", 150, 113);
     addMarker(4, "Tema, Ghana", 5.6558, -0.0016, "/gallery/v/ghana_new_billboards/", "/gallery/d/2492-2/TEMA-rana+motors+rdabt.jpg", 150, 113);
     addMarker(4, "Takoradi, Ghana", 4.8919, -1.7525, "/gallery/v/ghana_new_billboards/", "/gallery/d/2489-2/Takoradi2.jpg", 150, 113);
-    addMarker(6, "Ho, Ghana", 6.6015, 0.4714, "/gallery/v/ghana_new_billboards/", "/gallery/d/2507-2/Ho2.jpg", 150, 113, "Billboard");
-    addMarker(6, "Ashaiman, Ghana", 5.69415, -0.03267, "/gallery/v/ghana_new_billboards/", "/gallery/d/2513-2/Ashaiman2.jpg", 150, 113, "Billboard");
+    addMarker(4, "Ho, Ghana", 6.6015, 0.4714, "/gallery/v/ghana_new_billboards/", "/gallery/d/2507-2/Ho2.jpg", 150, 113);
+    addMarker(4, "Ashaiman, Ghana", 5.69415, -0.03267, "/gallery/v/ghana_new_billboards/", "/gallery/d/2513-2/Ashaiman2.jpg", 150, 113);
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
-    addMarker(6, "Nunavut Territory, Canada", 70.65, -83.15, null, null, null, null, "Ads in 5 Community Newspapers<br>Covering Various Parts of the Territory");
-    addMarker(6, "Northern Area of Minnesota", 48.175, -94.709, null, null, null, null, "Ads in 81 Newspapers<br>Covering the Northern Half of the State<br>Week of December 12th");
+    addMarker(5, "Nunavut Territory, Canada", 70.65, -83.15, null, null, null, null, "Ads in 5 Community Newspapers<br>Covering Various Parts of the Territory");
+    addMarker(5, "Northern Area of Minnesota", 48.175, -94.709, null, null, null, null, "Ads in 81 Newspapers<br>Covering the Northern Half of the State<br>Week of December 12th");
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("<%= base_url %>/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      

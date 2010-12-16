@@ -701,9 +701,17 @@ p.menu-desc {
   height: 640px;  
 }
 
-#map_canvas { 
+#map-canvas-and-disclaimer {   
+  background-color: #FFFFFF;
+}
+
+#map-canvas { 
   height: 600px; 
   margin: 0 20px;
+}
+
+#map-disclaimer {  
+  margin-top: 16px;  
 }
 
 .schedule {
