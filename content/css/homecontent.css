@@ -17,22 +17,28 @@
 }
 
 #news {  
-  padding-left: 20px 
+  padding-left: 1.5em;
+  padding-right: 1em;
 }
 
-#news img { 
-  padding-top: 10px; 
+#news .item {
+  width: 100%;
+  overflow: auto;  /* clear floats */
+  margin-bottom: 1em;
+}
+
+#news .graphic {
+  float: right;
+  margin-left: 1em;
 }
 
 #news h3 {  
   color: #006699;
-  margin-left: 0; 
+  margin-left: 0;
 }
 
 #news p { 
-  margin-right: 20px; 
   margin: 0; 
-  padding-right: 15px; 
 }
 
 /* Publications Section: Right Sidebar */
