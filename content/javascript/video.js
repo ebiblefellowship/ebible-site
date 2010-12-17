@@ -3,9 +3,10 @@
     {path: 'album/',id: '1472823', page: '1'}, 
     {path: '', id: 'ebible', page: '1', excludeTag: 'TFTB'}, 
     {path: '', id: 'ebible', page: '2', excludeTag: 'TFTB'}, 
-    {path: '', id: 'ebible', page: '3', excludeTag: 'TFTB'}, 
+    {path: '', id: 'ebible', page: '3', excludeTag: 'TFTB'},     
     {path: '', id: 'bmi', page: '1', excludeTag: ''}, 
-    {path: '', id: 'bmi', page: '2', excludeTag: ''}
+    {path: '', id: 'bmi', page: '2', excludeTag: ''},
+    {path: '', id: 'bmi', page: '3', excludeTag: ''}
   ]        
   var fullNames = new Array();
   fullNames['1472823'] = 'Thought From The Bible';

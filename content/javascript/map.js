@@ -490,8 +490,8 @@
     addMarker(3, "Belize City, Belize", 17.5014, -88.1866, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(3, "Grand Cayman Island", 19.3304, -81.2405, null, null, null, null, "Tract Trip<br>November 2010");
     addMarker(3, "Dakar, Senegal", 14.782, -17.335, "/gallery/v/senegal_tract_trip/", "/gallery/d/2545-2/photo-2.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
-    addMarker(6, "Port-au-Prince, Haiti", 18.5458, -72.3361, "/gallery/v/haiti_tract_trip/", "/gallery/d/2536-2/photo-3.jpg", 150, 113, "Tract Trip<br>December 2010");
-    addMarker(6, "Managua, Nicaragua", 12.1408, -86.2518, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(3, "Port-au-Prince, Haiti", 18.5458, -72.3361, "/gallery/v/haiti_tract_trip/", "/gallery/d/2536-2/photo-3.jpg", 150, 113, "Tract Trip<br>December 2010");
+    addMarker(3, "Managua, Nicaragua", 12.1408, -86.2518, "/videos/?type=yt&video=kVEn_1_i8lw", "<%= images_url %>/nicaragua-video-tn.jpg", 120, 90, "Tract Trip<br>December 2010");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -607,10 +607,10 @@
     addMarker(4, "Guwahati, India", 26.18206, 91.74909, "/gallery/v/india_billboards/Guwahati/", "/gallery/d/2350-2/Srbatti_Opp+Cancer+Hospital++20x10_Guwahati.jpg", 150, 113);
     addMarker(4, "Amritsar, Punjab, India", 31.6346, 74.8716, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2308-2/Realto+Chk_Amritsar.jpg", 150, 99);
     addMarker(4, "Jagraon Bridge, Ludhiana, Punjab, India", 30.90680, 75.84677, "/gallery/v/india_billboards/Punjab/", "/gallery/d/2312-2/Jagraon+Bridge+Ludhiana__.JPG", 150, 113);
-    addMarker(6, "Bahadurganj, Shahjahanpur, Uttar Pradesh, India", 27.88463, 79.91341, "/gallery/v/india_billboards/Shahjahanpur/", "/gallery/d/2471-2/Bahadurganj_+Shahjahanpur_+UP.JPG", 150, 100, "Billboard");
-    addMarker(6, "Town Hall, Shahjahanpur, Uttar Pradesh, India", 27.88856, 79.91090, "/gallery/v/india_billboards/Shahjahanpur/", "/gallery/d/2475-2/Town+Hall_+Shahjahanpur_+UP.JPG", 150, 100, "Billboard");
-    addMarker(6, "Shuklaganj, Uttar Pradesh, India", 26.48203, 80.38910, "/gallery/v/india_billboards/Shuklaganj/", "/gallery/d/2518-2/Shuklaganj+Crossing_+Shuklaganj.jpg", 150, 99, "Billboard");
-    addMarker(6, "Unnao, Uttar Pradesh, India", 26.55017, 80.4846, "/gallery/v/india_billboards/Unnao/", "/gallery/d/2523-2/Taxi+Stand_+Unnao.jpg", 150, 98, "Billboard");
+    addMarker(4, "Bahadurganj, Shahjahanpur, Uttar Pradesh, India", 27.88463, 79.91341, "/gallery/v/india_billboards/Shahjahanpur/", "/gallery/d/2471-2/Bahadurganj_+Shahjahanpur_+UP.JPG", 150, 100);
+    addMarker(4, "Town Hall, Shahjahanpur, Uttar Pradesh, India", 27.88856, 79.91090, "/gallery/v/india_billboards/Shahjahanpur/", "/gallery/d/2475-2/Town+Hall_+Shahjahanpur_+UP.JPG", 150, 100);
+    addMarker(4, "Shuklaganj, Uttar Pradesh, India", 26.48203, 80.38910, "/gallery/v/india_billboards/Shuklaganj/", "/gallery/d/2518-2/Shuklaganj+Crossing_+Shuklaganj.jpg", 150, 99);
+    addMarker(4, "Unnao, Uttar Pradesh, India", 26.55017, 80.4846, "/gallery/v/india_billboards/Unnao/", "/gallery/d/2523-2/Taxi+Stand_+Unnao.jpg", 150, 98);
     addMarker(4, "Gaborone, Botswana", -24.66600, 25.91751, "/gallery/v/botswana_billboards/", "/gallery/d/2417-2/botswana-gaborone-kaunda-road.jpg", 150, 111);
     addMarker(4, "Gaborone, Botswana", -24.6773, 25.9064, "/gallery/v/botswana_billboards/", "/gallery/d/2420-2/botswana-gaborone-old-lobatse-road.jpg", 150, 111);
     addMarker(4, "Gaborone, Botswana", -24.62869, 25.93369, "/gallery/v/botswana_billboards/", "/gallery/d/2422-2/botswana-gaborone-top-boipuso-park.jpg", 150, 111);
@@ -627,6 +627,8 @@
     addMarker(4, "Takoradi, Ghana", 4.8919, -1.7525, "/gallery/v/ghana_new_billboards/", "/gallery/d/2489-2/Takoradi2.jpg", 150, 113);
     addMarker(4, "Ho, Ghana", 6.6015, 0.4714, "/gallery/v/ghana_new_billboards/", "/gallery/d/2507-2/Ho2.jpg", 150, 113);
     addMarker(4, "Ashaiman, Ghana", 5.69415, -0.03267, "/gallery/v/ghana_new_billboards/", "/gallery/d/2513-2/Ashaiman2.jpg", 150, 113);
+    addMarker(6, "Eminönü, Istanbul, Turkey", 41.01793, 28.97322, "/gallery/v/turkey_billboards/", "/gallery/d/2497-2/CX+050+_Large_.JPG", 150, 113, "Billboard");
+    addMarker(6, "Beşiktaş, Istanbul, Turkey", 41.0718, 29.0283, "/gallery/v/turkey_billboards/", "/gallery/d/2501-2/IX+056+_Large_.JPG", 150, 113, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
@@ -687,12 +689,12 @@
       scheduleContent += '<\/table>';
     }
     var locationContent = '<p style="text-align: center; margin: 0px 0px 0.5em;">Location: ';
-    if (link != null) locationContent += '<a href="'+link+'"><b>'+location+'<\/b><\/a><\/p>';
+    if (link != null) locationContent += '<a href="'+link+'" target="_blank"><b>'+location+'<\/b><\/a><\/p>';
     else locationContent += '<b>'+location+'<\/b><\/p>';    
     var imgContent = "";
     if (imgPath != null) {
       imgContent = '<img src="'+imgPath+'" width="'+imgWidth+'" height="'+imgHeight+'" alt="Photo">';
-      if (link != null) imgContent = '<a href="'+link+'">'+imgContent+'<\/a>';
+      if (link != null) imgContent = '<a href="'+link+'" target="_blank">'+imgContent+'<\/a>';
     }    
     var contentString = '<div style="text-align: center; overflow: hidden;"><p style="text-align: center; margin: 0px 0px 0.5em;"><b>'+title+'<\/b><\/p>'+locationContent+imgContent+scheduleContent+'<\/div>';
     var marker = new google.maps.Marker({
