@@ -19,6 +19,7 @@
 #news {  
   padding-left: 1.5em;
   padding-right: 1em;
+  float: left;
 }
 
 #news .item {
@@ -35,6 +36,7 @@
 #news h3 {  
   color: #006699;
   margin-left: 0;
+  margin-top: 16px;
 }
 
 #news p { 
