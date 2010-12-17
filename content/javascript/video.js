@@ -46,8 +46,8 @@
     // expand or collapse section when + or - is clicked      
     if (active[userName]) return;   
     active[userName] = true;
-    var img = $('#plus-icon-'+userName+'>span>img');            
-    img.attr('src', (img.attr("src").toLowerCase() == '/assets/images/plus-icon.jpg') ? '/assets/images/minus-icon.jpg' : '/assets/images/plus-icon.jpg');
+    var img = $('#plus-icon-'+userName+'>span>img');
+    img.attr('src', (img.attr('src').toLowerCase().indexOf('plus-icon.jpg') != -1) ? '/assets/images/minus-icon.jpg' : '/assets/images/plus-icon.jpg');    
     var p = $('#plus-icon-'+userName+'>p');            
     p.html((p.html().toLowerCase() == 'view<br>all') ? 'hide' : 'view<br>all');
     var div = $('#contentbar-mid-'+userName);
@@ -139,17 +139,17 @@
     }
   }
 
-  var lastId = '';
+  //var lastId = '';
   function loadYouTubeVideo(id, title) {		
     var player = $('#video-player');
     if (queryVideo) { player.insertAfter(player.next()); queryVideo = false; }
-    if (lastId != id) {
-      lastId = id;
+    //if (lastId != id) {
+      //lastId = id;
       // load the new video			
       var url = 'http://www.youtube.com/v/'+id;          
       if (typeof title == 'undefined') title = $('#'+id+'>div>a').text();          
       player.html($('<h4 class="youtube-title">'+title+'<\/h4><object width="510" height="420"><param name="movie" value="'+url+'"><param name="autoplay" value="1"><param name="wmode" value="transparent"><embed src="'+url+'&autoplay=1" type="application/x-shockwave-flash" wmode="transparent" width="510" height="420"><\/embed><\/object>'));			
-    }		
+    //}		
     // scroll the player into view
     player[0].scrollIntoView();
   }
