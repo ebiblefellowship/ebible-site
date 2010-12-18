@@ -489,9 +489,10 @@
     addMarker(3, "Cozumel, Mexico", 20.4380, -86.9067, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(3, "Belize City, Belize", 17.5014, -88.1866, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(3, "Grand Cayman Island", 19.3304, -81.2405, null, null, null, null, "Tract Trip<br>November 2010");
-    addMarker(3, "Dakar, Senegal", 14.782, -17.335, "/gallery/v/senegal_tract_trip/", "/gallery/d/2545-2/photo-2.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
+    addMarker(3, "Dakar, Senegal", 14.782, -17.335, "/gallery/v/project_jonah/senegal_tract_trip/", "/gallery/d/2545-2/photo-2.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
     addMarker(3, "Port-au-Prince, Haiti", 18.5458, -72.3361, "/gallery/v/haiti_tract_trip/", "/gallery/d/2536-2/photo-3.jpg", 150, 113, "Tract Trip<br>December 2010");
     addMarker(3, "Managua, Nicaragua", 12.1408, -86.2518, "/videos/?type=yt&video=kVEn_1_i8lw", "<%= images_url %>/nicaragua-video-tn.jpg", 120, 90, "Tract Trip<br>December 2010");
+    addMarker(6, "Cameroon", 5.36, 12.24, "/gallery/v/project_jonah/cameroon_tract_trip/", "/gallery/d/2565-2/crowd.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -627,9 +628,11 @@
     addMarker(4, "Takoradi, Ghana", 4.8919, -1.7525, "/gallery/v/ghana_new_billboards/", "/gallery/d/2489-2/Takoradi2.jpg", 150, 113);
     addMarker(4, "Ho, Ghana", 6.6015, 0.4714, "/gallery/v/ghana_new_billboards/", "/gallery/d/2507-2/Ho2.jpg", 150, 113);
     addMarker(4, "Ashaiman, Ghana", 5.69415, -0.03267, "/gallery/v/ghana_new_billboards/", "/gallery/d/2513-2/Ashaiman2.jpg", 150, 113);
-    addMarker(6, "Eminönü, Istanbul, Turkey", 41.01793, 28.97322, "/gallery/v/turkey_billboards/", "/gallery/d/2497-2/CX+050+_Large_.JPG", 150, 113, "Billboard");
-    addMarker(6, "Beşiktaş, Istanbul, Turkey", 41.0718, 29.0283, "/gallery/v/turkey_billboards/", "/gallery/d/2501-2/IX+056+_Large_.JPG", 150, 113, "Billboard");
-    
+    addMarker(6, "Koforidua, Ghana", 6.0918, -0.2630, "/gallery/v/ghana_new_billboards/", "/gallery/d/2571-2/Koforidua1.jpg", 150, 113, "Billboard");
+    addMarker(4, "Eminönü, Istanbul, Turkey", 41.01793, 28.97322, "/gallery/v/turkey_billboards/", "/gallery/d/2497-2/CX+050+_Large_.JPG", 150, 113);
+    addMarker(4, "Beşiktaş, Istanbul, Turkey", 41.0718, 29.0283, "/gallery/v/turkey_billboards/", "/gallery/d/2501-2/IX+056+_Large_.JPG", 150, 113);    
+    addMarker(6, "Lusaka, Zambia", -15.40505, 28.29977, "/gallery/v/zambia_billboards/", "/gallery/d/2579-2/Lusaka.jpg", 150, 113, "Billboard");
+        
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
     addMarker(5, "Nunavut Territory, Canada", 70.65, -83.15, null, null, null, null, "Ads in 5 Community Newspapers<br>Covering Various Parts of the Territory");
