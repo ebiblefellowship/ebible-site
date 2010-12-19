@@ -25,18 +25,20 @@
 #news .item {
   width: 100%;
   overflow: auto;  /* clear floats */
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
 #news .graphic {
   float: right;
+  width: 150px;  /* Gallery thumbnail default */
   margin-left: 1em;
 }
 
 #news h3 {  
   color: #006699;
   margin-left: 0;
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 #news p { 
