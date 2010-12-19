@@ -21,6 +21,9 @@
 require 'compass'
 Compass.add_project_configuration('config.rb')
 
+# List of extensions that are mapped to a subdirectory with index.html
+mapped_extensions = %w[ html md ]
+
 # The preprocess block is used to generate dynamic pages, like archives,
 # tag pages and meta-pages that are simple to generate, like the sitemap
 # or feed.
@@ -53,6 +56,11 @@ preprocess do
       # Set category unless already defined
       # /studies/bc2/2010.11.14.../ => studies.bc2
       i[:category] = i.identifier.split('/')[1..-2].join('.') unless i[:category]
+      # Extract slug for news items so routing can be shared
+      if i.identifier =~ %r{^/news/.+} and i[:slug].nil?
+        # Extract basename from identifier and strip any date from the front
+        i[:slug] = i.identifier.split('/').last.sub(/^\d\d\d\d\.\d\d\.\d\d[_-]/,'')
+      end
       #puts '==========='
       #puts i.identifier
       #puts YAML.dump i.attributes
@@ -128,27 +136,18 @@ compile '/free*/*' do
 end
 
 compile '*' do
-  keep_file_raw = item[:extension] != 'html'
-  filter :erb unless keep_file_raw
+  # Flag to perform filtering if extension is html or md, 
+  perform_filtering = mapped_extensions.include?(item[:extension])
+  filter :erb if perform_filtering
 
-  # TODO: we don't use any of these formats so strip out what we don't use
   case item[:extension]
-  when 'textile' then
-    filter :redcloth
+  when 'md' then
+    filter :kramdown, :auto_ids => false
   when 'haml' then
     filter :haml
-  when 'bbcode' then
-    filter :bbcode
   end
 
-  case item[:markdown]
-  when 'advanced'
-    filter :kramdown, :auto_ids => false
-  when 'basic'
-    filter :rdiscount
-  end
-
-  unless keep_file_raw
+  if perform_filtering
     layout '/default/'
     ##filter :relativize_paths, :type => :html unless item[:is_partial] || item[:kind] == 'article'
   end
@@ -202,9 +201,9 @@ end
 
 route '*' do
   # does this work?
-  if item.binary? or item[:extension] != 'html'
+  if item.binary? or !mapped_extensions.include?(item[:extension])
     item.identifier.chop + '.' + item[:extension]
-  elsif item[:is_partial] || item[:kind] == 'article'
+  elsif item[:is_partial] # || item[:kind] == 'article' # why this check?
     nil  # Don’t output partial items (e.g. sub-stylesheets)
   elsif item.identifier =~ %r{\d\d\d\d\.\d\d\.\d\d} and item[:slug]
     "/archives/#{item[:created_at].tr('-','/')}/#{item[:slug]}/index.html"
