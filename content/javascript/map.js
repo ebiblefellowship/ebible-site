@@ -492,7 +492,7 @@
     addMarker(3, "Dakar, Senegal", 14.782, -17.335, "/gallery/v/project_jonah/senegal_tract_trip/", "/gallery/d/2545-2/photo-2.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
     addMarker(3, "Port-au-Prince, Haiti", 18.5458, -72.3361, "/gallery/v/haiti_tract_trip/", "/gallery/d/2536-2/photo-3.jpg", 150, 113, "Tract Trip<br>December 2010");
     addMarker(3, "Managua, Nicaragua", 12.1408, -86.2518, "/videos/?type=yt&video=kVEn_1_i8lw", "<%= images_url %>/nicaragua-video-tn.jpg", 120, 90, "Tract Trip<br>December 2010");
-    addMarker(6, "Cameroon", 5.36, 12.24, "/gallery/v/project_jonah/cameroon_tract_trip/", "/gallery/d/2565-2/crowd.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
+    addMarker(3, "Cameroon", 5.36, 12.24, "/gallery/v/project_jonah/cameroon_tract_trip/", "/gallery/d/2565-2/crowd.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -628,10 +628,19 @@
     addMarker(4, "Takoradi, Ghana", 4.8919, -1.7525, "/gallery/v/ghana_new_billboards/", "/gallery/d/2489-2/Takoradi2.jpg", 150, 113);
     addMarker(4, "Ho, Ghana", 6.6015, 0.4714, "/gallery/v/ghana_new_billboards/", "/gallery/d/2507-2/Ho2.jpg", 150, 113);
     addMarker(4, "Ashaiman, Ghana", 5.69415, -0.03267, "/gallery/v/ghana_new_billboards/", "/gallery/d/2513-2/Ashaiman2.jpg", 150, 113);
-    addMarker(6, "Koforidua, Ghana", 6.0918, -0.2630, "/gallery/v/ghana_new_billboards/", "/gallery/d/2571-2/Koforidua1.jpg", 150, 113, "Billboard");
+    addMarker(4, "Koforidua, Ghana", 6.0918, -0.2630, "/gallery/v/ghana_new_billboards/", "/gallery/d/2571-2/Koforidua1.jpg", 150, 113);
     addMarker(4, "Eminönü, Istanbul, Turkey", 41.01793, 28.97322, "/gallery/v/turkey_billboards/", "/gallery/d/2497-2/CX+050+_Large_.JPG", 150, 113);
     addMarker(4, "Beşiktaş, Istanbul, Turkey", 41.0718, 29.0283, "/gallery/v/turkey_billboards/", "/gallery/d/2501-2/IX+056+_Large_.JPG", 150, 113);    
-    addMarker(6, "Lusaka, Zambia", -15.40505, 28.29977, "/gallery/v/zambia_billboards/", "/gallery/d/2579-2/Lusaka.jpg", 150, 113, "Billboard");
+    addMarker(4, "Lusaka, Zambia", -15.40505, 28.29977, "/gallery/v/zambia_billboards/", "/gallery/d/2579-2/Lusaka.jpg", 150, 113);
+    addMarker(6, "Columbia, South Carolina", 33.91833, -81.31149, "/gallery/v/columbia_billboards/", "/gallery/d/2603-2/IMG_5470.JPG", 150, 100, "Billboard");
+    addMarker(6, "Columbia, South Carolina", 33.80262, -81.00072, "/gallery/v/columbia_billboards/", "/gallery/d/2593-2/IMG_5464.JPG", 150, 100, "Billboard");
+    addMarker(6, "Chimaltenago, Guatemala", 14.5633, -90.8616, "/gallery/v/guatemala_billboards", "/gallery/d/2624-2/Codigo+No_+1589+1a_+calle+6-30+zona+1_+chimaltenago.JPG", 150, 112, "Billboard");
+    addMarker(6, "Coban, Guatemala", 15.47039, -90.36881, "/gallery/v/guatemala_billboards", "/gallery/d/2621-2/Codigo+No_+1588+Avenida+16+A+1-40+Zona+1_+Coban.JPG", 150, 100, "Billboard");
+    addMarker(6, "Santa Elena Peten, Guatemala", 16.1131, -90.4498, "/gallery/v/guatemala_billboards", "/gallery/d/2618-2/Codigo+No_+1587+Calle+principal+Sata+Elena+peten.JPG", 150, 112, "Billboard");
+    addMarker(6, "Zacapa, Guatemala", 14.9600, -89.7425, "/gallery/v/guatemala_billboards", "/gallery/d/2615-2/Codigo+No_+1586+8+calle+15-56+Zona+1+Zacapa.JPG", 150, 112, "Billboard");
+    addMarker(6, "Izabal, Guatemala", 15.4782, -88.8451, "/gallery/v/guatemala_billboards", "/gallery/d/2612-2/Codigo+No_+1585+Barrio+La+gasolinera+san+Jose+Morales_+izabal.JPG", 150, 112, "Billboard");
+    addMarker(6, "Escuintla, Guatemala", 14.224, -90.981, "/gallery/v/guatemala_billboards", "/gallery/d/2609-2/Codigo+No_+1142+Terminal+Sur+Local+No_+65+Escuintla.JPG", 150, 100, "Billboard");
+    addMarker(6, "Chiquimula, Guatemala", 14.7649, -89.4720, "/gallery/v/guatemala_billboards", "/gallery/d/2606-2/Codigo+No_+1135+3+Calle+5-11+zona+1+Chiquimula.JPG", 150, 112, "Billboard");
         
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
