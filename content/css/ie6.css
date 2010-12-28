@@ -17,6 +17,9 @@
 #header-wrap-home {
   background: url(<%= images_url %>/colored_bars_home.jpg) repeat-x left top;
 }
+#title {
+  font-size: 18pt;
+}
 
 /* menu bar fixes */
 #menu {
