@@ -62,7 +62,8 @@ div#billboard-sprite-wrap {
   margin-top: 0px;
 }
 .billboard li {
-  list-style: disc inside none;  
+  list-style: disc inside none;
+  vertical-align: middle;
 }
 .billboard-flags li {    
   background: none;
