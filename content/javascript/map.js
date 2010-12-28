@@ -645,6 +645,16 @@
     addMarker(4, "Chiquimula, Guatemala", 14.7649, -89.4720, "/gallery/v/guatemala_billboards", "/gallery/d/2606-2/Codigo+No_+1135+3+Calle+5-11+zona+1+Chiquimula.JPG", 150, 112);
     addMarker(6, "Vancouver, British Columbia, Canada", 49.2597, -123.1094, null, "<%= images_url %>/vancouver-tn.jpg", 150, 113, "15 Billboards");
     addMarker(6, "Port Vila, Vanuatu", -17.73332, 168.32102, null, "<%= images_url %>/vanuatu-tn.jpg", 150, 113, "Billboard");
+    addMarker(6, "Bridgeport, Connecticut", 41.16722, -73.20504, null, null, null, null, "10 Billboards");
+    addMarker(6, "Omaha, Nebraska", 41.2644, -95.9999, null, null, null, null, "8 Billboards");
+    addMarker(6, "Louisville, Kentucky", 38.2657, -85.7572, null, null, null, null, "16 Billboards");
+    addMarker(6, "Kansas City, Missouri", 39.1093, -94.5772, null, null, null, null, "2 Billboards");
+    addMarker(6, "St. Louis, Missouri", 38.6544, -90.2259, null, null, null, null, "10 Billboards");
+    addMarker(6, "Atlanta, Georgia", 33.7552, -84.3887, null, null, null, null, "50 Billboards");
+    addMarker(6, "Detroit, Michigan", 42.3418, -83.0470, null, null, null, null, "20 Billboards");
+    addMarker(6, "Fort Wayne, Indiana", 41.0907, -85.1372, null, null, null, null, "16 Billboards");
+    addMarker(6, "Little Rock, Arkansas", 34.7529, -92.2903, null, null, null, null, "20 Billboards");
+    addMarker(6, "Columbus, Ohio", 39.9755, -82.9990, null, null, null, null, "20 Billboards");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
