@@ -492,7 +492,7 @@
     addMarker(3, "Dakar, Senegal", 14.782, -17.335, "/gallery/v/project_jonah/senegal_tract_trip/", "/gallery/d/2545-2/photo-2.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
     addMarker(3, "Port-au-Prince, Haiti", 18.5458, -72.3361, "/gallery/v/haiti_tract_trip/", "/gallery/d/2536-2/photo-3.jpg", 150, 113, "Tract Trip<br>December 2010");
     addMarker(3, "Managua, Nicaragua", 12.1408, -86.2518, "/videos/?type=yt&video=kVEn_1_i8lw", "<%= images_url %>/nicaragua-video-tn.jpg", 120, 90, "Tract Trip<br>December 2010");
-    addMarker(3, "Cameroon", 5.36, 12.24, "/gallery/v/project_jonah/cameroon_tract_trip/", "/gallery/d/2565-2/crowd.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
+    addMarker(3, "Yaounde, Cameroon", 3.8738, 11.5178, "/gallery/v/project_jonah/cameroon_tract_trip/", "/gallery/d/2565-2/crowd.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
     addMarker(6, "Taipei, Taiwan", 25.124, 121.564, null, null, null, null, "Tract Trip<br>December 2010");
     addMarker(6, "Abuakwa, Ghana", 6.7, -1.716667, null, "<%= images_url %>/abuakwa-tract-trip-tn.jpg", 150, 113, "Tract Trip<br>December 2010");
     
