@@ -8,6 +8,11 @@
     
     $("#countdown").countdown({until: new Date(2011, 5 - 1, 21, 23, 59, 59), format: 'Od', layout: '{on} {ol}{d<} and {dn} {dl}{d>} Remaining'});
     
+    // ie6 fix grey gradient on homepage
+    if(typeof document.body.style.maxHeight === "undefined") {
+      var spacerDiv = "<div style='font-size: 0px; height: 0px; margin-top: 0px; margin-bottom: 0px;'>&nbsp;</div>";
+      $(".grey-gradient").after(spacerDiv);      
+    }
     // set the width of the judgment day gradient to the width of the text
     // $("#jday-gradient").width($("#jday-link").outerWidth());
 

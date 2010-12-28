@@ -13,11 +13,6 @@
     <link rel="stylesheet" type="text/css" href="<%= css_url %>/form.css">
 
 <%= @item[:links] || @item[:head_links] %>
-    <!-- http://code.google.com/p/ie7-js/ -->
-    <!--[if lt IE 7]>
-    <script type="text/javascript">IE7_PNG_SUFFIX=".png";</script>
-    <script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-    <![endif]-->
     <!--[if IE 7]><link rel="stylesheet" type="text/css" href="<%= css_url %>/ie7.css"><![endif]-->
     <!--[if IE 6]><link rel="stylesheet" type="text/css" href="<%= css_url %>/ie6.css"><![endif]-->
     
@@ -39,19 +34,19 @@
     <div id="container">  
     
 <% if home_page? %>
-    <img src="<%= images_url %>/world-map.png" alt="World Map">
+    <img id="world-map" src="<%= images_url %>/world-map.png" alt="World Map">
     <h1 id="title">eBible Fellowship</h1>
     <div id="logo-home">
-      <img src="<%= images_url %>/ebible_logo.png" alt="EBible Fellowship Logo"
+      <img id="ebible-logo" src="<%= images_url %>/ebible_logo.png" alt="EBible Fellowship Logo"
            title="eBible Fellowship Home">
     </div>
     <!--<div id="scripture-revelation"><img src="<%= images_url %>/revelation.png" alt="Scripture Photo"></div>-->
     <!--<div id="scripture-thess"><img src="<%= images_url %>/thess.png" alt="Scripture Photo"></div>-->
 <% else %>
-    <img src="<%= images_url %>/world-map-crop.png">
+    <img id="world-map" src="<%= images_url %>/world-map-crop.png" alt="World Map">
     <h1 id="title">eBible Fellowship</h1>
     <div id="logo">
-      <a href="<%= base_url %>"><img src="<%= images_url %>/ebible_logo.png" alt="eBible Fellowship Logo" title="eBible Fellowship Home" border="0" width="300" height="71"></a>
+      <a href="<%= base_url %>"><img id="ebible-logo" src="<%= images_url %>/ebible_logo.png" alt="eBible Fellowship Logo" title="eBible Fellowship Home" border="0" width="300" height="71"></a>
     </div>
 <% end %>
 
@@ -76,7 +71,7 @@
            else
              if item  # skip nil items which are gaps in the path
          %><p><%= link_to(item[:nav] || item[:title], item.rep_named(:default)) %></p>
-           <img src="<%= images_url %>/breadcrumbs_pipe.png">
+           <img src="<%= images_url %>/breadcrumbs_pipe.png" alt="">
          <%  end
            end
            end %>

@@ -89,6 +89,9 @@ compile %r{^/error-\d\d\d/$} do
   layout '/default/'
 end
 
+compile '/css/resources/*' do  
+end
+
 compile '/css/*' do
   filter :erb
   #filter :relativize_paths, :type => :css
@@ -179,6 +182,10 @@ route '/stylesheets/*/' do
   # path with version for cache busting
   #'/assets/style/style' + '-v' + rep.item[:version].to_s + '.css'
   nil  # not using scss/compass
+end
+
+route '/css/resources/*' do  
+  item.identifier.chop + '.' + item[:extension]
 end
 
 route '/css/*' do
