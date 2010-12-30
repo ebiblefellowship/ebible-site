@@ -1,6 +1,6 @@
 /* ebiblefellowship.com tract formatting */
 /* jmg - added type p.Box for tracts, changed indent on verse, made verse justified */
-body {
+div#main {
   /* content in a centered box */
   padding: 0px;
   text-align: left; 
