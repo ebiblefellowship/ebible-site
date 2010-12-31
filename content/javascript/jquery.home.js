@@ -46,22 +46,26 @@
     });
 
     // load the rest of the billboards    
-    $.ajaxSetup({ cache: false });		
-    $.get('panels/index.html', function(panels) {	
-      $("#fading-list").html(panels);
-      $("#fading-list").innerfade({
-        animationtype: 'fade', 
-        speed: 'slow', 
-        timeout: 'dynamic', 
-        type: 'sequence',
-        containerheight: '287px',
-        controlbox: true,
-        controlboxid: 'billboard-sprite-wrap',
-        controlprevid: 'back-button',
-        controlplayid: 'play-button',
-        controlpauseid: 'pause-button',      
-        controlnextid: 'forward-button'
-      });      
+    $.ajaxSetup({ cache: false });
+    $("#fading-list").load('panels/index.html', function() {
+      $("#fading-list").onImagesLoad({
+        callbackIfNoImagesExist: true,
+        selectorCallback: function() {
+          $("#fading-list").innerfade({
+            animationtype: 'fade', 
+            speed: 'slow', 
+            timeout: 'dynamic', 
+            type: 'sequence',
+            containerheight: '287px',
+            controlbox: true,
+            controlboxid: 'billboard-sprite-wrap',
+            controlprevid: 'back-button',
+            controlplayid: 'play-button',
+            controlpauseid: 'pause-button',      
+            controlnextid: 'forward-button'
+          });
+        }
+      });
     });
   });  
   
