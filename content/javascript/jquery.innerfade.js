@@ -219,40 +219,64 @@ function getTimeout(index) {
     case 0: // continents/countries listing
       timeout = 4000;
       break;
-    case 1: // billboards-Swaziland, Mozambique, Ghana
+    case 1: // billboards
       timeout = 4000;
       break;
-    case 2: // billboards-Puerto Rico, Guatemala, Jamaica
+    case 2: // billboards
       timeout = 4000;
       break;      
-    case 3: // billboards-India, Singapore, India
+    case 3: // billboards
       timeout = 4000;
       break;      
-    case 4: // billboards - Samoa, Indonesia, Samoa
+    case 4: // billboards
       timeout = 4000;
       break;
-    case 5: // billboards - Botswana, Namibia, Tanzania
+    case 5: // billboards
       timeout = 4000;
       break;
-    case 6: // outreach map
+    case 6: // billboards
+      timeout = 4000;
+      break;
+    case 7: // billboards
+      timeout = 4000;
+      break;
+    case 8: // billboards
+      timeout = 4000;
+      break;
+    case 9: //  moving billboards
+      timeout = 4000;
+      break;
+    case 10: // outreach map
       timeout = 8000;
       break;
-    case 7: // request comments - Shanghai, China
+    case 11: // request comments
       timeout = 11000;
       break;      
-    case 8: // request comments - Gouldsboro PA, USA
+    case 12: // request comments
       timeout = 11000;
       break;      
-    case 9: // request comments - Itanagar, Arunachal Pradesh, India
+    case 13: // request comments
       timeout = 11000;
       break;      
-    case 10: // request comments - Tema, Ghana
+    case 14: // request comments
       timeout = 11000;
       break;            
-    case 11: // we can know
+    case 15: // request comments
+      timeout = 11000;
+      break;
+    case 16: // request comments
+      timeout = 11000;
+      break;
+    case 17: // request comments
+      timeout = 11000;
+      break;
+    case 18: // request comments
+      timeout = 11000;
+      break;
+    case 19: // we can know
       timeout = 8000;
       break;      
-    case 12: // family radio
+    case 20: // family radio
       timeout = 8000;
       break;      
     default:

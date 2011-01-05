@@ -37,6 +37,13 @@ body {
   margin-top: -495px;
 }
 
+#verse-home-wrap {
+  float: right;
+  position: relative;
+  margin-right: 15px;
+  z-index: 1;    
+}
+
 /* Begin Menu Bar */
 #menu  { 
   margin-top: 19px;

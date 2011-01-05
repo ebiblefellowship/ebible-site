@@ -34,14 +34,15 @@
 
 .billboard img {
   border: 2px solid white;
-  margin-right: 15px; 
+  margin-right: 15px;
+  margin-left: 20px; 
   float: left; 
 }
 
 .billboard img.ribbon {
   border: none;
   margin-top: -211px;
-  margin-left: 3px;
+  margin-left: 13px;
 }
 
 .billboard img:hover.ribbon {
@@ -63,7 +64,7 @@
 }
 
 .billboard img.three-image {
-  margin: 0px 0 3px 10px;   
+  margin: 0px 0 3px 20px;   
 }
 
 .billboard h1 { 
@@ -86,12 +87,12 @@
 .billboard h3 {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   color: white;
-  margin: 0 20px 0 15px;  
+  margin: 0 25px 0 25px;  
 }  
 
 .billboard h3.location {
   font-weight: bold;
-  margin: 0 20px 0 0;
+  margin: 10px 30px 0 0;
   text-align: right;
 }  
 
@@ -141,6 +142,57 @@
 .billboard li a:hover {
   text-decoration: underline;
   color: #dACDB0;
+}
+
+/* Vertical Tabs Sprite */
+div#tabs-wrap {
+  position: absolute;
+  top: 165px;
+  z-index: 20;
+  display: block;
+}
+
+.tabs {
+  position: relative;
+  background: url(<%= images_url %>/billboard_tabs.png) no-repeat;
+  margin-left: 11px;
+  list-style: none;
+}
+
+.tabs li a { 
+  position: absolute;
+  height: 75px;
+  width: 22px; 
+  background: url(<%= images_url %>/billboard_tabs.png) no-repeat;
+}
+
+li#features a {
+  left: 0;
+  background-position: -7px -2px;
+}
+
+li#comments a {
+  top: 75px;
+  left: 0;
+  background-position: -7px -77px;
+}  
+
+li#billboards a {
+  top: 150px;
+  left: 0;
+  background-position: -7px -152px;
+}
+
+li#features a:hover {
+  background-position: -32px -2px;
+}
+
+li#comments a:hover {
+  background-position: -32px -77px;
+}  
+
+li#billboards a:hover {
+  background-position: -32px -152px;
 }
 
 /* Control Box Sprite */
@@ -305,11 +357,13 @@ li.oceania-glow {
 
 #africa-sprite h2, #americas-sprite h2, #asia-sprite h2, #oceania-sprite h2 {
   text-align: left;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 15px;
+  margin: -8px 0 15px 0;
   color: #99ccff;
   border-bottom: 1px solid #99ccff;
+}
+
+#oceania-sprite h2 {
+  margin-top: 0;
 }
 
 li#botswana {
@@ -348,24 +402,48 @@ li#tanzania {
   background-position: -288px 0px;
 }
 
-li#dominican-republic {
+li#canada {
   background-position: 0px -27px;
 }
 
-li#guatemala {
+li#costa-rica {
   background-position: -36px -27px;
 }
 
-li#jamaica {
+li#dominican-republic {
   background-position: -72px -27px;
 }
 
-li#puerto-rico {
+li#el-salvador {
   background-position: -108px -27px;
 }
 
-li#usa {
+li#guatemala {
   background-position: -144px -27px;
+}
+
+li#honduras {
+  background-position: -180px -27px;
+}
+
+li#jamaica {
+  background-position: -216px -27px;
+}
+
+li#nicaragua {
+  background-position: -252px -27px;
+}
+
+li#panama {
+  background-position: -288px -27px;
+}
+
+li#puerto-rico {
+  background-position: -324px -27px;
+}
+
+li#usa {
+  background-position: -360px -27px;
 }
 
 li#india {
@@ -376,11 +454,23 @@ li#singapore {
   background-position: -36px -54px;
 }
 
+li#taiwan {
+  background-position: -72px -54px;
+}
+
+li#turkey {
+  background-position: -108px -54px;
+}
+
 li#indonesia {
   background-position: 0px -81px;
 }
 
 li#samoa {
   background-position: -36px -81px;
+}
+
+li#vanuatu {
+  background-position: -72px -81px;
 }
 
