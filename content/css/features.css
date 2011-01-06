@@ -148,7 +148,7 @@
 div#tabs-wrap {
   position: absolute;
   top: 165px;
-  z-index: 20;
+  z-index: 100;
   display: block;
 }
 
@@ -200,7 +200,7 @@ div#billboard-sprite-wrap {
   position: absolute;
   top: 405px;
   margin-left: 90px;
-  z-index: 50;
+  z-index: 100;
   display: none;
 }
 
