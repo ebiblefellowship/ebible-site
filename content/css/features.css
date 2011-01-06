@@ -167,14 +167,16 @@ div#tabs-wrap {
 }
 
 li#features a {
+  top: 75px;
   left: 0;
   background-position: -7px -2px;
 }
 
 li#comments a {
-  top: 75px;
+  top: -2px;
   left: 0;
-  background-position: -7px -77px;
+  height: 78px;
+  background-position: -7px -75px;
 }  
 
 li#billboards a {
@@ -188,7 +190,7 @@ li#features a:hover {
 }
 
 li#comments a:hover {
-  background-position: -32px -77px;
+  background-position: -32px -75px;
 }  
 
 li#billboards a:hover {
