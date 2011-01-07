@@ -36,7 +36,12 @@
     var src = img.attr("src");    
     src = src.substring(0, src.lastIndexOf('/')+1) + 'verse' + verseIndex + ".png";    
     img.attr("src", src);
-    $("#verse-home-wrap").show();
+    $("#verse-home-wrap").onImagesLoad({
+        callbackIfNoImagesExist: true,
+        selectorCallback: function() {
+          $("#verse-home-wrap").show();
+        }
+      });    
     
     $("#first-pub").hide();
     items[pubIndex] = $(".pub");
