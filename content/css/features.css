@@ -331,7 +331,7 @@ li.oceania-glow {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 115px;
+  width: 122px;
   float: left;
 }
 
@@ -351,10 +351,10 @@ li.oceania-glow {
 }
 
 #africa-sprite, #americas-sprite, #asia-sprite, #oceania-sprite {
-  margin: 0px 0px 0px 40px;
+  margin: 0px 0px 0px 30px;
   padding: 0;
   float: left;
-  width: 230px;
+  width: 245px;
 }
 
 #africa-sprite h2, #americas-sprite h2, #asia-sprite h2, #oceania-sprite h2 {
@@ -402,6 +402,10 @@ li#swaziland {
 
 li#tanzania {
   background-position: -288px 0px;
+}
+
+li#zambia {
+  background-position: -324px 0px;
 }
 
 li#canada {
