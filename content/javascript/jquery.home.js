@@ -35,7 +35,8 @@
     var img = $("#verse-home-wrap>img");
     var src = img.attr("src");    
     src = src.substring(0, src.lastIndexOf('/')+1) + 'verse' + verseIndex + ".png";    
-    img.attr("src", src); 
+    img.attr("src", src);
+    $("#verse-home-wrap").show();
     
     $("#first-pub").hide();
     items[pubIndex] = $(".pub");
