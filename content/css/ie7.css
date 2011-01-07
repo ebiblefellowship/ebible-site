@@ -14,7 +14,15 @@
   margin-right: -1px;
 }
 
-#oceania-sprite h2 {
+#verse-home-wrap {
+  margin-top: -15px;
+}
+
+div#tabs-wrap {
+  top: 180px;
+}
+
+#africa-sprite h2, #americas-sprite h2, #asia-sprite h2, #oceania-sprite h2 {
   margin-top: 0px;
 }
 

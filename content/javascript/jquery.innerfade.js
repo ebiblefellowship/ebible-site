@@ -38,7 +38,11 @@
       controlprevid: 'back-button',
       controlplayid: 'play-button',
       controlpauseid: 'pause-button',      
-      controlnextid: 'forward-button'
+      controlnextid: 'forward-button',
+      tabs: false,
+      tabsid: 'tabs',
+      tabids: [ 'tab-1', 'tab-2', 'tab-3' ],
+      tabindexes: [ 0, 5, 10 ]
     };    
     
     if (options) $.extend(settings, options);
@@ -101,23 +105,27 @@
           return false;
         });
       }
+      
+      if (settings.tabs) {        
+        $("#"+settings.tabsid).show();
+        for (var i=0;i<settings.tabids.length;i++) {            
+          $("#"+settings.tabids[i]).bind('click', {tab: i}, function(event) { 
+            if (settings.active) return false;
+            clearTimeout(settings.timer);
+            $("#"+settings.controlpauseid).show(); 
+            $("#"+settings.controlplayid).hide();            
+            settings.next = settings.tabindexes[event.data.tab];
+            settings.prev = settings.next;
+            $.innerfade.next(container, elements, settings); return false; 
+          });
+        }
+      }
     }
     else {
       if ($("#"+settings.controlboxid).length > 0) $("#"+settings.controlboxid).hide();
+      if ($("#"+settings.tabsid).length > 0) $("#"+settings.tabsid).hide();
       if (elements.length == 1 && settings.containerheight == 'dynamic') $(container).css('height', $(elements[0]).height());
     }
-    
-    $(container).one('cancelInnerfade', function(e) {     
-      settings.active = false;
-      clearTimeout(settings.timer); 
-      $(elements[settings.current]).stop().stop();        
-      if (settings.controlbox) {
-        $("#"+settings.controlboxid+" a.pause-button").html("<img src='"+settings.controlbuttonspath+"/pause.gif' alt='pause' style='border: none;' />");
-        $("#"+settings.controlboxid+" a.next-button").unbind('click');
-        $("#"+settings.controlboxid+" a.prev-button").unbind('click');
-        $("#"+settings.controlboxid+" a.pause-button").unbind('click');       
-      }     
-    });   
   };
 
   $.innerfade.next = function(container, elements, settings) {    
@@ -219,42 +227,66 @@ function getTimeout(index) {
     case 0: // continents/countries listing
       timeout = 4000;
       break;
-    case 1: // billboards-Swaziland, Mozambique, Ghana
+    case 1: // billboards
       timeout = 4000;
       break;
-    case 2: // billboards-Puerto Rico, Guatemala, Jamaica
+    case 2: // billboards
       timeout = 4000;
       break;      
-    case 3: // billboards-India, Singapore, India
+    case 3: // billboards
       timeout = 4000;
       break;      
-    case 4: // billboards - Samoa, Indonesia, Samoa
+    case 4: // billboards
       timeout = 4000;
       break;
-    case 5: // billboards - Botswana, Namibia, Tanzania
+    case 5: // billboards
       timeout = 4000;
       break;
-    case 6: // outreach map
+    case 6: // billboards
+      timeout = 4000;
+      break;
+    case 7: // billboards
+      timeout = 4000;
+      break;
+    case 8: // billboards
+      timeout = 4000;
+      break;
+    case 9: // moving billboards
+      timeout = 4000;
+      break;
+    case 10: // outreach map
       timeout = 8000;
       break;
-    case 7: // request comments - Shanghai, China
-      timeout = 11000;
-      break;      
-    case 8: // request comments - Gouldsboro PA, USA
-      timeout = 11000;
-      break;      
-    case 9: // request comments - Itanagar, Arunachal Pradesh, India
-      timeout = 11000;
-      break;      
-    case 10: // request comments - Tema, Ghana
-      timeout = 11000;
-      break;            
     case 11: // we can know
       timeout = 8000;
       break;      
     case 12: // family radio
       timeout = 8000;
+      break;
+    case 13: // request comments
+      timeout = 11000;
       break;      
+    case 14: // request comments
+      timeout = 11000;
+      break;      
+    case 15: // request comments
+      timeout = 11000;
+      break;      
+    case 16: // request comments
+      timeout = 11000;
+      break;            
+    case 17: // request comments
+      timeout = 11000;
+      break;
+    case 18: // request comments
+      timeout = 11000;
+      break;
+    case 19: // request comments
+      timeout = 11000;
+      break;
+    case 20: // request comments
+      timeout = 11000;
+      break;          
     default:
       timeout = 15000;      
   }  
