@@ -31,6 +31,18 @@
     });
     */
     
+    var verseIndex = Math.floor((Math.random()%1) * 7) + 1; // adjust if the number of verse images changes
+    var img = $("#verse-home-wrap>img");
+    var src = img.attr("src");    
+    src = src.substring(0, src.lastIndexOf('/')+1) + 'verse' + verseIndex + ".png";    
+    img.attr("src", src);
+    $("#verse-home-wrap").onImagesLoad({
+        callbackIfNoImagesExist: true,
+        selectorCallback: function() {
+          $("#verse-home-wrap").show();
+        }
+      });    
+    
     $("#first-pub").hide();
     items[pubIndex] = $(".pub");
     currentIndex[pubIndex] = Math.floor((Math.random()%1) * items[pubIndex].length);
@@ -62,7 +74,11 @@
             controlprevid: 'back-button',
             controlplayid: 'play-button',
             controlpauseid: 'pause-button',      
-            controlnextid: 'forward-button'
+            controlnextid: 'forward-button',
+            tabs: true,
+            tabsid: 'tabs-wrap',
+            tabids: [ 'billboards', 'features', 'comments' ],
+            tabindexes: [ 0, 10, 13 ]            
           });
         }
       });

@@ -34,7 +34,7 @@
 
 .billboard img {
   border: 2px solid white;
-  margin-right: 15px;
+  margin-right: 15px; 
   margin-left: 20px; 
   float: left; 
 }
@@ -149,7 +149,7 @@ div#tabs-wrap {
   position: absolute;
   top: 165px;
   z-index: 100;
-  display: block;
+  display: none;
 }
 
 .tabs {
@@ -414,6 +414,11 @@ li#costa-rica {
 
 li#dominican-republic {
   background-position: -72px -27px;
+}
+
+li#dominican-republic p {
+  position: relative;
+  bottom: 7px;
 }
 
 li#el-salvador {

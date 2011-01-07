@@ -38,7 +38,11 @@
       controlprevid: 'back-button',
       controlplayid: 'play-button',
       controlpauseid: 'pause-button',      
-      controlnextid: 'forward-button'
+      controlnextid: 'forward-button',
+      tabs: false,
+      tabsid: 'tabs',
+      tabids: [ 'tab-1', 'tab-2', 'tab-3' ],
+      tabindexes: [ 0, 5, 10 ]
     };    
     
     if (options) $.extend(settings, options);
@@ -101,23 +105,27 @@
           return false;
         });
       }
+      
+      if (settings.tabs) {        
+        $("#"+settings.tabsid).show();
+        for (var i=0;i<settings.tabids.length;i++) {            
+          $("#"+settings.tabids[i]).bind('click', {tab: i}, function(event) { 
+            if (settings.active) return false;
+            clearTimeout(settings.timer);
+            $("#"+settings.controlpauseid).show(); 
+            $("#"+settings.controlplayid).hide();            
+            settings.next = settings.tabindexes[event.data.tab];
+            settings.prev = settings.next;
+            $.innerfade.next(container, elements, settings); return false; 
+          });
+        }
+      }
     }
     else {
       if ($("#"+settings.controlboxid).length > 0) $("#"+settings.controlboxid).hide();
+      if ($("#"+settings.tabsid).length > 0) $("#"+settings.tabsid).hide();
       if (elements.length == 1 && settings.containerheight == 'dynamic') $(container).css('height', $(elements[0]).height());
     }
-    
-    $(container).one('cancelInnerfade', function(e) {     
-      settings.active = false;
-      clearTimeout(settings.timer); 
-      $(elements[settings.current]).stop().stop();        
-      if (settings.controlbox) {
-        $("#"+settings.controlboxid+" a.pause-button").html("<img src='"+settings.controlbuttonspath+"/pause.gif' alt='pause' style='border: none;' />");
-        $("#"+settings.controlboxid+" a.next-button").unbind('click');
-        $("#"+settings.controlboxid+" a.prev-button").unbind('click');
-        $("#"+settings.controlboxid+" a.pause-button").unbind('click');       
-      }     
-    });   
   };
 
   $.innerfade.next = function(container, elements, settings) {    
@@ -243,42 +251,42 @@ function getTimeout(index) {
     case 8: // billboards
       timeout = 4000;
       break;
-    case 9: //  moving billboards
+    case 9: // moving billboards
       timeout = 4000;
       break;
     case 10: // outreach map
       timeout = 8000;
       break;
-    case 11: // request comments
-      timeout = 11000;
+    case 11: // we can know
+      timeout = 8000;
       break;      
-    case 12: // request comments
-      timeout = 11000;
-      break;      
+    case 12: // family radio
+      timeout = 8000;
+      break;
     case 13: // request comments
       timeout = 11000;
       break;      
     case 14: // request comments
       timeout = 11000;
-      break;            
+      break;      
     case 15: // request comments
       timeout = 11000;
-      break;
+      break;      
     case 16: // request comments
       timeout = 11000;
-      break;
+      break;            
     case 17: // request comments
       timeout = 11000;
       break;
     case 18: // request comments
       timeout = 11000;
       break;
-    case 19: // we can know
-      timeout = 8000;
-      break;      
-    case 20: // family radio
-      timeout = 8000;
-      break;      
+    case 19: // request comments
+      timeout = 11000;
+      break;
+    case 20: // request comments
+      timeout = 11000;
+      break;          
     default:
       timeout = 15000;      
   }  

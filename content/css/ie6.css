@@ -11,6 +11,10 @@
 #logo-home {
   margin-top: -554px;
 }
+#verse-home-wrap {
+  margin-top: -15px;
+  visibility: hidden;
+}
 #header-wrap {
   background: url(<%= images_url %>/colored_bars.jpg) repeat-x left top;
 }
@@ -54,11 +58,14 @@
 div#billboard-sprite-wrap {  
   visibility: hidden;
 }
+div#tabs-wrap {
+  top: 182px;  
+}
 /* first panel */
 #africa-sprite {
   margin-left: 20px;
 }
-#oceania-sprite h2 {
+#africa-sprite h2, #americas-sprite h2, #asia-sprite h2, #oceania-sprite h2 {
   margin-top: 0px;
 }
 .billboard li {
@@ -67,16 +74,19 @@ div#billboard-sprite-wrap {
 }
 .billboard-flags li {    
   background: none;
+  margin-bottom: 7px;
 }
 .billboard-flags p {
   padding: 0px;  
 }
 /* billboard image panels  */
-.location-bar, .ribbon { 
+.location-bar, .ribbon, .billboard h1.top { 
   display: none; 
 }
 .three-image-container {  
   margin-top: 30px;  
+  margin-left: 7px;
+  margin-right: 10px;
 }
 .billboard img.three-image {
   margin: 0px 0px 3px 0px;   
