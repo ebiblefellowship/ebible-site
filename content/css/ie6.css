@@ -12,7 +12,8 @@
   margin-top: -554px;
 }
 #verse-home-wrap {
-  display: none;
+  margin-top: -15px;
+  visibility: hidden;
 }
 #header-wrap {
   background: url(<%= images_url %>/colored_bars.jpg) repeat-x left top;
