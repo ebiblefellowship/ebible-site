@@ -10,6 +10,8 @@ tmp
 nanoc_compile.log
 # sass temporary files
 .sass-cache
+# bundler configuration
+.bundle
 # vi/vim temp files
 .*.swp
 # other
