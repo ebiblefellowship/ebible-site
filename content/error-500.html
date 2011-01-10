@@ -53,7 +53,7 @@ if($should_send_mail)
 		'Message:  ' . $_SERVER['REDIRECT_ERROR_NOTES'] . "\n";
 	$headers = 'From: ' . $src_email_address;
 
-	mail($dst_email_address, $subject, $message, $headers);
+	//mail($dst_email_address, $subject, $message, $headers);
 }
 
 ?>

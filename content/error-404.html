@@ -48,7 +48,7 @@ if($should_send_mail)
 		'Referrer: ' . $_SERVER['HTTP_REFERER'];
 	$headers = 'From: ' . $src_email_address;
 
-	mail($dst_email_address, $subject, $message, $headers);
+	//mail($dst_email_address, $subject, $message, $headers);
 }
 
 ?>
