@@ -495,14 +495,17 @@
     addMarker(3, "Yaounde, Cameroon", 3.8738, 11.5178, "/gallery/v/project_jonah/cameroon_tract_trip/", "/gallery/d/2565-2/crowd.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>December 2010");
     addMarker(3, "Taipei, Taiwan", 25.124, 121.564, null, null, null, null, "Tract Trip<br>December 2010");
     addMarker(3, "Abuakwa, Ghana", 6.7, -1.716667, null, "<%= images_url %>/abuakwa-tract-trip-tn.jpg", 150, 113, "Tract Trip<br>December 2010");
-    addMarker(6, "Tortola, British Virgin Islands", 18.4405, -64.6333, null, null, null, null, "Tract Trip<br>December 2010");
-    addMarker(6, "St. Maarten, Dutch West Indies", 18.03102, -63.04564, null, null, null, null, "Tract Trip<br>December 2010");
-    addMarker(6, "Anguilla", 18.21826, -63.05732, null, null, null, null, "Tract Trip<br>December 2010");
-    addMarker(6, "Castries, St. Lucia", 13.99525, -61.00687, null, null, null, null, "Tract Trip<br>December 2010");
-    addMarker(6, "Bridgetown, Barbados", 13.1032, -59.6127, null, null, null, null, "Tract Trip<br>December 2010");
-    addMarker(6, "St. Georges and Grenville, Grenada", 12.05460, -61.74960, null, null, null, null, "Tract Trip<br>December 2010");
-    addMarker(6, "Oranjestad, Aruba", 12.5283, -70.0269, null, null, null, null, "Tract Trip<br>December 2010");
-    addMarker(6, "Willemstad, Curacao", 12.1256, -68.9334, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(3, "Tortola, British Virgin Islands", 18.4405, -64.6333, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(3, "St. Maarten, Dutch West Indies", 18.03102, -63.04564, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(3, "Anguilla", 18.21826, -63.05732, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(3, "Castries, St. Lucia", 13.99525, -61.00687, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(3, "Bridgetown, Barbados", 13.1032, -59.6127, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(3, "St. Georges and Grenville, Grenada", 12.05460, -61.74960, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(3, "Oranjestad, Aruba", 12.5283, -70.0269, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(3, "Willemstad, Curacao", 12.1256, -68.9334, null, null, null, null, "Tract Trip<br>December 2010");
+    addMarker(6, "Trinidad &amp; Tobago", 10.66048, -61.47885, null, null, null, null, "Tract Trip<br>December 2010");    
+    addMarker(6, "Fiji", -18.083, 178.421, null, null, null, null, "Tract Trip<br>January 2011");
+    //addMarker(6, "Ireland", , null, null, null, null, "Tract Trip<br>January 2011");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -652,7 +655,7 @@
     addMarker(4, "Escuintla, Guatemala", 14.224, -90.981, "/gallery/v/guatemala_billboards", "/gallery/d/2609-2/Codigo+No_+1142+Terminal+Sur+Local+No_+65+Escuintla.JPG", 150, 100);
     addMarker(4, "Chiquimula, Guatemala", 14.7649, -89.4720, "/gallery/v/guatemala_billboards", "/gallery/d/2606-2/Codigo+No_+1135+3+Calle+5-11+zona+1+Chiquimula.JPG", 150, 112);
     addMarker(4, "Vancouver, British Columbia, Canada", 49.2597, -123.1094, null, "<%= images_url %>/vancouver-tn.jpg", 150, 113, "15 Billboards");
-    addMarker(4, "Port Vila, Vanuatu", -17.73332, 168.32102, null, "<%= images_url %>/vanuatu-tn.jpg", 150, 113);
+    addMarker(4, "Port Vila, Vanuatu", -17.73332, 168.32102, "/gallery/v/vanuatu_billboard", "/gallery/d/2940-2/Vanuatu+20101220.JPG", 150, 113);
     addMarker(4, "Bridgeport, Connecticut", 41.16722, -73.20504, null, null, null, null, "10 Billboards");
     addMarker(4, "Omaha, Nebraska", 41.2644, -95.9999, null, null, null, null, "8 Billboards");
     addMarker(4, "Louisville, Kentucky", 38.2657, -85.7572, null, null, null, null, "16 Billboards");
@@ -704,9 +707,13 @@
     addMarker(4, "Panama", 8.96211, -79.54282, "/gallery/v/panama_billboards", "/gallery/d/2874-2/PAN_45.jpg", 150, 113);
     addMarker(4, "Panama", 9.02913, -79.49374, "/gallery/v/panama_billboards", "/gallery/d/2866-2/Pan_17___1__2.jpg", 150, 113);
     addMarker(4, "Panama", 8.9488, -79.6638, "/gallery/v/panama_billboards", "/gallery/d/2872-2/PAN_22_A.jpg", 150, 113);
-    addMarker(6, "Taipei, Taiwan", 25.0538, 121.5555, "/gallery/v/taiwan_billboards", "/gallery/d/2900-2/Taipei_Billboard_2.jpg", 150, 113, "Billboard");
-    addMarker(6, "Kaohsiung, Taiwan", 22.6341, 120.3098, "/gallery/v/taiwan_billboards", "/gallery/d/2882-2/KaoHsiung_Billboards_2.jpg", 150, 113, "Billboard");
-    addMarker(6, "Kaohsiung, Taiwan", 22.6432, 120.3042, "/gallery/v/taiwan_billboards", "/gallery/d/2888-2/KaoHsiung_Bus+Stop1.jpg", 150, 113, "100 Bus Stop Advertisements");
+    addMarker(4, "Taipei, Taiwan", 25.0538, 121.5555, "/gallery/v/taiwan_billboards", "/gallery/d/2900-2/Taipei_Billboard_2.jpg", 150, 113);
+    addMarker(4, "Kaohsiung, Taiwan", 22.6341, 120.3098, "/gallery/v/taiwan_billboards", "/gallery/d/2882-2/KaoHsiung_Billboards_2.jpg", 150, 113);
+    addMarker(4, "Kaohsiung, Taiwan", 22.6432, 120.3042, "/gallery/v/taiwan_billboards", "/gallery/d/2888-2/KaoHsiung_Bus+Stop1.jpg", 150, 113, "100 Bus Stop Advertisements");
+    addMarker(6, "Auckland, New Zealand", -36.84996, 174.76062, "/gallery/v/new_zealand_billboards", "/gallery/d/2926-2/Auckland+NZ+A108.JPG", 100, 150, "Billboard");
+    addMarker(6, "Auckland, New Zealand", -36.88441, 174.73785, "/gallery/v/new_zealand_billboards", "/gallery/d/2929-2/Auckland+NZ+A309.JPG", 100, 150, "Billboard");
+    addMarker(6, "Wellington, New Zealand", -41.21911, 174.87818, "/gallery/v/new_zealand_billboards", "/gallery/d/2922-2/Wellington+NZ+W84.jpg", 100, 150, "Billboard");
+    addMarker(6, "Trinidad", 10.65099, -61.50902, "/gallery/v/trinidad_billboard", "/gallery/d/2934-2/trinidad.jpg", 150, 113, "Billboard");
         
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
