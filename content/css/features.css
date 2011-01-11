@@ -457,6 +457,10 @@ li#usa {
   background-position: -360px -27px;
 }
 
+li#trinidad {
+  background-position: -398px -27px;
+}
+
 li#india {
   background-position: 0px -54px;
 }
@@ -485,3 +489,6 @@ li#vanuatu {
   background-position: -72px -81px;
 }
 
+li#new-zealand {
+  background-position: -108px -81px;
+}
