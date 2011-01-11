@@ -714,7 +714,9 @@
     addMarker(6, "Auckland, New Zealand", -36.88441, 174.73785, "/gallery/v/new_zealand_billboards", "/gallery/d/2929-2/Auckland+NZ+A309.JPG", 100, 150, "Billboard");
     addMarker(6, "Wellington, New Zealand", -41.21911, 174.87818, "/gallery/v/new_zealand_billboards", "/gallery/d/2922-2/Wellington+NZ+W84.jpg", 100, 150, "Billboard");
     addMarker(6, "Trinidad", 10.65099, -61.50902, "/gallery/v/trinidad_billboard", "/gallery/d/2934-2/trinidad.jpg", 150, 113, "Billboard");
-        
+    addMarker(6, "Chingola, Zambia", -12.5395, 27.8577, "/gallery/v/zambia_billboards/", "/gallery/d/2915-2/Chingola_001.jpg", 150, 113, "Billboard");
+    addMarker(6, "Ndola, Zambia", -12.9641, 28.6336, "/gallery/v/zambia_billboards/", "/gallery/d/2918-2/Ndola+CL_001.jpg", 150, 112, "Billboard");
+    
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
     addMarker(5, "Nunavut Territory, Canada", 70.65, -83.15, null, "<%= images_url %>/kivalliq-news-tn.jpg", 150, 97, "Ads in 5 Community Newspapers<br>Covering Various Parts of the Territory");
