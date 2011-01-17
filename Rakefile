@@ -23,7 +23,7 @@ MP3_META_DIRS_MAP = [
   { :mp3 => 'unto_the_end_of_the_world', :meta => 'studies/unto-the-end' }
 ]
 # Only 2009 and 2010
-MP3_SELECT_GLOB = '*20[01][09].[0-9][0-9].[0-9][0-9]*.mp3'
+MP3_SELECT_GLOB = '*20[01][019].[0-9][0-9].[0-9][0-9]*.mp3'
 
 # Speakers lookup hash to get full name
 SPEAKERS = {
