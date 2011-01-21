@@ -505,12 +505,13 @@
     addMarker(3, "Willemstad, Curacao", 12.1256, -68.9334, null, null, null, null, "Tract Trip<br>December 2010");
     addMarker(3, "Trinidad &amp; Tobago", 10.66048, -61.47885, null, null, null, null, "Tract Trip<br>December 2010");    
     addMarker(3, "Fiji", -18.083, 178.421, null, null, null, null, "Tract Trip<br>January 2011");
-    addMarker(6, "Dublin, Ireland", 53.3491, -6.2670, null, null, null, null, "Tract Trip<br>January 2011");
-    addMarker(6, "Belfast, Northern Ireland", 54.629, -5.930, null, null, null, null, "Tract Trip<br>January 2011");
-    addMarker(6, "Edinburgh, Scotland", 55.9546, -3.1867, null, null, null, null, "Tract Trip<br>January 2011");
-    addMarker(6, "Glasgow, Scotland", 55.8709, -4.2575, null, null, null, null, "Tract Trip<br>January 2011");
-    addMarker(6, "Liverpool, England", 53.4149, -2.9773, null, null, null, null, "Tract Trip<br>January 2011");
-    addMarker(6, "Manchester, England", 53.4858, -2.2357, null, null, null, null, "Tract Trip<br>January 2011");
+    addMarker(3, "Dublin, Ireland", 53.3491, -6.2670, null, null, null, null, "Tract Trip<br>January 2011");
+    addMarker(3, "Belfast, Northern Ireland", 54.629, -5.930, null, null, null, null, "Tract Trip<br>January 2011");
+    addMarker(3, "Edinburgh, Scotland", 55.9546, -3.1867, null, null, null, null, "Tract Trip<br>January 2011");
+    addMarker(3, "Glasgow, Scotland", 55.8709, -4.2575, null, null, null, null, "Tract Trip<br>January 2011");
+    addMarker(3, "Liverpool, England", 53.4149, -2.9773, null, null, null, null, "Tract Trip<br>January 2011");
+    addMarker(3, "Manchester, England", 53.4858, -2.2357, null, null, null, null, "Tract Trip<br>January 2011");
+    addMarker(6, "Dar Es Salaam, Tanzania", -6.8085, 39.2727, "/gallery/v/project_jonah/tanzania_tract_trip/", "/gallery/d/3674-2/tanzania-photo-3.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>January 2011");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -715,12 +716,18 @@
     addMarker(4, "Taipei, Taiwan", 25.0538, 121.5555, "/gallery/v/taiwan_billboards", "/gallery/d/2900-2/Taipei_Billboard_2.jpg", 150, 113);
     addMarker(4, "Kaohsiung, Taiwan", 22.6341, 120.3098, "/gallery/v/taiwan_billboards", "/gallery/d/2882-2/KaoHsiung_Billboards_2.jpg", 150, 113);
     addMarker(4, "Kaohsiung, Taiwan", 22.6432, 120.3042, "/gallery/v/taiwan_billboards", "/gallery/d/2888-2/KaoHsiung_Bus+Stop1.jpg", 150, 113, "100 Bus Stop Advertisements");
-    addMarker(4, "Auckland, New Zealand", -36.84996, 174.76062, "/gallery/v/new_zealand_billboards", "/gallery/d/2926-2/Auckland+NZ+A108.JPG", 100, 150, "Billboard");
-    addMarker(4, "Auckland, New Zealand", -36.88441, 174.73785, "/gallery/v/new_zealand_billboards", "/gallery/d/2929-2/Auckland+NZ+A309.JPG", 100, 150, "Billboard");
-    addMarker(4, "Wellington, New Zealand", -41.21911, 174.87818, "/gallery/v/new_zealand_billboards", "/gallery/d/2922-2/Wellington+NZ+W84.jpg", 100, 150, "Billboard");
-    addMarker(4, "Trinidad", 10.65099, -61.50902, "/gallery/v/trinidad_billboard", "/gallery/d/2934-2/trinidad.jpg", 150, 113, "Billboard");
-    addMarker(4, "Chingola, Zambia", -12.5395, 27.8577, "/gallery/v/zambia_billboards/", "/gallery/d/2915-2/Chingola_001.jpg", 150, 113, "Billboard");
-    addMarker(4, "Ndola, Zambia", -12.9641, 28.6336, "/gallery/v/zambia_billboards/", "/gallery/d/2918-2/Ndola+CL_001.jpg", 150, 112, "Billboard");
+    addMarker(4, "Auckland, New Zealand", -36.84996, 174.76062, "/gallery/v/new_zealand_billboards", "/gallery/d/2926-2/Auckland+NZ+A108.JPG", 100, 150);
+    addMarker(4, "Auckland, New Zealand", -36.88441, 174.73785, "/gallery/v/new_zealand_billboards", "/gallery/d/2929-2/Auckland+NZ+A309.JPG", 100, 150);
+    addMarker(4, "Wellington, New Zealand", -41.21911, 174.87818, "/gallery/v/new_zealand_billboards", "/gallery/d/2922-2/Wellington+NZ+W84.jpg", 100, 150);
+    addMarker(4, "Trinidad", 10.65099, -61.50902, "/gallery/v/trinidad_billboard", "/gallery/d/2934-2/trinidad.jpg", 150, 113);
+    addMarker(4, "Chingola, Zambia", -12.5395, 27.8577, "/gallery/v/zambia_billboards/", "/gallery/d/2915-2/Chingola_001.jpg", 150, 113);
+    addMarker(4, "Ndola, Zambia", -12.9641, 28.6336, "/gallery/v/zambia_billboards/", "/gallery/d/2918-2/Ndola+CL_001.jpg", 150, 112);
+    addMarker(6, "Nairobi, Kenya", -1.279479, 36.821371, "/gallery/v/kenya_billboards/", "/gallery/d/3660-2/DSC02345.JPG", 150, 113, "Billboard");
+    addMarker(6, "Mauritius", -20.24102, 57.47116, "/gallery/v/mauritius_billboards/", "/gallery/d/3679-2/BEAU+BASSIN.JPG", 150, 113, "Billboard");
+    addMarker(6, "Mauritius", -20.16628, 57.48894, "/gallery/v/mauritius_billboards/", "/gallery/d/3683-2/Brabant+St.JPG", 150, 113, "Billboard");
+    addMarker(6, "Mauritius", -20.01751, 57.58012, "/gallery/v/mauritius_billboards/", "/gallery/d/3686-2/Grand+baie.JPG", 150, 113, "Billboard");
+    addMarker(6, "Mauritius", -20.27153, 57.47569, "/gallery/v/mauritius_billboards/", "/gallery/d/3689-2/La+Louise.JPG", 150, 113, "Billboard");
+    addMarker(6, "Mauritius", -20.28281, 57.51218, "/gallery/v/mauritius_billboards/", "/gallery/d/3692-2/Phoenix.JPG", 150, 113, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
