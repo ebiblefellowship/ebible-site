@@ -738,6 +738,7 @@
     addMarker(6, "Chile", -33.5769, -71.2141, "/gallery/v/chile_billboards/", "/gallery/d/3924-2/Ruta+G76+Maria+Pinto+Melipilla.jpg", 150, 113, "Billboard");
     addMarker(6, "Jakarta, Indonesia", -6.11389, 106.88191, "/gallery/v/indonesia_billboards/", "/gallery/d/3731-2/At+the+park+pf+jln_+Gorontalo+7.jpg", 150, 113, "Billboards");    
     addMarker(6, "Jakarta, Indonesia", -6.25609, 106.80056, "/gallery/v/indonesia_billboards/", "/gallery/d/3737-2/Billboard+kertajaya+-+darmawangsa.jpg", 150, 113, "Billboard");
+    addMarker(6, "Bangkok, Thailand", 13.83016, 100.67390, "/gallery/v/thailand_billboards/", "/gallery/d/3928-2/IMGP2993.JPG", 150, 113, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
