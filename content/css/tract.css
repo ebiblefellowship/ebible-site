@@ -14,7 +14,7 @@ div#main {
   font-size: 70%;
 }
 div#all_content {
-  margin: 20px 10% 20px 10%;  /* top left bottom right */
+  margin: 20px 5% 20px 5%;  /* top left bottom right */
   border: 2px solid #000;
   /*margin: 0px;*/
   padding: 20px;
@@ -62,14 +62,14 @@ h2 {
 h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #000;  
+  font-size: 105%;
 }
 p {
-  margin-top: 0.1em; 
-  margin-left: 1.5em;
-  margin-bottom: 0.1em;
-  text-align: left;
+  margin: 1em 1em 0 1em;
+  text-align: justify;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #000;
+  font-size: 100%;
 }
 p.q {
   margin-top: 1em;
@@ -113,7 +113,6 @@ p.verse {
   text-indent: 0em;
   margin-left: 3em;
   margin-right: 2em;
-  text-align: justify;
   font-style: italic;
 }
 p.verseb {
@@ -129,7 +128,8 @@ p.verseb {
 }
 p.text1 {
   /* jmg - for tract body paragraphs */
-  margin-top: 1em;
+  margin: 1em 1em 0 1em;
+  text-align: justify;
 }
 p.text1rt {
   /* jmg - added for arabic rt-to-lft text */
@@ -177,6 +177,7 @@ p.verseref {
   /*text-indent: 3em;*/
   text-align: right;
   font-weight: bold;
+  font-size: 85%;
 }
 .vref {
 /* jmg - for inline verse refs */
