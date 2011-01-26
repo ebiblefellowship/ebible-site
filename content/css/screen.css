@@ -598,6 +598,14 @@ li#map {
   background-position: 0 -145px;
 }
 
+li#rv {
+  background-position: 0 -217px;
+}
+
+li#plane {
+  background-position: 0 -290px;
+}
+
 /* Free Materials Sprite */
 #icon-list-free {
   list-style:none;
