@@ -14,6 +14,7 @@
 #verse-home-wrap {
   margin-top: -15px;
   visibility: hidden;
+  display: none;
 }
 #header-wrap {
   background: url(<%= images_url %>/colored_bars.jpg) repeat-x left top;

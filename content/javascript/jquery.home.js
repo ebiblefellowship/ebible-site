@@ -39,7 +39,8 @@
     $("#verse-home-wrap").onImagesLoad({
         callbackIfNoImagesExist: true,
         selectorCallback: function() {
-          $("#verse-home-wrap").show();
+          //$("#verse-home-wrap").show();
+          $("#verse-home-wrap").css("visibility", "visible");
         }
       });    
     
