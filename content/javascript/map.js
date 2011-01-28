@@ -723,22 +723,26 @@
     addMarker(4, "Chingola, Zambia", -12.5395, 27.8577, "/gallery/v/zambia_billboards/", "/gallery/d/2915-2/Chingola_001.jpg", 150, 113);
     addMarker(4, "Ndola, Zambia", -12.9641, 28.6336, "/gallery/v/zambia_billboards/", "/gallery/d/2918-2/Ndola+CL_001.jpg", 150, 112);
     addMarker(4, "Nairobi, Kenya", -1.279479, 36.821371, "/gallery/v/kenya_billboards/", "/gallery/d/3660-2/DSC02345.JPG", 150, 113);
+    addMarker(6, "Mwea, Kenya", -1.8914, 37.2337, "/gallery/v/kenya_billboards/", "/gallery/d/3932-2/Mwea.JPG", 150, 113, "Billboard");
+    addMarker(6, "Mombasa, Kenya", -4.0420, 39.6672, "/gallery/v/kenya_billboards/", "/gallery/d/3935-2/Nyali+Bridge+-+Mombasa.JPG", 150, 113, "Billboard");
     addMarker(4, "Mauritius", -20.24102, 57.47116, "/gallery/v/mauritius_billboards/", "/gallery/d/3679-2/BEAU+BASSIN.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.16628, 57.48894, "/gallery/v/mauritius_billboards/", "/gallery/d/3683-2/Brabant+St.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.01751, 57.58012, "/gallery/v/mauritius_billboards/", "/gallery/d/3686-2/Grand+baie.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.27153, 57.47569, "/gallery/v/mauritius_billboards/", "/gallery/d/3689-2/La+Louise.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.28281, 57.51218, "/gallery/v/mauritius_billboards/", "/gallery/d/3692-2/Phoenix.JPG", 150, 113);
-    addMarker(6, "Quito, Ecuador", -0.2304, -78.5268, "/gallery/v/ecuador_billboards/", "/gallery/d/3783-2/Bus006.jpg", 150, 110, "20 Buses");
-    addMarker(6, "Guayaquil, Ecuador", -2.1960, -79.8977, "/gallery/v/ecuador_billboards/", "/gallery/d/3870-2/Taxi015.jpg", 150, 110, "30 Taxis");
-    addMarker(6, "Chile", -33.6724, -71.1818, "/gallery/v/chile_billboards/", "/gallery/d/3760-2/21+may+r+78+km+64+_2_.jpg", 150, 113, "Billboard");
-    addMarker(6, "Chile", -33.6529, -71.3181, "/gallery/v/chile_billboards/", "/gallery/d/3763-2/21+may+r+78+km+76+_3_.jpg", 150, 113, "Billboard");
-    addMarker(6, "Chile", -33.4244, -70.6619, "/gallery/v/chile_billboards/", "/gallery/d/3918-2/21+de+mayo+010.jpg", 150, 113, "Billboard");
-    addMarker(6, "Chile", -33.6078, -71.4685, "/gallery/v/chile_billboards/", "/gallery/d/3920-2/Autopista+del+Sol+Km+103.jpg", 150, 113, "Billboard");
-    addMarker(6, "Chile", -33.60836, -70.53836, "/gallery/v/chile_billboards/", "/gallery/d/3922-2/Eyzaguirre+esq+21+Sep.jpg", 113, 150, "Billboard");
-    addMarker(6, "Chile", -33.5769, -71.2141, "/gallery/v/chile_billboards/", "/gallery/d/3924-2/Ruta+G76+Maria+Pinto+Melipilla.jpg", 150, 113, "Billboard");
-    addMarker(6, "Jakarta, Indonesia", -6.11389, 106.88191, "/gallery/v/indonesia_billboards/", "/gallery/d/3731-2/At+the+park+pf+jln_+Gorontalo+7.jpg", 150, 113, "Billboards");    
-    addMarker(6, "Jakarta, Indonesia", -6.25609, 106.80056, "/gallery/v/indonesia_billboards/", "/gallery/d/3737-2/Billboard+kertajaya+-+darmawangsa.jpg", 150, 113, "Billboard");
-    addMarker(6, "Bangkok, Thailand", 13.83016, 100.67390, "/gallery/v/thailand_billboards/", "/gallery/d/3928-2/IMGP2993.JPG", 150, 113, "Billboard");
+    addMarker(4, "Quito, Ecuador", -0.2304, -78.5268, "/gallery/v/ecuador_billboards/", "/gallery/d/3783-2/Bus006.jpg", 150, 110, "20 Buses");
+    addMarker(4, "Guayaquil, Ecuador", -2.1960, -79.8977, "/gallery/v/ecuador_billboards/", "/gallery/d/3870-2/Taxi015.jpg", 150, 110, "30 Taxis");
+    addMarker(4, "Chile", -33.6724, -71.1818, "/gallery/v/chile_billboards/", "/gallery/d/3760-2/21+may+r+78+km+64+_2_.jpg", 150, 113);
+    addMarker(4, "Chile", -33.6529, -71.3181, "/gallery/v/chile_billboards/", "/gallery/d/3763-2/21+may+r+78+km+76+_3_.jpg", 150, 113);
+    addMarker(4, "Chile", -33.4244, -70.6619, "/gallery/v/chile_billboards/", "/gallery/d/3918-2/21+de+mayo+010.jpg", 150, 113);
+    addMarker(4, "Chile", -33.6078, -71.4685, "/gallery/v/chile_billboards/", "/gallery/d/3920-2/Autopista+del+Sol+Km+103.jpg", 150, 113);
+    addMarker(4, "Chile", -33.60836, -70.53836, "/gallery/v/chile_billboards/", "/gallery/d/3922-2/Eyzaguirre+esq+21+Sep.jpg", 113, 150);
+    addMarker(4, "Chile", -33.5769, -71.2141, "/gallery/v/chile_billboards/", "/gallery/d/3924-2/Ruta+G76+Maria+Pinto+Melipilla.jpg", 150, 113);
+    addMarker(6, "Chile", -32.0546, -71.5196, "/gallery/v/chile_billboards/", "/gallery/d/3937-2/ruta+5+km+200+_4_.jpg", 150, 113, "Billboard");
+    addMarker(6, "Chile", -32.7064, -71.2045, "/gallery/v/chile_billboards/", "/gallery/d/3940-2/Ruta+5+Norte+Km+78.jpg", 113, 150, "Billboard");
+    addMarker(4, "Jakarta, Indonesia", -6.11389, 106.88191, "/gallery/v/indonesia_billboards/", "/gallery/d/3731-2/At+the+park+pf+jln_+Gorontalo+7.jpg", 150, 113, "Billboards");    
+    addMarker(4, "Jakarta, Indonesia", -6.25609, 106.80056, "/gallery/v/indonesia_billboards/", "/gallery/d/3737-2/Billboard+kertajaya+-+darmawangsa.jpg", 150, 113);
+    addMarker(4, "Bangkok, Thailand", 13.83016, 100.67390, "/gallery/v/thailand_billboards/", "/gallery/d/3928-2/IMGP2993.JPG", 150, 113);
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
