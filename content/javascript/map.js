@@ -449,6 +449,8 @@
     addMarker(1, "Maseru, Lesotho", -29.3225, 27.4829, null, null, null, null, "Family Radio Programming", null, schedule);
     schedule = {frequency:["1503 kHz AM",""],hours:["20:00-21:00","23:00-00:30"],days:["Monday-Sunday","Monday-Sunday"]};
     addMarker(1, "Moscow, Russia", 55.756, 37.620, null, null, null, null, "Family Radio Programming", null, schedule);
+    schedule = {frequency:["88.5 FM"],hours:["20:30-22:30"],days:["Monday-Sunday"]};
+    addMarker(1, "Monrovia, Liberia", 6.3051, -10.7970, null, null, null, null, "Family Radio Programming", null, schedule);
     
     // EBF broadcasts
     schedule = {frequency:["Kapital FM 97.1"],hours:["08:00-09:00"],days:["Sundays"]};
@@ -512,6 +514,7 @@
     addMarker(3, "Liverpool, England", 53.4149, -2.9773, null, null, null, null, "Tract Trip<br>January 2011");
     addMarker(3, "Manchester, England", 53.4858, -2.2357, null, null, null, null, "Tract Trip<br>January 2011");
     addMarker(3, "Dar Es Salaam, Tanzania", -6.8085, 39.2727, "/gallery/v/project_jonah/tanzania_tract_trip/", "/gallery/d/3674-2/tanzania-photo-3.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>January 2011");
+    addMarker(6, "Sri Lanka", 7.54, 80.62, "/gallery/v/project_jonah/sri_lanka_tract_trip/", "/gallery/d/3957-2/Citshrilanka.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>January 2011");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -723,8 +726,8 @@
     addMarker(4, "Chingola, Zambia", -12.5395, 27.8577, "/gallery/v/zambia_billboards/", "/gallery/d/2915-2/Chingola_001.jpg", 150, 113);
     addMarker(4, "Ndola, Zambia", -12.9641, 28.6336, "/gallery/v/zambia_billboards/", "/gallery/d/2918-2/Ndola+CL_001.jpg", 150, 112);
     addMarker(4, "Nairobi, Kenya", -1.279479, 36.821371, "/gallery/v/kenya_billboards/", "/gallery/d/3660-2/DSC02345.JPG", 150, 113);
-    addMarker(6, "Mwea, Kenya", -1.8914, 37.2337, "/gallery/v/kenya_billboards/", "/gallery/d/3932-2/Mwea.JPG", 150, 113, "Billboard");
-    addMarker(6, "Mombasa, Kenya", -4.0420, 39.6672, "/gallery/v/kenya_billboards/", "/gallery/d/3935-2/Nyali+Bridge+-+Mombasa.JPG", 150, 113, "Billboard");
+    addMarker(4, "Mwea, Kenya", -1.8914, 37.2337, "/gallery/v/kenya_billboards/", "/gallery/d/3932-2/Mwea.JPG", 150, 113);
+    addMarker(4, "Mombasa, Kenya", -4.0420, 39.6672, "/gallery/v/kenya_billboards/", "/gallery/d/3935-2/Nyali+Bridge+-+Mombasa.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.24102, 57.47116, "/gallery/v/mauritius_billboards/", "/gallery/d/3679-2/BEAU+BASSIN.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.16628, 57.48894, "/gallery/v/mauritius_billboards/", "/gallery/d/3683-2/Brabant+St.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.01751, 57.58012, "/gallery/v/mauritius_billboards/", "/gallery/d/3686-2/Grand+baie.JPG", 150, 113);
@@ -738,11 +741,13 @@
     addMarker(4, "Chile", -33.6078, -71.4685, "/gallery/v/chile_billboards/", "/gallery/d/3920-2/Autopista+del+Sol+Km+103.jpg", 150, 113);
     addMarker(4, "Chile", -33.60836, -70.53836, "/gallery/v/chile_billboards/", "/gallery/d/3922-2/Eyzaguirre+esq+21+Sep.jpg", 113, 150);
     addMarker(4, "Chile", -33.5769, -71.2141, "/gallery/v/chile_billboards/", "/gallery/d/3924-2/Ruta+G76+Maria+Pinto+Melipilla.jpg", 150, 113);
-    addMarker(6, "Chile", -32.0546, -71.5196, "/gallery/v/chile_billboards/", "/gallery/d/3937-2/ruta+5+km+200+_4_.jpg", 150, 113, "Billboard");
-    addMarker(6, "Chile", -32.7064, -71.2045, "/gallery/v/chile_billboards/", "/gallery/d/3940-2/Ruta+5+Norte+Km+78.jpg", 113, 150, "Billboard");
+    addMarker(4, "Chile", -32.0546, -71.5196, "/gallery/v/chile_billboards/", "/gallery/d/3937-2/ruta+5+km+200+_4_.jpg", 150, 113);
+    addMarker(4, "Chile", -32.7064, -71.2045, "/gallery/v/chile_billboards/", "/gallery/d/3940-2/Ruta+5+Norte+Km+78.jpg", 113, 150);
     addMarker(4, "Jakarta, Indonesia", -6.11389, 106.88191, "/gallery/v/indonesia_billboards/", "/gallery/d/3731-2/At+the+park+pf+jln_+Gorontalo+7.jpg", 150, 113, "Billboards");    
     addMarker(4, "Jakarta, Indonesia", -6.25609, 106.80056, "/gallery/v/indonesia_billboards/", "/gallery/d/3737-2/Billboard+kertajaya+-+darmawangsa.jpg", 150, 113);
     addMarker(4, "Bangkok, Thailand", 13.83016, 100.67390, "/gallery/v/thailand_billboards/", "/gallery/d/3928-2/IMGP2993.JPG", 150, 113);
+    addMarker(6, "Blantyre, Malawi", -15.7777, 35.0062, "/gallery/v/malawi_billboards/", "/gallery/d/3952-2/Malawi_Blantyer2.jpg", 150, 113, "Billboard");
+    addMarker(6, "Ireland", 53.3405, -6.2797, "/gallery/v/ireland_and_uk_tract_trip/", "/gallery/d/3600-2/IMG_0921.JPG", 150, 100, "29 Billboards");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
