@@ -12,8 +12,9 @@
 #
 # <%= render 'partial-name' [ args ... ] %>
 # http://nanoc.stoneship.org/docs/api/3.1/Nanoc3/Helpers/Rendering.html
-include Nanoc3::Helpers::Rendering
+include Nanoc3::Helpers::Blogging
 include Nanoc3::Helpers::Breadcrumbs
 include Nanoc3::Helpers::LinkTo
+include Nanoc3::Helpers::Rendering
 include Nanoc3::Helpers::XMLSitemap
 
