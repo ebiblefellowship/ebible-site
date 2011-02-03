@@ -1,14 +1,16 @@
   var queryVideo = false;
-  var feeds = [ 
-    {path: 'album/',id: '1472823', page: '1'}, 
+  var feeds = [   
     {path: '', id: 'ebible', page: '1', excludeTag: 'TFTB'}, 
     {path: '', id: 'ebible', page: '2', excludeTag: 'TFTB'}, 
-    {path: '', id: 'ebible', page: '3', excludeTag: 'TFTB'},     
+    {path: '', id: 'ebible', page: '3', excludeTag: 'TFTB'},
+    {path: 'album/',id: '1523895', page: '1'},
+    {path: 'album/',id: '1472823', page: '1'},    
     {path: '', id: 'bmi', page: '1', excludeTag: ''}, 
     {path: '', id: 'bmi', page: '2', excludeTag: ''},
     {path: '', id: 'bmi', page: '3', excludeTag: ''}
   ]        
   var fullNames = new Array();
+  fullNames['1523895'] = 'Bible Reading';
   fullNames['1472823'] = 'Thought From The Bible';
   fullNames['ebible'] = 'EBible Fellowship';
   fullNames['bmi'] = 'Bible Ministries International';      
