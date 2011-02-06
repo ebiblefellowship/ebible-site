@@ -451,6 +451,14 @@
     addMarker(1, "Moscow, Russia", 55.756, 37.620, null, null, null, null, "Family Radio Programming", null, schedule);
     schedule = {frequency:["88.5 FM"],hours:["20:30-22:30"],days:["Monday-Sunday"]};
     addMarker(1, "Monrovia, Liberia", 6.3051, -10.7970, null, null, null, null, "Family Radio Programming", null, schedule);
+    schedule = {frequency:["540 AM","1590 AM"],hours:["18:00-20:00","21:00-22:00"],days:["Monday-Sunday","Monday-Friday"]};
+    addMarker(1, "Mexico City, Mexico", 19.4420, -99.1290, null, null, null, null, "Family Radio Programming", null, schedule);
+    schedule = {frequency:["105.1 FM",""],hours:["05:00-06:00","18:00-19:00"],days:["Monday-Sunday","Monday-Sunday"]};
+    addMarker(1, "El Quiche, Guatemala", 15.534, -90.985, null, null, null, null, "Family Radio Programming", null, schedule);
+    schedule = {frequency:["1430 AM"],hours:["20:00-21:00"],days:["Monday-Sunday"]};
+    addMarker(1, "Puerto Rico", 18.4057, -66.0361, null, null, null, null, "Family Radio Programming", null, schedule);
+    schedule = {frequency:["1420 AM","91.3 FM"],hours:["14:00-15:00","13:00-14:00"],days:["Monday-Friday","Monday-Sunday"]};
+    addMarker(1, "Carora, Venezuela", 10.18037, -70.07363, null, null, null, null, "Family Radio Programming", null, schedule);
     
     // EBF broadcasts
     schedule = {frequency:["Kapital FM 97.1"],hours:["08:00-09:00"],days:["Sundays"]};
@@ -514,7 +522,13 @@
     addMarker(3, "Liverpool, England", 53.4149, -2.9773, null, null, null, null, "Tract Trip<br>January 2011");
     addMarker(3, "Manchester, England", 53.4858, -2.2357, null, null, null, null, "Tract Trip<br>January 2011");
     addMarker(3, "Dar Es Salaam, Tanzania", -6.8085, 39.2727, "/gallery/v/project_jonah/tanzania_tract_trip/", "/gallery/d/3674-2/tanzania-photo-3.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>January 2011");
-    addMarker(6, "Sri Lanka", 7.54, 80.62, "/gallery/v/project_jonah/sri_lanka_tract_trip/", "/gallery/d/3957-2/Citshrilanka.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>January 2011");
+    addMarker(3, "Sri Lanka", 7.54, 80.62, "/gallery/v/project_jonah/sri_lanka_tract_trip/", "/gallery/d/3957-2/Citshrilanka.jpg", 150, 113, "Family Radio Tract Trip<br>Project Jonah<br>January 2011");
+    addMarker(6, "Panama", 9.0533, -79.4456, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah<br>January 2011");
+    addMarker(6, "Arusha, Tanzania", -3.37291, 36.68477, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah<br>January 2011");
+    addMarker(6, "Mombasa, Kenya", -4.0581, 39.6661, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah<br>January 2011");
+    addMarker(6, "Nairobi, Kenya", -1.2911, 36.7771, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah<br>February 2011");
+    addMarker(6, "Awka, Nigeria", 6.20865, 7.06790, "/gallery/v/project_jonah/nigeria_tract_trip/", "/gallery/d/4129-2/LONDON+4.JPG", 150, 111, "Family Radio Tract Trip<br>Project Jonah<br>February 2011");
+    addMarker(6, "Hong Kong, China", 22.3377, 114.1685, "http://www.familyradio.com/english/connect/missions/letters/HongKong.html", null, null, null, "Family Radio Tract Trip<br>February 2011");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -722,12 +736,15 @@
     addMarker(4, "Auckland, New Zealand", -36.84996, 174.76062, "/gallery/v/new_zealand_billboards", "/gallery/d/2926-2/Auckland+NZ+A108.JPG", 100, 150);
     addMarker(4, "Auckland, New Zealand", -36.88441, 174.73785, "/gallery/v/new_zealand_billboards", "/gallery/d/2929-2/Auckland+NZ+A309.JPG", 100, 150);
     addMarker(4, "Wellington, New Zealand", -41.21911, 174.87818, "/gallery/v/new_zealand_billboards", "/gallery/d/2922-2/Wellington+NZ+W84.jpg", 100, 150);
+    addMarker(6, "Christchurch, New Zealand", -43.53504, 172.63130, "/gallery/v/new_zealand_billboards/", "/gallery/d/3993-2/Christchurch+NZ+C23.jpg", 113, 150, "Billboard");
     addMarker(4, "Trinidad", 10.65099, -61.50902, "/gallery/v/trinidad_billboard", "/gallery/d/2934-2/trinidad.jpg", 150, 113);
     addMarker(4, "Chingola, Zambia", -12.5395, 27.8577, "/gallery/v/zambia_billboards/", "/gallery/d/2915-2/Chingola_001.jpg", 150, 113);
     addMarker(4, "Ndola, Zambia", -12.9641, 28.6336, "/gallery/v/zambia_billboards/", "/gallery/d/2918-2/Ndola+CL_001.jpg", 150, 112);
     addMarker(4, "Nairobi, Kenya", -1.279479, 36.821371, "/gallery/v/kenya_billboards/", "/gallery/d/3660-2/DSC02345.JPG", 150, 113);
     addMarker(4, "Mwea, Kenya", -1.8914, 37.2337, "/gallery/v/kenya_billboards/", "/gallery/d/3932-2/Mwea.JPG", 150, 113);
     addMarker(4, "Mombasa, Kenya", -4.0420, 39.6672, "/gallery/v/kenya_billboards/", "/gallery/d/3935-2/Nyali+Bridge+-+Mombasa.JPG", 150, 113);
+    addMarker(6, "Eldoret, Kenya", 0.5194, 35.2659, "/gallery/v/kenya_billboards/", "/gallery/d/3996-2/Eldoret.jpg", 150, 113, "Billboard");
+    addMarker(6, "Kisumu, Kenya", -0.09836, 34.76109, "/gallery/v/kenya_billboards/", "/gallery/d/3999-2/Kisumu.jpg", 150, 84, "Billboard");
     addMarker(4, "Mauritius", -20.24102, 57.47116, "/gallery/v/mauritius_billboards/", "/gallery/d/3679-2/BEAU+BASSIN.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.16628, 57.48894, "/gallery/v/mauritius_billboards/", "/gallery/d/3683-2/Brabant+St.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.01751, 57.58012, "/gallery/v/mauritius_billboards/", "/gallery/d/3686-2/Grand+baie.JPG", 150, 113);
@@ -746,8 +763,18 @@
     addMarker(4, "Jakarta, Indonesia", -6.11389, 106.88191, "/gallery/v/indonesia_billboards/", "/gallery/d/3731-2/At+the+park+pf+jln_+Gorontalo+7.jpg", 150, 113, "Billboards");    
     addMarker(4, "Jakarta, Indonesia", -6.25609, 106.80056, "/gallery/v/indonesia_billboards/", "/gallery/d/3737-2/Billboard+kertajaya+-+darmawangsa.jpg", 150, 113);
     addMarker(4, "Bangkok, Thailand", 13.83016, 100.67390, "/gallery/v/thailand_billboards/", "/gallery/d/3928-2/IMGP2993.JPG", 150, 113);
-    addMarker(6, "Blantyre, Malawi", -15.7777, 35.0062, "/gallery/v/malawi_billboards/", "/gallery/d/3952-2/Malawi_Blantyer2.jpg", 150, 113, "Billboard");
-    addMarker(6, "Ireland", 53.3405, -6.2797, "/gallery/v/ireland_and_uk_tract_trip/", "/gallery/d/3600-2/IMG_0921.JPG", 150, 100, "29 Billboards");
+    addMarker(4, "Blantyre, Malawi", -15.7777, 35.0062, "/gallery/v/malawi_billboards/", "/gallery/d/3952-2/Malawi_Blantyer2.jpg", 150, 113);
+    addMarker(4, "Ireland", 53.3405, -6.2797, "/gallery/v/ireland_and_uk_tract_trip/", "/gallery/d/3600-2/IMG_0921.JPG", 150, 100, "29 Billboards");
+    addMarker(6, "Egypt", 26.55264, 31.69195, "/gallery/v/egypt_banners/", "/gallery/d/4048-2/banner003.jpg", 150, 113, "Banners");
+    addMarker(6, "Arua, Uganda", 3.03193, 30.90995, "/gallery/v/uganda_billboards/", "/gallery/d/4015-2/arua.jpg", 150, 91, "Billboard");
+    addMarker(6, "Kampala, Uganda", 0.34418, 32.54331, "/gallery/v/uganda_billboards/", "/gallery/d/4019-2/kampala-namirembe-road-taxi-park.jpg", 150, 84, "Billboard");
+    addMarker(6, "Lira, Uganda", 2.25076, 32.90028, "/gallery/v/uganda_billboards/", "/gallery/d/4022-2/lira-town.jpg", 150, 84, "Billboard");
+    addMarker(6, "Mbarara, Uganda", -0.6013, 30.6483, "/gallery/v/uganda_billboards/", "/gallery/d/4025-2/mbarara.jpg", 150, 84, "Billboard");
+    addMarker(6, "Kampala, Uganda", 0.3213, 32.5813, "/gallery/v/uganda_billboards/", "/gallery/d/4028-2/taxi001.jpg", 150, 97, "20 Taxis");
+    addMarker(6, "Maputo, Mozambique", -25.97651, 32.59298, "/gallery/v/mozambique_billboard/", "/gallery/d/4004-2/maputo-polana.jpg", 150, 112, "Billboard");
+    addMarker(6, "Macia, Mozambique", -25.0270, 33.0963, "/gallery/v/mozambique_billboard/", "/gallery/d/4007-2/gaza-macia.jpg", 150, 112, "Billboard");
+    addMarker(6, "Inhambane, Mozambique", -23.8700, 35.3887, "/gallery/v/mozambique_billboard/", "/gallery/d/4010-2/inhambane.jpg", 150, 112, "Billboard");
+    addMarker(6, "London, England", 51.5173, -0.128, "/gallery/v/uk_billboards/", "/gallery/d/4092-2/FAMILY+RADIO+001+_Large_.jpg", 150, 113, "Billboards");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
