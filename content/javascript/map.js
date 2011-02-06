@@ -775,6 +775,17 @@
     addMarker(6, "Macia, Mozambique", -25.0270, 33.0963, "/gallery/v/mozambique_billboard/", "/gallery/d/4007-2/gaza-macia.jpg", 150, 112, "Billboard");
     addMarker(6, "Inhambane, Mozambique", -23.8700, 35.3887, "/gallery/v/mozambique_billboard/", "/gallery/d/4010-2/inhambane.jpg", 150, 112, "Billboard");
     addMarker(6, "London, England", 51.5173, -0.128, "/gallery/v/uk_billboards/", "/gallery/d/4092-2/FAMILY+RADIO+001+_Large_.jpg", 150, 113, "Billboards");
+    addMarker(6, "Bangladesh", 23.87913, 90.40134, "/gallery/v/bangladesh_billboards/", "/gallery/d/4175-2/Abdullah+pur_+Uttara+Size+-+15X25+_down_.JPG", 150, 113, "Billboard");
+    addMarker(6, "Bangladesh", 23.87407, 90.40057, "/gallery/v/bangladesh_billboards/", "/gallery/d/4179-2/Abdullah+pur_+Uttara+Size+-+15X25+_up_.JPG", 150, 113, "Billboard");
+    addMarker(6, "Bangladesh", 23.70855, 90.43250, "/gallery/v/bangladesh_billboards/", "/gallery/d/4182-2/Jattra+Bari_+Size+-+20X20.JPG", 150, 113, "Billboard");
+    addMarker(6, "Bangladesh", 23.74412, 90.42669, "/gallery/v/bangladesh_billboards/", "/gallery/d/4185-2/Location+-+Khilgaon+Flyover_+Size+-+10X30.JPG", 150, 113, "Billboard");
+    addMarker(6, "Bangladesh", 23.86496, 90.39675, "/gallery/v/bangladesh_billboards/", "/gallery/d/4188-2/Location+-+Raj+Laxmi_+Uttara+_+Size+-+15X30.JPG", 150, 113, "Billboard");
+    addMarker(6, "Bangladesh", 23.74738, 90.41259, "/gallery/v/bangladesh_billboards/", "/gallery/d/4191-2/Location-+Malibagh+Rail+Gate_+Size+-15X30.JPG", 113, 150, "Billboard");
+    addMarker(6, "Bangladesh", 23.74960, 90.40362, "/gallery/v/bangladesh_billboards/", "/gallery/d/4194-2/Moge+Bazar+_+Size-15X40.JPG", 150, 113, "Billboard");
+    addMarker(6, "Bangladesh", 23.73389, 90.41714, "/gallery/v/bangladesh_billboards/", "/gallery/d/4197-2/Motijheel+_+Size-+15X40.JPG", 150, 113, "Billboard");
+    addMarker(6, "Bangladesh", 23.75960, 90.39416, "/gallery/v/bangladesh_billboards/", "/gallery/d/4200-2/Sation+Road_+Tongi_+size+-+15X30.JPG", 150, 113, "Billboard");
+    addMarker(6, "Bangladesh", 23.73915, 90.41426, "/gallery/v/bangladesh_billboards/", "/gallery/d/4203-2/Shanti+Nagar_+Size+-+15X30.JPG", 150, 113, "Billboard");
+    addMarker(6, "Bangladesh", 23.89015, 90.40160, "/gallery/v/bangladesh_billboards/", "/gallery/d/4206-2/Station+Road_+Tongi+_+Size+-+15X30.JPG", 150, 113, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
