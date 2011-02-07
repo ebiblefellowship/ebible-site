@@ -359,24 +359,26 @@ h2.large {
   bottom: 0;
 }
 
-.contentbar-mid p { 
+.contentbar-mid > p { 
   margin: 0 45px 15px 45px; 
 }
 
+/* probably from prototype for question summary--use .question-summary below
 .contentbar-mid ol li { 
   color: #666; 
   font-size: 10pt; 
   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; 
   text-align: justify; 
   margin: 0 40px 12px 40px; 
-}
+}*/
 
+/* probably from prototype for question summary timestamp--use .question-summary below
 .contentbar-mid ol li .time { 
   color: #006699; 
   padding-bottom: 10px;
-}
+}*/
 
-.contentbar-mid ul li { 
+.contentbar-mid > ul > li { 
   color: #666; 
   font-size: 10pt; 
   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; 
@@ -388,6 +390,15 @@ h2.large {
   background: url(<%= images_url %>/roundframe_bottom.png) no-repeat; 
   margin: 0 0 30px 10px; 
   height: 33px;
+}
+
+.question-summary p {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.question-summary .time {
+  color: #069;
 }
 
 /* Begin CSS Sprites */
