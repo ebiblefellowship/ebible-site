@@ -1,18 +1,19 @@
   var queryVideo = false;
   var feeds = [   
-    {path: '', id: 'ebible', page: '1', excludeTag: 'TFTB'}, 
-    {path: '', id: 'ebible', page: '2', excludeTag: 'TFTB'}, 
-    {path: '', id: 'ebible', page: '3', excludeTag: 'TFTB'},
-    {path: 'album/',id: '1523895', page: '1'},
-    {path: 'album/',id: '1472823', page: '1'},    
+    {path: 'album/', id: '96423', page: '1'}, // Sunday Bible Messages Album 
+    {path: 'album/', id: '96423', page: '2'}, 
+    {path: 'album/', id: '96423', page: '3'},
+    {path: 'album/', id: '1523895', page: '1'}, // Bible Reading Album
+    {path: 'album/', id: '1523895', page: '2'},
+    {path: 'album/', id: '1472823', page: '1'}, // Thought From The Bible Album  
     {path: '', id: 'bmi', page: '1', excludeTag: ''}, 
     {path: '', id: 'bmi', page: '2', excludeTag: ''},
     {path: '', id: 'bmi', page: '3', excludeTag: ''}
   ]        
   var fullNames = new Array();
+  fullNames['96423'] = 'EBible Fellowship';
   fullNames['1523895'] = 'Bible Reading';
   fullNames['1472823'] = 'Thought From The Bible';
-  fullNames['ebible'] = 'EBible Fellowship';
   fullNames['bmi'] = 'Bible Ministries International';      
   fullNames['youtube'] = 'YouTube';
   var active = new Array();
