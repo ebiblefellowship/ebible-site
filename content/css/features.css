@@ -26,6 +26,12 @@
   position: relative;  
 }
 
+.two-image-container {
+  float: left;
+  width: 45%;
+  margin: -10px 0 0 30px;
+}
+
 .three-image-container {
   float: left;
   width: 31%;
@@ -102,12 +108,18 @@
   text-align: center 
 }
 
-.billboard h3.left { 
+.billboard h3.left, .billboard h3.project { 
   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
   font-weight: normal;
   color: #dacdb0;
   margin: 0 0 0 20px;
   text-align: center;
+}
+
+.billboard h3.project { 
+  margin: 0;
+  font-weight: bold;
+  clear: both;
 }
 
 .billboard a {
