@@ -6,7 +6,7 @@
   var pubIndex = 1;
   $(document).ready(function(){     
     
-    $("#countdown").countdown({until: new Date(2011, 5 - 1, 21, 23, 59, 59), format: 'Od', layout: '{on} {ol}{d<} and {dn} {dl}{d>} Remaining'});
+    $("#countdown").countdown({until: new Date(2011, 5 - 1, 21), format: 'Od', layout: '{on} {ol}{d<} and {dn} {dl}{d>} Remaining'});
     
     // ie6 fix grey gradient on homepage
     if(typeof document.body.style.maxHeight === "undefined") {
