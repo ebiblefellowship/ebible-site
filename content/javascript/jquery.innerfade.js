@@ -224,21 +224,21 @@ function fandr(fr, element) {
 function getTimeout(index) {
   var timeout;  
   switch (index) {
-    case 0: // continents/countries listing
-      timeout = 4000;
+    case 0: // Project Caravan/Jonah
+      timeout = 8000;
       break;
-    case 1: // billboards
+    case 1: // continents/countries listing
       timeout = 4000;
       break;
     case 2: // billboards
       timeout = 4000;
-      break;      
+      break;
     case 3: // billboards
       timeout = 4000;
       break;      
     case 4: // billboards
       timeout = 4000;
-      break;
+      break;      
     case 5: // billboards
       timeout = 4000;
       break;
@@ -260,14 +260,14 @@ function getTimeout(index) {
     case 11: // billboards
       timeout = 4000;
       break;
-    case 12: // moving billboards
+    case 12: // billboards
       timeout = 4000;
       break;
     case 13: // moving billboards
       timeout = 4000;
       break;
-    case 14: // Project Caravan/Jonah
-      timeout = 8000;
+    case 14: // moving billboards
+      timeout = 4000;
       break;
     case 15: // outreach map
       timeout = 8000;
