@@ -7,14 +7,14 @@ EBible Fellowship is holding a two day Bible conference with a banquet.
 
 ## When
 
-April 15th and 16th, 2011
+Starts Friday April 15th at 6 PM through Saturday afternoon the 16th
 
 ## Conference and Banquet Location
 
 Holiday Inn Select\\
 630 Naamans Road\\
 Claymont, DE 19703\\
-(302) 792-2700\\
+(800) 660-1370 or (302) 792-2700\\
 [Web Site](http://www.ichotelsgroup.com/h/d/sl/1/en/hotel/cymde)
 
 The hotel should be contacted only for information regarding lodging and 
@@ -23,7 +23,7 @@ or sell tickets to it.
 
 ## Lodging Information
 
-Call the Holiday Inn Select at (302) 792-2700 to make room reservations 
+Call the Holiday Inn Select at the number above to make room reservations 
 if you need them.  Make sure to mention you are there for the *EBible 
 Conference* so you will get the discounted rate of $89 plus tax.  
 
@@ -46,7 +46,17 @@ Banquet tickets are available on a first-come first-serve basis.
 
 ## Conference Schedule
 
-Friday and Saturday.  Details to follow.
+###Friday
+
+6 PM to about 9 PM
+
+###Saturday
+
+9 AM to 1 PM\\
+1 PM to 2:30 PM - Banquet\\
+2:30 PM - TBD
+
+Details and possible corrections to follow.
 
 ## Contact Information
 
