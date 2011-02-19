@@ -23,8 +23,8 @@
     
     // create map    
     var myOptions = {
-      zoom: 3,
-      center: new google.maps.LatLng(15.550101, 32.532241),
+      zoom: 2,
+      center: new google.maps.LatLng(22.550101, 42.532241),
       mapTypeControl: false,      
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
