@@ -529,13 +529,25 @@
     addMarker(3, "Nairobi, Kenya", -1.2911, 36.7771, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah<br>February 2011");
     addMarker(3, "Awka, Nigeria", 6.20865, 7.06790, "/gallery/v/project_jonah/nigeria_tract_trip/", "/gallery/d/4129-2/LONDON+4.JPG", 150, 111, "Family Radio Tract Trip<br>Project Jonah<br>February 2011");
     addMarker(3, "Hong Kong, China", 22.3377, 114.1685, "http://www.familyradio.com/english/connect/missions/letters/HongKong.html", null, null, null, "Family Radio Tract Trip<br>February 2011");
-    addMarker(6, "Kampala, Uganda", 0.31234, 32.58820, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah<br>February 2011");
+    addMarker(3, "Kampala, Uganda", 0.31234, 32.58820, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah<br>February 2011");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
     addMarker(4, "Maputo, Mozambique", -25.968945, 32.569551, "/gallery/v/mozambique_billboard/", "/gallery/d/1705-2/Mozambique.jpg", 150, 113);
-    addMarker(4, "Mbabane, Swaziland", -26.3166667, 31.1333333, "/gallery/v/swaziland_billboards/", "/gallery/d/2439-2/Swaziland_+Mbabane+Nov_2010.JPG", 150, 84);
+    addMarker(4, "Maputo, Mozambique", -25.97651, 32.59298, "/gallery/v/mozambique_billboard/", "/gallery/d/4004-2/maputo-polana.jpg", 150, 112);
+    addMarker(4, "Macia, Mozambique", -25.0270, 33.0963, "/gallery/v/mozambique_billboard/", "/gallery/d/4007-2/gaza-macia.jpg", 150, 112);
+    addMarker(4, "Inhambane, Mozambique", -23.8700, 35.3887, "/gallery/v/mozambique_billboard/", "/gallery/d/4010-2/inhambane.jpg", 150, 112);    
+    addMarker(6, "Beira, Mozambique", -19.8248, 34.8510, "/gallery/v/mozambique_billboard/", "/gallery/d/5419-2/beira.jpg", 150, 112, "Billboard");
+    addMarker(6, "Chimoio, Mozambique", -19.1131, 33.4503, "/gallery/v/mozambique_billboard/", "/gallery/d/5422-2/chimoio.jpg", 150, 112, "Billboard");
+    addMarker(6, "Lichinga, Mozambique", -13.3084, 35.2342, "/gallery/v/mozambique_billboard/", "/gallery/d/5425-2/lichinga.jpg", 150, 112, "Billboard");
+    addMarker(6, "Nacala, Mozambique", -14.5567, 40.6882, "/gallery/v/mozambique_billboard/", "/gallery/d/5428-2/nacala.jpg", 150, 113, "Billboard");
+    addMarker(6, "Nampula, Mozambique", -15.1127, 39.2669, "/gallery/v/mozambique_billboard/", "/gallery/d/5431-2/nampula.jpg", 150, 112, "Billboard");
+    addMarker(6, "Pemba, Mozambique", -12.97069, 40.51809, "/gallery/v/mozambique_billboard/", "/gallery/d/5434-2/pemba.jpg", 150, 112, "Billboard");
+    addMarker(6, "Quelimane, Mozambique", -17.8724, 36.8871, "/gallery/v/mozambique_billboard/", "/gallery/d/5437-2/quelimane.jpg", 150, 112, "Billboard");
+    addMarker(6, "Tete, Mozambique", -16.1590, 33.5895, "/gallery/v/mozambique_billboard/", "/gallery/d/5442-2/tete-b.jpg", 150, 112, "2 Billboards");
+    addMarker(4, "Mbabane, Swaziland", -26.3166667, 31.1333333, "/gallery/v/swaziland_billboards/", "/gallery/d/5416-2/Swaziland_Mbabane.jpg", 150, 84);
     addMarker(4, "Manzini, Swaziland", -26.49502, 31.387711, "/gallery/v/swaziland_billboards/", "/gallery/d/2454-2/Swaziland_+Manzini_Nov_2010.JPG", 150, 84);
+    addMarker(6, "Swaziland", -26.33919, 31.14349, "/gallery/v/swaziland_billboards/", "/gallery/d/5413-2/Swaziland.jpg", 150, 84, "Billboard");
     addMarker(4, "Accra, Ghana", 5.555717, -0.196306, "/gallery/v/ghana_accra_billboard/", "/gallery/d/1671-2/IMG_1519.jpg", 150, 113);
     addMarker(4, "Tamale, Ghana", 9.4075, -0.8533333, "/gallery/v/ghana_tamale_billboard/", "/gallery/d/1046-2/Picture+2672.jpg", 150, 113);
     addMarker(4, "Sunyani, Ghana", 7.3333333, -2.3333333, "/gallery/v/ghana_sunyani_billboard/", "/gallery/d/1070-2/IMG_0965.jpg", 150, 113);
@@ -765,6 +777,8 @@
     addMarker(4, "Jakarta, Indonesia", -6.25609, 106.80056, "/gallery/v/indonesia_billboards/", "/gallery/d/3737-2/Billboard+kertajaya+-+darmawangsa.jpg", 150, 113);
     addMarker(4, "Bangkok, Thailand", 13.83016, 100.67390, "/gallery/v/thailand_billboards/", "/gallery/d/3928-2/IMGP2993.JPG", 150, 113);
     addMarker(4, "Blantyre, Malawi", -15.7777, 35.0062, "/gallery/v/malawi_billboards/", "/gallery/d/3952-2/Malawi_Blantyer2.jpg", 150, 113);
+    addMarker(6, "Lilongwe, Malawi", -13.98708, 33.76830, "/gallery/v/malawi_billboards/", "/gallery/d/5407-2/Malawi+Lilongwe_M1+Rd_+Near+Nico+Centre.jpg", 150, 113, "Billboard");
+    addMarker(6, "Mzuzu, Malawi", -11.4539, 34.0147, "/gallery/v/malawi_billboards/", "/gallery/d/5410-2/MMZU007-01+Lubinga+Road+Facing+Market.jpg", 150, 113, "Billboard");
     addMarker(4, "Ireland", 53.3405, -6.2797, "/gallery/v/ireland_and_uk_tract_trip/", "/gallery/d/3600-2/IMG_0921.JPG", 150, 100, "29 Billboards");
     addMarker(4, "Egypt", 26.55264, 31.69195, "/gallery/v/egypt_banners/", "/gallery/d/4048-2/banner003.jpg", 150, 113, "Banners");
     addMarker(4, "Arua, Uganda", 3.03193, 30.90995, "/gallery/v/uganda_billboards/", "/gallery/d/4015-2/arua.jpg", 150, 91);
@@ -772,9 +786,6 @@
     addMarker(4, "Lira, Uganda", 2.25076, 32.90028, "/gallery/v/uganda_billboards/", "/gallery/d/4022-2/lira-town.jpg", 150, 84);
     addMarker(4, "Mbarara, Uganda", -0.6013, 30.6483, "/gallery/v/uganda_billboards/", "/gallery/d/4025-2/mbarara.jpg", 150, 84);
     addMarker(4, "Kampala, Uganda", 0.3213, 32.5813, "/gallery/v/uganda_billboards/", "/gallery/d/4028-2/taxi001.jpg", 150, 97, "20 Taxis");
-    addMarker(4, "Maputo, Mozambique", -25.97651, 32.59298, "/gallery/v/mozambique_billboard/", "/gallery/d/4004-2/maputo-polana.jpg", 150, 112);
-    addMarker(4, "Macia, Mozambique", -25.0270, 33.0963, "/gallery/v/mozambique_billboard/", "/gallery/d/4007-2/gaza-macia.jpg", 150, 112);
-    addMarker(4, "Inhambane, Mozambique", -23.8700, 35.3887, "/gallery/v/mozambique_billboard/", "/gallery/d/4010-2/inhambane.jpg", 150, 112);
     addMarker(4, "London, England", 51.5173, -0.128, "/gallery/v/uk_billboards/", "/gallery/d/4092-2/FAMILY+RADIO+001+_Large_.jpg", 150, 113, "Billboards");
     addMarker(4, "Bangladesh", 23.87913, 90.40134, "/gallery/v/bangladesh_billboards/", "/gallery/d/4175-2/Abdullah+pur_+Uttara+Size+-+15X25+_down_.JPG", 150, 113);
     addMarker(4, "Bangladesh", 23.87407, 90.40057, "/gallery/v/bangladesh_billboards/", "/gallery/d/4179-2/Abdullah+pur_+Uttara+Size+-+15X25+_up_.JPG", 150, 113);
@@ -816,13 +827,13 @@
     addMarker(4, "Delaware", 39.80092, -75.54759, "/gallery/v/delaware_billboards/", "/gallery/d/4646-2/IMG00499.jpg", 150, 113);
     addMarker(4, "Delaware", 39.73374, -75.63932, "/gallery/v/delaware_billboards/", "/gallery/d/4650-2/IMG00505.jpg", 150, 113);
     addMarker(4, "Bergen County, New Jersey", 40.9410, -74.0774, "/gallery/v/nj-buses/", "/gallery/d/4737-2/DSC00199.jpg", 150, 113, "Buses");
-    addMarker(6, "Philadelphia, Pennsylvania", 40.03156, -75.02194, "/gallery/v/philadelphia_billboards/", "/gallery/d/5404-2/Philadelphia-95-Billboard-2.jpg", 150, 94, "Billboard");
-    addMarker(6, "Blacktown, New South Wales, Australia", -33.75906, 150.91425, "/gallery/v/australia_billboards/", "/gallery/d/5379-2/NSW+-+Blacktown+-+Sunnyholt+Rd.JPG", 150, 104, "Billboard");
-    addMarker(6, "West Pennant Hills, New South Wales, Australia", -33.74904, 151.04935, "/gallery/v/australia_billboards/", "/gallery/d/5383-2/NSW+-+West+Pennant+Hills+-+Pennant+Hills+Rd.JPG", 150, 103, "Billboard");
-    addMarker(6, "Milton, Queensland, Australia", -27.468440, 153.00506, "/gallery/v/australia_billboards/", "/gallery/d/5386-2/QLD+-+Milton+-+Milton+Rd.JPG", 150, 102, "Billboard");
-    addMarker(6, "Wacol, Queensland, Australia", -27.57901, 152.92441, "/gallery/v/australia_billboards/", "/gallery/d/5389-2/QLD+-+Wacol+-+Wacol+Station+Rd.JPG", 150, 103, "Billboard");
-    addMarker(6, "Coburg, Victoria, Australia", -37.74043, 144.96301, "/gallery/v/australia_billboards/", "/gallery/d/5392-2/VIC+-+Coburg+-+148+Bell+St.JPG", 150, 103, "Billboard");
-    addMarker(6, "Footscray, Victoria, Australia", -37.80285, 144.89257, "/gallery/v/australia_billboards/", "/gallery/d/5395-2/VIC+-+Footscray+-+65+Victoria+St.JPG", 150, 103, "Billboard");
+    addMarker(4, "Philadelphia, Pennsylvania", 40.03156, -75.02194, "/gallery/v/philadelphia_billboards/", "/gallery/d/5404-2/Philadelphia-95-Billboard-2.jpg", 150, 94);
+    addMarker(4, "Blacktown, New South Wales, Australia", -33.75906, 150.91425, "/gallery/v/australia_billboards/", "/gallery/d/5379-2/NSW+-+Blacktown+-+Sunnyholt+Rd.JPG", 150, 104);
+    addMarker(4, "West Pennant Hills, New South Wales, Australia", -33.74904, 151.04935, "/gallery/v/australia_billboards/", "/gallery/d/5383-2/NSW+-+West+Pennant+Hills+-+Pennant+Hills+Rd.JPG", 150, 103);
+    addMarker(4, "Milton, Queensland, Australia", -27.468440, 153.00506, "/gallery/v/australia_billboards/", "/gallery/d/5386-2/QLD+-+Milton+-+Milton+Rd.JPG", 150, 102);
+    addMarker(4, "Wacol, Queensland, Australia", -27.57901, 152.92441, "/gallery/v/australia_billboards/", "/gallery/d/5389-2/QLD+-+Wacol+-+Wacol+Station+Rd.JPG", 150, 103);
+    addMarker(4, "Coburg, Victoria, Australia", -37.74043, 144.96301, "/gallery/v/australia_billboards/", "/gallery/d/5392-2/VIC+-+Coburg+-+148+Bell+St.JPG", 150, 103);
+    addMarker(4, "Footscray, Victoria, Australia", -37.80285, 144.89257, "/gallery/v/australia_billboards/", "/gallery/d/5395-2/VIC+-+Footscray+-+65+Victoria+St.JPG", 150, 103);    
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
