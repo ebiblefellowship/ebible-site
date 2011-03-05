@@ -853,7 +853,27 @@
     addMarker(6, "Port Moresby, Papua New Guinea", -9.47929, 147.19019, "/gallery/v/papua_new_guinea_billboard/", "/gallery/d/5757-2/Port+Moresby+-+Papua+New+Guinea+3.jpg", 150, 113, "Billboard");
     addMarker(6, "Philippines", 14.642, 120.984, "/gallery/v/philippines_billboards/", "/gallery/d/5730-2/tyw+634.jpg", 150, 134, "30 Buses");
     addMarker(6, "Guatemala", 15.10, -89.92, "/gallery/v/moving_billboards/", "/gallery/d/5785-2/guatemala-moving-billboard-1.jpg", 150, 112, "Moving Billboard");
-    addMarker(6, "Belize", 16.978, -88.314, "/gallery/v/moving_billboards/", null, null, null, "Moving Billboard");
+    addMarker(6, "Belize", 16.978, -88.314, "/gallery/v/moving_billboards/", null, null, null, "Moving Billboard");    
+    addMarker(6, "Kathmandu, Nepal", 27.68710, 85.34875, "/gallery/v/nepal_billboards/", "/gallery/d/5851-2/1+Tinkune-KTM.jpg", 150, 100, "Billboard");
+    addMarker(6, "Nepalgunj, Nepal", 28.06643, 81.63732, "/gallery/v/nepal_billboards/", "/gallery/d/5855-2/10+Nepalgunj+Highway.jpg", 150, 105, "Billboard");
+    addMarker(6, "Nepalgunj, Nepal", 28.1067, 81.6665, "/gallery/v/nepal_billboards/", "/gallery/d/5858-2/11+Nepalgunj_+Airport.jpg", 150, 105, "Billboard");
+    addMarker(6, "Palpa, Nepal", 27.8312, 83.4652, "/gallery/v/nepal_billboards/", "/gallery/d/5861-2/12+PALPAA+Busstand.jpg", 150, 89, "Billboard");
+    addMarker(6, "Birgunj, Nepal", 27.01444, 84.87848, "/gallery/v/nepal_billboards/", "/gallery/d/5864-2/13+Birgunj-Ghantaghar+Area.jpg", 150, 113, "Billboard");
+    addMarker(6, "Dharan, Nepal", 26.81166, 87.28498, "/gallery/v/nepal_billboards/", "/gallery/d/5867-2/14+Dharan+BusPark.jpg", 150, 113, "Billboard");
+    addMarker(6, "Itahari, Nepal", 26.6702, 87.2831, "/gallery/v/nepal_billboards/", "/gallery/d/5870-2/15+Itahari+Chowk.JPG", 150, 113, "Billboard");
+    addMarker(6, "Biratnagar, Nepal", 26.45605, 87.28037, "/gallery/v/nepal_billboards/", "/gallery/d/5873-2/16+Biratnagar-Shivmandir.JPG", 150, 113, "Billboard");
+    addMarker(6, "Simara, Nepal", 27.160414, 84.97960, "/gallery/v/nepal_billboards/", "/gallery/d/5876-2/18+Simara+Airport.jpg", 150, 113, "Billboard");
+    addMarker(6, "Damak, Nepal", 26.6757, 87.6682, "/gallery/v/nepal_billboards/", "/gallery/d/5881-2/20+Damak+15x30.jpg", 150, 105, "Billboard");
+    addMarker(6, "Birtamod, Nepal", 26.63426, 87.98332, "/gallery/v/nepal_billboards/", "/gallery/d/5884-2/21+Birtamod+15x30.jpg", 150, 105, "Billboard");
+    addMarker(6, "Mahendranagar, Nepal", 28.9786, 80.1538, "/gallery/v/nepal_billboards/", "/gallery/d/5887-2/23+Mahendra+nagar.jpg", 150, 112, "Billboard");
+    addMarker(6, "Kathmandu, Nepal", 27.69166, 85.32935, "/gallery/v/nepal_billboards/", "/gallery/d/5890-2/3+BijuliBazar-KTM.JPG", 150, 113, "Billboard");
+    addMarker(6, "Kathmandu, Nepal", 27.70365, 85.31952, "/gallery/v/nepal_billboards/", "/gallery/d/5893-2/4+Balkumari-KTM.JPG", 150, 113, "Billboard");
+    addMarker(6, "Pokhara, Nepal", 28.21789, 83.98644, "/gallery/v/nepal_billboards/", "/gallery/d/5896-2/5+Pokhara-HalanChowk.jpg", 150, 113, "Billboard");
+    addMarker(6, "Ghorahi, Nepal", 28.045092, 82.488871, "/gallery/v/nepal_billboards/", "/gallery/d/5899-2/6+Dang+Bazar+Chowk.JPG", 150, 105, "Billboard");
+    addMarker(6, "Damauli, Nepal", 27.9771, 84.2682, "/gallery/v/nepal_billboards/", "/gallery/d/5902-2/7+Damuouli+Highway.jpg", 150, 113, "Billboard");
+    addMarker(6, "Surkhet, Nepal", 28.5233, 81.7788, "/gallery/v/nepal_billboards/", "/gallery/d/5905-2/8+Surkhet.JPG", 150, 113, "Billboard");
+    addMarker(6, "Kathmandu, Nepal", 27.73186, 85.29558, "/gallery/v/nepal_billboards/", "/gallery/d/5910-2/2+Kalanki-KTM.jpg", 150, 113, "Billboard");
+    addMarker(6, "Ethiopia", 8.977, 37.848, "/gallery/v/ethiopia_billboard/", "/gallery/d/5927-2/DSC00255_sm.jpg", 150, 113, "Posters in Various Cities");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
