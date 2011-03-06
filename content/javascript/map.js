@@ -494,7 +494,7 @@
     addMarker(3, "Grenada", 12.1604, -61.6705, "/outreach/reports/grenada_mission_report.html", null, null, null, "Tract Trip<br>November 2010");
     addMarker(3, "Istanbul, Turkey", 41.055, 28.976, null, null, null, null, "Family Radio Tract Trip<br>November 2010");
     addMarker(3, "Barbados", 13.1686, -59.5597, null, null, null, null, "Tract Trip<br>June 2009");
-    addMarker(3, "Cancun, Mexico", 21.192, -86.846, null, null, null, null, "Tract Trip<br>November 2010");
+    addMarker(6, "Cancun, Mexico", 21.192, -86.846, null, null, null, null, "Tract Trip<br>November 2010 &amp; March 2011");
     addMarker(3, "Playa del Carmen, Mexico", 20.6308, -87.0797, null, null, null, null, "Tract Trip<br>November 2010");
     addMarker(3, "Cozumel, Mexico", 20.4380, -86.9067, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
     addMarker(3, "Belize City, Belize", 17.5014, -88.1866, null, null, null, null, "Tract Trip<br>November 2009 &amp; 2010");
@@ -874,18 +874,23 @@
     addMarker(6, "Surkhet, Nepal", 28.5233, 81.7788, "/gallery/v/nepal_billboards/", "/gallery/d/5905-2/8+Surkhet.JPG", 150, 113, "Billboard");
     addMarker(6, "Kathmandu, Nepal", 27.73186, 85.29558, "/gallery/v/nepal_billboards/", "/gallery/d/5910-2/2+Kalanki-KTM.jpg", 150, 113, "Billboard");
     addMarker(6, "Ethiopia", 8.977, 37.848, "/gallery/v/ethiopia_billboard/", "/gallery/d/5927-2/DSC00255_sm.jpg", 150, 113, "Posters in Various Cities");
+    addMarker(6, "Rio de Janeiro, Brazil", -22.86530, -43.77528, "/gallery/v/brazil_billboards/", "/gallery/d/5939-2/itaguai-centro.jpg", 150, 113, "Billboard");
+    addMarker(6, "Rio de Janeiro, Brazil", -22.88697, -43.22313, "/gallery/v/brazil_billboards/", "/gallery/d/5942-2/rio-caju.jpg", 150, 113, "Billboard");
+    addMarker(6, "Rio de Janeiro, Brazil", -22.93059, -43.18614, "/gallery/v/brazil_billboards/", "/gallery/d/5944-2/rio-catumbi.jpg", 150, 113, "Billboard");
+    addMarker(6, "Rio de Janeiro, Brazil", -22.91008, -43.23118, "/gallery/v/brazil_billboards/", "/gallery/d/5946-2/rio-maracana.jpg", 150, 113, "Billboard");
+    addMarker(6, "Rio de Janeiro, Brazil", -22.9933, -43.5972, "/gallery/v/brazil_billboards/", "/gallery/d/5948-2/rio-pedra-de-guaratiba.jpg", 150, 113, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
     addMarker(5, "Nunavut Territory, Canada", 70.65, -83.15, null, "<%= images_url %>/kivalliq-news-tn.jpg", 150, 97, "Ads in 5 Community Newspapers<br>Covering Various Parts of the Territory");
     addMarker(5, "Northern Area of Minnesota", 48.175, -94.709, null, null, null, null, "Ads in 81 Newspapers<br>Covering the Northern Half of the State<br>Week of December 12th");
-    addMarker(6, "Delaware", 38.959, -75.523, null, "<%= images_url %>/delaware-ad.jpg", 150, 160, "Ad in Free Community Hub Newspaper<br>Covering the Entire State of Delaware");
-    addMarker(6, "Maine", 45.422, -69.47, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
-    addMarker(6, "New Hampshire", 43.293, -71.565, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
-    addMarker(6, "Vermont", 44.649, -72.576, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
-    addMarker(6, "Idaho", 44.285, -114.72, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
-    addMarker(6, "Oregon", 43.993, -120.53, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
-    addMarker(6, "Montana", 47.063, -110.40, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
+    addMarker(5, "Delaware", 38.959, -75.523, null, "<%= images_url %>/delaware-ad.jpg", 150, 160, "Ad in Free Community Hub Newspaper<br>Covering the Entire State of Delaware");
+    addMarker(5, "Maine", 45.422, -69.47, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
+    addMarker(5, "New Hampshire", 43.293, -71.565, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
+    addMarker(5, "Vermont", 44.649, -72.576, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
+    addMarker(5, "Idaho", 44.285, -114.72, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
+    addMarker(5, "Oregon", 43.993, -120.53, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
+    addMarker(5, "Montana", 47.063, -110.40, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("<%= base_url %>/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
