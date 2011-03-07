@@ -263,43 +263,49 @@ function getTimeout(index) {
     case 12: // billboards
       timeout = 4000;
       break;
-    case 13: // moving billboards
+    case 13: // billboards
       timeout = 4000;
       break;
     case 14: // moving billboards
       timeout = 4000;
       break;
-    case 15: // outreach map
+    case 15: // moving billboards
+      timeout = 4000;
+      break;
+    case 16: // moving billboards
+      timeout = 4000;
+      break;
+    case 17: // outreach map
       timeout = 8000;
       break;
-    case 16: // we can know
+    case 18: // we can know
       timeout = 8000;
       break;      
-    case 17: // family radio
+    case 19: // family radio
       timeout = 8000;
       break;
-    case 18: // request comments
-      timeout = 11000;
-      break;      
-    case 19: // request comments
-      timeout = 11000;
-      break;      
     case 20: // request comments
       timeout = 11000;
       break;      
     case 21: // request comments
       timeout = 11000;
-      break;            
+      break;      
     case 22: // request comments
       timeout = 11000;
-      break;
+      break;      
     case 23: // request comments
       timeout = 11000;
-      break;
+      break;            
     case 24: // request comments
       timeout = 11000;
       break;
     case 25: // request comments
+      timeout = 11000;
+      break;
+    case 26: // request comments
+      timeout = 11000;
+      break;
+    case 27: // request comments
       timeout = 11000;
       break;          
     default:
