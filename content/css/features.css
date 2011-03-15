@@ -12,7 +12,7 @@
 #billboard-background {  
   border-left: 1px solid #003366;
   border-right: 1px solid #003366;
-  background: url("<%= images_url %>/billboard_bground.jpg") repeat-x;
+  background: url(<%= images_url %>/billboard_bground.jpg) repeat-x;
   opacity: 0.7;
   filter: alpha(opacity=70);
   position: absolute;
@@ -280,7 +280,7 @@ li#forward-button a:active {
 
 /* Continents Location Bar Sprite */
 .location-bar {
-  margin: -15px 0 0 0;
+  margin: -15px 0 0 10px;
   padding-left: 0;
   list-style: none;
   width: 100%;
@@ -289,7 +289,6 @@ li#forward-button a:active {
 .location-bar li {
   padding: 0;
   margin: 0 0 4px 0;
-  width: 202px;
   height: 60px;
   float: left;
   background: transparent url(<%= images_url %>/location_bar.png) no-repeat;
@@ -299,44 +298,53 @@ li#forward-button a:active {
 }
 
 li.africa {
-  background-position: 0px 0;
+  background-position: 0px 0px;
+  width: 150px;
 }
 
 li.africa-glow {
   background-position: 0px -58px;
+  width: 150px;
 }
 
 li.americas {
-  background-position: -202px 0px;
+  background-position: -150px 0px;
+  width: 185px;
 }
 
 li.americas-glow {
-  background-position: -202px -58px;
+  background-position: -150px -58px;
+  width: 185px;
 }
 
 li.asia {
-  background-position: -404px 0px;
+  background-position: -335px 0px;
+  width: 125px;
 }
 
 li.asia-glow {
-  background-position: -404px -58px;
+  background-position: -335px -58px;
+  width: 125px;
 }
 
 li.europe {
-  background-position: -606px 0px;
+  background-position: -460px 0px;
+  width: 163px;
 }
 
 li.europe-glow {
-  background-position: -606px -58px;
+  background-position: -460px -58px;
+  width: 163px;
 }
 
 li.oceania {
-  background-position: -808px 0px;
+  background-position: -623px 0px;
+  width: 155px;
 }
 
 li.oceania-glow {
-  background-position: -808px -58px;
-}
+  background-position: -623px -58px;
+  width: 155px;
 
 /* Billboard countries/flags sprite */
 .billboard-flags {
