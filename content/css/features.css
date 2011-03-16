@@ -361,7 +361,7 @@ li.oceania-glow {
   margin: 0 0 13px 0;
   padding: 0;
   width: 21px;
-  height: 12px;
+  height: 13px;
   background: url(<%= images_url %>/flags_sprite.png) no-repeat;
 }
 
@@ -573,9 +573,9 @@ li#papua p {
 
 /* Europe */
 li#uk {
-  background-position: 0px -68px;
+  background-position: 0px -70px;
 }
 
 li#ireland {
-  background-position: -24px -68px;
+  background-position: -24px -70px;
 }
