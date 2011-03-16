@@ -360,13 +360,13 @@ li.oceania-glow {
   display: block;
   margin: 0 0 13px 0;
   padding: 0;
-  width: 30px;
-  height: 18px;
+  width: 21px;
+  height: 12px;
   background: url(<%= images_url %>/flags_sprite.png) no-repeat;
 }
 
 .billboard-flags p {
-  padding: 3px 0 0 40px;
+  padding: 0 0 0 30px;
   white-space: nowrap;
   color: #dacdb0;
 }
@@ -389,64 +389,74 @@ li.oceania-glow {
   margin-top: 0;
 }
 
+/* Africa */
 li#botswana {
   background-position: 0 0px;
 }
 
 li#ethiopia {
-  background-position: -36px 0px;
+  background-position: -24px 0px;
 }
 
 li#ghana {
-  background-position: -72px 0px;
+  background-position: -47px 0px;
 }
 
 li#lesotho {
-  background-position: -108px 0px;
+  background-position: -70px 0px;
 }
 
 li#mozambique {
-  background-position: -144px 0px;
+  background-position: -94px 0px;
 }
 
 li#namibia {
-  background-position: -180px 0px;
+  background-position: -117px 0px;
 }
 
 li#nigeria {
-  background-position: -216px 0px;
+  background-position: -141px 0px;
 }
 
 li#swaziland {
-  background-position: -252px 0px;
+  background-position: -165px 0px;
 }
 
 li#tanzania {
-  background-position: -288px 0px;
+  background-position: -187px 0px;
 }
 
 li#zambia {
-  background-position: -324px 0px;
+  background-position: -211px 0px;
 }
 
 li#mauritius {
-  background-position: -360px 0px;
+  background-position: -234px 0px;
 }
 
 li#kenya {
-  background-position: -396px 0px;
+  background-position: -258px 0px;
 }
 
+li#uganda {
+  background-position: -281px 0px;
+}
+
+li#malawi {
+  background-position: -304px 0px;
+}
+
+/* Americas */
 li#canada {
-  background-position: 0px -27px;
+  background-position: 0px -17px;
 }
 
 li#costa-rica {
-  background-position: -36px -27px;
+  background-position: -24px -17px;
 }
 
 li#dominican-republic {
-  background-position: -72px -27px;
+  background-position: -47px -17px;
 }
 
 li#dominican-republic p {
@@ -455,69 +465,117 @@ li#dominican-republic p {
 }
 
 li#el-salvador {
-  background-position: -108px -27px;
+  background-position: -70px -17px;
 }
 
 li#guatemala {
-  background-position: -144px -27px;
+  background-position: -93px -17px;
 }
 
 li#honduras {
-  background-position: -180px -27px;
+  background-position: -116px -17px;
 }
 
 li#jamaica {
-  background-position: -216px -27px;
+  background-position: -140px -17px;
 }
 
 li#nicaragua {
-  background-position: -252px -27px;
+  background-position: -164px -17px;
 }
 
 li#panama {
-  background-position: -288px -27px;
+  background-position: -187px -17px;
 }
 
 li#puerto-rico {
-  background-position: -324px -27px;
+  background-position: -211px -17px;
 }
 
 li#usa {
-  background-position: -360px -27px;
+  background-position: -234px -17px;
 }
 
 li#trinidad {
-  background-position: -396px -27px;
+  background-position: -257px -17px;
 }
 
+li#ecuador {
+  background-position: -280px -17px;
+}
+
+li#chile {
+  background-position: -303px -17px;
+}
+
+li#brazil {
+  background-position: -326px -17px;
+}
+
+/* Asia */
 li#india {
-  background-position: 0px -54px;
+  background-position: 0px -34px;
 }
 
 li#singapore {
-  background-position: -36px -54px;
+  background-position: -24px -34px;
 }
 
 li#taiwan {
-  background-position: -72px -54px;
+  background-position: -47px -34px;
 }
 
 li#turkey {
-  background-position: -108px -54px;
+  background-position: -70px -34px;
 }
 
+li#thailand {
+  background-position: -93px -34px;
+}
+
+li#philippines {
+  background-position: -116px -34px;
+}
+
+li#nepal {
+  background-position: -139px -34px;
+}
+
+li#bangladesh {
+  background-position: -162px -34px;
+}
+
+/* Oceania */
 li#indonesia {
-  background-position: 0px -81px;
+  background-position: 0px -51px;
 }
 
 li#samoa {
-  background-position: -36px -81px;
+  background-position: -24px -51px;
 }
 
 li#vanuatu {
-  background-position: -72px -81px;
+  background-position: -47px -51px;
 }
 
 li#new-zealand {
-  background-position: -108px -81px;
+  background-position: -70px -51px;
+}
+
+li#papua {
+  background-position: -93px -51px;
+}
+
+li#papua p {
+  position: relative;
+  bottom: 7px;
+}
+
+/* Europe */
+li#uk {
+  background-position: 0px -68px;
+}
+
+li#ireland {
+  background-position: -24px -68px;
 }
