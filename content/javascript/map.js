@@ -912,9 +912,9 @@
     addMarker(4, "Eminönü, Istanbul, Turkey", 41.01793, 28.97322, "/gallery/v/turkey_billboards/", "/gallery/d/2497-2/CX+050+_Large_.JPG", 150, 113);
     addMarker(4, "Beşiktaş, Istanbul, Turkey", 41.0718, 29.0283, "/gallery/v/turkey_billboards/", "/gallery/d/2501-2/IX+056+_Large_.JPG", 150, 113);
     addMarker(4, "Rize, Turkey", 41.0234, 40.5238, "/gallery/v/turkey_billboards/", "/gallery/d/6199-2/DSC02487+_Small_.JPG", 150, 113, "Billboards");
-    addMarker(6, "Karabuk, Turkey", 41.2029, 32.6337, "/gallery/v/turkey_billboards/", "/gallery/d/6236-2/Karabuk3.JPG", 150, 113, "Billboards");
-    addMarker(6, "Kayseri, Turkey", 38.7377, 35.4776, "/gallery/v/turkey_billboards/", "/gallery/d/6242-2/IMG_3520.jpg", 150, 113, "Billboards");
-    addMarker(6, "Mersin, Turkey", 36.8126, 34.6371, "/gallery/v/turkey_billboards/", "/gallery/d/6226-2/IMG_7339+_Large_.jpg", 150, 113, "Billboards");
+    addMarker(4, "Karabuk, Turkey", 41.2029, 32.6337, "/gallery/v/turkey_billboards/", "/gallery/d/6236-2/Karabuk3.JPG", 150, 113, "Billboards");
+    addMarker(4, "Kayseri, Turkey", 38.7377, 35.4776, "/gallery/v/turkey_billboards/", "/gallery/d/6242-2/IMG_3520.jpg", 150, 113, "Billboards");
+    addMarker(4, "Mersin, Turkey", 36.8126, 34.6371, "/gallery/v/turkey_billboards/", "/gallery/d/6226-2/IMG_7339+_Large_.jpg", 150, 113, "Billboards");
     addMarker(4, "Lusaka, Zambia", -15.40505, 28.29977, "/gallery/v/zambia_billboards/", "/gallery/d/2579-2/Lusaka.jpg", 150, 113);
     addMarker(4, "Columbia, South Carolina", 33.91833, -81.31149, "/gallery/v/columbia_billboards/", "/gallery/d/2603-2/IMG_5470.JPG", 150, 100);
     addMarker(4, "Columbia, South Carolina", 33.80262, -81.00072, "/gallery/v/columbia_billboards/", "/gallery/d/2593-2/IMG_5464.JPG", 150, 100);
@@ -1015,8 +1015,8 @@
     addMarker(4, "Mauritius", -20.01751, 57.58012, "/gallery/v/mauritius_billboards/", "/gallery/d/3686-2/Grand+baie.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.27153, 57.47569, "/gallery/v/mauritius_billboards/", "/gallery/d/3689-2/La+Louise.JPG", 150, 113);
     addMarker(4, "Mauritius", -20.28281, 57.51218, "/gallery/v/mauritius_billboards/", "/gallery/d/3692-2/Phoenix.JPG", 150, 113);
-    addMarker(6, "Mauritius", -20.15789, 57.48914, "/gallery/v/mauritius_billboards/", "/gallery/d/6273-2/SUGAR+ROAD.JPG", 150, 113, "Billboard");
-    addMarker(6, "Mauritius", -20.18742, 57.48219, "/gallery/v/mauritius_billboards/", "/gallery/d/6271-2/BVILLAGE+_2_.JPG", 150, 113, "Billboard");
+    addMarker(4, "Mauritius", -20.15789, 57.48914, "/gallery/v/mauritius_billboards/", "/gallery/d/6273-2/SUGAR+ROAD.JPG", 150, 113);
+    addMarker(4, "Mauritius", -20.18742, 57.48219, "/gallery/v/mauritius_billboards/", "/gallery/d/6271-2/BVILLAGE+_2_.JPG", 150, 113);
     addMarker(4, "Quito, Ecuador", -0.2304, -78.5268, "/gallery/v/ecuador_billboards/", "/gallery/d/3783-2/Bus006.jpg", 150, 110, "20 Buses");
     addMarker(4, "Guayaquil, Ecuador", -2.1960, -79.8977, "/gallery/v/ecuador_billboards/", "/gallery/d/3870-2/Taxi015.jpg", 150, 110, "30 Taxis");
     addMarker(4, "Chile", -33.6724, -71.1818, "/gallery/v/chile_billboards/", "/gallery/d/3760-2/21+may+r+78+km+64+_2_.jpg", 150, 113);
@@ -1041,8 +1041,8 @@
     addMarker(4, "Lira, Uganda", 2.25076, 32.90028, "/gallery/v/uganda_billboards/", "/gallery/d/4022-2/lira-town.jpg", 150, 84);
     addMarker(4, "Mbarara, Uganda", -0.6013, 30.6483, "/gallery/v/uganda_billboards/", "/gallery/d/4025-2/mbarara.jpg", 150, 84);
     addMarker(4, "Kampala, Uganda", 0.3213, 32.5813, "/gallery/v/uganda_billboards/", "/gallery/d/4028-2/taxi001.jpg", 150, 97, "20 Taxis");
-    addMarker(6, "Kampala, Uganda", 0.31380, 32.57927, "/gallery/v/uganda_billboards/", "/gallery/d/6293-2/Tourist+hotel_Kampala.JPG", 150, 115, "Billboard");
-    addMarker(6, "Kampala, Uganda", 0.31577, 32.59137, "/gallery/v/uganda_billboards/", "/gallery/d/6295-2/Uganda_Time_to_Pray.jpg", 150, 116, "Billboard");
+    addMarker(4, "Kampala, Uganda", 0.31380, 32.57927, "/gallery/v/uganda_billboards/", "/gallery/d/6293-2/Tourist+hotel_Kampala.JPG", 150, 115);
+    addMarker(4, "Kampala, Uganda", 0.31577, 32.59137, "/gallery/v/uganda_billboards/", "/gallery/d/6295-2/Uganda_Time_to_Pray.jpg", 150, 116);
     addMarker(4, "London, England", 51.5173, -0.128, "/gallery/v/uk_billboards/", "/gallery/d/4092-2/FAMILY+RADIO+001+_Large_.jpg", 150, 113, "Billboards");
     addMarker(4, "Bangladesh", 23.87913, 90.40134, "/gallery/v/bangladesh_billboards/", "/gallery/d/4175-2/Abdullah+pur_+Uttara+Size+-+15X25+_down_.JPG", 150, 113);
     addMarker(4, "Bangladesh", 23.87407, 90.40057, "/gallery/v/bangladesh_billboards/", "/gallery/d/4179-2/Abdullah+pur_+Uttara+Size+-+15X25+_up_.JPG", 150, 113);
@@ -1091,11 +1091,11 @@
     addMarker(4, "Wacol, Queensland, Australia", -27.57901, 152.92441, "/gallery/v/australia_billboards/", "/gallery/d/5389-2/QLD+-+Wacol+-+Wacol+Station+Rd.JPG", 150, 103);
     addMarker(4, "Coburg, Victoria, Australia", -37.74043, 144.96301, "/gallery/v/australia_billboards/", "/gallery/d/5392-2/VIC+-+Coburg+-+148+Bell+St.JPG", 150, 103);
     addMarker(4, "Footscray, Victoria, Australia", -37.80285, 144.89257, "/gallery/v/australia_billboards/", "/gallery/d/5395-2/VIC+-+Footscray+-+65+Victoria+St.JPG", 150, 103);
-    addMarker(6, "Niddrie, Victoria, Australia", -37.73580, 144.88883, "/gallery/v/australia_billboards/", "/gallery/d/6256-2/VIC+-+Niddrie+-+374+Keilor+Road.jpg", 150, 111, "Billboard");
-    addMarker(6, "Mentone, Victoria, Australia", -37.98260, 145.06560, "/gallery/v/australia_billboards/", "/gallery/d/6259-2/VIC+-+Mentone+-+23+Como+Parade+West.jpg", 150, 111, "Billboard");
-    addMarker(6, "Rothwell, Queensland, Australia", -27.21063, 153.04528, "/gallery/v/australia_billboards/", "/gallery/d/6262-2/QLD+-+Rothwell+-+Deception+Bay+Road.jpg", 150, 105, "Billboard");
-    addMarker(6, "Enoggera, Queensland, Australia", -27.41892, 152.99325, "/gallery/v/australia_billboards/", "/gallery/d/6265-2/QLD+-+Enoggera+-+Pickering+Street.jpg", 150, 107, "Billboard");
-    addMarker(6, "Georges Hall, New South Wales, Australia", -33.90939, 150.97858, "/gallery/v/australia_billboards/", "/gallery/d/6268-2/NSW+-+Georges+Hall+-+Henry+Lawson+Drive.jpg", 150, 111, "Billboard");
+    addMarker(4, "Niddrie, Victoria, Australia", -37.73580, 144.88883, "/gallery/v/australia_billboards/", "/gallery/d/6256-2/VIC+-+Niddrie+-+374+Keilor+Road.jpg", 150, 111);
+    addMarker(4, "Mentone, Victoria, Australia", -37.98260, 145.06560, "/gallery/v/australia_billboards/", "/gallery/d/6259-2/VIC+-+Mentone+-+23+Como+Parade+West.jpg", 150, 111);
+    addMarker(4, "Rothwell, Queensland, Australia", -27.21063, 153.04528, "/gallery/v/australia_billboards/", "/gallery/d/6262-2/QLD+-+Rothwell+-+Deception+Bay+Road.jpg", 150, 105);
+    addMarker(4, "Enoggera, Queensland, Australia", -27.41892, 152.99325, "/gallery/v/australia_billboards/", "/gallery/d/6265-2/QLD+-+Enoggera+-+Pickering+Street.jpg", 150, 107);
+    addMarker(4, "Georges Hall, New South Wales, Australia", -33.90939, 150.97858, "/gallery/v/australia_billboards/", "/gallery/d/6268-2/NSW+-+Georges+Hall+-+Henry+Lawson+Drive.jpg", 150, 111);
     addMarker(4, "Port Moresby, Papua New Guinea", -9.47929, 147.19019, "/gallery/v/papua_new_guinea_billboard/", "/gallery/d/5757-2/Port+Moresby+-+Papua+New+Guinea+3.jpg", 150, 113);
     addMarker(4, "Philippines", 14.642, 120.984, "/gallery/v/philippines_billboards/", "/gallery/d/5730-2/tyw+634.jpg", 150, 134, "30 Buses");
     addMarker(4, "Guatemala", 15.10, -89.92, "/gallery/v/moving_billboards/", "/gallery/d/5785-2/guatemala-moving-billboard-1.jpg", 150, 112, "Moving Billboard");
@@ -1136,7 +1136,15 @@
     addMarker(4, "Sao Joao de Meriti, Brazil", -22.79945, -43.35484, "/gallery/v/brazil_billboards/", null, null, null);
     addMarker(4, "Regiao Serrana, Brazil", -22.4002, -42.9648, "/gallery/v/brazil_billboards/", null, null, null);
     addMarker(4, "Regiao Serrana, Brazil", -22.576, -42.720, "/gallery/v/brazil_billboards/", null, null, null);
-    addMarker(6, "Haiti", 19.213, -72.263, "/gallery/v/haiti_billboards/", "/gallery/d/6281-2/IMG_0760.JPG", 150, 113, "6 Billboards");
+    addMarker(4, "Haiti", 19.213, -72.263, "/gallery/v/haiti_billboards/", "/gallery/d/6281-2/IMG_0760.JPG", 150, 113, "6 Billboards");
+    addMarker(6, "Phnom Penh, Cambodia", 11.56240, 104.91244, "/gallery/v/cambodia_billboards/", "/gallery/d/6300-2/Cambodia-01.jpg", 150, 112, "Billboard");
+    addMarker(6, "Phnom Penh, Cambodia", 11.56270, 104.85497, "/gallery/v/cambodia_billboards/", "/gallery/d/6304-2/Cambodia-02.jpg", 150, 113, "Billboard");
+    addMarker(6, "Phnom Penh, Cambodia", 11.55641, 104.93523, "/gallery/v/cambodia_billboards/", "/gallery/d/6307-2/Cambodia-03.jpg", 150, 113, "Billboard");
+    addMarker(6, "Phnom Penh, Cambodia", 11.55991, 104.91505, "/gallery/v/cambodia_billboards/", "/gallery/d/6310-2/Cambodia-04.jpg", 150, 113, "Billboard");
+    addMarker(6, "Phnom Penh, Cambodia", 11.55847, 104.92016, "/gallery/v/cambodia_billboards/", "/gallery/d/6313-2/Cambodia-05.jpg", 150, 113, "Billboard");
+    addMarker(6, "Phnom Penh, Cambodia", 11.58645, 104.91943, "/gallery/v/cambodia_billboards/", "/gallery/d/6316-2/Cambodia-06.jpg", 150, 113, "Billboard");
+    addMarker(6, "Phnom Penh, Cambodia", 11.56587, 104.91158, "/gallery/v/cambodia_billboards/", "/gallery/d/6319-2/Cambodia-07.jpg", 150, 112, "Billboard");
+    addMarker(6, "Phnom Penh, Cambodia", 11.55447, 104.90206, "/gallery/v/cambodia_billboards/", "/gallery/d/6322-2/Cambodia-08.jpg", 150, 113, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
