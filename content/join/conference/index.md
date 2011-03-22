@@ -30,10 +30,10 @@ Conference* so you will get the discounted rate of $89 plus tax.
 ## Banquet Information
 
 If you choose to attend the banquet, all attendees need a ticket except 
-handheld infants.  Banquet tickets are $20 per person and include a choice 
-of entree of chicken, fish or vegetarian plate which you must specify at 
-the time you send your check.  The check must be made payable to *EBible 
-Fellowship* and sent, along with a stamped, self-addressed envelope to:
+handheld infants.  Banquet tickets are $20 per person.  **Please specify a 
+choice of entree of chicken, fish or vegetarian plate at the time you send 
+your check.**  The check must be made payable to *EBible Fellowship* and sent, 
+along with a stamped, self-addressed envelope to:
 
 > Allison Johnson\\
 > 11 Short Drive\\
@@ -43,6 +43,8 @@ If you are only attending the Bible conference and not the banquet,
 there is no charge.
 
 Banquet tickets are available on a first-come first-serve basis.
+
+***NOTE:* Your banquet payment must be in Mrs. Johnson's hands by April 5th.**
 
 ## Conference Schedule
 
