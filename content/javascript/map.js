@@ -1299,7 +1299,7 @@
     addMarker(6, "Poland", 52.20, 18.81, "/gallery/v/poland_billboards/", "/gallery/d/6330-2/104-BBR_mar11.jpg", 150, 113, "100 Billboards");
     addMarker(6, "Acarigua, Venezuela", 9.58126, -69.22005, "/gallery/v/venezuela_billboards/", "/gallery/d/6454-2/FAMILY+RADIO+2+007.jpg", 150, 113, "Billboard");
     addMarker(6, "Barinas, Venezuela", 8.6250, -70.2227, "/gallery/v/venezuela_billboards/", "/gallery/d/6441-2/0325111205.jpg", 150, 113, "Billboard");
-    addMarker(6, "Barquisimeto, Venezuela", 10.08397, -69.31442, "/gallery/v/venezuela_billboards/", null, null, null, "Billboard");
+    addMarker(6, "Barquisimeto, Venezuela", 10.08397, -69.31442, "/gallery/v/venezuela_billboards/", "/gallery/d/6668-2/BARQUISIMETO+EDO+LARA.jpg", 150, 113, "Billboard");
     addMarker(6, "Maracaibo, Venezuela", 10.57388, -71.61687, "/gallery/v/venezuela_billboards/", null, null, null, "Billboard");
     addMarker(6, "Valencia, Venezuela", 10.17725, -68.01123, "/gallery/v/venezuela_billboards/", null, null, null, "Billboard");
     addMarker(6, "Merida, Venezuela", 8.5338, -71.2496, "/gallery/v/venezuela_billboards/", null, null, null, "Billboard");
