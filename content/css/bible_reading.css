@@ -1,0 +1,15 @@
+/* Bible Reading pages */
+#bible-audio {
+  margin: 0 2em;
+  color: #666;
+  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+  text-align: left;
+}
+#bible-audio dl {
+  /*font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; */
+}
+#bible-audio dt { font-weight: bold; }
+#bible-audio dd { margin-left: 2em; font-size: 80%; }
+#bible-audio p { margin: 0; text-align: left; }
+#bible-audio sup { font-size: 70%; font-weight: bold; }
+/* end */
