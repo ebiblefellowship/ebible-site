@@ -1185,7 +1185,6 @@
     addMarker(4, "Enoggera, Queensland, Australia", -27.41892, 152.99325, "/gallery/v/australia_billboards/", "/gallery/d/6265-2/QLD+-+Enoggera+-+Pickering+Street.jpg", 150, 107);
     addMarker(4, "Georges Hall, New South Wales, Australia", -33.90939, 150.97858, "/gallery/v/australia_billboards/", "/gallery/d/6268-2/NSW+-+Georges+Hall+-+Henry+Lawson+Drive.jpg", 150, 111);
     addMarker(4, "Port Moresby, Papua New Guinea", -9.47929, 147.19019, "/gallery/v/papua_new_guinea_billboard/", "/gallery/d/5757-2/Port+Moresby+-+Papua+New+Guinea+3.jpg", 150, 113);
-    addMarker(4, "Papua New Guinea", -6.56, 144.36, "/gallery/v/papua_new_guinea_billboard/", "<%= images_url %>/papua-new-guinea-tn.jpg", 150, 120, "Front Page Newspaper Article");
     addMarker(4, "Philippines", 14.642, 120.984, "/gallery/v/philippines_billboards/", "/gallery/d/5730-2/tyw+634.jpg", 150, 134, "30 Buses");
     addMarker(4, "Guatemala", 15.10, -89.92, "/gallery/v/moving_billboards/", "/gallery/d/5785-2/guatemala-moving-billboard-1.jpg", 150, 112, "Moving Billboard");
     addMarker(4, "Belize", 16.978, -88.314, "/gallery/v/moving_billboards/", null, null, null, "Moving Billboard");    
@@ -1328,6 +1327,7 @@
     addMarker(5, "Idaho", 44.285, -114.72, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
     addMarker(5, "Oregon", 43.993, -120.53, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
     addMarker(5, "Montana", 47.063, -110.40, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
+    addMarker(5, "Papua New Guinea", -6.56, 144.36, "/gallery/v/papua_new_guinea_billboard/", "<%= images_url %>/papua-new-guinea-tn.jpg", 150, 120, "Front Page Newspaper Article");
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("<%= base_url %>/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
