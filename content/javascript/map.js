@@ -894,6 +894,7 @@
     addMarker(4, "Gujarat, India", 22.46121, 73.06565, "/gallery/v/india_billboards/Gujarat/", "/gallery/d/6162-2/Vasad+-+Dungri+Road+20X10.jpg", 150, 113);
     addMarker(4, "Gujarat, India", 23.00938, 72.53161, "/gallery/v/india_billboards/Gujarat/", "/gallery/d/6165-2/Vejalpur_Rly_Crossing_1.JPG", 150, 113);
     addMarker(4, "Gujarat, India", 23.12698, 72.04310, "/gallery/v/india_billboards/Gujarat/", "/gallery/d/6167-2/Viramgaon+-+Bazaar+Road+20X10.jpg", 150, 91);
+    addMarker(6, "Chennai, India", 13.0681, 80.2493, "/gallery/v/india_billboards/moving_billboards/", "/gallery/d/6974-2/DSCF0191.JPG", 150, 113, "Moving Billboards");
     addMarker(4, "Gaborone, Botswana", -24.66600, 25.91751, "/gallery/v/botswana_billboards/", "/gallery/d/2417-2/botswana-gaborone-kaunda-road.jpg", 150, 111);
     addMarker(4, "Gaborone, Botswana", -24.6773, 25.9064, "/gallery/v/botswana_billboards/", "/gallery/d/2420-2/botswana-gaborone-old-lobatse-road.jpg", 150, 111);
     addMarker(4, "Gaborone, Botswana", -24.62869, 25.93369, "/gallery/v/botswana_billboards/", "/gallery/d/2422-2/botswana-gaborone-top-boipuso-park.jpg", 150, 111);
