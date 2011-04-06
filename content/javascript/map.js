@@ -542,6 +542,9 @@
     addMarker(3, "Dhaka, Bangladesh", 23.7074, 90.4044, null, null, null, null, "Family Radio Tract Trip");
     addMarker(3, "Mexico City, Mexico", 19.4426, -99.1276, null, null, null, null, "Tract Trip<br>March 2011");
     addMarker(3, "Freeport, Bahamas", 26.5322, -78.6970, null, null, null, null, "Tract Trip<br>March 2011");
+    addMarker(6, "Stockholm, Sweden", 59.3346, 18.0643, null, null, null, null, "Tract Trip<br>March/April 2011");
+    addMarker(6, "Copenhagen, Denmark", 55.6950, 12.5831, null, null, null, null, "Tract Trip<br>March/April 2011");
+    addMarker(6, "Oslo, Norway", 59.9185, 10.7515, null, null, null, null, "Tract Trip<br>March/April 2011");
         
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -894,9 +897,9 @@
     addMarker(4, "Gujarat, India", 22.46121, 73.06565, "/gallery/v/india_billboards/Gujarat/", "/gallery/d/6162-2/Vasad+-+Dungri+Road+20X10.jpg", 150, 113);
     addMarker(4, "Gujarat, India", 23.00938, 72.53161, "/gallery/v/india_billboards/Gujarat/", "/gallery/d/6165-2/Vejalpur_Rly_Crossing_1.JPG", 150, 113);
     addMarker(4, "Gujarat, India", 23.12698, 72.04310, "/gallery/v/india_billboards/Gujarat/", "/gallery/d/6167-2/Viramgaon+-+Bazaar+Road+20X10.jpg", 150, 91);
-    addMarker(6, "Chennai, India", 13.0681, 80.2493, "/gallery/v/india_billboards/moving_billboards/chennai/", "/gallery/d/6980-2/DSCF0193.JPG", 150, 113, "Moving Billboards");
-    addMarker(6, "Panruti, India", 11.77721, 79.55269, "/gallery/v/india_billboards/moving_billboards/panruti/", "/gallery/d/7039-2/P1070635.jpg", 150, 113, "Moving Billboards");
-    addMarker(6, "Vallioor, India", 8.38959, 77.60498, "/gallery/v/india_billboards/moving_billboards/vallioor/", "/gallery/d/7121-2/P1020060.jpg", 150, 100, "Moving Billboards");
+    addMarker(4, "Chennai, India", 13.0681, 80.2493, "/gallery/v/india_billboards/moving_billboards/chennai/", "/gallery/d/6980-2/DSCF0193.JPG", 150, 113, "Moving Billboards");
+    addMarker(4, "Panruti, India", 11.77721, 79.55269, "/gallery/v/india_billboards/moving_billboards/panruti/", "/gallery/d/7039-2/P1070635.jpg", 150, 113, "Moving Billboards");
+    addMarker(4, "Vallioor, India", 8.38959, 77.60498, "/gallery/v/india_billboards/moving_billboards/vallioor/", "/gallery/d/7121-2/P1020060.jpg", 150, 100, "Moving Billboards");
     addMarker(4, "Gaborone, Botswana", -24.66600, 25.91751, "/gallery/v/botswana_billboards/", "/gallery/d/2417-2/botswana-gaborone-kaunda-road.jpg", 150, 111);
     addMarker(4, "Gaborone, Botswana", -24.6773, 25.9064, "/gallery/v/botswana_billboards/", "/gallery/d/2420-2/botswana-gaborone-old-lobatse-road.jpg", 150, 111);
     addMarker(4, "Gaborone, Botswana", -24.62869, 25.93369, "/gallery/v/botswana_billboards/", "/gallery/d/2422-2/botswana-gaborone-top-boipuso-park.jpg", 150, 111);
@@ -1199,7 +1202,7 @@
     addMarker(4, "Birgunj, Nepal", 27.01444, 84.87848, "/gallery/v/nepal_billboards/", "/gallery/d/5864-2/13+Birgunj-Ghantaghar+Area.jpg", 150, 113);
     addMarker(4, "Dharan, Nepal", 26.81166, 87.28498, "/gallery/v/nepal_billboards/", "/gallery/d/5867-2/14+Dharan+BusPark.jpg", 150, 113);
     addMarker(4, "Itahari, Nepal", 26.6702, 87.2831, "/gallery/v/nepal_billboards/", "/gallery/d/5870-2/15+Itahari+Chowk.JPG", 150, 113);
-    addMarker(4, "Biratnagar, Nepal", 26.45605, 87.28037, "/gallery/v/nepal_billboards/", "/gallery/d/5873-2/16+Biratnagar-Shivmandir.JPG", 150, 113);
+    addMarker(4, "Biratnagar, Nepal", 26.44814, 87.27676, "/gallery/v/nepal_billboards/", "/gallery/d/5873-2/16+Biratnagar-Shivmandir.JPG", 150, 113);
     addMarker(4, "Simara, Nepal", 27.160414, 84.97960, "/gallery/v/nepal_billboards/", "/gallery/d/5876-2/18+Simara+Airport.jpg", 150, 113);
     addMarker(4, "Damak, Nepal", 26.6757, 87.6682, "/gallery/v/nepal_billboards/", "/gallery/d/5881-2/20+Damak+15x30.jpg", 150, 105);
     addMarker(4, "Birtamod, Nepal", 26.63426, 87.98332, "/gallery/v/nepal_billboards/", "/gallery/d/5884-2/21+Birtamod+15x30.jpg", 150, 105);
@@ -1211,6 +1214,24 @@
     addMarker(4, "Damauli, Nepal", 27.9771, 84.2682, "/gallery/v/nepal_billboards/", "/gallery/d/5902-2/7+Damuouli+Highway.jpg", 150, 113);
     addMarker(4, "Surkhet, Nepal", 28.5233, 81.7788, "/gallery/v/nepal_billboards/", "/gallery/d/5905-2/8+Surkhet.JPG", 150, 113);
     addMarker(4, "Kathmandu, Nepal", 27.73186, 85.29558, "/gallery/v/nepal_billboards/", "/gallery/d/5910-2/2+Kalanki-KTM.jpg", 150, 113);
+    addMarker(6, "Biratnagar, Nepal", 26.45620, 87.27788, "/gallery/v/nepal_billboards/", "/gallery/d/7162-2/17+Biratnagar+Main+Road.JPG", 150, 113, "Billboard");
+    addMarker(6, "Dhading, Nepal", 27.8675, 84.9140, "/gallery/v/nepal_billboards/", "/gallery/d/7165-2/19+Dhading+Bazar.jpg", 150, 113, "Billboard");
+    addMarker(6, "Inaruwa, Nepal", 26.61738, 87.17214, "/gallery/v/nepal_billboards/", "/gallery/d/7167-2/22+Inaruwa+Bazar+Chowk.JPG", 150, 113, "Billboard");
+    addMarker(6, "Birtamod, Nepal", 26.64784, 87.99448, "/gallery/v/nepal_billboards/", "/gallery/d/7170-2/24+Birtamod+Bazar+15x30.jpg", 150, 105, "Billboard");
+    addMarker(6, "Patan, Nepal", 27.67068, 85.32049, "/gallery/v/nepal_billboards/", "/gallery/d/7172-2/25+kumaripati+20x30.JPG", 150, 113, "Billboard");
+    addMarker(6, "Panipokhari, Nepal", 27.73733, 85.32781, "/gallery/v/nepal_billboards/", "/gallery/d/7174-2/26+panipokhari+15x30.jpg", 150, 113, "Billboard");
+    addMarker(6, "Balaju, Nepal", 27.73148, 85.29553, "/gallery/v/nepal_billboards/", "/gallery/d/7176-2/27+Balaju+20x40.JPG", 150, 113, "Billboard");
+    addMarker(6, "Thankot, Nepal", 27.69265, 85.21919, "/gallery/v/nepal_billboards/", "/gallery/d/7178-2/28+thankot+15x30.JPG", 150, 113, "Billboard");
+    addMarker(6, "Dharan, Nepal", 26.7965, 87.2895, "/gallery/v/nepal_billboards/", "/gallery/d/7180-2/29+Way+to+Dharan.jpg", 113, 150, "Billboard");
+    addMarker(6, "Biratnagar, Nepal", 26.48417, 87.28329, "/gallery/v/nepal_billboards/", "/gallery/d/7183-2/32+Mahendra+Chowk.jpg", 150, 113, "Billboard");
+    addMarker(6, "Damak, Nepal", 26.67231, 87.65888, "/gallery/v/nepal_billboards/", "/gallery/d/7186-2/34_Damak_Bazar20x40.jpg", 150, 113, "Billboard");
+    addMarker(6, "Ilam, Nepal", 26.90944, 87.92582, "/gallery/v/nepal_billboards/", "/gallery/d/7189-2/35+Ilam+bazar.JPG", 150, 113, "Billboard");
+    addMarker(6, "Kakarvitta, Nepal", 26.6504, 88.1550, "/gallery/v/nepal_billboards/", "/gallery/d/7192-2/38+Kakarvitta+Photo.JPG", 150, 113, "Billboard");
+    addMarker(6, "Fikkal, Nepal", 26.89808, 88.07173, "/gallery/v/nepal_billboards/", "/gallery/d/7195-2/39+Fikkal+Photo.JPG", 150, 113, "Billboard");
+    addMarker(6, "Rajbiraj, Nepal", 26.53490, 86.75487, "/gallery/v/nepal_billboards/", "/gallery/d/7198-2/39_Rajbiraj_Chowk.JPG", 150, 113, "Billboard");
+    addMarker(6, "Lamahi, Nepal", 27.8694, 82.5128, "/gallery/v/nepal_billboards/", "/gallery/d/7204-2/9+Lamahie+Bazzer+Highway.JPG", 150, 113, "Billboard");
+    addMarker(6, "Lahan, Nepal", 26.71748, 86.48330, "/gallery/v/nepal_billboards/", "/gallery/d/7207-2/Lahan+15x30.jpg", 150, 113, "Billboard");
+    addMarker(6, "Rajbiraj, Nepal", 26.54381, 86.74783, "/gallery/v/nepal_billboards/", "/gallery/d/7210-2/Rajbiraj+10x20.jpg", 150, 113, "Billboard");    
     addMarker(4, "Ethiopia", 8.977, 37.848, "/gallery/v/ethiopia_billboard/", "/gallery/d/5927-2/DSC00255_sm.jpg", 150, 113, "Posters in Various Cities");
     addMarker(4, "Rio de Janeiro, Brazil", -22.86530, -43.77528, "/gallery/v/brazil_billboards/", "/gallery/d/5939-2/itaguai-centro.jpg", 150, 113);
     addMarker(4, "Rio de Janeiro, Brazil", -22.88697, -43.22313, "/gallery/v/brazil_billboards/", "/gallery/d/5942-2/rio-caju.jpg", 150, 113);
@@ -1260,6 +1281,7 @@
     addMarker(4, "Phnom Penh, Cambodia", 11.56587, 104.91158, "/gallery/v/cambodia_billboards/", "/gallery/d/6319-2/Cambodia-07.jpg", 150, 112);
     addMarker(4, "Phnom Penh, Cambodia", 11.55447, 104.90206, "/gallery/v/cambodia_billboards/", "/gallery/d/6322-2/Cambodia-08.jpg", 150, 113);
     addMarker(4, "Southern New Jersey, USA", 39.711, -75.119, "/gallery/v/new_jersey_billboards/", "/gallery/d/6626-2/P1180032.JPG", 150, 113, "Billboards");
+    addMarker(6, "Northern New Jersey, USA", 40.839, -74.169, null, null, null, null, "72 Billboards");
     addMarker(4, "Toledo, Ohio", 41.626286, -83.664497, null, null, null, null);
     addMarker(4, "Toledo, Ohio", 41.653572, -83.664902, null, null, null, null);
     addMarker(4, "Toledo, Ohio", 41.636566, -83.664581, null, null, null, null);
@@ -1356,12 +1378,12 @@
     addMarker(4, "Guadalajara, Mexico", 20.6842, -103.3772, "/gallery/v/mexico_billboards/", "/gallery/d/6547-2/route27_side1.jpg", 150, 113, "2 Wrapped Buses");
     addMarker(4, "Mexico City, Mexico", 19.4167, -99.1351, "/gallery/v/mexico_billboards/", "/gallery/d/6503-2/1292-1close.jpg", 150, 113, "6 Billboards");
     addMarker(4, "Mexico City, Mexico", 19.3831, -99.1516, "/gallery/v/mexico_billboards/", "/gallery/d/6559-2/route39_side1.jpg", 150, 113, "7 Wrapped Buses");
-    addMarker(6, "Anosizato, Antananarivo, Madagascar", -18.93779, 47.49965, "/gallery/v/madagascar_billboards/", "/gallery/d/7002-2/ANOSIZATO.jpg", 150, 108, "Billboard");
-    addMarker(6, "Antehiroka, Antananarivo, Madagascar", -18.84684, 47.47587, "/gallery/v/madagascar_billboards/", "/gallery/d/7005-2/ANTEHIROKA.jpg", 150, 112, "Billboard");
-    addMarker(6, "Antsirabe, Madagascar", -19.8489, 47.0333, "/gallery/v/madagascar_billboards/", "/gallery/d/7007-2/ANTSIRABE.jpg", 150, 112, "Billboard");
-    addMarker(6, "Fianarantsoa, Madagascar", -21.4575, 47.0900, "/gallery/v/madagascar_billboards/", "/gallery/d/7009-2/FIANARANTSOA.jpg", 150, 112, "Billboard");
-    addMarker(6, "Tamatave, Madagascar", -18.15488, 49.40745, "/gallery/v/madagascar_billboards/", "/gallery/d/7011-2/TAMATAVE-1.jpg", 150, 99, "Billboard");
-    addMarker(6, "Tamatave, Madagascar", -18.14308, 49.38457, "/gallery/v/madagascar_billboards/", "/gallery/d/7013-2/TAMATAVE-2.jpg", 150, 100, "Billboard");
+    addMarker(4, "Anosizato, Antananarivo, Madagascar", -18.93779, 47.49965, "/gallery/v/madagascar_billboards/", "/gallery/d/7002-2/ANOSIZATO.jpg", 150, 108, "Billboard");
+    addMarker(4, "Antehiroka, Antananarivo, Madagascar", -18.84684, 47.47587, "/gallery/v/madagascar_billboards/", "/gallery/d/7005-2/ANTEHIROKA.jpg", 150, 112, "Billboard");
+    addMarker(4, "Antsirabe, Madagascar", -19.8489, 47.0333, "/gallery/v/madagascar_billboards/", "/gallery/d/7007-2/ANTSIRABE.jpg", 150, 112, "Billboard");
+    addMarker(4, "Fianarantsoa, Madagascar", -21.4575, 47.0900, "/gallery/v/madagascar_billboards/", "/gallery/d/7009-2/FIANARANTSOA.jpg", 150, 112, "Billboard");
+    addMarker(4, "Tamatave, Madagascar", -18.15488, 49.40745, "/gallery/v/madagascar_billboards/", "/gallery/d/7011-2/TAMATAVE-1.jpg", 150, 99, "Billboard");
+    addMarker(4, "Tamatave, Madagascar", -18.14308, 49.38457, "/gallery/v/madagascar_billboards/", "/gallery/d/7013-2/TAMATAVE-2.jpg", 150, 100, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
