@@ -959,6 +959,11 @@
     addMarker(4, "Phoenix, Arizona", 33.474, -112.078, null, null, null, null, "45 Billboards");
     addMarker(4, "New Orleans, Louisiana", 29.991, -90.070, null, null, null, null, "12 Billboards");
     addMarker(4, "Minneapolis, Minnesota", 44.9852, -93.2629, null, null, null, null, "24 Billboards");
+    addMarker(6, "Seattle, Washington", 47.616, -122.331, null, null, null, null, "10 Billboards");
+    addMarker(6, "Amarillo, Texas", 35.2277, -101.831, null, null, null, null, "9 Billboards");
+    addMarker(6, "Corpus Christi, Texas", 27.814, -97.398, null, null, null, null, "11 Billboards");
+    addMarker(6, "Lubbock, Texas", 33.5829, -101.855, null, null, null, null, "10 Billboards");
+    addMarker(6, "Johnstown, Pennsylvania", 40.3285, -78.9222, null, null, null, null, "2 Billboards");
     addMarker(4, "Honduras", 14.08930, -87.18325, "/gallery/v/honduras_billboards", "/gallery/d/2654-2/HON28B_1.JPG", 150, 113);
     addMarker(4, "Honduras", 14.07106, -87.18355, "/gallery/v/honduras_billboards", "/gallery/d/2666-2/HON47C_1.JPG", 150, 113);
     addMarker(4, "Honduras", 13.3280, -87.1880, "/gallery/v/honduras_billboards", "/gallery/d/2691-2/HON95A_1.JPG", 150, 113);
@@ -1181,6 +1186,10 @@
     addMarker(4, "Philadelphia, Pennsylvania", 40.0065, -75.1169, "/gallery/v/philadelphia_billboards/", null, null, null);
     addMarker(4, "Philadelphia, Pennsylvania", 39.9817, -75.1225, "/gallery/v/philadelphia_billboards/", null, null, null);
     addMarker(4, "Philadelphia, Pennsylvania", 39.9934, -75.0971, "/gallery/v/philadelphia_billboards/", null, null, null);
+    addMarker(6, "Camden, New Jersey", 39.93480, -75.08411, "/gallery/v/philadelphia_billboards/", "/gallery/d/7231-2/Admiral-Wilson-Blvd-1.jpg", 150, 93, "Billboard");
+    addMarker(6, "Philadelphia, Pennsylvania", 40.0180, -75.1728, "/gallery/v/philadelphia_billboards/", "/gallery/d/7240-2/Roosevelt-2.jpg", 150, 96, "Billboard");
+    addMarker(6, "Philadelphia, Pennsylvania", 39.9076, -75.1433, "/gallery/v/philadelphia_billboards/", "/gallery/d/7246-2/Walt-Whitman-Bridge-2.jpg", 150, 118, "Billboard");
+    addMarker(6, "Chester, Pennsylvania", 39.8485, -75.3828, "/gallery/v/philadelphia_billboards/", null, null, null, "Billboard");
     addMarker(4, "Blacktown, New South Wales, Australia", -33.75906, 150.91425, "/gallery/v/australia_billboards/", "/gallery/d/5379-2/NSW+-+Blacktown+-+Sunnyholt+Rd.JPG", 150, 104);
     addMarker(4, "West Pennant Hills, New South Wales, Australia", -33.74904, 151.04935, "/gallery/v/australia_billboards/", "/gallery/d/5383-2/NSW+-+West+Pennant+Hills+-+Pennant+Hills+Rd.JPG", 150, 103);
     addMarker(4, "Milton, Queensland, Australia", -27.468440, 153.00506, "/gallery/v/australia_billboards/", "/gallery/d/5386-2/QLD+-+Milton+-+Milton+Rd.JPG", 150, 102);
