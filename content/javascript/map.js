@@ -1394,6 +1394,7 @@
     addMarker(4, "Fianarantsoa, Madagascar", -21.4575, 47.0900, "/gallery/v/madagascar_billboards/", "/gallery/d/7009-2/FIANARANTSOA.jpg", 150, 112, "Billboard");
     addMarker(4, "Tamatave, Madagascar", -18.15488, 49.40745, "/gallery/v/madagascar_billboards/", "/gallery/d/7011-2/TAMATAVE-1.jpg", 150, 99, "Billboard");
     addMarker(4, "Tamatave, Madagascar", -18.14308, 49.38457, "/gallery/v/madagascar_billboards/", "/gallery/d/7013-2/TAMATAVE-2.jpg", 150, 100, "Billboard");
+    addMarker(6, "Dubai, United Arab Emirates", 25.273, 55.311, null, "<%= images_url %>/dubai.jpg", 150, 99, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
