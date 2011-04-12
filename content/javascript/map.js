@@ -1201,11 +1201,11 @@
     addMarker(4, "Rothwell, Queensland, Australia", -27.21063, 153.04528, "/gallery/v/australia_billboards/", "/gallery/d/6262-2/QLD+-+Rothwell+-+Deception+Bay+Road.jpg", 150, 105);
     addMarker(4, "Enoggera, Queensland, Australia", -27.41892, 152.99325, "/gallery/v/australia_billboards/", "/gallery/d/6265-2/QLD+-+Enoggera+-+Pickering+Street.jpg", 150, 107);
     addMarker(4, "Georges Hall, New South Wales, Australia", -33.90939, 150.97858, "/gallery/v/australia_billboards/", "/gallery/d/6268-2/NSW+-+Georges+Hall+-+Henry+Lawson+Drive.jpg", 150, 111);
-    addMarker(6, "Keperra, Queensland, Australia", -27.4130, 152.9541, "/gallery/v/australia_billboards/", "/gallery/d/7255-2/QLD+-+Keperra+-+Samford+Road+_Keperra+Country+Golf+Club_.jpg", 150, 111, "Billboard");
-    addMarker(6, "Tanah Merah, Queensland, Australia", -27.6733, 153.1817, "/gallery/v/australia_billboards/", "/gallery/d/7253-2/QLD+-+Tanah+Merah+-+Pacific+Hwy.jpg", 150, 99, "Billboard");
-    addMarker(6, "Resevoir, Victoria, Australia", -37.72930, 145.01668, "/gallery/v/australia_billboards/", "/gallery/d/7251-2/VIC+-+Reservoir+-+708+Plenty+Rd.jpg", 150, 112, "Billboard");
-    addMarker(6, "Tottenham, Victoria, Australia", -37.7995, 144.8619, "/gallery/v/australia_billboards/", "/gallery/d/7249-2/VIC+-+Tottenham+-+Sunshine+Rd.jpg", 150, 111, "Billboard");
-    addMarker(6, "Rozelle, New South Wales, Australia", -33.86473, 151.17134, "/gallery/v/australia_billboards/", "/gallery/d/7257-2/NSW+-+Rozelle+-+Victoria+Rd.jpg", 150, 102, "Billboard");
+    addMarker(4, "Keperra, Queensland, Australia", -27.4130, 152.9541, "/gallery/v/australia_billboards/", "/gallery/d/7255-2/QLD+-+Keperra+-+Samford+Road+_Keperra+Country+Golf+Club_.jpg", 150, 111);
+    addMarker(4, "Tanah Merah, Queensland, Australia", -27.6733, 153.1817, "/gallery/v/australia_billboards/", "/gallery/d/7253-2/QLD+-+Tanah+Merah+-+Pacific+Hwy.jpg", 150, 99);
+    addMarker(4, "Resevoir, Victoria, Australia", -37.72930, 145.01668, "/gallery/v/australia_billboards/", "/gallery/d/7251-2/VIC+-+Reservoir+-+708+Plenty+Rd.jpg", 150, 112);
+    addMarker(4, "Tottenham, Victoria, Australia", -37.7995, 144.8619, "/gallery/v/australia_billboards/", "/gallery/d/7249-2/VIC+-+Tottenham+-+Sunshine+Rd.jpg", 150, 111);
+    addMarker(4, "Rozelle, New South Wales, Australia", -33.86473, 151.17134, "/gallery/v/australia_billboards/", "/gallery/d/7257-2/NSW+-+Rozelle+-+Victoria+Rd.jpg", 150, 102);
     addMarker(4, "Port Moresby, Papua New Guinea", -9.47929, 147.19019, "/gallery/v/papua_new_guinea_billboard/", "/gallery/d/5757-2/Port+Moresby+-+Papua+New+Guinea+3.jpg", 150, 113);
     addMarker(4, "Philippines", 14.642, 120.984, "/gallery/v/philippines_billboards/", "/gallery/d/5730-2/tyw+634.jpg", 150, 134, "30 Buses");
     addMarker(4, "Guatemala", 15.10, -89.92, "/gallery/v/moving_billboards/", "/gallery/d/5785-2/guatemala-moving-billboard-1.jpg", 150, 112, "Moving Billboard");
@@ -1399,7 +1399,12 @@
     addMarker(4, "Fianarantsoa, Madagascar", -21.4575, 47.0900, "/gallery/v/madagascar_billboards/", "/gallery/d/7009-2/FIANARANTSOA.jpg", 150, 112);
     addMarker(4, "Tamatave, Madagascar", -18.15488, 49.40745, "/gallery/v/madagascar_billboards/", "/gallery/d/7011-2/TAMATAVE-1.jpg", 150, 99);
     addMarker(4, "Tamatave, Madagascar", -18.14308, 49.38457, "/gallery/v/madagascar_billboards/", "/gallery/d/7013-2/TAMATAVE-2.jpg", 150, 100);
-    addMarker(6, "Dubai, United Arab Emirates", 25.273, 55.311, null, "<%= images_url %>/dubai.jpg", 150, 99, "Billboards");
+    addMarker(4, "Dubai, United Arab Emirates", 25.273, 55.311, null, "<%= images_url %>/dubai.jpg", 150, 99, "Billboards");
+    addMarker(6, "Benguela, Angola", -12.5727, 13.4100, "/gallery/v/angola_billboards/", "/gallery/d/7262-2/Benguela-1.jpg", 150, 102, "Billboard");
+    addMarker(6, "Benguela, Angola", -12.5952, 13.4000, "/gallery/v/angola_billboards/", "/gallery/d/7266-2/Benguela-2.jpg", 150, 113, "Billboard");
+    addMarker(6, "Lobito, Angola", -12.3545, 13.5357, "/gallery/v/angola_billboards/", "/gallery/d/7269-2/Lobito-1.jpg", 150, 105, "Billboard");
+    addMarker(6, "Luanda, Angola", -8.8781, 13.1930, "/gallery/v/angola_billboards/", "/gallery/d/7272-2/Luanda-1.jpg", 150, 92, "Billboard");
+    addMarker(6, "Luanda, Angola", -8.83154, 13.23080, "/gallery/v/angola_billboards/", "/gallery/d/7275-2/Luanda-2.jpg", 150, 109, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
