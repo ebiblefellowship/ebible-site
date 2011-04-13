@@ -1400,11 +1400,13 @@
     addMarker(4, "Tamatave, Madagascar", -18.15488, 49.40745, "/gallery/v/madagascar_billboards/", "/gallery/d/7011-2/TAMATAVE-1.jpg", 150, 99);
     addMarker(4, "Tamatave, Madagascar", -18.14308, 49.38457, "/gallery/v/madagascar_billboards/", "/gallery/d/7013-2/TAMATAVE-2.jpg", 150, 100);
     addMarker(4, "Dubai, United Arab Emirates", 25.273, 55.311, null, "<%= images_url %>/dubai.jpg", 150, 99, "Billboards");
-    addMarker(6, "Benguela, Angola", -12.5727, 13.4100, "/gallery/v/angola_billboards/", "/gallery/d/7262-2/Benguela-1.jpg", 150, 102, "Billboard");
-    addMarker(6, "Benguela, Angola", -12.5952, 13.4000, "/gallery/v/angola_billboards/", "/gallery/d/7266-2/Benguela-2.jpg", 150, 113, "Billboard");
-    addMarker(6, "Lobito, Angola", -12.3545, 13.5357, "/gallery/v/angola_billboards/", "/gallery/d/7269-2/Lobito-1.jpg", 150, 105, "Billboard");
-    addMarker(6, "Luanda, Angola", -8.8781, 13.1930, "/gallery/v/angola_billboards/", "/gallery/d/7272-2/Luanda-1.jpg", 150, 92, "Billboard");
-    addMarker(6, "Luanda, Angola", -8.83154, 13.23080, "/gallery/v/angola_billboards/", "/gallery/d/7275-2/Luanda-2.jpg", 150, 109, "Billboard");
+    addMarker(4, "Benguela, Angola", -12.5727, 13.4100, "/gallery/v/angola_billboards/", "/gallery/d/7262-2/Benguela-1.jpg", 150, 102);
+    addMarker(4, "Benguela, Angola", -12.5952, 13.4000, "/gallery/v/angola_billboards/", "/gallery/d/7266-2/Benguela-2.jpg", 150, 113);
+    addMarker(4, "Lobito, Angola", -12.3545, 13.5357, "/gallery/v/angola_billboards/", "/gallery/d/7269-2/Lobito-1.jpg", 150, 105);
+    addMarker(4, "Luanda, Angola", -8.8781, 13.1930, "/gallery/v/angola_billboards/", "/gallery/d/7272-2/Luanda-1.jpg", 150, 92);
+    addMarker(4, "Luanda, Angola", -8.83154, 13.23080, "/gallery/v/angola_billboards/", "/gallery/d/7275-2/Luanda-2.jpg", 150, 109);
+    addMarker(6, "Harare, Zimbabwe", -17.8592, 31.0990, "/gallery/v/zimbabwe_billboards/", "/gallery/d/7409-2/ATT00058.jpg", 150, 112, "Billboard");
+    addMarker(6, "Harare, Zimbabwe", -17.8333, 31.0873, "/gallery/v/zimbabwe_billboards/", "/gallery/d/7413-2/ATT00060.jpg", 150, 112, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
