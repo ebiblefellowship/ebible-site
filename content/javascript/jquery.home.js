@@ -80,7 +80,7 @@
             tabs: true,
             tabsid: 'tabs-wrap',
             tabids: [ 'billboards', 'features', 'comments' ],
-            tabindexes: [ 0, 22, 25 ]            
+            tabindexes: [ 0, 23, 26 ]            
           });
         }
       });
