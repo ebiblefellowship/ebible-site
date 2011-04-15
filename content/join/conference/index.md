@@ -5,6 +5,8 @@ title: EBible Fellowship 2011 Bible Conference
 
 EBible Fellowship is holding a two day Bible conference with a banquet.
 
+NOTE: See conference schedule below
+
 ## When
 
 Starts Friday April 15th at 6 PM through Saturday afternoon the 16th
@@ -50,15 +52,29 @@ Banquet tickets are available on a first-come first-serve basis.
 
 ###Friday
 
-6 PM to about 9 PM
+6:00pm to 7:00pm - Hymn Sing\\
+7:15pm to 8:30pm - Bible Teaching\\
+8:45pm to 10:00pm - Open Forum
 
 ###Saturday
 
-9 AM to 1 PM\\
-1 PM to 2:30 PM - Banquet\\
-2:30 PM - TBD
+8:30am to 9:30am - Hymns/Scripture reading/Announcements\\
+9:30am to 10:30am - Bible Teaching with Chris McCann\\
+10:30am to 11:30am - Bible Teaching with Gunther von Harringa, Sr.\\
+11:30am to 12:30pm - Open Forum
 
-Details and possible corrections to follow.
+1:00pm to 2:30pm - Banquet (tickets required)
+
+2:30pm to 4:00pm - Free Time
+
+4:00pm to 5:00pm - Bible Teaching with Guy Berry\\
+5:00pm to 6:00pm - Bible Teaching with Gunther von Harringa, Sr.
+
+6:00pm to 6:15pm - Coffee Break
+
+6:15pm to 7:00pm - Bible Teaching with Chris McCann\\
+7:15pm to 8:00pm - Open Forum\\
+8:00pm - Closing Hymn
 
 ## Contact Information
 
