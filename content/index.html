@@ -12,6 +12,7 @@ head_scripts: |
     <script type="text/javascript" src="/javascript/jquery.onImagesLoad.js"></script>
     <script type="text/javascript" src="/javascript/jquery.home.js"></script>
     <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b7df40f6e87cc94"></script>
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 ---
   <!--Begin Languages-->
  
@@ -348,7 +349,51 @@ head_scripts: |
       <div class="container-bottom"></div>
     </div>      
  
-    
+    <div id="twitter-container">
+      <div class="container-top">Bible Study</div>
+      <div class="container-mid">
+      </div>
+      <div class="container-bottom"></div>
+    </div>
+
+    <div id="twitter-container">
+      <div class="container-top">Twitter Posts</div>
+      <div class="container-mid">
+        <script>
+        new TWTR.Widget({
+          version: 2,
+          type: 'profile',
+          rpp: 8,
+          interval: 6000,
+          width: 'auto',
+          height: 250,
+          theme: {
+            shell: {
+              background: '#fff',
+              color: '#000'
+            },
+            tweets: {
+              background: '#fff',
+              color: '#000',
+              links: '#069'
+            }
+          },
+          features: {
+            scrollbar: false,
+            loop: true,
+            live: true,
+            hashtags: true,
+            timestamp: true,
+            avatars: false,
+            behavior: 'default'
+          }
+        }).render().setUser('EBibleFellowshp').start();
+        </script>
+      </div>
+      <div class="container-bottom"></div>
+    </div>
+
+<!-- TODO: remove Unto the End of the World section below to make room for this section again
     <div id="pubs-container">
       <div class="container-top">Publications</div>
       <div class="container-mid">           
@@ -372,7 +417,7 @@ head_scripts: |
       </div>
       <div class="container-bottom"></div>
     </div>
-
+ -->
             
     <div id="study-container">
         <div class="container-top">Bible Study</div>

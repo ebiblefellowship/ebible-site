@@ -45,6 +45,15 @@
   margin: 0; 
 }
 
+/* Twitter Profile Section: Right Sidebar */
+#twitter-container {
+  width: 24%;
+  float: right;
+  margin-right: 10px
+}
+.twtr-hd, .twtr-ft { display: none; }
+.twtr-tweet-text p { text-align: left; }
+
 /* Publications Section: Right Sidebar */
 #pubs-container {
   width: 24%;
