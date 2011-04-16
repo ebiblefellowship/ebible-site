@@ -45,6 +45,7 @@
         }
       });    
     
+    /*
     $("#first-pub").hide();
     items[pubIndex] = $(".pub");
     currentIndex[pubIndex] = Math.floor((Math.random()%1) * items[pubIndex].length);
@@ -58,6 +59,7 @@
       slideEm(pubIndex, 1);
       return false;
     });
+    */
 
     // load the rest of the billboards    
     $.ajaxSetup({ cache: false });
