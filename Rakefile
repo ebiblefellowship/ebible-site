@@ -139,7 +139,7 @@ MP3_META_DIRS_MAP.each do |d|
 end
 =end
 
-desc 'Update audio meta data files'
+desc "Update audio metadata files by scanning MP3's"
 task :update do
   MP3_META_DIRS_MAP.each do |d|
     Dir.glob(File.join(MP3_ROOT, d[:mp3], MP3_SELECT_GLOB)).each do |mp3_file|
@@ -151,6 +151,7 @@ task :update do
   end
 end
 
+desc 'Create HTML stubs for correspending audio metadata files'
 task :create do
   Dir[META_ROOT + '/**/*.yaml'].each do |source|
     target = source.sub(%r{^#{META_ROOT}}, CONTENT_ROOT).ext('html')
