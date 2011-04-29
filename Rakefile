@@ -13,14 +13,28 @@ require 'to_slug'
 String.send(:include, ToSlug)  # add to_slug method to String class
 
 MP3_ROOT = '/var/www/html'
+DOC_ROOT = '/var/www/html'
+AUDIO_ROOT = '/var/www/assets/audio'
 META_ROOT =  '/var/www_staging/sitegen/content/audio'
 CONTENT_ROOT =  '/var/www_staging/sitegen/content'
+HTTP_AUDIO_ROOT = 'http://assets.ebiblefellowship.com/audio'
 MP3_META_DIRS_MAP = [
-  { :mp3 => 'sunday_bible_message',      :meta => 'studies/bc2' },
-  { :mp3 => 'sunday_bible_study',        :meta => 'studies/bc1' },
-  { :mp3 => 'sunday_open_forum',         :meta => 'questions/of' },
-  { :mp3 => 'q_and_a',                   :meta => 'questions/web' },
-  { :mp3 => 'unto_the_end_of_the_world', :meta => 'studies/unto-the-end' }
+  { :mp3 => "#{DOC_ROOT}/sunday_bible_message",      :meta => 'studies/bc2',
+    :http_root => '' },
+  { :mp3 => "#{DOC_ROOT}/sunday_bible_study",        :meta => 'studies/bc1',
+    :http_root => '' },
+  { :mp3 => "#{DOC_ROOT}/sunday_open_forum",         :meta => 'questions/of',
+    :http_root => '' },
+  { :mp3 => "#{DOC_ROOT}/q_and_a",                   :meta => 'questions/web',
+    :http_root => '' },
+  { :mp3 => "#{DOC_ROOT}/unto_the_end_of_the_world", :meta => 'studies/unto-the-end',
+    :http_root => '' },
+  { :mp3 => "#{AUDIO_ROOT}/studies/conf",            :meta => 'studies/conf',
+    :http_root => HTTP_AUDIO_ROOT },
+  { :mp3 => "#{AUDIO_ROOT}/questions/fh",            :meta => 'questions/fh',
+    :http_root => HTTP_AUDIO_ROOT },
+  { :mp3 => "#{AUDIO_ROOT}/questions/conf",          :meta => 'questions/conf',
+    :http_root => HTTP_AUDIO_ROOT }
 ]
 # Only 2009 and 2010
 MP3_SELECT_GLOB = '*20[01][019].[0-9][0-9].[0-9][0-9]*.mp3'
@@ -37,7 +51,7 @@ SPEAKERS = {
 }
 
 # Create audio meta file from mp3 file
-def update_meta_from_mp3(mp3_file, meta_file)
+def update_meta_from_mp3(mp3_file, meta_file, http_root)
   mp3_mtime = File.mtime(mp3_file)
   meta_mtime = File.exists?(meta_file) ? File.mtime(meta_file) : nil
   # determine if meta file should be updated
@@ -56,7 +70,7 @@ def update_meta_from_mp3(mp3_file, meta_file)
     'bitrate'     => mp3.bitrate_fmt,
     'sample_rate' => mp3.sample_rate_fmt,
     'size'        => mp3.size_fmt,
-    'url'         => mp3.filename.sub(%r{^#{MP3_ROOT}},''),
+    'url'         => http_root + mp3.filename.sub(%r{^(#{DOC_ROOT}|#{AUDIO_ROOT})},''),
     'is_hidden'   => true
   }.delete_if { |k,v| v.nil? or v == ''}
   # Write extracted metadata
@@ -70,7 +84,7 @@ end
 # parse filename and extract date, speaker and title returning a Hash
 def parse_dated_file(file)
   meta = {}
-  if file =~ %r{^Fellowship_Hour_(\d\d\d\d\.\d\d\.\d\d)}
+  if file =~ %r{^(\d\d\d\d\.\d\d\.\d\d)_Fellowship_Hour}
     meta['created_at'] = $1.tr('.','-')
     meta['speaker'] = 'Chris McCann'
     meta['title'] = "Fellowship Hour for #{meta['created_at']}"
@@ -97,7 +111,7 @@ rule %r{^#{CONTENT_ROOT}.*\.html$} => [
 
   # Don't overwrite already existing html file
   if File.exists?(t.name)
-    puts "    ... skipping ..."
+    #puts "    ... skipping ..."
     next
   end
 
@@ -142,11 +156,13 @@ end
 desc "Update audio metadata files by scanning MP3's"
 task :update do
   MP3_META_DIRS_MAP.each do |d|
-    Dir.glob(File.join(MP3_ROOT, d[:mp3], MP3_SELECT_GLOB)).each do |mp3_file|
+    Dir.glob(File.join(d[:mp3], MP3_SELECT_GLOB)).each do |mp3_file|
       #mp3_files << mp3_file
       meta_file = File.join(META_ROOT, d[:meta], File.basename(mp3_file, '.mp3') + '.yaml')
+      # Fellowship Hour sometimes has a -draft.mp3 suffix. Remove so not in meta file name.
+      meta_file.sub!(/-draft/,'')
       #meta_files << meta_file
-      update_meta_from_mp3(mp3_file, meta_file)
+      update_meta_from_mp3(mp3_file, meta_file, d[:http_root])
     end
   end
 end
