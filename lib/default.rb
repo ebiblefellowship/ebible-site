@@ -46,6 +46,12 @@ def sorted_articles(relevant_articles, limit = 100)
   end.reverse.first(limit)
 end
 
+# Find by identifier
+def find_item(identifier)
+  @items.find { |i| i.identifier == identifier } ||
+    raise(Exception, "item not found with identifier == '#{identifier}'")
+end
+
 # Messages always have a date as part of the filename, normally in YYYY.DD.MM format
 def select_messages
   @items.select { |i| i.identifier =~ CONTENT_SELECTION }
