@@ -29,11 +29,11 @@ MP3_META_DIRS_MAP = [
     :http_root => '' },
   { :mp3 => "#{DOC_ROOT}/unto_the_end_of_the_world", :meta => 'studies/unto-the-end',
     :http_root => '' },
-  { :mp3 => "#{AUDIO_ROOT}/studies/conf",            :meta => 'studies/conf',
+  { :mp3 => "#{AUDIO_ROOT}/studies/conferences",     :meta => 'studies/conferences',
     :http_root => HTTP_AUDIO_ROOT },
   { :mp3 => "#{AUDIO_ROOT}/questions/fh",            :meta => 'questions/fh',
     :http_root => HTTP_AUDIO_ROOT },
-  { :mp3 => "#{AUDIO_ROOT}/questions/conf",          :meta => 'questions/conf',
+  { :mp3 => "#{AUDIO_ROOT}/questions/conferences",   :meta => 'questions/conferences',
     :http_root => HTTP_AUDIO_ROOT }
 ]
 # Only 2009 and 2010
