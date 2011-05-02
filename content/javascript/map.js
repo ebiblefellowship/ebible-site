@@ -537,7 +537,7 @@
     addMarker(3, "Dominica", 15.3074, -61.3844, null, null, null, null, "Tract Trip<br>February 2011");
     addMarker(3, "San Salvador, El Salvador", 13.6970, -89.1894, null, null, null, null, "Tract Trip<br>March 2011");
     addMarker(3, "Greece", 37.9826, 23.7162, null, null, null, null, "Family Radio Tract Trip");
-    addMarker(6, "Australia", -33.874, 151.209, "/gallery/v/project_jonah/australia_mission/", "/gallery/d/8273-2/australia_17.jpg", 150, 150, "Tract Trip<br>March 2011");
+    addMarker(3, "Australia", -33.874, 151.209, "/gallery/v/project_jonah/australia_mission/", "/gallery/d/8273-2/australia_17.jpg", 150, 150, "Tract Trip<br>March 2011");
     addMarker(3, "Chittagong, Bangladesh", 22.3733, 91.8011, null, null, null, null, "Family Radio Tract Trip");
     addMarker(3, "Dhaka, Bangladesh", 23.7074, 90.4044, null, null, null, null, "Family Radio Tract Trip");
     addMarker(3, "Mexico City, Mexico", 19.4426, -99.1276, null, null, null, null, "Tract Trip<br>March 2011");
@@ -545,21 +545,21 @@
     addMarker(3, "Stockholm, Sweden", 59.3346, 18.0643, null, null, null, null, "Tract Trip<br>March/April 2011");
     addMarker(3, "Copenhagen, Denmark", 55.6950, 12.5831, null, null, null, null, "Tract Trip<br>March/April 2011");
     addMarker(3, "Oslo, Norway", 59.9185, 10.7515, null, null, null, null, "Tract Trip<br>March/April 2011");
-    addMarker(6, "Bermuda", 32.2977, -64.7816, "/gallery/v/bermuda_mission/", "/gallery/d/8202-2/bermuda_10.jpg", 150, 150, "Tract Trip<br>April 2011");
-    addMarker(6, "Wroclaw, Poland", 51.118, 17.039, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Swidnica, Poland", 50.8521, 16.4757, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Cottbus, Germany", 51.7651, 14.328, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Berlin, Germany", 52.541, 13.410, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Prague, Czech Republic", 50.099, 14.421, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Trutnov, Czech Republic", 50.5662, 15.913, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "La Paz, Bolivia", -16.493, -68.146, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Cochabamba, Bolivia", -17.3808, -66.1670, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Santa Cruz, Bolivia", -17.781, -63.198, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Singapore", 1.311, 103.856, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Kuala Lumpur, Malaysia", 3.146, 101.687, null, null, null, null, "Tract Trip<br>April 2011");
-    addMarker(6, "Cuba", 23.1233, -82.389, "/gallery/v/project_jonah/cuba_mission/", "/gallery/d/8344-2/cuba_05.JPG", 150, 150, "Tract Trip<br>April 2011");
-    addMarker(6, "Hungary", 47.506, 19.041, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah");
-    addMarker(6, "Italy", 41.920, 12.483, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah");
+    addMarker(3, "Bermuda", 32.2977, -64.7816, "/gallery/v/bermuda_mission/", "/gallery/d/8202-2/bermuda_10.jpg", 150, 150, "Tract Trip<br>April 2011");
+    addMarker(3, "Wroclaw, Poland", 51.118, 17.039, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Swidnica, Poland", 50.8521, 16.4757, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Cottbus, Germany", 51.7651, 14.328, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Berlin, Germany", 52.541, 13.410, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Prague, Czech Republic", 50.099, 14.421, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Trutnov, Czech Republic", 50.5662, 15.913, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "La Paz, Bolivia", -16.493, -68.146, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Cochabamba, Bolivia", -17.3808, -66.1670, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Santa Cruz, Bolivia", -17.781, -63.198, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Singapore", 1.311, 103.856, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Kuala Lumpur, Malaysia", 3.146, 101.687, null, null, null, null, "Tract Trip<br>April 2011");
+    addMarker(3, "Cuba", 23.1233, -82.389, "/gallery/v/project_jonah/cuba_mission/", "/gallery/d/8344-2/cuba_05.JPG", 150, 150, "Tract Trip<br>April 2011");
+    addMarker(3, "Hungary", 47.506, 19.041, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah");
+    addMarker(3, "Italy", 41.920, 12.483, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -623,7 +623,7 @@
     addMarker(4, "Puerto Rico", 17.98958, -66.61839, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2108-2/Taller+Alcaraz+Ave_+Hostos+159+_amp_+Playa+Ponce+1.jpg", 150, 113);
     addMarker(4, "Puerto Rico", 18.35230, -65.68434, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2114-2/TALLER+CAR+Taller+Carrera+Carr+3+Bo_+Juan+1.jpg", 150, 113);
     addMarker(4, "Puerto Rico", 18.3153, -65.6507, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2136-2/AGAYI+1.jpg", 150, 113);
-    addMarker(6, "Puerto Rico", 18.3735, -65.7165, "/gallery/v/puerto_rico_billboards/", "/gallery/d/8398-2/P4250477.jpg", 150, 150, "Billboard");
+    addMarker(4, "Puerto Rico", 18.3735, -65.7165, "/gallery/v/puerto_rico_billboards/", "/gallery/d/8398-2/P4250477.jpg", 150, 150, "Billboard");
     addMarker(4, "Jamaica", 18.04585, -76.81858, "/gallery/v/jamaica_billboards/", "/gallery/d/2129-2/billboard1.jpg", 150, 116);
     addMarker(4, "Jamaica", 17.95348, -76.88010, "/gallery/v/jamaica_billboards/", "/gallery/d/2126-2/billboard2.jpg", 150, 90);
     addMarker(4, "Jamaica", 18.03446, -76.79560, "/gallery/v/jamaica_billboards/", "/gallery/d/2134-2/billboard3b.jpg", 150, 111);
@@ -1050,7 +1050,7 @@
     addMarker(4, "Mauritius", -20.18742, 57.48219, "/gallery/v/mauritius_billboards/", "/gallery/d/6271-2/BVILLAGE+_2_.JPG", 150, 113);
     addMarker(4, "Quito, Ecuador", -0.2304, -78.5268, "/gallery/v/ecuador_billboards/", "/gallery/d/3783-2/Bus006.jpg", 150, 110, "20 Buses");
     addMarker(4, "Guayaquil, Ecuador", -2.1960, -79.8977, "/gallery/v/ecuador_billboards/", "/gallery/d/3870-2/Taxi015.jpg", 150, 110, "30 Taxis");
-    addMarker(6, "Guayaquil, Ecuador", -2.164, -79.899, "/gallery/v/ecuador_billboards/", "/gallery/d/8407-2/moving-billboard-truck-3.JPG", 150, 150, "Mobile Billboard Truck");
+    addMarker(4, "Guayaquil, Ecuador", -2.164, -79.899, "/gallery/v/ecuador_billboards/", "/gallery/d/8407-2/moving-billboard-truck-3.JPG", 150, 150, "Mobile Billboard Truck");
     addMarker(4, "Chile", -33.6724, -71.1818, "/gallery/v/chile_billboards/", "/gallery/d/3760-2/21+may+r+78+km+64+_2_.jpg", 150, 113);
     addMarker(4, "Chile", -33.6529, -71.3181, "/gallery/v/chile_billboards/", "/gallery/d/3763-2/21+may+r+78+km+76+_3_.jpg", 150, 113);
     addMarker(4, "Chile", -33.4244, -70.6619, "/gallery/v/chile_billboards/", "/gallery/d/3918-2/21+de+mayo+010.jpg", 150, 113);
@@ -1270,7 +1270,7 @@
     addMarker(4, "Rio de Janeiro, Brazil", -22.93059, -43.18614, "/gallery/v/brazil_billboards/", "/gallery/d/5944-2/rio-catumbi.jpg", 150, 113);
     addMarker(4, "Rio de Janeiro, Brazil", -22.91008, -43.23118, "/gallery/v/brazil_billboards/", "/gallery/d/5946-2/rio-maracana.jpg", 150, 113);
     addMarker(4, "Rio de Janeiro, Brazil", -22.9933, -43.5972, "/gallery/v/brazil_billboards/", "/gallery/d/5948-2/rio-pedra-de-guaratiba.jpg", 150, 113);
-    addMarker(6, "Rio de Janeiro, Brazil", -22.872, -43.205, "/gallery/v/brazil_billboards/", "/gallery/d/8395-2/Buses-RIO-DE-JANEIRO.jpg", 150, 150, "Bus Wraps");
+    addMarker(4, "Rio de Janeiro, Brazil", -22.872, -43.205, "/gallery/v/brazil_billboards/", "/gallery/d/8395-2/Buses-RIO-DE-JANEIRO.jpg", 150, 150, "Bus Wraps");
     addMarker(4, "Niteroi, Brazil", -22.9358, -43.0472, "/gallery/v/brazil_billboards/", "/gallery/d/6183-2/28494_2364.jpg", 150, 113);
     addMarker(4, "Sao Goncalo, Brazil", -22.87222, -43.00461, "/gallery/v/brazil_billboards/", "/gallery/d/6181-2/28494_2357.jpg", 150, 113);
     addMarker(4, "Sao Goncalo, Brazil", -22.90409, -42.96950, "/gallery/v/brazil_billboards/", "/gallery/d/6177-2/28494_1260.jpg", 150, 113);
@@ -1425,16 +1425,17 @@
     addMarker(4, "Luanda, Angola", -8.83154, 13.23080, "/gallery/v/angola_billboards/", "/gallery/d/7275-2/Luanda-2.jpg", 150, 109);
     addMarker(4, "Harare, Zimbabwe", -17.8592, 31.0990, "/gallery/v/zimbabwe_billboards/", "/gallery/d/7409-2/ATT00058.jpg", 150, 112);
     addMarker(4, "Harare, Zimbabwe", -17.8333, 31.0873, "/gallery/v/zimbabwe_billboards/", "/gallery/d/7413-2/ATT00060.jpg", 150, 112);
-    addMarker(6, "Harare, Zimbabwe", -17.7786, 31.1274, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8369-2/Enterprise_Road_and_Harare_Drive.jpg", 150, 150, "Billboard");
-    addMarker(6, "Harare, Zimbabwe", -17.7201, 31.1251, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8371-2/Crowhill_by_Borrowdale_Brooke.jpg", 150, 150, "Billboard");
-    addMarker(6, "Harare, Zimbabwe", -17.7826, 31.1181, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8373-2/Enterprise_Road_by_Chisipite_Roundabout.jpg", 150, 150, "Billboard");
-    addMarker(6, "Harare, Zimbabwe", -17.8420, 31.1335, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8375-2/Mutare_Road_by_Jaggers.jpg", 150, 150, "Billboard");
-    addMarker(6, "Harare, Zimbabwe", -17.82994, 31.06554, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8379-2/Robert_Mugabe_at_Mukuvisi.jpg", 150, 150, "Billboard");
-    addMarker(6, "New York City, USA", 40.6567, -73.950, "/gallery/v/nyc_billboards/", "/gallery/d/8422-2/IMG_3700.JPG", 150, 150, "Billboards");
-    addMarker(6, "Libreville, Gabon", 0.3925, 9.4482, "/gallery/v/gabon_billboards/", "/gallery/d/8359-2/gabon-1.jpg", 150, 150, "Billboard");
-    addMarker(6, "Libreville, Gabon", 0.42179, 9.47860, "/gallery/v/gabon_billboards/", "/gallery/d/8363-2/gabon-2.jpg", 150, 150, "Billboard");
-    addMarker(6, "Libreville, Gabon", 0.4103, 9.4862, "/gallery/v/gabon_billboards/", "/gallery/d/8366-2/gabon-3.jpg", 150, 150, "Billboard");
-    addMarker(6, "Bujumbura, Burundi", -3.3792, 29.3553, "/gallery/v/burundi_billboards/", "/gallery/d/8383-2/Golf-Course-Gantry-1a.jpg", 150, 150, "Billboards");
+    addMarker(4, "Harare, Zimbabwe", -17.7786, 31.1274, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8369-2/Enterprise_Road_and_Harare_Drive.jpg", 150, 150, "Billboard");
+    addMarker(4, "Harare, Zimbabwe", -17.7201, 31.1251, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8371-2/Crowhill_by_Borrowdale_Brooke.jpg", 150, 150, "Billboard");
+    addMarker(4, "Harare, Zimbabwe", -17.7826, 31.1181, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8373-2/Enterprise_Road_by_Chisipite_Roundabout.jpg", 150, 150, "Billboard");
+    addMarker(4, "Harare, Zimbabwe", -17.8420, 31.1335, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8375-2/Mutare_Road_by_Jaggers.jpg", 150, 150, "Billboard");
+    addMarker(4, "Harare, Zimbabwe", -17.82994, 31.06554, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8379-2/Robert_Mugabe_at_Mukuvisi.jpg", 150, 150, "Billboard");
+    addMarker(4, "New York City, USA", 40.6567, -73.950, "/gallery/v/nyc_billboards/", "/gallery/d/8422-2/IMG_3700.JPG", 150, 150, "Billboards");
+    addMarker(4, "Libreville, Gabon", 0.3925, 9.4482, "/gallery/v/gabon_billboards/", "/gallery/d/8359-2/gabon-1.jpg", 150, 150, "Billboard");
+    addMarker(4, "Libreville, Gabon", 0.42179, 9.47860, "/gallery/v/gabon_billboards/", "/gallery/d/8363-2/gabon-2.jpg", 150, 150, "Billboard");
+    addMarker(4, "Libreville, Gabon", 0.4103, 9.4862, "/gallery/v/gabon_billboards/", "/gallery/d/8366-2/gabon-3.jpg", 150, 150, "Billboard");
+    addMarker(4, "Bujumbura, Burundi", -3.3792, 29.3553, "/gallery/v/burundi_billboards/", "/gallery/d/8383-2/Golf-Course-Gantry-1a.jpg", 150, 150, "Billboards");
+    addMarker(6, "Beirut, Lebanon", 33.8894, 35.4955, "/gallery/v/lebanon_billboards/", "/gallery/d/8448-2/SDC10005.jpg", 150, 150, "Billboards");
         
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
@@ -1448,7 +1449,8 @@
     addMarker(5, "Oregon", 43.993, -120.53, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
     addMarker(5, "Montana", 47.063, -110.40, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
     addMarker(5, "Papua New Guinea", -6.56, 144.36, "/gallery/v/papua_new_guinea_billboard/", "<%= images_url %>/papua-new-guinea-tn.jpg", 150, 120, "Front Page Newspaper Article");
-    addMarker(6, "Greenland", 64.1853, -51.7212, null, null, null, null, "Newspaper Ads");
+    addMarker(5, "Greenland", 64.1853, -51.7212, null, null, null, null, "Newspaper Ads");
+    addMarker(6, "Iceland", 64.1380, -21.895, null, null, null, null, "Newspaper Ads");
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("<%= base_url %>/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
