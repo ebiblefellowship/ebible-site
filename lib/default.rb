@@ -1,6 +1,7 @@
 # All files in the 'lib' directory will be loaded
 # before nanoc starts compiling.
 require "bundler/setup"
+require 'uri'
 
 # All content has a filename with a date
 CONTENT_SELECTION = %r{\d\d\d\d[.-]\d\d[.-]\d\d}
@@ -15,6 +16,15 @@ end
 
 def images_url
   @site.config[:images_url]
+end
+
+# Given an MP3 URI, convert to an .m3u URL
+def m3u_url(mp3_uri)
+  # if parameter starts with a '/', the mp3 is on www.ebiblefellowship.com
+  url = (mp3_uri.strip[0] == '/') ? 'http://www.ebiblefellowship.com' + mp3_uri : mp3_uri
+  base_url + '/m3u.php?url=' +
+      URI.escape(url, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]")) +
+      '&amp;ext=.m3u'
 end
 
 def home_page?
