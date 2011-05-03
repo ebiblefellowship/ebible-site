@@ -8,7 +8,7 @@ item = sorted_articles_for_category(category_id, 10).select { |i| i[:audio] }.fi
 %>
         <div class="audio">
           <ul class="homemedia-sprite">
-            <li class="hphones"><a href="<%= item[:audio][:url].sub(/mp3$/,'m3u') %>" title="Listen"></a></li>
+            <li class="hphones"><a href="<%= m3u_url(item[:audio][:url]) %>" title="Listen via M3U Playlist"></a></li>
             <li class="download"><a href="<%= item[:audio][:url] %>" title="Download"></a></li>
           </ul>
           <h4><%= category_desc %></h4>
