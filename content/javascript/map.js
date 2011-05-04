@@ -623,7 +623,7 @@
     addMarker(4, "Puerto Rico", 17.98958, -66.61839, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2108-2/Taller+Alcaraz+Ave_+Hostos+159+_amp_+Playa+Ponce+1.jpg", 150, 113);
     addMarker(4, "Puerto Rico", 18.35230, -65.68434, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2114-2/TALLER+CAR+Taller+Carrera+Carr+3+Bo_+Juan+1.jpg", 150, 113);
     addMarker(4, "Puerto Rico", 18.3153, -65.6507, "/gallery/v/puerto_rico_billboards/", "/gallery/d/2136-2/AGAYI+1.jpg", 150, 113);
-    addMarker(4, "Puerto Rico", 18.3735, -65.7165, "/gallery/v/puerto_rico_billboards/", "/gallery/d/8398-2/P4250477.jpg", 150, 150, "Billboard");
+    addMarker(4, "Puerto Rico", 18.3735, -65.7165, "/gallery/v/puerto_rico_billboards/", "/gallery/d/8398-2/P4250477.jpg", 150, 150);
     addMarker(4, "Jamaica", 18.04585, -76.81858, "/gallery/v/jamaica_billboards/", "/gallery/d/2129-2/billboard1.jpg", 150, 116);
     addMarker(4, "Jamaica", 17.95348, -76.88010, "/gallery/v/jamaica_billboards/", "/gallery/d/2126-2/billboard2.jpg", 150, 90);
     addMarker(4, "Jamaica", 18.03446, -76.79560, "/gallery/v/jamaica_billboards/", "/gallery/d/2134-2/billboard3b.jpg", 150, 111);
@@ -1425,17 +1425,19 @@
     addMarker(4, "Luanda, Angola", -8.83154, 13.23080, "/gallery/v/angola_billboards/", "/gallery/d/7275-2/Luanda-2.jpg", 150, 109);
     addMarker(4, "Harare, Zimbabwe", -17.8592, 31.0990, "/gallery/v/zimbabwe_billboards/", "/gallery/d/7409-2/ATT00058.jpg", 150, 112);
     addMarker(4, "Harare, Zimbabwe", -17.8333, 31.0873, "/gallery/v/zimbabwe_billboards/", "/gallery/d/7413-2/ATT00060.jpg", 150, 112);
-    addMarker(4, "Harare, Zimbabwe", -17.7786, 31.1274, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8369-2/Enterprise_Road_and_Harare_Drive.jpg", 150, 150, "Billboard");
-    addMarker(4, "Harare, Zimbabwe", -17.7201, 31.1251, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8371-2/Crowhill_by_Borrowdale_Brooke.jpg", 150, 150, "Billboard");
-    addMarker(4, "Harare, Zimbabwe", -17.7826, 31.1181, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8373-2/Enterprise_Road_by_Chisipite_Roundabout.jpg", 150, 150, "Billboard");
-    addMarker(4, "Harare, Zimbabwe", -17.8420, 31.1335, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8375-2/Mutare_Road_by_Jaggers.jpg", 150, 150, "Billboard");
-    addMarker(4, "Harare, Zimbabwe", -17.82994, 31.06554, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8379-2/Robert_Mugabe_at_Mukuvisi.jpg", 150, 150, "Billboard");
+    addMarker(4, "Harare, Zimbabwe", -17.7786, 31.1274, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8369-2/Enterprise_Road_and_Harare_Drive.jpg", 150, 150);
+    addMarker(4, "Harare, Zimbabwe", -17.7201, 31.1251, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8371-2/Crowhill_by_Borrowdale_Brooke.jpg", 150, 150);
+    addMarker(4, "Harare, Zimbabwe", -17.7826, 31.1181, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8373-2/Enterprise_Road_by_Chisipite_Roundabout.jpg", 150, 150);
+    addMarker(4, "Harare, Zimbabwe", -17.8420, 31.1335, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8375-2/Mutare_Road_by_Jaggers.jpg", 150, 150);
+    addMarker(4, "Harare, Zimbabwe", -17.82994, 31.06554, "/gallery/v/zimbabwe_billboards/", "/gallery/d/8379-2/Robert_Mugabe_at_Mukuvisi.jpg", 150, 150);
     addMarker(4, "New York City, USA", 40.6567, -73.950, "/gallery/v/nyc_billboards/", "/gallery/d/8422-2/IMG_3700.JPG", 150, 150, "Billboards");
-    addMarker(4, "Libreville, Gabon", 0.3925, 9.4482, "/gallery/v/gabon_billboards/", "/gallery/d/8359-2/gabon-1.jpg", 150, 150, "Billboard");
-    addMarker(4, "Libreville, Gabon", 0.42179, 9.47860, "/gallery/v/gabon_billboards/", "/gallery/d/8363-2/gabon-2.jpg", 150, 150, "Billboard");
-    addMarker(4, "Libreville, Gabon", 0.4103, 9.4862, "/gallery/v/gabon_billboards/", "/gallery/d/8366-2/gabon-3.jpg", 150, 150, "Billboard");
+    addMarker(4, "Libreville, Gabon", 0.3925, 9.4482, "/gallery/v/gabon_billboards/", "/gallery/d/8359-2/gabon-1.jpg", 150, 150);
+    addMarker(4, "Libreville, Gabon", 0.42179, 9.47860, "/gallery/v/gabon_billboards/", "/gallery/d/8363-2/gabon-2.jpg", 150, 150);
+    addMarker(4, "Libreville, Gabon", 0.4103, 9.4862, "/gallery/v/gabon_billboards/", "/gallery/d/8366-2/gabon-3.jpg", 150, 150);
     addMarker(4, "Bujumbura, Burundi", -3.3792, 29.3553, "/gallery/v/burundi_billboards/", "/gallery/d/8383-2/Golf-Course-Gantry-1a.jpg", 150, 150, "Billboards");
-    addMarker(6, "Beirut, Lebanon", 33.8894, 35.4955, "/gallery/v/lebanon_billboards/", "/gallery/d/8448-2/SDC10005.jpg", 150, 150, "Billboards");
+    addMarker(4, "Beirut, Lebanon", 33.8894, 35.4955, "/gallery/v/lebanon_billboards/", "/gallery/d/8448-2/SDC10005.jpg", 150, 150, "Billboards");
+    addMarker(6, "Iraq", 33.3170, 44.393, "/gallery/v/iraq_billboards/", "/gallery/d/8778-2/DSC03933.jpg", 150, 150, "Billboards");
+    addMarker(6, "Sri Lanka", 6.937, 79.851, "/gallery/v/sri_lanka_billboards/", "/gallery/d/8782-2/sri-lanka-001.jpg", 150, 150, "Billboards");
         
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
@@ -1450,7 +1452,7 @@
     addMarker(5, "Montana", 47.063, -110.40, null, null, null, null, "Save the Date, May 21, 2011<br>Newspaper Ads");
     addMarker(5, "Papua New Guinea", -6.56, 144.36, "/gallery/v/papua_new_guinea_billboard/", "<%= images_url %>/papua-new-guinea-tn.jpg", 150, 120, "Front Page Newspaper Article");
     addMarker(5, "Greenland", 64.1853, -51.7212, null, null, null, null, "Newspaper Ads");
-    addMarker(6, "Iceland", 64.1380, -21.895, null, null, null, null, "Newspaper Ads");
+    addMarker(5, "Iceland", 64.1380, -21.895, null, null, null, null, "Newspaper Ads");
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("<%= base_url %>/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
