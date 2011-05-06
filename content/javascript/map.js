@@ -1461,6 +1461,24 @@
     addMarker(6, "Tulkarm, Palestine", 32.311528, 35.027039, "/gallery/v/palestine_billboards/", "/gallery/d/8974-2/tolkarem+_2_-s.jpg", 150, 150, "Billboard and Balloon Ad");
     addMarker(6, "Salfit, Palestine", 32.0821, 35.182442, "/gallery/v/palestine_billboards/", "/gallery/d/8971-2/salfeet-s.jpg", 150, 150, "Balloon Ad");
     addMarker(6, "Hebron, Palestine", 31.533333, 35.095, "/gallery/v/palestine_billboards/", "/gallery/d/8912-2/hebro-s.jpg", 150, 150, "Balloon Ad");
+    addMarker(6, "Amman, Jordan", 31.960685, 35.894405, "/gallery/v/jordan_billboards/", "/gallery/d/8988-2/jordan-001.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9892, 35.9090, "/gallery/v/jordan_billboards/", "/gallery/d/8995-2/jordan-003.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 32.025, 35.83806, "/gallery/v/jordan_billboards/", "/gallery/d/8998-2/jordan-004.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 32.0180, 35.8731, "/gallery/v/jordan_billboards/", "/gallery/d/9001-2/jordan-005.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.94985, 35.93295, "/gallery/v/jordan_billboards/", "/gallery/d/9007-2/jordan-007.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9764, 35.8581, "/gallery/v/jordan_billboards/", "/gallery/d/9013-2/jordan-009.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9092, 35.8855, "/gallery/v/jordan_billboards/", "/gallery/d/9019-2/jordan-011.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 32.0046, 35.873, "/gallery/v/jordan_billboards/", "/gallery/d/9022-2/jordan-012.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9755389, 35.852648, "/gallery/v/jordan_billboards/", "/gallery/d/9025-2/jordan-013.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9412763, 35.888021, "/gallery/v/jordan_billboards/", "/gallery/d/9031-2/jordan-015.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9556, 35.8405, "/gallery/v/jordan_billboards/", "/gallery/d/9034-2/jordan-016.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9739, 35.9371, "/gallery/v/jordan_billboards/", "/gallery/d/9040-2/jordan-018.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9554, 35.9086, "/gallery/v/jordan_billboards/", "/gallery/d/9043-2/jordan-019.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9318, 35.939, "/gallery/v/jordan_billboards/", "/gallery/d/9046-2/jordan-020.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9629, 35.8904, "/gallery/v/jordan_billboards/", "/gallery/d/9049-2/jordan-021.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9759, 35.9197, "/gallery/v/jordan_billboards/", "/gallery/d/9052-2/jordan-022.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9344, 35.912, "/gallery/v/jordan_billboards/", "/gallery/d/9055-2/jordan-023.jpg", 150, 150, "Billboard");
+    addMarker(6, "Amman, Jordan", 31.9528, 35.9381, "/gallery/v/jordan_billboards/", "/gallery/d/9058-2/jordan-024.jpg", 150, 150, "Billboard");    
         
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
