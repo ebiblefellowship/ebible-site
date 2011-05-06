@@ -1410,6 +1410,7 @@
     addMarker(4, "T. Lubelskie, Poland", 50.44860, 23.41650, "/gallery/v/poland_billboards/", null, null, null, "5 Billboards");
     addMarker(4, "Zamosc, Poland", 50.7257, 23.2519, "/gallery/v/poland_billboards/", null, null, null, "2 Billboards");
     addMarker(4, "Zwolen, Poland", 51.35661, 21.58788, "/gallery/v/poland_billboards/", null, null, null);
+    addMarker(6, "Nowy Sacz, Poland", 49.6198, 20.7152, "/gallery/v/poland_billboards/", "/gallery/d/8983-2/barcice.jpg", 150, 150, "7 Billboards");
     addMarker(4, "Acarigua, Venezuela", 9.58126, -69.22005, "/gallery/v/venezuela_billboards/", "/gallery/d/6454-2/FAMILY+RADIO+2+007.jpg", 150, 113);
     addMarker(4, "Barinas, Venezuela", 8.6250, -70.2227, "/gallery/v/venezuela_billboards/", "/gallery/d/6441-2/0325111205.jpg", 150, 113);
     addMarker(4, "Barquisimeto, Venezuela", 10.08397, -69.31442, "/gallery/v/venezuela_billboards/", "/gallery/d/6668-2/BARQUISIMETO+EDO+LARA.jpg", 150, 113);
