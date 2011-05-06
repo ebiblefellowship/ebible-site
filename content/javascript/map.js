@@ -1212,9 +1212,9 @@
     addMarker(4, "Milton, Queensland, Australia", -27.468440, 153.00506, "/gallery/v/australia_billboards/", "/gallery/d/5386-2/QLD+-+Milton+-+Milton+Rd.JPG", 150, 102);
     addMarker(4, "Wacol, Queensland, Australia", -27.57901, 152.92441, "/gallery/v/australia_billboards/", "/gallery/d/5389-2/QLD+-+Wacol+-+Wacol+Station+Rd.JPG", 150, 103);
     addMarker(4, "Coburg, Victoria, Australia", -37.74043, 144.96301, "/gallery/v/australia_billboards/", "/gallery/d/5392-2/VIC+-+Coburg+-+148+Bell+St.JPG", 150, 103);
-    addMarker(4, "Footscray, Victoria, Australia", -37.80285, 144.89257, "/gallery/v/australia_billboards/", "/gallery/d/5395-2/VIC+-+Footscray+-+65+Victoria+St.JPG", 150, 103);
+    //addMarker(4, "Footscray, Victoria, Australia", -37.80285, 144.89257, "/gallery/v/australia_billboards/", "/gallery/d/5395-2/VIC+-+Footscray+-+65+Victoria+St.JPG", 150, 103);
     addMarker(4, "Niddrie, Victoria, Australia", -37.73580, 144.88883, "/gallery/v/australia_billboards/", "/gallery/d/6256-2/VIC+-+Niddrie+-+374+Keilor+Road.jpg", 150, 111);
-    addMarker(4, "Mentone, Victoria, Australia", -37.98260, 145.06560, "/gallery/v/australia_billboards/", "/gallery/d/6259-2/VIC+-+Mentone+-+23+Como+Parade+West.jpg", 150, 111);
+    //addMarker(4, "Mentone, Victoria, Australia", -37.98260, 145.06560, "/gallery/v/australia_billboards/", "/gallery/d/6259-2/VIC+-+Mentone+-+23+Como+Parade+West.jpg", 150, 111);
     addMarker(4, "Rothwell, Queensland, Australia", -27.21063, 153.04528, "/gallery/v/australia_billboards/", "/gallery/d/6262-2/QLD+-+Rothwell+-+Deception+Bay+Road.jpg", 150, 105);
     addMarker(4, "Enoggera, Queensland, Australia", -27.41892, 152.99325, "/gallery/v/australia_billboards/", "/gallery/d/6265-2/QLD+-+Enoggera+-+Pickering+Street.jpg", 150, 107);
     addMarker(4, "Georges Hall, New South Wales, Australia", -33.90939, 150.97858, "/gallery/v/australia_billboards/", "/gallery/d/6268-2/NSW+-+Georges+Hall+-+Henry+Lawson+Drive.jpg", 150, 111);
@@ -1223,6 +1223,19 @@
     addMarker(4, "Resevoir, Victoria, Australia", -37.72930, 145.01668, "/gallery/v/australia_billboards/", "/gallery/d/7251-2/VIC+-+Reservoir+-+708+Plenty+Rd.jpg", 150, 112);
     addMarker(4, "Tottenham, Victoria, Australia", -37.7995, 144.8619, "/gallery/v/australia_billboards/", "/gallery/d/7249-2/VIC+-+Tottenham+-+Sunshine+Rd.jpg", 150, 111);
     addMarker(4, "Rozelle, New South Wales, Australia", -33.86473, 151.17134, "/gallery/v/australia_billboards/", "/gallery/d/7257-2/NSW+-+Rozelle+-+Victoria+Rd.jpg", 150, 102);
+    addMarker(6, "Canterbury, New South Wales, Australia", -33.91429, 151.11224, "/gallery/v/australia_billboards/", "/gallery/d/8864-2/NSW_+Canterbury_+325+Canterbury+Rd.jpg", 150, 150, "Billboard");
+    addMarker(6, "Georges Hall, New South Wales, Australia", -33.9264, 150.9794, "/gallery/v/australia_billboards/", "/gallery/d/8867-2/NSW_+Georges+Hall_+Cnr+Henry+Lawson+Dv+_amp_+Tower+Rd.jpg", 150, 150, "Billboard");
+    addMarker(6, "Haberfield, New South Wales, Australia", -33.87439, 151.12829, "/gallery/v/australia_billboards/", "/gallery/d/8870-2/NSW_+Haberfield_+313+Parramatta+Rd.jpg", 150, 150, "Billboard");
+    addMarker(6, "Rydalmere, New South Wales, Australia", -33.8114, 151.0406, "/gallery/v/australia_billboards/", "/gallery/d/8873-2/NSW_+Rydalmere_+Victoria+Rd.jpg", 150, 150, "Billboard");
+    addMarker(6, "West Ryde, New South Wales, Australia", -33.8063, 151.0838, "/gallery/v/australia_billboards/", "/gallery/d/8876-2/NSW_+West+Ryde_+Victoria+Rd.jpg", 150, 150, "Billboard");
+    addMarker(6, "Chermside, Queensland, Australia", -27.3821, 153.0221, "/gallery/v/australia_billboards/", "/gallery/d/8879-2/QLD_+Chermside_+Webster+Rd.jpg", 150, 150, "Billboard");
+    addMarker(6, "Newmarket, Queensland, Australia", -27.42989, 153.01050, "/gallery/v/australia_billboards/", "/gallery/d/8882-2/QLD_+Newmarket_+Wilston+Rd.jpg", 150, 150, "Billboard");
+    addMarker(6, "Tugun, Queensland, Australia", -28.15547, 153.48733, "/gallery/v/australia_billboards/", "/gallery/d/8885-2/QLD_+Tugun_+Pacific+Hwy.jpg", 150, 150, "Billboard");
+    addMarker(6, "Wynnum West, Queensland, Australia", -27.44098, 153.13950, "/gallery/v/australia_billboards/", "/gallery/d/8888-2/QLD_+Wynnum+West_+Lindum+Rd.jpg", 150, 150, "Billboard");
+    addMarker(6, "Coburg, Victoria, Australia", -37.73889, 144.96670, "/gallery/v/australia_billboards/", "/gallery/d/8891-2/VIC_+Coburg_+559+Sydney+Rd.jpg", 150, 150, "Billboard");
+    addMarker(6, "Footscray, Victoria, Australia", -37.80285, 144.89257, "/gallery/v/australia_billboards/", "/gallery/d/8894-2/VIC_+Footscray_+65+Victoria+St.jpg", 150, 150, "Billboard");
+    addMarker(6, "Mentone, Victoria, Australia", -37.98250, 145.06558, "/gallery/v/australia_billboards/", "/gallery/d/8897-2/VIC_+Mentone_+23+Como+Parade+West.jpg", 150, 150, "Billboard");
+    addMarker(6, "Mooroolbark, Victoria, Australia", -37.79754, 145.32693, "/gallery/v/australia_billboards/", "/gallery/d/8900-2/VIC_+Mooroolbark_+179+Cambridge+Rd.jpg", 150, 150, "Billboard");
     addMarker(4, "Port Moresby, Papua New Guinea", -9.47929, 147.19019, "/gallery/v/papua_new_guinea_billboard/", "/gallery/d/5757-2/Port+Moresby+-+Papua+New+Guinea+3.jpg", 150, 113);
     addMarker(4, "Philippines", 14.642, 120.984, "/gallery/v/philippines_billboards/", "/gallery/d/5730-2/tyw+634.jpg", 150, 134, "30 Buses");
     addMarker(4, "Guatemala", 15.10, -89.92, "/gallery/v/moving_billboards/", "/gallery/d/5785-2/guatemala-moving-billboard-1.jpg", 150, 112, "Moving Billboard");
@@ -1436,8 +1449,17 @@
     addMarker(4, "Libreville, Gabon", 0.4103, 9.4862, "/gallery/v/gabon_billboards/", "/gallery/d/8366-2/gabon-3.jpg", 150, 150);
     addMarker(4, "Bujumbura, Burundi", -3.3792, 29.3553, "/gallery/v/burundi_billboards/", "/gallery/d/8383-2/Golf-Course-Gantry-1a.jpg", 150, 150, "Billboards");
     addMarker(4, "Beirut, Lebanon", 33.8894, 35.4955, "/gallery/v/lebanon_billboards/", "/gallery/d/8448-2/SDC10005.jpg", 150, 150, "Billboards");
-    addMarker(6, "Iraq", 33.3170, 44.393, "/gallery/v/iraq_billboards/", "/gallery/d/8778-2/DSC03933.jpg", 150, 150, "Billboards");
-    addMarker(6, "Sri Lanka", 6.937, 79.851, "/gallery/v/sri_lanka_billboards/", "/gallery/d/8782-2/sri-lanka-001.jpg", 150, 150, "Billboards");
+    addMarker(4, "Iraq", 33.3170, 44.393, "/gallery/v/iraq_billboards/", "/gallery/d/8778-2/DSC03933.jpg", 150, 150, "Billboards");
+    addMarker(4, "Sri Lanka", 6.937, 79.851, "/gallery/v/sri_lanka_billboards/", "/gallery/d/8782-2/sri-lanka-001.jpg", 150, 150, "Billboards");
+    addMarker(6, "Bethlehem, Palestine", 31.7296, 35.2848, "/gallery/v/palestine_billboards/", "/gallery/d/8909-2/bethlehem-wad+el+nar-s.jpg", 150, 150, "Billboard and Balloon Ad");
+    addMarker(6, "Jericho, Palestine", 31.8588, 35.4605, "/gallery/v/palestine_billboards/", "/gallery/d/8924-2/jericho-casino-s.jpg", 150, 150, "Billboard and Balloon Ad");
+    addMarker(6, "Jenin, Palestine", 32.4636, 35.3023, "/gallery/v/palestine_billboards/", "/gallery/d/8915-2/jenin+_2_-s.jpg", 150, 150, "Billboard and Balloon Ad");
+    addMarker(6, "Nablus, Palestine", 32.2267, 35.2608, "/gallery/v/palestine_billboards/", "/gallery/d/8929-2/nablus+6-12-s.jpg", 150, 150, "Billboard and Balloon Ad");
+    addMarker(6, "Qalqilyah, Palestine", 32.1970, 34.9814, "/gallery/v/palestine_billboards/", "/gallery/d/8938-2/qalqeelyeh-s.jpg", 150, 150, "Billboard and Balloon Ad");
+    addMarker(6, "Ramallah, Palestine", 31.8768, 35.2174, "/gallery/v/palestine_billboards/", "/gallery/d/8947-2/ramallah-+qalandia+entrance-s.jpg", 150, 150, "Billboards and Balloon Ads");
+    addMarker(6, "Tulkarm, Palestine", 32.311528, 35.027039, "/gallery/v/palestine_billboards/", "/gallery/d/8974-2/tolkarem+_2_-s.jpg", 150, 150, "Billboard and Balloon Ad");
+    addMarker(6, "Salfit, Palestine", 32.0821, 35.182442, "/gallery/v/palestine_billboards/", "/gallery/d/8971-2/salfeet-s.jpg", 150, 150, "Balloon Ad");
+    addMarker(6, "Hebron, Palestine", 31.533333, 35.095, "/gallery/v/palestine_billboards/", "/gallery/d/8912-2/hebro-s.jpg", 150, 150, "Balloon Ad");
         
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
