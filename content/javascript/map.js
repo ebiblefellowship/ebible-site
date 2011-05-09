@@ -1410,7 +1410,13 @@
     addMarker(4, "T. Lubelskie, Poland", 50.44860, 23.41650, "/gallery/v/poland_billboards/", null, null, null, "5 Billboards");
     addMarker(4, "Zamosc, Poland", 50.7257, 23.2519, "/gallery/v/poland_billboards/", null, null, null, "2 Billboards");
     addMarker(4, "Zwolen, Poland", 51.35661, 21.58788, "/gallery/v/poland_billboards/", null, null, null);
-    addMarker(4, "Nowy Sacz, Poland", 49.6198, 20.7152, "/gallery/v/poland_billboards/", "/gallery/d/8983-2/barcice.jpg", 150, 150, "7 Billboards");
+    addMarker(6, "Nowy Sacz, Poland", 49.5251, 20.6533, "/gallery/v/poland_billboards/", "/gallery/d/8983-2/barcice.jpg", 150, 150, "Billboard");
+    addMarker(6, "Nowy Sacz, Poland", 49.6254, 20.7285, "/gallery/v/poland_billboards/", "/gallery/d/9122-2/nowy_sacz_lwowska_1_poland.jpg", 150, 150, "Billboard");
+    addMarker(6, "Nowy Sacz, Poland", 49.6247, 20.7104, "/gallery/v/poland_billboards/", "/gallery/d/9125-2/nowy_sacz_lwowska_2_poland.jpg", 150, 150, "Billboard");
+    addMarker(6, "Nowy Sacz, Poland", 49.5682, 20.739, "/gallery/v/poland_billboards/", "/gallery/d/9128-2/nowy_sacz_nawojowa_poland.jpg", 150, 150, "Billboard");
+    addMarker(6, "Nowy Sacz, Poland", 49.5959, 20.7218, "/gallery/v/poland_billboards/", "/gallery/d/9131-2/nowy_sacz_nawojowska_poland.jpg", 150, 150, "Billboard");
+    addMarker(6, "Nowy Sacz, Poland", 49.5914, 20.6744, "/gallery/v/poland_billboards/", "/gallery/d/9134-2/nowy_sacz_wegierska_poland.jpg", 150, 150, "Billboard");
+    addMarker(6, "Nowy Sacz, Poland", 49.67338, 20.6847, "/gallery/v/poland_billboards/", "/gallery/d/9137-2/nowy_sacz_wieloglowy_poland.jpg", 150, 150, "Billboard");
     addMarker(4, "Acarigua, Venezuela", 9.58126, -69.22005, "/gallery/v/venezuela_billboards/", "/gallery/d/6454-2/FAMILY+RADIO+2+007.jpg", 150, 113);
     addMarker(4, "Barinas, Venezuela", 8.6250, -70.2227, "/gallery/v/venezuela_billboards/", "/gallery/d/6441-2/0325111205.jpg", 150, 113);
     addMarker(4, "Barquisimeto, Venezuela", 10.08397, -69.31442, "/gallery/v/venezuela_billboards/", "/gallery/d/6668-2/BARQUISIMETO+EDO+LARA.jpg", 150, 113);
@@ -1479,7 +1485,7 @@
     addMarker(4, "Amman, Jordan", 31.9759, 35.9197, "/gallery/v/jordan_billboards/", "/gallery/d/9052-2/jordan-022.jpg", 150, 150);
     addMarker(4, "Amman, Jordan", 31.9344, 35.912, "/gallery/v/jordan_billboards/", "/gallery/d/9055-2/jordan-023.jpg", 150, 150);
     addMarker(4, "Amman, Jordan", 31.9528, 35.9381, "/gallery/v/jordan_billboards/", "/gallery/d/9058-2/jordan-024.jpg", 150, 150);
-    addMarker(6, "Russia", 55.775, 37.616, "/gallery/v/russia_billboards/", "/gallery/d/9112-2/1051_.JPG", 150, 150, "Billboards");
+    addMarker(4, "Russia", 55.775, 37.616, "/gallery/v/russia_billboards/", "/gallery/d/9112-2/1051_.JPG", 150, 150, "Billboards");
 
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
