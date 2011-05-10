@@ -1507,6 +1507,7 @@
     addMarker(5, "Papua New Guinea", -6.56, 144.36, "/gallery/v/papua_new_guinea_billboard/", "<%= images_url %>/papua-new-guinea-tn.jpg", 150, 120, "Front Page Newspaper Article");
     addMarker(5, "Greenland", 64.1853, -51.7212, null, null, null, null, "Newspaper Ads");
     addMarker(5, "Iceland", 64.1380, -21.895, null, null, null, null, "Newspaper Ads");
+    addMarker(6, "South Korea", 37.57, 126.96, null, null, null, null, "Full Page Newspaper Ad<br>of the Judgment Day Tract");
     
     // add country progress
     var kmlLayer = new google.maps.KmlLayer("<%= base_url %>/outreach/map/may21progress.kmz?"+(new Date()).getTime(),{      
