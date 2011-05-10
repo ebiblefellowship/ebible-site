@@ -560,6 +560,8 @@
     addMarker(3, "Cuba", 23.1233, -82.389, "/gallery/v/project_jonah/cuba_mission/", "/gallery/d/8344-2/cuba_05.JPG", 150, 150, "Tract Trip<br>April 2011");
     addMarker(3, "Hungary", 47.506, 19.041, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah");
     addMarker(3, "Italy", 41.920, 12.483, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah");
+    addMarker(6, "Osaka, Japan", 34.6974, 135.5019, null, null, null, null, "Tract Trip<br>May 2011");
+    addMarker(6, "Nkawkaw, Ghana", 6.5535, -0.7780, null, null, null, null, "Tract Trip<br>May 2011");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
@@ -980,6 +982,10 @@
     addMarker(4, "Corpus Christi, Texas", 27.814, -97.398, null, null, null, null, "11 Billboards");
     addMarker(4, "Lubbock, Texas", 33.5829, -101.855, null, null, null, null, "10 Billboards");
     addMarker(4, "Johnstown, Pennsylvania", 40.3285, -78.9222, null, null, null, null, "2 Billboards");
+    addMarker(6, "San Jose, California", 37.356, -121.897, null, null, null, null, "6 Billboards");
+    addMarker(6, "Cupertino, California", 37.3208, -122.0317, null, null, null, null, "Billboard");
+    addMarker(6, "Oakland, California", 37.818, -122.273, null, null, null, null, "Billboard");
+    addMarker(6, "Berkeley, California", 37.8759, -122.2729, null, null, null, null, "2 Billboards");
     addMarker(4, "Honduras", 14.08930, -87.18325, "/gallery/v/honduras_billboards", "/gallery/d/2654-2/HON28B_1.JPG", 150, 113);
     addMarker(4, "Honduras", 14.07106, -87.18355, "/gallery/v/honduras_billboards", "/gallery/d/2666-2/HON47C_1.JPG", 150, 113);
     addMarker(4, "Honduras", 13.3280, -87.1880, "/gallery/v/honduras_billboards", "/gallery/d/2691-2/HON95A_1.JPG", 150, 113);
@@ -1410,13 +1416,13 @@
     addMarker(4, "T. Lubelskie, Poland", 50.44860, 23.41650, "/gallery/v/poland_billboards/", null, null, null, "5 Billboards");
     addMarker(4, "Zamosc, Poland", 50.7257, 23.2519, "/gallery/v/poland_billboards/", null, null, null, "2 Billboards");
     addMarker(4, "Zwolen, Poland", 51.35661, 21.58788, "/gallery/v/poland_billboards/", null, null, null);
-    addMarker(6, "Nowy Sacz, Poland", 49.5251, 20.6533, "/gallery/v/poland_billboards/", "/gallery/d/8983-2/barcice.jpg", 150, 150, "Billboard");
-    addMarker(6, "Nowy Sacz, Poland", 49.6254, 20.7285, "/gallery/v/poland_billboards/", "/gallery/d/9122-2/nowy_sacz_lwowska_1_poland.jpg", 150, 150, "Billboard");
-    addMarker(6, "Nowy Sacz, Poland", 49.6247, 20.7104, "/gallery/v/poland_billboards/", "/gallery/d/9125-2/nowy_sacz_lwowska_2_poland.jpg", 150, 150, "Billboard");
-    addMarker(6, "Nowy Sacz, Poland", 49.5682, 20.739, "/gallery/v/poland_billboards/", "/gallery/d/9128-2/nowy_sacz_nawojowa_poland.jpg", 150, 150, "Billboard");
-    addMarker(6, "Nowy Sacz, Poland", 49.5959, 20.7218, "/gallery/v/poland_billboards/", "/gallery/d/9131-2/nowy_sacz_nawojowska_poland.jpg", 150, 150, "Billboard");
-    addMarker(6, "Nowy Sacz, Poland", 49.5914, 20.6744, "/gallery/v/poland_billboards/", "/gallery/d/9134-2/nowy_sacz_wegierska_poland.jpg", 150, 150, "Billboard");
-    addMarker(6, "Nowy Sacz, Poland", 49.67338, 20.6847, "/gallery/v/poland_billboards/", "/gallery/d/9137-2/nowy_sacz_wieloglowy_poland.jpg", 150, 150, "Billboard");
+    addMarker(4, "Nowy Sacz, Poland", 49.5251, 20.6533, "/gallery/v/poland_billboards/", "/gallery/d/8983-2/barcice.jpg", 150, 150, "Billboard");
+    addMarker(4, "Nowy Sacz, Poland", 49.6254, 20.7285, "/gallery/v/poland_billboards/", "/gallery/d/9122-2/nowy_sacz_lwowska_1_poland.jpg", 150, 150, "Billboard");
+    addMarker(4, "Nowy Sacz, Poland", 49.6247, 20.7104, "/gallery/v/poland_billboards/", "/gallery/d/9125-2/nowy_sacz_lwowska_2_poland.jpg", 150, 150, "Billboard");
+    addMarker(4, "Nowy Sacz, Poland", 49.5682, 20.739, "/gallery/v/poland_billboards/", "/gallery/d/9128-2/nowy_sacz_nawojowa_poland.jpg", 150, 150, "Billboard");
+    addMarker(4, "Nowy Sacz, Poland", 49.5959, 20.7218, "/gallery/v/poland_billboards/", "/gallery/d/9131-2/nowy_sacz_nawojowska_poland.jpg", 150, 150, "Billboard");
+    addMarker(4, "Nowy Sacz, Poland", 49.5914, 20.6744, "/gallery/v/poland_billboards/", "/gallery/d/9134-2/nowy_sacz_wegierska_poland.jpg", 150, 150, "Billboard");
+    addMarker(4, "Nowy Sacz, Poland", 49.67338, 20.6847, "/gallery/v/poland_billboards/", "/gallery/d/9137-2/nowy_sacz_wieloglowy_poland.jpg", 150, 150, "Billboard");
     addMarker(4, "Acarigua, Venezuela", 9.58126, -69.22005, "/gallery/v/venezuela_billboards/", "/gallery/d/6454-2/FAMILY+RADIO+2+007.jpg", 150, 113);
     addMarker(4, "Barinas, Venezuela", 8.6250, -70.2227, "/gallery/v/venezuela_billboards/", "/gallery/d/6441-2/0325111205.jpg", 150, 113);
     addMarker(4, "Barquisimeto, Venezuela", 10.08397, -69.31442, "/gallery/v/venezuela_billboards/", "/gallery/d/6668-2/BARQUISIMETO+EDO+LARA.jpg", 150, 113);
