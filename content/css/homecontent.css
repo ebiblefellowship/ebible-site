@@ -1,4 +1,7 @@
 /* Home page main content */
+.height {
+  height: 250px;
+}
 
 /* News Section */
 #news-container {
@@ -58,7 +61,8 @@
 #pubs-container {
   width: 24%;
   float: right;
-  margin-right: 10px
+  margin-right: 10px;
+  margin-top: 15px;
 }
 
 #pubs {
@@ -181,7 +185,7 @@ li#forward-arrow a:hover {
   width: 24%;
   float: right;
   margin-right: 10px;
-  margin-top: 15px
+  margin-top: 15px;
 }
 
 .study img { 
@@ -216,6 +220,10 @@ li#forward-arrow a:hover {
   width: 80%;
   border-bottom: 1px solid #c0c0c0;
   padding-bottom: 10px 
+}
+
+.study-height {
+  height: 291px;
 }
 
 /* Free Materials Section */

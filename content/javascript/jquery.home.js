@@ -17,8 +17,8 @@
     // set the width of the judgment day gradient to the width of the text
     // $("#jday-gradient").width($("#jday-link").outerWidth());
 
-    /*
-    $("#first-lang").hide();    
+    
+    /* $("#first-lang").hide();    
     items[langIndex] = $(".lang"); 
     display[langIndex] = $("#lang-display");
     display[langIndex].html($(items[langIndex][currentIndex[langIndex]]).html());
@@ -45,7 +45,7 @@
         }
       });    
     
-    /*
+    
     $("#first-pub").hide();
     items[pubIndex] = $(".pub");
     currentIndex[pubIndex] = Math.floor((Math.random()%1) * items[pubIndex].length);
@@ -59,7 +59,7 @@
       slideEm(pubIndex, 1);
       return false;
     });
-    */
+    
 
     // load the rest of the billboards    
     $.ajaxSetup({ cache: false });

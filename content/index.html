@@ -405,10 +405,9 @@ head_scripts: |
       <div class="container-bottom"></div>
     </div>
 
-<!-- TODO: remove Unto the End of the World section below to make room for this section again
     <div id="pubs-container">
       <div class="container-top">Publications</div>
-      <div class="container-mid">           
+      <div class="container-mid height">           
         <div id="pubs">
           <div id="pub-display"></div>
           <div class="pub" id="first-pub"><a href="http://www.familyradio.com/graphical/literature/judgment/judgment.html" target="fr"><img src="<%= images_url %>/Judgment_Day_tn.jpg" alt="Judgment Day Tract" width="104" height="161" border="1"></a><p class="pub-id">Family Radio</p></div>
@@ -429,29 +428,10 @@ head_scripts: |
       </div>
       <div class="container-bottom"></div>
     </div>
- -->
-            
-    <div id="study-container">
-        <div class="container-top">Bible Study</div>
-      <div class="container-mid">
-        <div class="study">
-        <a href="studies/numbers/"><img src="<%= images_url %>/numbers.jpg" alt="Various Numbers" title= "The Numbers of the Bible Page" width="149" height="84" border="0"></a>
-        <h3><a href="studies/numbers/">The Numbers of the Bible</a></h3>
-        <p class="line">In this time of the end when God is opening up the Scriptures, the child of God realizes like never before that the numbers of the Bible are perfectly accurate ...</p>
-        </div>
-        <div class="study">
-        <a href="studies/unto-the-end/"><img src="<%= images_url %>/earth-fire.jpg" alt="The Earth in flames" title= "Unto the End of the World Page" width="152" height="101" border="0"></a>
-        <h3><a href="studies/unto-the-end/">Unto the End of the World</a></h3>
-        <p>In this weekly devotional, we will be taking a look at Scripture with the thought constantly in mind that we are approaching &ldquo;unto the end of the world&rdquo;.</p>
-        </div>
-      </div>
-      <div class="container-bottom"></div>
-    </div>
-  
     
       <div id="audio-container">
         <div class="container-top">New Audio Studies</div>
-      <div class="container-mid">
+      <div class="container-mid height">
         <%= render('_home_audio', :category_id => 'studies.bc2',
                                   :category_desc => 'Sunday Bible Class II') %>
         <%= render('_home_audio', :category_id => 'studies.bc1',
@@ -468,7 +448,7 @@ head_scripts: |
 
       <div id="video-container">      
         <div class="container-top">Latest Videos</div>
-      <div class="container-mid">
+      <div class="container-mid height">
         <div class="video">
         <p>EBible Fellowship's latest Bible studies found on Vimeo</p>
         </div>
@@ -506,7 +486,18 @@ head_scripts: |
       <div class="container-bottom"></div>
     </div>
  
-            
+    <div id="study-container">
+        <div class="container-top">Bible Study</div>
+      <div class="container-mid study-height">
+        <div class="study">
+        <a href="studies/numbers/"><img src="<%= images_url %>/numbers.jpg" alt="Various Numbers" title= "The Numbers of the Bible Page" width="149" height="84" border="0"></a>
+        <h3><a href="studies/numbers/">The Numbers of the Bible</a></h3>
+        <p>In this time of the end when God is opening up the Scriptures, the child of God realizes like never before that the numbers of the Bible are perfectly accurate ...</p>
+        </div>
+      </div>
+      <div class="container-bottom"></div>
+    </div>
+              
     <div id="materials-container">
         <div class="container-top">Free Materials</div>
       <div class="container-mid">
