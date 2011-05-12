@@ -9,7 +9,7 @@ hidden_comment: |
 your request.</p>
 
 <?php
-  if isset($_SERVER['REDIRECT_ERROR_NOTES']) {
+  if (isset($_SERVER['REDIRECT_ERROR_NOTES'])) {
     print '<p><strong>' . $_SERVER['REDIRECT_ERROR_NOTES'] . '</strong></p>';
   }
 ?>
