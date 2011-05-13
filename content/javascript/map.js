@@ -562,7 +562,7 @@
     addMarker(3, "Italy", 41.920, 12.483, null, null, null, null, "Family Radio Tract Trip<br>Project Jonah");
     addMarker(3, "Osaka, Japan", 34.6974, 135.5019, null, null, null, null, "Tract Trip<br>May 2011");
     addMarker(3, "Nkawkaw, Ghana", 6.5535, -0.7780, null, null, null, null, "Tract Trip<br>May 2011");
-    addMarker(6, "Suriname", 5.8280, -55.1685, null, null, null, null, "Tract Trip<br>May 2011");
+    addMarker(6, "Suriname", 5.8280, -55.1685, "/gallery/v/suriname_tract_trip/", "/gallery/d/9267-2/TractTriptoSuriname2011006.jpg", 150, 150, "Tract Trip<br>May 2011");
     
     // add billboard markers
     addMarker(4, "Maseru, Lesotho", -29.3141863, 27.4832633, "/gallery/v/lesotho_billboard/", "/gallery/d/874-2/DSC01482.JPG", 150, 84);
