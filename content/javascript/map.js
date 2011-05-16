@@ -1539,6 +1539,11 @@
     addMarker(4, "Brasov, Romania", 45.6275, 25.6414, "/gallery/v/romania_billboards/", "/gallery/d/9447-2/50068905--A--B4X6F1--ZIUA+JUDECATII--BRASOV--CALEA+BUCURESTI+46_+BL_+S21--11052011--0.jpg", 150, 150);
     addMarker(4, "Brasov, Romania", 45.6199, 25.6496, "/gallery/v/romania_billboards/", "/gallery/d/9449-2/50068906--A--B4X6F1--ZIUA+JUDECATII--BRASOV--CALEA+BUCURESTI+100_+BL_+208_+SC_+C--11052011--0.jpg", 150, 150);
     addMarker(6, "Ukraine", 50.462, 30.521, "/gallery/v/ukraine_billboards/", "/gallery/d/9464-2/03.jpg", 150, 115, "Billboards");
+    addMarker(6, "Kinshasa, DR Congo", -4.3639, 15.3508, "/gallery/v/drc_billboards/", "/gallery/d/9481-2/drc-001.jpg", 150, 150, "Billboard");
+    addMarker(6, "Kinshasa, DR Congo", -4.3911, 15.3841, "/gallery/v/drc_billboards/", "/gallery/d/9484-2/drc-002.jpg", 150, 150, "Billboard");
+    addMarker(6, "Kinshasa, DR Congo", -4.41868, 15.30700, "/gallery/v/drc_billboards/", "/gallery/d/9486-2/drc-003.jpg", 150, 150, "Billboard");
+    addMarker(6, "Kinshasa, DR Congo", -4.30881, 15.30198, "/gallery/v/drc_billboards/", "/gallery/d/9488-2/drc-004.jpg", 150, 150, "Billboard");
+    addMarker(6, "Kinshasa, DR Congo", -4.2984, 15.3068, "/gallery/v/drc_billboards/", "/gallery/d/9490-2/drc-005.jpg", 150, 150, "Billboard");
     
     // add print ad markers (ads in newspapers, magazines, etc.)
     addMarker(5, "Trujillo, Peru", -8.089, -79.047, null, null, null, null, "Judgment Day! Newspaper Ad");
