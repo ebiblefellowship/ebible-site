@@ -6,8 +6,13 @@
   var pubIndex = 1;
   $(document).ready(function(){     
     
+    var jDay = new Date(Date.UTC(2011, 5 - 1, 22, 11,59,59));  // last place its May 21: UTC-12:00 is 5/22 at 11:59
+    if (new Date() <= jDay) {
+        $("#countdown").html("It is still May 21 in parts of the world");
+    }
+
     //$("#countdown").countdown({until: new Date(2011, 5 - 1, 21), format: 'Od', layout: '{on} {ol}{d<} and {dn} {dl}{d>} Remaining'});
-    $("#countdown").countdown({until: new Date(2011, 5 - 1, 21), format: 'D', layout: '{dn} {dl} Remaining'});
+    //$("#countdown").countdown({until: new Date(2011, 5 - 1, 21), format: 'D', layout: '{dn} {dl} Remaining'});
     
     // ie6 fix grey gradient on homepage
     if(typeof document.body.style.maxHeight === "undefined") {
