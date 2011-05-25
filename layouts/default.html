@@ -61,7 +61,7 @@
       <div id="shadow-left">
       <div id="shadow-right">
      
-      <%= render('_billboard') if home_page? %>
+      <%= render('_billboard') if false and home_page? %>
 
       <div id="main">
         
@@ -98,7 +98,7 @@
     </div>   
     
       <p id="bottom-links" style="margin-top: 0; text-align: center; font-size: 75%;">
-        <%= link_to('Contact Us', '/contactus/') %> &bull;
+        <% if false %><%= link_to('Contact Us', '/contactus/') %> &bull;<% end %>
         <%= link_to('Privacy', '/privacy/') %> &bull;
         <%= link_to('HTML Validation', 'http://validator.w3.org/check/referer') %> &bull;
         Generated with <%= link_to('nanoc', 'http://nanoc.stoneship.org') %>

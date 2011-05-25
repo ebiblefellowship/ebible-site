@@ -4,6 +4,8 @@
   var active = [false, false];  
   var langIndex = 0;
   var pubIndex = 1;
+  var isPanelEnabled = false;
+
   $(document).ready(function(){     
     
     //var jDay = new Date(Date.UTC(2011, 5 - 1, 22, 11,59,59));  // last place its May 21: UTC-12:00 is 5/22 at 11:59
@@ -50,7 +52,7 @@
         }
       });    
     
-    
+  if (isPanelEnabled) {
     $("#first-pub").hide();
     items[pubIndex] = $(".pub");
     currentIndex[pubIndex] = Math.floor((Math.random()%1) * items[pubIndex].length);
@@ -92,7 +94,8 @@
         }
       });
     });
-  });  
+   }  // isPanelEnabled
+ });  // document.ready
   
   function slideEm(index, direction) {    
     if (active[index]) return;   

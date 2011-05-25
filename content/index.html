@@ -5,14 +5,14 @@ head_links: |
     <link rel="stylesheet" type="text/css" href="generated/css/languages.css">
     <link rel="stylesheet" type="text/css" href="generated/css/may212011.css">
     <link rel="stylesheet" type="text/css" href="generated/css/features.css">
-    <link rel="stylesheet" type="text/css" href="generated/css/video_home.css">
 head_scripts: |
+    <script type="text/javascript" src="/javascript/jquery.home.js"></script>
+    <script type="text/javascript" src="/javascript/jquery.onImagesLoad.js"></script>
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+unused: |
+    <link rel="stylesheet" type="text/css" href="generated/css/video_home.css">
     <script type="text/javascript" src="/javascript/jquery.innerfade.js"></script>
     <script type="text/javascript" src="/javascript/jquery.countdown.js"></script>
-    <script type="text/javascript" src="/javascript/jquery.onImagesLoad.js"></script>
-    <script type="text/javascript" src="/javascript/jquery.home.js"></script>
-    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b7df40f6e87cc94"></script>
-    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 ---
   <!--Begin Languages-->
  
@@ -79,12 +79,13 @@ head_scripts: |
       </div>
        -->
             
-      <p>On <a href="about/">this site</a>, you will find hundreds of hours of teaching on the
+      <p>On <a href="about/">this site</a>, you will find teachings on the
         Bible which you can listen to online or freely download. You can also
         join us each Sunday for our worship service live simulcast over the internet
         and the evening Fellowship Hour is a time when you can ask questions
-        relating to the Bible. We also distribute free Bibles, free MP3 CD's and
-        free tracts.</p>
+        relating to the Bible. 
+		<!-- We also distribute free Bibles, free MP3 CD's and free tracts. -->
+        </p>
  
       <div id="news-container">
         <div class="container-top">Fellowship News</div>
@@ -432,6 +433,7 @@ head_scripts: |
       <div class="container-bottom"></div>
     </div>
 
+<% if false %>
     <div id="pubs-container">
       <div class="container-top">Publications</div>
       <div class="container-mid height">           
@@ -512,6 +514,7 @@ head_scripts: |
       </div>
       <div class="container-bottom"></div>
     </div>
+ <% end %>
  
     <div id="study-container">
         <div class="container-top">Bible Study</div>
@@ -524,7 +527,8 @@ head_scripts: |
       </div>
       <div class="container-bottom"></div>
     </div>
-              
+ 
+<% if false %> 
     <div id="materials-container">
         <div class="container-top">Free Materials</div>
       <div class="container-mid">
@@ -561,7 +565,7 @@ head_scripts: |
       </div>
       <div class="container-bottom"></div>
     </div>
-
+<% end %>
 
     <div id="footer-container">
       <div class="footer-content">        
@@ -597,7 +601,7 @@ head_scripts: |
       <div class="container-mid">       
         <div class="tba">
           <ul>
-          <li><a href="gallery/">Photo Gallery</a></li>
+          <!-- <li><a href="gallery/">Photo Gallery</a></li> -->
           <li><a href="join/live/directions/">Looking for fellowship?</a></li>
           <li><a href="hymnal/">Online Trinity Hymnal</a></li>
           <li><a href="donate/">Make a financial gift</a></li>
