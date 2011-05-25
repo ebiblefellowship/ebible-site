@@ -236,9 +236,22 @@ li.free {
   border-left: 1px solid #c0c0c0 
 }
 
+#follow-share-container {
+  overflow: auto;  /* clear floats */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .twitter-rss { 
   background-image: url(<%= images_url %>/breadcrumbs.png) repeat-x; 
-  padding-left: 10px 
+  width: 40%;
+  float: left;
+}
+
+.share-links {
+  width: 242px;
+  float: right;
+  margin-top: 4px;
 }
 
 .breadcrumbs {    
