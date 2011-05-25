@@ -1,14 +1,14 @@
   var queryVideo = false;
   var feeds = [   
-    {path: 'album/', id: '96423', page: '1'}, // Sunday Bible Messages Album 
-    {path: 'album/', id: '96423', page: '2'}, 
-    {path: 'album/', id: '96423', page: '3'},
+    //{path: 'album/', id: '96423', page: '1'}, // Sunday Bible Messages Album 
+    //{path: 'album/', id: '96423', page: '2'}, 
+    //{path: 'album/', id: '96423', page: '3'},
     {path: 'album/', id: '1523895', page: '1'}, // Bible Reading Album
     {path: 'album/', id: '1523895', page: '2'},
-    {path: 'album/', id: '1472823', page: '1'}, // Thought From The Bible Album  
-    {path: '', id: 'bmi', page: '1', excludeTag: ''}, 
-    {path: '', id: 'bmi', page: '2', excludeTag: ''},
-    {path: '', id: 'bmi', page: '3', excludeTag: ''}
+    //{path: 'album/', id: '1472823', page: '1'}, // Thought From The Bible Album  
+    //{path: '', id: 'bmi', page: '1', excludeTag: ''}, 
+    //{path: '', id: 'bmi', page: '2', excludeTag: ''},
+    //{path: '', id: 'bmi', page: '3', excludeTag: ''}
   ]        
   var fullNames = new Array();
   fullNames['96423'] = 'EBible Fellowship';
@@ -138,7 +138,9 @@
       // close out the last section
       closeErOut(currentUserName);          
       // load the youtube videos now
-      $.getScript('http://gdata.youtube.com/feeds/playlists/707239D48D757C29?alt=json-in-script&format=5&orderby=published&sortorder=ascending&callback=getYouTubeVideos');
+      //$.getScript('http://gdata.youtube.com/feeds/playlists/707239D48D757C29?alt=json-in-script&format=5&orderby=published&sortorder=ascending&callback=getYouTubeVideos');
+      // hide the loading indicator (but preserve the space in the layout)
+      $('#loading').css('visibility', 'hidden');
     }
   }
 
