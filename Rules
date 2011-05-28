@@ -223,8 +223,8 @@ route '*' do
     item.identifier.chop + '.' + item[:extension]
   elsif item[:is_partial] # || item[:kind] == 'article' # why this check?
     nil  # Don’t output partial items (e.g. sub-stylesheets)
-  elsif item.identifier =~ %r{\d\d\d\d\.\d\d\.\d\d} and item[:slug]
-    "/archives/#{item[:created_at].tr('-','/')}/#{item[:slug]}/index.html"
+  elsif item.identifier =~ %r{(\d\d\d\d\.\d\d\.\d\d)} and item[:slug]
+    "/archives/#{$1.tr('.','/')}/#{item[:slug]}/index.html"
   else
     # Place each file in its own directory
     rep.item.identifier + 'index.html'
