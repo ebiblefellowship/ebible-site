@@ -1,0 +1,29 @@
+<%
+ # partial: _items_nav
+ # usage: render('_items_nav', :series => @item[:series], :item => @item
+%>
+	<!-- Start item group navigation -->
+	<div class="items-nav">
+<%	  item_series = @site.item_groups[series]
+	  item_nav = ItemNavigation.new(item_series, item)
+	  if item_nav.has_prev? 
+%>		<p><%= link_to('&laquo; Previous', item_nav.prev, :title => item_nav.prev[:title]) %></p>
+<%	  else 
+%>		<p>&laquo; Previous</p>
+<%	  end 
+%>		<img src="<%= images_url %>/breadcrumbs_pipe.png" alt="">
+<%	  item_series.each_index do |i|
+		if item_series[i] == item 
+%>		  <p><%= i+1 %></p>
+<%		else 
+%>		  <p><%= link_to((i+1).to_s, item_series[i], :title => item_series[i][:title]) %></p>
+<%		end 
+%>		  <img src="<%= images_url %>/breadcrumbs_pipe.png" alt="">
+<%	  end 
+	  if item_nav.has_next? 
+%>		<p><%= link_to('Next &raquo;', item_nav.next, :title => item_nav.next[:title]) %></p>
+<%	  else 
+%>		<p>Next &raquo;</p>
+<%	  end 
+%>	</div>
+	<!-- End item group navigation -->

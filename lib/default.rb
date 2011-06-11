@@ -2,6 +2,7 @@
 # before nanoc starts compiling.
 require "bundler/setup"
 require 'uri'
+require 'time'
 
 # All content has a filename with a date
 CONTENT_SELECTION = %r{\d\d\d\d[.-]\d\d[.-]\d\d}
@@ -49,7 +50,6 @@ def to_month_full_s(month)
 end
 
 def sorted_articles(relevant_articles, limit = 100)
-  require 'time'
   sorted_relevant_articles = relevant_articles.sort_by do |a|
     time = a[:created_at]
     time.is_a?(String) ? Time.parse(time) : time

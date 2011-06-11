@@ -81,12 +81,17 @@
            end %>
         </div>
 <% end %>
-
-        <%= render('_media_bar', :item => @item, :list => false) if @item[:audio] or @item[:video] %>
+<% if @item[:series]
+%>		<%= render('_items_nav', :series => @item[:series], :item => @item) %>
+<% end
+%>		<%= render('_media_bar', :item => @item, :list => false) if @item[:audio] or @item[:video] or @item[:category] %>
         <!-- Start body content -->
         <%= yield %>
         <!-- End body content -->
-      </div> <!-- #main -->
+<% if @item[:series]
+%>		<%= render('_items_nav', :series => @item[:series], :item => @item) %>
+<% end
+%>      </div> <!-- #main -->
     
     <div id="footer-border-mid">&nbsp;</div>
     

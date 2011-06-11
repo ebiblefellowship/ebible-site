@@ -33,6 +33,13 @@ mapped_extensions = %w[ html md ]
 # xml_sitemap or atom_feed directly. Instead, embed it in a string and filter
 # that with erb.
 preprocess do
+  
+  # Returns ItemGroups instance.  Define method in the Nanoc3::Site instance.
+  def @site.item_groups
+    @item_groups = ItemGroups.new if @item_groups.nil?
+	@item_groups
+  end
+
   # Add sitemap item
   def create_sitemap
     @items << Nanoc3::Item.new(
@@ -60,12 +67,15 @@ preprocess do
       next unless i.identifier =~ %r{(\d\d\d\d\.\d\d\.\d\d)}
       # Set the :created_at attribute for date-based content if not set
       i[:created_at] = $1.tr('.','-') if i[:created_at].nil?
+      # TODO: test for :audio attribute first before doing logic below
       # Find an associated /audio item and save its attributes to the item
       audio_item = @items.find { |a| a.identifier == '/audio' + i.identifier }
       i[:audio] = audio_item.attributes unless audio_item.nil?
       # Set category unless already defined
       # /studies/bc2/2010.11.14.../ => studies.bc2
       i[:category] = i.identifier.split('/')[1..-2].join('.') unless i[:category]
+      # If part of a series, append item to an Array stored in a Hash by series name
+      @site.item_groups[i[:series]] = i if i[:series]
       # Extract slug for news items so routing can be shared
       if i.identifier =~ %r{^/news/.+} and i[:slug].nil?
         # Extract basename from identifier and strip any date from the front
@@ -75,9 +85,21 @@ preprocess do
       #puts i.identifier
       #puts YAML.dump i.attributes
     end
+    # Sort the items in each series by ascending created_at date
+	# Each item group ...
+    @site.item_groups.names do |name|
+      # Retrieve items in this group, then sort them
+      items = @site.item_groups[name]
+      items.sort_by! do |a|
+        time = a[:created_at]
+        time.is_a?(String) ? Time.parse(time) : time
+      end
+	  # Store sorted items back in item group store
+      @site.item_groups[name] = items
+    end
   end
 
-  # Run method
+  # Run methods
   create_sitemap
   create_atom_feed
   initialize_item_attributes

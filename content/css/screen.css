@@ -259,7 +259,7 @@ li.free {
   border-bottom: 1px solid #CCCCCC;   
 }
 
-.breadcrumbs p {
+.breadcrumbs p, .items-nav p {
   font-size: 10pt; 
   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; 
   font-weight: normal; 
@@ -269,19 +269,25 @@ li.free {
   margin: 0;
 }
 
-.breadcrumbs a {
+.breadcrumbs a, .items-nav a {
   text-decoration: none;
   color: #006699;  
 }
   
-.breadcrumbs a:hover, .years a:hover, .months a:hover { 
+.breadcrumbs a:hover, .items-nav a:hover, .years a:hover, .months a:hover { 
   color: #CCCCCC;
   text-decoration: none; 
 }
 
-.breadcrumbs img { 
+.breadcrumbs img, .items-nav img { 
   text-decoration: none;
   vertical-align: middle;
+}
+
+.items-nav {
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 #date-bar {
