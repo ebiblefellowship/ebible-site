@@ -61,7 +61,7 @@ class ItemGroups
   # Sort specified group by the :created_at date in ascending order
   def sort_by_created_at(name)
 	return nil unless @item_groups.has_key?(name)
-	@item_groups[name].sort_by! do |a|
+	@item_groups[name] = @item_groups[name].sort_by do |a|
 	  time = a[:created_at]
 	  time.is_a?(String) ? Time.parse(time) : time
 	end
