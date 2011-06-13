@@ -87,16 +87,8 @@ preprocess do
     end
     # Sort the items in each series by ascending created_at date
 	# Each item group ...
-    @site.item_groups.names do |name|
-      # Retrieve items in this group, then sort them
-      items = @site.item_groups[name]
-      items.sort_by! do |a|
-        time = a[:created_at]
-        time.is_a?(String) ? Time.parse(time) : time
-      end
-	  # Store sorted items back in item group store
-      @site.item_groups[name] = items
-    end
+	@site.item_groups.names.each { |name| @site.item_groups.sort_by_created_at(name) }
+	puts @site.item_groups.to_s
   end
 
   # Run methods
