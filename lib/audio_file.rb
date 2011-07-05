@@ -95,9 +95,9 @@ class AudioFile
     if @size.nil?
       'unknown size'
     elsif @size >= 1.kilobyte && @size < 1.megabyte
-      sprintf('%0.1f KB', @size / 1.kilobyte)
+      sprintf('%0.1f KB', @size.to_f / 1.kilobyte)
     elsif @size >= 1.megabyte
-      sprintf('%0.1f MB', @size / 1.megabyte)
+      sprintf('%0.1f MB', @size.to_f / 1.megabyte)
     else
       "#{@size} bytes"
     end
