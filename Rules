@@ -101,7 +101,7 @@ end
 ### Compilation ##############################################################
 
 # Sitemap and htaccess do get filtered with erb, but get no layout.
-compile %r{^/(atom|sitemap|htaccess|panels)/$} do
+compile %r{^/(atom|sitemap|htaccess|panels|rewrites)/$} do
   filter :erb
   filter :clean_sitemap if item.identifier == '/sitemap/'
 end
@@ -197,6 +197,10 @@ end
 route %r{^/error-\d\d\d/$} do
   item.identifier.chop + '.php'
 end 
+
+route %r{^/rewrites\.conf} do
+  '/rewrites.conf'
+end
 
 route '/stylesheets/_*/' do
   nil  # Don't output partials
