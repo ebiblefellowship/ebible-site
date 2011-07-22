@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'taglib2'
+#require 'taglib2'
+require 'mp3info'
 
 # Monkey patch Numeric class to add our own convenience conversions
 # See http://warrenseen.com/blog/2007/02/22/ruby-cheap-tricks-monkeypatching-unit-conversion/
@@ -42,15 +43,27 @@ class AudioFile
     unless filename.nil?
       @filename = filename
       @size = File.size(filename)
-      @tf = TagLib2::File.new(filename)
-      @title = @tf.title
-      @artist = @tf.artist
-      @album = @tf.album
-      @genre = @tf.genre
-      @comment = @tf.comment
-      @length = @tf.length
-      @bitrate = @tf.bitrate
-      @sample_rate = @tf.sample_rate
+      Mp3Info.open(filename) do |mp3|
+        unless mp3.tag.nil?
+          @title = mp3.tag.title
+          @artist = mp3.tag.artist
+          @album = mp3.tag.album
+          @genre = mp3.tag.genre
+          @comment = mp3.tag.comment
+        end
+        @length = mp3.length.round
+        @bitrate = mp3.bitrate
+        @sample_rate = mp3.samplerate
+      end if File.extname(filename).eql?('.mp3')
+      #@tf = TagLib2::File.new(filename)
+      #@title = @tf.title
+      #@artist = @tf.artist
+      #@album = @tf.album
+      #@genre = @tf.genre
+      #@comment = @tf.comment
+      #@length = @tf.length
+      #@bitrate = @tf.bitrate
+      #@sample_rate = @tf.sample_rate
     end
   end
 
