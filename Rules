@@ -37,7 +37,7 @@ preprocess do
   # Returns ItemGroups instance.  Define method in the Nanoc3::Site instance.
   def @site.item_groups
     @item_groups = ItemGroups.new if @item_groups.nil?
-	@item_groups
+    @item_groups
   end
 
   # Add sitemap item
@@ -86,9 +86,9 @@ preprocess do
       #puts YAML.dump i.attributes
     end
     # Sort the items in each series by ascending created_at date
-	# Each item group ...
-	@site.item_groups.names.each { |name| @site.item_groups.sort_by_created_at(name) }
-	puts @site.item_groups.to_s
+    # Each item group ...
+    @site.item_groups.names.each { |name| @site.item_groups.sort_by_created_at(name) }
+    puts @site.item_groups.to_s
   end
 
   # Run methods
