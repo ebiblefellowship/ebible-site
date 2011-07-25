@@ -77,8 +77,12 @@ def sorted_messages(limit = 25)
   sorted_articles(select_messages, limit)
 end
 
-def sorted_articles_for_category(category, limit = 100)
-  sorted_articles(@items.select { |i| i[:category] == category }, limit)
+# Select all by a regex matched against the category attribute
+def sorted_articles_for_category(category_regex, limit = 100)
+  return nil if category_regex.nil?
+  # convert a String to a fully matching regex for backward compatibilty
+  regex = category_regex.is_a?(String) ? /^#{category_regex}$/ : category_regex
+  sorted_articles(@items.select { |i| i[:category] =~ regex }, limit)
 end
 
 # From: http://github.com/mgutz/nanoc3_blog/blob/master/lib/helpers.rb

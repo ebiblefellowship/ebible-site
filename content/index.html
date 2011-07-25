@@ -540,6 +540,16 @@ unused: |
     </div>
  <% end %>
  
+    <div id="recent-container">
+      <div class="container-top">Recent Bible Studies, Questions and Answers</div>
+      <div class="container-mid-recent study-height">
+<% sorted_articles_for_category(/^(studies|questions)/, 10).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true, :show_media => false) %>
+<% end %>
+      </div>
+      <div class="container-bottom"></div>
+    </div>
+
     <div id="study-container">
         <div class="container-top">Bible Study</div>
       <div class="container-mid study-height">

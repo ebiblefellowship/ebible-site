@@ -10,7 +10,14 @@
   margin-left: 10px;
 }
 
-.container-mid-news  { 
+#recent-container {
+  width: 72%;
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.container-mid-news, .container-mid-recent { 
   background-image: url(<%= images_url %>/homegradient_mid.gif); 
   margin: auto;
   height: 250px; 

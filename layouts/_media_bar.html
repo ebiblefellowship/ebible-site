@@ -1,15 +1,20 @@
 <%
  # partial: _media_bar
- # usage: render('_media_bar', :item => item, :list => {true|false}
+ # usage: render('_media_bar', :item => item, :list => {true|false}, :show_media => {true|false}
 %>
+<% if not list %>
       <div class="contentbar-top"></div>
       <div class="contentbar-mid">
+<% end %>
+      <div class="media-bar">
+<% if not defined?(show_media) or show_media %>
         <ul class="media-sprite">
           <% if item[:audio] %><li class="hphones"><a href="<%= m3u_url(item[:audio][:url]) %>" title="Listen"></a></li>
           <li class="download"><a href="<%= item[:audio][:url] %>" title="Download"></a></li>
           <% end %><% if list and item.raw_content.length > 40 %><li class="transcript"><a href="<%= item.path %>" title="Transcript"></a></li><% end %>
           <% if item[:video] %><li class="video"><a href="<%= item[:video][:url] %>" title="Video"></a></li><% end %>
         </ul>
+<% end %>
         <h2><%= list ? link_to(item[:title], item.path) : item[:title] %></h2>
         <ul>
           <li><%= item[:created_at] %> | <%= item[:speaker] %></li>
@@ -18,4 +23,7 @@
           <% if item[:excerpt] %><li><%= item[:excerpt] %></li><% end %>
         </ul>
       </div>
+<% if not list %>
+      </div>
       <div class="contentbar-bottom"></div>
+<% end %>

@@ -2,19 +2,19 @@
 title: Messages and Studies
 nav: Studies
 ---
-        <h1 class="center-bottom">EBible Fellowship Messages &#38; Studies</h1>
+      <h1 class="center-bottom">Bible Studies by Category and Topic</h1>
 
       <div class="contentbar-top"></div>
       <div class="contentbar-mid">
 
       <ul id="icon-list">
-        <li id="study">  
-          <p class="menu"><a href="/studies/bc1/">Sunday Bible Class I</a></p>
-          <p class="menu-desc">Sunday morning Bible studies during the 1st hour at Delco Fellowship</p>
-        </li>
         <li id="message">
-          <p class="menu" style="margin-top: 15px;"><a href="/studies/bc2/">Sunday Bible Class II</a></p>
-          <p class="menu-desc">Sunday morning Bible messages during the 2nd hour at Delco Fellowship</p>
+          <p class="menu" style="margin-top: 15px;"><a href="/studies/sunday/">Sunday Bible Studies</a></p>
+          <p class="menu-desc">Sunday morning Bible studies at Delco Fellowship</p>
+        </li>
+        <li id="study">  
+          <p class="menu"><a href="/studies/friday/">Friday Night Studies</a></p>
+          <p class="menu-desc">Friday Night Studies</p>
         </li>
         <li id="timeline">  
           <p class="menu"><a href="/studies/timeline/">The Biblical Timeline of History</a></p>
@@ -39,3 +39,11 @@ nav: Studies
       </ul>
       </div>
       <div class="contentbar-bottom"></div>
+
+<h2>Most Recent Studies in all Categories</h2>
+
+<p>Click on the study title for more information or to see related studies.</p>
+
+<% sorted_articles_for_category(/^studies/, 25).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>

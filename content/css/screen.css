@@ -378,7 +378,8 @@ h2.large {
   bottom: 0;
 }
 
-.contentbar-mid > p { 
+.contentbar-mid > p,
+.media-bar p { 
   margin: 0 45px 15px 45px; 
 }
 
@@ -397,7 +398,8 @@ h2.large {
   padding-bottom: 10px;
 }*/
 
-.contentbar-mid > ul > li { 
+.contentbar-mid > ul > li,
+.media-bar ul > li { 
   color: #666; 
   font-size: 10pt; 
   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; 
