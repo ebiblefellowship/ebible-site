@@ -1,0 +1,21 @@
+---
+title: Sunday Bible Studies
+nav: Sunday Bible Studies
+---
+<h1><%= @item[:title] %></h1>
+
+<p>This is a list of all Bible studies given at <cite>Delco Bible Fellowship</cite>
+each Sunday shown in reverse chronological order.</p>
+
+<p>Click on the study title for more information or to see related studies.</p>
+
+<h2>Older Studies</h2>
+
+<h3><a href="/studies/bc1/">Bible Class I</a> and 
+    <a href="/studies/bc2/">Bible Class II</a></h3>
+
+<%= render('_date_bar', :item => @item) %>
+
+<% sorted_articles_for_category('studies.sunday', 100).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>

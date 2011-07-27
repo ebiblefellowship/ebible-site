@@ -1,0 +1,16 @@
+---
+title: Friday Night Bible Studies
+nav: Friday Night Bible Studies
+---
+<h1><%= @item[:title] %></h1>
+
+<p>This is a list of all Bible studies given at the <cite>Friday Night Study</cite>
+shown in reverse chronological order.</p>
+
+<p>Click on the study title for more information or to see related studies.</p>
+
+<%= render('_date_bar', :item => @item) %>
+
+<% sorted_articles_for_category('studies.friday', 100).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>
