@@ -249,9 +249,10 @@ li.free {
 }
 
 .share-links {
-  width: 285px;
+  width: 395px;
   float: right;
-  margin-top: 4px;
+  margin-top: 10px;
+  margin-right: 6px;
 }
 
 .breadcrumbs {    

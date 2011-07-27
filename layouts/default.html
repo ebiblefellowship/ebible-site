@@ -5,7 +5,10 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <title><%= @item[:title] %> - eBible Fellowship</title>
-    <meta name="generator" content="nanoc 3.1.5">
+    <meta name="generator" content="nanoc 3.1.9">
+
+<%= render('_opengraph_meta') %>
+
 <%= @item[:meta] || @item[:head_meta] %>
     <link rel="stylesheet" type="text/css" href="<%= css_url %>/screen.css">
     <link rel="stylesheet" type="text/css" href="<%= css_url %>/defaults.css">
@@ -80,6 +83,19 @@
            end
            end %>
         </div>
+
+	<div style="overflow: auto">
+	  <div class="share-links">
+	    <!-- AddThis Button BEGIN -->
+	    <div class="addthis_toolbox addthis_default_style" addthis:title="<%= @item[:title] %>">
+	      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	      <a class="addthis_button_tweet" tw:via="EBibleFellowshp"></a>
+	      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	      <a class="addthis_counter addthis_pill_style"></a>
+	    </div>
+	    <!-- AddThis Button END -->
+	  </div>
+	</div>
 <% end %>
 <% if @item[:series]
 %>		<%= render('_items_nav', :series => @item[:series], :item => @item) %>
@@ -116,6 +132,8 @@
     <script type="text/javascript" src="/javascript/jquery.google-analytics.js"></script>
     <script type="text/javascript" src="/javascript/ebible.google-analytics.js"></script>
 <% end %>
+    <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4b7df40f6e87cc94"></script>
   </body>
 </html>
 
