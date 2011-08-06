@@ -11,34 +11,34 @@ GEM
       sass (~> 3.1)
     compass-susy-plugin (0.9)
       compass (>= 0.11.1)
-    cri (1.0.1)
+    cri (2.0.2)
     fssm (0.2.7)
-    haml (3.1.2)
     jsmin (1.0.1)
     kramdown (0.13.3)
     mime-types (1.16)
-    nanoc (3.1.9)
-      nanoc3 (>= 3.1.9)
-    nanoc3 (3.1.9)
-      cri (~> 1.0)
-    rack (1.3.0)
+    nanoc (3.2.1)
+      nanoc3 (>= 3.2.1)
+    nanoc3 (3.2.1)
+      cri (~> 2.0)
+    rack (1.3.2)
     rack-rewrite (1.0.2)
     rainpress (1.0)
-    sass (3.1.4)
+    sass (3.1.5)
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   adsf
   builder
-  compass (~> 0.1)
-  compass-susy-plugin (~> 0.8)
-  haml (~> 3.0)
-  jsmin (~> 1.0)
-  kramdown (~> 0.10)
+  compass
+  compass-susy-plugin
+  jsmin
+  kramdown
   mime-types
-  nanoc (~> 3.1)
-  rack (~> 1.2)
-  rack-rewrite (~> 1.0)
-  rainpress (~> 1.0)
+  nanoc (~> 3.2)
+  rack
+  rack-rewrite
+  rainpress
+  sass
