@@ -47,6 +47,7 @@ body {
 
 /* Begin Menu Bar */
 #menu  { 
+  height: 47px;
   margin-top: 19px;
   margin-left: 10px;
   position: relative;

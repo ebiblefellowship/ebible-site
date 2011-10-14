@@ -111,3 +111,25 @@ def articles_by_year_month(relevant_articles)
   result
 end
 
+# Multilingual support
+# see http://nanoc.stoneship.org/docs/6-guides/#creating-multilingual-sites
+
+# Determine if the item is the home page for a language by comparing
+# the item identifier with the language code of the identifier.  If
+# they are the same, the current item is the home page for that language.
+def language_home_page?
+  @item.identifier[1..-2].eql?(language_code_of(@item) || '')
+end
+
+# Examine the item path and return the two letter language code.
+def language_code_of(item)
+  # "/en/foo/" becomes "en"
+  (item.identifier.match(/^\/([a-z]{2})\//) || [])[1]
+end
+
+# Find all items that are translations of the current item
+def translations_of(item)
+  @items.select do |i| 
+    i[:canonical_identifier] == item[:canonical_identifier]
+  end
+end

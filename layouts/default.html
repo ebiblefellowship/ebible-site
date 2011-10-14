@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
  "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html lang="<%= language_code_of(@item) || 'en' %>">
   
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
@@ -58,9 +58,9 @@
 <% end %>
 
       <div id="menu">
-        <%= render '_menu' %>
+        <%= render('_menu') if language_code_of(@item).nil? %>
       </div>
-      
+
       <div id="shadow-left">
       <div id="shadow-right">
      
@@ -70,7 +70,10 @@
         
         <%= render('_twitter_bar') if home_page? %>
 
-<% unless home_page? %>
+<% if home_page? or language_home_page?
+%>		<%= render('_languages_nav') %>
+<% else
+%>
         <div class="breadcrumbs">
         <% breadcrumbs_trail.each do |item|
            if @item == item %>
@@ -83,7 +86,10 @@
            end
            end %>
         </div>
+<% end
+%>
 
+<% unless home_page? %>
 	<div style="overflow: auto">
 	  <div class="share-links">
 	    <!-- AddThis Button BEGIN -->
@@ -96,7 +102,8 @@
 	    <!-- AddThis Button END -->
 	  </div>
 	</div>
-<% end %>
+<% end
+ %>
 <% if @item[:series]
 %>		<%= render('_items_nav', :series => @item[:series], :item => @item) %>
 <% end
