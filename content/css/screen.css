@@ -993,4 +993,9 @@ span.verseref {
   font-style: italic;
   font-weight: bold;
 }
+/* used to highlight parts of verses in a transcript */
+em.verse {
+  font-style: italic;
+  font-weight: bold;
+}
 
