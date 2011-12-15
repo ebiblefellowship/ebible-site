@@ -9,7 +9,7 @@
     <meta property="og:site_name" content="eBible Fellowship">
 	<meta property="og:locale" content="en_US">
     <meta property="fb:app_id" content="151891754889259">
-    <% if @item[:excerpt] %><meta property="og:description" content="<%= @item[:excerpt] %>"><% end %>
+    <% if @item[:description] %><meta property="og:description" content="<%= @item[:description] %>"><% end %>
     <% if @item[:audio] %>
     <meta property="og:audio" content="<%= @item[:audio][:url] %>">
     <meta property="og:audio:title" content="<%= @item[:title] %>">
