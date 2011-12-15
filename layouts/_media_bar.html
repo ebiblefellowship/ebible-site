@@ -21,6 +21,7 @@
           <% if item[:text] %><li><%= item[:text] %></li><% end %>
           <% if item[:audio] %><li>Audio: Length: <%= item[:audio][:length] %> Size: <%= item[:audio][:size] %></li><% end %>
           <% if item[:video] and not list and item[:video][:embed] %><li><div class="video-embed"><%= item[:video][:embed] %></div></li><% end %>
+          <% if item[:description] %><li><%= item[:description] %></li><% end %>
           <% if item[:excerpt] %><li><%= item[:excerpt] %></li><% end %>
         </ul>
       </div>
