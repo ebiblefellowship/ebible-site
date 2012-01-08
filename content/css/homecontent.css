@@ -3,6 +3,57 @@
   height: 250px;
 }
 
+/* March of 2012 section */
+#march-2012-the-end {
+  margin: 1em 50px;
+  padding: 0.5em;
+/* start www.css3.me generated code */
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow:3px 3px 3px #000000;
+-webkit-box-shadow:3px 3px 3px #000000;
+box-shadow:3px 3px 3px #000000;
+filter: progid:DXImageTransform.Microsoft.Shadow(strength=3, direction=135, color='#000000');
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(strength=3, Direction=135, Color='#000000')";
+/*Shadows look very different in IE (Only cardinal directions supported)*/
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element should have a background-color*/
+/*All filters must be placed together*/
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#dddddd), to(#bbbbbb));
+background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#bbbbbb');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#bbbbbb')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: linear-gradient(top, #dddddd, #bbbbbb);
+-moz-background-clip: padding-box;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+}
+#march-2012-the-end h2 {
+  margin-left: 0.4em;
+  margin-bottom: 0;
+  font-size: 200%;
+  color: #069;
+}
+#march-2012-the-end p, #march-2012-the-end p.verse {
+  margin: 0.5em 1em;
+  color: #444;
+  font-weight: bold;
+}
+#march-2012-the-end p.verse {
+  background-color: #aaa;
+}
+
 /* News Section */
 #news-container {
   width: 72%;
