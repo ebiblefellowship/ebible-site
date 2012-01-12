@@ -50,7 +50,8 @@ SPEAKERS = {
   'James' => 'Oliver James',
   'McCann' => 'Chris McCann',
   'McOwen' => 'John McOwen',
-  'Seifert' => 'Greg Seifert'
+  'Seifert' => 'Greg Seifert',
+  'von_Harringa' => 'Gunther von Harringa, Sr.'
 }
 
 # Load any tasks in the tasks/ folder
