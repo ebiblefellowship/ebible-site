@@ -27,8 +27,11 @@ rule %r{^#{CONTENT_ROOT}.*\.html$} => [
     'speaker' => yaml_meta['speaker'] || file_meta['speaker'],
     'created_at' => file_meta['created_at'],
     'slug' => file_meta['slug'],
+    'description' => 'Write a brief description',
     'audio' => [ t.source.sub(%r{^#{META_ROOT.sub(%r{/audio$},'')}}, '') ]
   }
+  metadata['description'] = 'Various questions and answers from the Bible' if
+    metadata['title'] =~ /Question|Open Forum|Fellowship Hour/
 
   # write out .html file
   FileUtils.mkdir_p(File.dirname(t.name))
