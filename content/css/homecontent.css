@@ -42,7 +42,11 @@ background-clip: padding-box;
 #march-2012-the-end h2 {
   margin-left: 0.4em;
   margin-bottom: 0;
-  font-size: 200%;
+  text-align: center;
+  font-size: 280%;
+  font-family: Georgia, Times, serif;
+  font-variant: small-caps;
+  letter-spacing: 0px;
   color: #069;
 }
 #march-2012-the-end p, #march-2012-the-end p.verse {

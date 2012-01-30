@@ -1,0 +1,24 @@
+
+<%
+ # partial: _social_bar
+ # usage: render('_social_bar')
+%>
+    <div id="social-container">
+      <div class="follow-links">
+        <a href="http://facebook.com/ebiblefellowship" target="_new" title="Visit EBible Fellowship Facebook page"><img alt="" src="<%= images_url %>/social/facebook.png" style="border-style: none"></a>
+        <a href="http://twitter.com/EBibleFellowshp" target="_new" title="Follow EBible Fellowship on Twitter"><img alt="" src="<%= images_url %>/social/twitter.png" style="border-style: none"></a>
+        <a href="https://plus.google.com/101103841900584016885?prsrc=3" style="text-decoration:none;"><img src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" style="border:0;width:32px;height:32px;" title="Visit eBible Fellowship Google+ page"></a>
+        <a href="<%= base_url %>/rss.xml" target="_new" title="Subscribe to our RSS feed"><img alt="" src="<%= images_url %>/social/rss.png" style="border-style: none"></a>
+        <a href="http://feedburner.google.com/fb/a/mailverify?uri=EBibleFellowshipNews" target="_new" title="Subscribe to our RSS feed via email"><img alt="" src="<%= images_url %>/social/email.png" style="border-style: none"></a>
+      </div>
+      <div class="share-links">
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style" addthis:title="eBible Fellowship: faithful Bible teaching">
+          <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+          <a class="addthis_button_tweet" tw:via="EBibleFellowshp"></a>
+          <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+          <a class="addthis_counter addthis_pill_style"></a>
+        </div>
+        <!-- AddThis Button END -->
+      </div>
+    </div>

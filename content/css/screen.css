@@ -237,16 +237,21 @@ li.free {
   border-left: 1px solid #c0c0c0 
 }
 
-#follow-share-container {
+#social-container {
   overflow: auto;  /* clear floats */
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.twitter-rss { 
+.follow-links { 
   background-image: url(<%= images_url %>/breadcrumbs.png) repeat-x; 
   width: 40%;
   float: left;
+  margin-top: 3px;
+}
+
+.follow-links a {
+  margin-right: 5px;
 }
 
 .share-links {
