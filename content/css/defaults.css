@@ -52,11 +52,13 @@ h4 {
   bottom: 0; 
 }
 
-p, ol {
+p, ol, ul {
   color: #666; 
   /*font-size: 10pt;*/
   line-height: 1.5;  /* unitless */
   text-align: justify; 
+}
+p, ol, #main>ul {  /* TODO: remove after fixing container padding */
   margin-right: 55px; 
   margin-left: 55px;
 }
