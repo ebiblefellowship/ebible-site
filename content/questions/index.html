@@ -9,22 +9,14 @@ nav: Questions
 
       <ul id="icon-list-questions"> 
         <li id="open-forum">  
-          <p class="menu"><a href="/questions/sunday/">Sunday Open Forums</a></p>
-          <p class="menu-desc">Bible questions and answers</p>
+          <p class="menu"><a href="/questions/sessions/">All Questions and Answers Sessions</a></p>
+          <p class="menu-desc">Bible questions and answers sessions</p>
         </li>
-        <li id="open-forum">  
-          <p class="menu"><a href="/questions/friday/">Friday Night Open Forums</a></p>
-          <p class="menu-desc">Bible questions and answers</p>
-        </li>
-        <li id="open-forum">  
-          <p class="menu"><a href="/questions/of/">Sunday Open Forum</a></p>
-          <p class="menu-desc">Older Bible questions and answers</p>
-        </li>
+<!--
         <li id="web">  
           <p class="menu"><a href="/questions/web/">Web Questions</a></p>
           <p class="menu-desc">Older Questions and answers from the website</p>
         </li>
-<!--
         <li id="fellowship">  
           <p class="menu"><a href="/fellowship_hour/">Fellowship Hour</a></p>
           <p class="menu-desc">Older Bible questions and answers recorded over PalTalk</p>
@@ -38,7 +30,7 @@ nav: Questions
 
 <p>Click on a title for more information.</p>
 
-<% sorted_articles_for_category(/^questions/, 25).each do |item| %>
+<% sorted_articles_for_category(/^questions/, 30).each do |item| %>
   <%= render('_media_bar', :item => item, :list => true) %>
 <% end %>
 

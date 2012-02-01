@@ -1,0 +1,21 @@
+---
+title: Questions and Answers Sessions
+---
+<h1><%= @item[:title] %></h1>
+
+<p>A list of all Bible Question and Answers sessions given at 
+<cite>Delco Bible Fellowship</cite> or over the internet shown in reverse chronological order.</p>
+
+<p>Click on a title for more information.</p>
+
+<h2>Older Questions and Answers</h2>
+
+<h3><a href="/questions/of/">Sunday Open Forums (prior to May 21, 2011)</a><br>
+    <a href="/questions/web/">Questions from the Web Site (prior to May 21, 2011)</a><br>
+    <a href="/questions/sessions-may-21-oct-21/">Questions from May 21 through October 21, 2011</h3>
+
+<%= render('_date_bar', :item => @item) %>
+
+<% sorted_articles_for_category('questions.sessions', 100).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>

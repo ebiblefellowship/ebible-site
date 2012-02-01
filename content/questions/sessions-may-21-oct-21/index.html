@@ -1,0 +1,10 @@
+---
+title: Questions and Answers Sessions from May 21 through October 21, 2011
+---
+<h1><%= @item[:title] %></h1>
+
+<%= render('_date_bar', :item => @item) %>
+
+<% sorted_articles_for_category('questions.sessions-may-21-oct-21', 100).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>
