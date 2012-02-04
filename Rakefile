@@ -57,6 +57,6 @@ Dir["tasks/*.rake"].each { |ext| load ext }
 
 desc 'Issue a nanoc compile'
 task :compile do
-  system('umask 002; nanoc compile |egrep -v identical')
+  system("umask 002; nanoc compile |egrep -v 'identical|skip'")
 end
 
