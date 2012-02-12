@@ -1,9 +1,38 @@
 ---
 title: The Link Between May 21, 2011 and the Feast of Purim in March 2012
 created_at: "2012-01-20 23:17"
+description: |
+  A great deal of Biblical evidence confirms May 21, 2011 as Judgment Day!
+  1) May 21, 2011 was the 17th day of the 2nd month of the Hebrew/Biblical calendar.
+  2) The flood began on the 17th day of the 2nd month of Noah's calendar.
+  3) The book of Esther reveals that there is a timeline from Haman's death (the 17th day of the 2nd month, i.e. May 21) until an appointed day of destruction on the 13th day of the 12th month.
+video_not_used:
+  embed: '<iframe src="http://player.vimeo.com/video/36590434?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+head_links: |
+  <link rel="stylesheet" type="text/css" href="/javascript/mediaelement/mediaelementplayer.min.css">
+head_scripts: |
+  <script src="/javascript/mediaelement/mediaelement-and-player.min.js"></script>
 ---
 
 # The Link Between May 21, 2011 and the Feast of Purim in March 2012
+
+{::nomarkdown}
+<div style="margin-top: 1em; text-align: center;">
+  <!-- video from vimeo -->
+  <iframe src="http://player.vimeo.com/video/36590434?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  <!-- audio using HTML5 audio element and MediaElement.js player -->
+  <div style="width: 640px; margin: 1em auto 0 auto;">
+    <audio controls="controls" style="width: 640px;" title="Play audio">
+      <source src="http://c557803.r3.cf2.rackcdn.com/The-Link-Between-May-21-and-Feast-of-Purim.mp3" type="audio/mp3">
+      <source src="http://c557803.r3.cf2.rackcdn.com/The-Link-Between-May-21-and-Feast-of-Purim.ogg" type="audio/ogg">
+    </audio>
+    <script>$('audio').mediaelementplayer(/* Options */);</script>
+  </div>
+  <p style="text-align: center;">Download audio: 
+    <a href="http://c557803.r3.cf2.rackcdn.com/The-Link-Between-May-21-and-Feast-of-Purim.mp3">MP3 128 Kbps, 3.7 MB</a> or
+    <a href="http://c557803.r3.cf2.rackcdn.com/The-Link-Between-May-21-and-Feast-of-Purim.ogg">Ogg Vorbis 77 Kbps VBR, 2.2 MB</a></p>
+</div>
+{:/nomarkdown}
 
 A great deal of Biblical evidence confirms May 21, 2011 as Judgment Day!
 
