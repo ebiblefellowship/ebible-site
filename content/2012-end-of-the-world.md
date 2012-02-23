@@ -13,8 +13,17 @@ head_links: |
 head_scripts: |
   <script src="/javascript/mediaelement/mediaelement-and-player.min.js"></script>
 ---
+## References to the Feast of Purim and May 21, 2011
 
-# The Link Between May 21, 2011 and the Feast of Purim in March 2012
+* [Link Between May 21, 2011 and the Feast of Purim in March 2012](#link-may21-purim)
+
+* An ongoing [series of studies in Esther](/archives/2011/11/13/esther-part-1/) has been
+  in progress for many weeks.
+
+* Five nights a week, times of [Questions and Answers](/questions/)  are being held
+  with many questions and answers on this topic.
+
+## The Link Between May 21, 2011 and the Feast of Purim in March 2012  {#link-may21-purim}
 
 {::nomarkdown}
 <div style="margin-top: 1em; text-align: center;">
