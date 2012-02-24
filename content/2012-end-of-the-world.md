@@ -31,12 +31,25 @@ head_scripts: |
   in some cases, a summary of the questions asked.
 
 
+## Video Collage of May 21, 2011 and March 2012 Purim Photos  {#video-collage}
+
+{::nomarkdown}
+<div style="margin-top: 1em; margin-bottom: 2em; text-align: center;">
+  <!-- video from vimeo -->
+  <iframe src="http://player.vimeo.com/video/37352616?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  <p style="text-align: center; font-size: 90%; font-style: italic;">This video can be downloaded
+    by clicking the vimeo logo above and logging into vimeo.com (free registration). </p>
+</div>
+{:/nomarkdown}
+
 ## The Link Between May 21, 2011 and the Feast of Purim in March 2012  {#link-may21-purim}
 
 {::nomarkdown}
 <div style="margin-top: 1em; text-align: center;">
   <!-- video from vimeo -->
   <iframe src="http://player.vimeo.com/video/36590434?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  <p style="text-align: center; font-size: 90%; font-style: italic;">This video can be downloaded
+    by clicking the vimeo logo above and logging into vimeo.com (free registration). </p>
   <!-- audio using HTML5 audio element and MediaElement.js player -->
   <div style="width: 640px; margin: 1em auto 0 auto;">
     <audio controls="controls" style="width: 640px;" title="Play audio">
