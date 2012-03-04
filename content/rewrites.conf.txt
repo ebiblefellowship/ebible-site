@@ -5,7 +5,7 @@ rewrite ^/rss\.xml$ http://feeds.feedburner.com/EBibleFellowshipNews break;
 # TODO: Look at using the HttpMapModule: http://wiki.nginx.org/NginxHttpMapModule
 rewrite ^/questions/(friday|sunday)/(.*)$ /questions/sessions/$2 permanent;
 rewrite ^/tracts\.html$ /outreach/tracts/ permanent;
-rewrite ^/may21/(.*)$ /outreach/tracts/may21/$1 permanent;
+rewrite ^/(may21|outreach/tracts/may21)/?(.*)$ /2012-end-of-the-world/$2 permanent;
 rewrite ^/understandingthebible/(.*)$ /outreach/tracts/understandingthebible/$1 permanent;
 rewrite ^/wecanknow/(.*)$ /outreach/tracts/wecanknow/$1 permanent;
 rewrite ^/broadcasts/(.*)$ /join/broadcasts/$1 permanent;
