@@ -332,14 +332,14 @@ li#forward-arrow a:hover {
 /* Home Footer Section */
 #footer-container { 
   width: 96%;
-  margin: 20px 0 0 20px; 
+  margin: 20px 0 0 0px;
   float: left; 
 }
 
 .footer-content {
   float: left;
   margin-left: 10px;
-  width: 265px;
+  width: 310px;
 }
 
 .site li, .fr li, .tba li  {  
