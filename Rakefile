@@ -49,6 +49,7 @@ SPEAKERS = {
   'McCann' => 'Chris McCann',
   'McOwen' => 'John McOwen',
   'Seifert' => 'Greg Seifert',
+  'Tubbs' => 'Reuben Tubbs',
   'von_Harringa' => 'Gunther von Harringa, Sr.'
 }
 
