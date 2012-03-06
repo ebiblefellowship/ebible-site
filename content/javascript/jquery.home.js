@@ -4,7 +4,7 @@
   var active = [false, false];  
   var langIndex = 0;
   var pubIndex = 1;
-  var isPanelEnabled = false;
+  var isPanelEnabled = true;
 
   $(document).ready(function(){     
     
@@ -77,7 +77,7 @@
           $("#fading-list").innerfade({
             animationtype: 'fade', 
             speed: 'slow', 
-            timeout: 'dynamic', 
+            timeout: 5000,  // 'dynamic', // all the same for March 2012 Purim
             type: 'sequence',
             containerheight: '287px',
             controlbox: true,
@@ -86,7 +86,7 @@
             controlplayid: 'play-button',
             controlpauseid: 'pause-button',      
             controlnextid: 'forward-button',
-            tabs: true,
+            tabs: false,  // no tabs for March 2012 Purim
             tabsid: 'tabs-wrap',
             tabids: [ 'billboards', 'features', 'comments' ],
             tabindexes: [ 0, 24, 26 ]            
