@@ -300,7 +300,8 @@ li#forward-button a:active {
 
 /* Continents Location Bar Sprite */
 .location-bar {
-  margin: -15px 0 0 10px;
+  /* margin: -15px 0 0 10px; all continents */
+  margin: -15px 0 0 180px;  /* three continents */
   padding-left: 0;
   list-style: none;
   width: 100%;
