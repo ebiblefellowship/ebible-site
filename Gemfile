@@ -17,3 +17,9 @@ group :server do
   gem 'mime-types'
 end
 
+# Audio related gems including mp3 tagging and deployment
+group :audio do
+  gem 'ruby-mp3info'
+  gem 'cloudfiles'
+end
+
