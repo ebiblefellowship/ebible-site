@@ -17,6 +17,12 @@ group :server do
   gem 'mime-types'
 end
 
+# Deployment related gems
+group :deploy do
+  # required for nanoc deploy using rsync
+  gem 'systemu'
+end
+
 # Audio related gems including mp3 tagging and deployment
 group :audio do
   gem 'ruby-mp3info'
