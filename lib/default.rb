@@ -3,6 +3,7 @@
 require "bundler/setup"
 require 'uri'
 require 'time'
+require 'cgi'
 
 # All content has a filename with a date
 CONTENT_SELECTION = %r{\d\d\d\d[.-]\d\d[.-]\d\d}
@@ -26,6 +27,16 @@ def m3u_url(mp3_uri)
   base_url + '/m3u.php?url=' +
       URI.escape(url, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]")) +
       '&amp;ext=.m3u'
+end
+
+# HTML escape text or value of an attribute of the current item by passing a 
+# symbol of that attribute.
+def h(text)
+  case
+  when text.nil? then nil
+  when text.is_a?(Symbol) then CGI.escapeHTML(@item[text])
+  else CGI.escapeHTML(text)
+  end
 end
 
 def home_page?
