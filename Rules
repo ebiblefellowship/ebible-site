@@ -22,7 +22,7 @@ require 'compass'
 Compass.add_project_configuration('config.rb')
 
 # List of extensions that are mapped to a subdirectory with index.html
-mapped_extensions = %w[ html md ]
+mapped_extensions = %w[ html md haml ]
 
 # The preprocess block is used to generate dynamic pages, like archives,
 # tag pages and meta-pages that are simple to generate, like the sitemap
@@ -189,9 +189,12 @@ route '/sitemap/' do
 end
 
 route '/static/*/' do
-  puts "id: #{item.identifier}[7..-2]: #{item.identifier[7..-2]} ext: #{item[:extension]}"
+  #puts "id: #{item.identifier}[7..-2]: #{item.identifier[7..-2]} ext: #{item[:extension]}"
   # /static/foo.html/ → /foo.html
-  item.identifier[7..-2] #+ '.' + item.identifier[:extension]
+  identifier = item.identifier[7..-2]
+  # for any identifier that's two letters, assume it's a country directory and 
+  # add /index.html instead of just .html.
+  identifier + (identifier =~ %r{/[a-z][a-z]$} ? '/index.html' : '.' + item[:extension])
 end
 
 route %r{^/error-\d\d\d/$} do
