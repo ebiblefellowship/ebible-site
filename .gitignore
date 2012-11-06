@@ -6,6 +6,8 @@ config.yaml
 output
 # nanoc temporary files
 tmp
+# nanoc crash log
+crash.log
 # nanoc compilation log
 nanoc_compile.log
 # sass temporary files
