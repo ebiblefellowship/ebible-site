@@ -664,9 +664,11 @@ climbeth up some other way, the same is a thief and a robber.</p>
     <div id="recent-container">
       <div class="container-top">Recent Bible Studies, Questions and Answers</div>
       <div class="container-mid-recent study-height">
-<% sorted_articles_for_category(/^(studies|questions)/, 10).each do |item| %>
+<% %w[studies.3-john studies.psalm-37 studies.sunday questions.sessions
+      studies.2-john studies.1-samuel].each do|category|
+     sorted_articles_for_category(category, 1).each do |item| %>
   <%= render('_media_bar', :item => item, :list => true, :show_media => false) %>
-<% end %>
+<% end; end %>
       </div>
       <div class="container-bottom"></div>
     </div>
