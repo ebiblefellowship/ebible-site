@@ -30,6 +30,8 @@ MP3_META_DIRS_MAP = [
     :http_root => HTTP_AUDIO_ROOT },
   { :mp3 => "#{AUDIO_ROOT}/studies/2-john",          :meta => 'studies/2-john',
     :http_root => HTTP_AUDIO_ROOT },
+  { :mp3 => "#{AUDIO_ROOT}/studies/3-john",          :meta => 'studies/3-john',
+    :http_root => HTTP_AUDIO_ROOT },
   { :mp3 => "#{AUDIO_ROOT}/studies/psalm-37",        :meta => 'studies/psalm-37',
     :http_root => HTTP_AUDIO_ROOT },
   { :mp3 => "#{AUDIO_ROOT}/studies/conferences",     :meta => 'studies/conferences',
