@@ -114,11 +114,8 @@ compile %r{^/error-\d\d\d/$} do
   layout '/default/'
 end
 
-compile '/css/resources/*' do  
-end
-
 compile '/css/*' do
-  filter :erb
+  filter :erb if item[:extension] == 'css'
   #filter :relativize_paths, :type => :css
   #filter :rainpress
 end
@@ -214,14 +211,6 @@ route '/stylesheets/*/' do
   # path with version for cache busting
   #'/assets/style/style' + '-v' + rep.item[:version].to_s + '.css'
   nil  # not using scss/compass
-end
-
-route '/css/resources/*' do  
-  item.identifier.chop + '.' + item[:extension]
-end
-
-route '/css/*' do
-  item.identifier.chop + '.css'
 end
 
 route '/javascript/*' do
