@@ -1,0 +1,47 @@
+---
+title: Broadcast Schedule
+description: What's now playing on EBible Fellowship's playlist and realtime updating schedule.
+head_links: |
+  <link href="/css/airtime/airtime-widgets.css" rel="stylesheet" type="text/css">
+  <link href="/javascript/mediaelement/mediaelementplayer.min.css" rel="stylesheet" type="text/css">
+head_scripts: |
+  <script src="/javascript/airtime/jquery-ui-1.8.10.custom.min.js" type="text/javascript"></script>
+  <script src="/javascript/airtime/jquery.showinfo.js" type="text/javascript"></script>
+  <script>
+  $(document).ready(function() {
+    $("#headerLiveHolder").airtimeLiveInfo({
+        sourceDomain: "http://airtime.ebiblefellowship.com",
+        text: {onAirNow:"On Air Now", offline:"Offline", current:"Current", next:"Next"},
+        updatePeriod: 20 //seconds
+    });
+    $("#scheduleTabs").airtimeWeekSchedule({
+        sourceDomain:"http://airtime.ebiblefellowship.com",
+        dowText:{monday:"Monday", tuesday:"Tuesday", wednesday:"Wednesday", thursday:"Thursday", friday:"Friday", saturday:"Saturday", sunday:"Sunday"},
+        miscText:{time:"Time", programName:"Program Name", details:"Details", readMore:"Read More"},
+        updatePeriod: 600 //seconds
+    });
+    var d = new Date().getDay();
+    $('#scheduleTabs').tabs({selected: d === 0 ? 6 : d-1, fx: { opacity: 'toggle' }});
+  });
+  </script>
+  <script src="/javascript/mediaelement/mediaelement-and-player.min.js" type="text/javascript"></script>
+---
+<h2>Now Playing</h2>
+<p style="margin: 1em 4em; font-size: 80%">All times are Eastern/US (New York)</p>
+<div id="headerLiveHolder" style="margin: 0 3em; border: 1px solid #999999; padding: 10px;"></div>
+
+<h2 style="margin-top: 2em;">Listen</h2>
+  <!-- audio using HTML5 audio element and MediaElement.js player -->
+  <div style="margin: 0 0 1em 4em;">
+    <audio title="Play audio">
+      <source src="http://audiocast.ebiblefellowship.com:8008/teaching-low.mp3" type="audio/mp3">
+    </audio>
+    <script>$('audio').mediaelementplayer({ features: ['playpause','current','volume'], audioWidth: 170, loop: true });</script>
+  </div>
+
+<p style="margin: 0 3em;">See <a href="/join/broadcasts/">Bible Teaching and Music</a> broadcast</p>
+
+<h2 style="margin-top: 2em;">Broadcast Schedule</h2>
+<p style="margin: 1em 4em; font-size: 80%">All times are Eastern/US (New York)</p>
+<div id="scheduleTabs" style="margin: 0 3em;"></div>
+
