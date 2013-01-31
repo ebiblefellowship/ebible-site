@@ -22,6 +22,8 @@ namespace :deploy do
         FileUtils.mv(mp3_file, 
                      File.join(AUDIO_PROCESSED_ROOT, d[:meta], File.basename(mp3_file)),
                      :force => true, :verbose => true, :noop => false)
+        # Git add meta file
+        system("git add #{meta_file}")
       end
     end
   end
