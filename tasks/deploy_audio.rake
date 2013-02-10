@@ -73,15 +73,15 @@ end
 def generate_markdown_stub(base_path, meta_file)
   require 'yaml'
 
-  # Calculate the stub name
-  stub_file = File.join(CONTENT_ROOT, base_path + '.md')
-
-  # Don't overwrite already existing stub file.  This should only happen
-  # if an audio file is being republished.
-  if File.exists?(stub_file)
-    puts "*** stub file #{stub_file} exists!  skipping ..."
+  # Don't overwrite an already existing stub file.  Check for any extension. 
+  # This should only happen if an audio file is being republished.
+  Dir.glob(File.join(CONTENT_ROOT, base_path + '.*')).each do |stub_found|
+    puts "*** skipping existing stub file #{stub_found} ..."
     return
   end
+
+  # Calculate the stub name
+  stub_file = File.join(CONTENT_ROOT, base_path + '.md')
   puts "*** creating stub file #{stub_file}"
 
   yaml_meta = YAML.load_file(meta_file)
