@@ -109,7 +109,12 @@ li.join {
 }
 
 li.studies {
-  width: 120px;
+  width: 100px;
+  text-align: center;
+} 
+
+li.devotionals {
+  width: 150px;
   text-align: center;
 } 
 
@@ -120,11 +125,6 @@ li.vids {
 
 li.questions {
   width: 138px;
-  text-align: center;
-} 
-
-li.outreach {
-  width: 130px;
   text-align: center;
 } 
 
