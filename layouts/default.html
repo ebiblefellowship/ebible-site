@@ -136,9 +136,12 @@
     </div><!--#container -->
    
     </div><!--#header-wrap -->
-<% if @config[:google_analytics] == true %>
-    <script type="text/javascript" src="/javascript/jquery.google-analytics.js"></script>
+<% if @config[:google_analytics] == true
+%>    <script type="text/javascript" src="/javascript/jquery.google-analytics.js"></script>
     <script type="text/javascript" src="/javascript/ebible.google-analytics.js"></script>
+<% end %>
+<% if @config[:spinnakr_analytics] == true
+%>    <script>var _spinnakr_site_id='760179976';(function(d,t,a){var g=d.createElement(t), s=d.getElementsByTagName(t)[0];g[a]=a;g.src='//s5.spn.ee/js/so.js'; s.parentNode.insertBefore(g,s)}(document,'script','async'));</script>
 <% end %>
     <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
     <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4b7df40f6e87cc94"></script>
