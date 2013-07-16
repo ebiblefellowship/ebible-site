@@ -75,6 +75,19 @@
 %>		<%= render('_languages_nav') %>
 <% else
 %>
+        <!-- Start Google Search -->
+        <script>
+          (function() {
+            var cx = '013150561779340410118:WMX1205452097';
+            var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+        <!-- End Google Search -->
+
         <div class="breadcrumbs">
         <% breadcrumbs_trail.each do |item|
            if @item == item %>
@@ -105,6 +118,7 @@
 	</div>
 <% end
  %>
+
 <% if @item[:series]
 %>		<%= render('_items_nav', :series => @item[:series], :item => @item) %>
 <% end
