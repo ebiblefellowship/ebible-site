@@ -1,3 +1,6 @@
+---
+is_hidden: true
+---
 <?php
 $url = $_GET['url'];
 $dbg = $_GET['debug'];
