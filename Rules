@@ -43,8 +43,8 @@ preprocess do
   # Add sitemap item
   def create_sitemap
     @items << Nanoc3::Item.new(
-      "<%= xml_sitemap %>",
-      { :extension => 'xml' },
+      "<%= xml_sitemap :items => @items.reject { |i| i[:is_hidden] || i.binary? || %w[css htc js].include?(i[:extension])} %>",
+      { :extension => 'xml', :is_hidden => true },
       '/sitemap/'
     )
   end
@@ -101,9 +101,8 @@ end
 ### Compilation ##############################################################
 
 # Sitemap and htaccess do get filtered with erb, but get no layout.
-compile %r{^/(atom|sitemap|htaccess|panels|rewrites)/$} do
+compile %r{^/(atom|sitemap|htaccess|panels|rewrites|robots)/$} do
   filter :erb
-  filter :clean_sitemap if item.identifier == '/sitemap/'
 end
 
 compile '/static/*/' do
@@ -181,8 +180,8 @@ end
 ### Routing ##################################################################
 
 route '/sitemap/' do
-  #'/sitemap.xml'
-  nil
+  '/sitemap.xml'
+  #nil
 end
 
 route '/static/*/' do
