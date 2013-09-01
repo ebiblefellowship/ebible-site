@@ -1,5 +1,9 @@
 require 'nanoc3/tasks'
 
+def config
+  @config ||= YAML.load_file(File.join(File.dirname(__FILE__), 'config.yaml'))
+end
+
 # Add tasks/lib and lib to the LOAD_PATH
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'tasks', 'lib'),
 		   File.join(File.dirname(__FILE__), 'lib'))
