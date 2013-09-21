@@ -2,7 +2,7 @@
 title: Spiritual Judgment Began May 21, 2011
 head_meta: |
   <style type="text/css">
-  #tract-address { width: 300px; margin-left: auto; margin-right: auto; }
+  #tract-address { width: 400px; margin-left: auto; margin-right: auto; }
   #tract-address p { font-size: 120%; font-weight: bold; text-align: center; }
   </style>
 ---
@@ -285,14 +285,14 @@ Judgment”.
 <div markdown="1" id="tract-address">
 
 For more information visit:\\
-(http://www.ebiblefellowship.com)\\
-(http://www.ebible2.com)
+<http://www.ebiblefellowship.com>\\
+<http://www.ebible2.com>
 
 Visit our Facebook page:\\
-(http://www.facebook/ebiblefellowship)
+<http://www.facebook/ebiblefellowship>
 
 Also visit our YouTube Channel\\
-(http://www.youtube.com/user/ebiblefellowship1)
+<http://www.youtube.com/user/ebiblefellowship1>
 
 You may send a message, question or
 comment to: ebiblefellowship@juno.com\\
