@@ -8,6 +8,8 @@ title: Living in the Day of Judgment Tract Series
 This tract provides Biblical evidence to support that May 21, 2011 was indeed the beginning
 of God's spiritual judgment on the whole world.
 
+Short link to this page: __[bit.ly/litdoj](http://bit.ly/litdoj)__
+
 Available formats:
 
 * [HTML](spiritual-judgment/)

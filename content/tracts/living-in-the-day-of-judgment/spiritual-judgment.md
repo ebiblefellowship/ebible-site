@@ -2,7 +2,7 @@
 title: Spiritual Judgment Began May 21, 2011
 head_meta: |
   <style type="text/css">
-  #tract-address { width: 400px; margin-left: auto; margin-right: auto; }
+  #tract-address { width: 500px; margin-left: auto; margin-right: auto; }
   #tract-address p { font-size: 120%; font-weight: bold; text-align: center; }
   </style>
 ---
@@ -283,6 +283,11 @@ Judgment”.
 *LIVING IN THE DAY OF JUDGMENT TRACT SERIES #1 Page 5 of 5*
 
 <div markdown="1" id="tract-address">
+
+Short link to this tract: [bit.ly/spiritjudge](http://bit.ly/spiritjudge)
+
+QR Code for this tract:\\
+![QR Code](http://bit.ly/spiritjudge.qrcode?s=150)
 
 For more information visit:\\
 <http://www.ebiblefellowship.com>\\
