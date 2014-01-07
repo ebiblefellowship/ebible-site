@@ -1,3 +1,6 @@
+---
+is_hidden: true
+---
 # Feedburner redirect
 rewrite ^/rss\.xml$ http://feeds.feedburner.com/EBibleFellowshipNews break;
 
@@ -9,4 +12,5 @@ rewrite ^/(may21|outreach/tracts/may21)/?(.*)$ /2012-end-of-the-world/$2 permane
 rewrite ^/understandingthebible/(.*)$ /outreach/tracts/understandingthebible/$1 permanent;
 rewrite ^/wecanknow/(.*)$ /outreach/tracts/wecanknow/$1 permanent;
 rewrite ^/broadcasts/(.*)$ /join/broadcasts/$1 permanent;
-
+# tracts on 21-Sep-2013
+rewrite ^/tracts/living/(.*)$ /tracts/living-in-the-day-of-judgment/$1 permanent;

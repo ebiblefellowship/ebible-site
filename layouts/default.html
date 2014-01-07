@@ -4,10 +4,10 @@
   
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title><%= @item[:title] %> - eBible Fellowship</title>
-    <meta name="generator" content="nanoc 3.2.1">
+    <title><%= h(@item[:title]) %> - eBible Fellowship</title>
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
 
-<%= render('_opengraph_meta') %>
+<%= render('_social_meta') %>
 
 <%= @item[:meta] || @item[:head_meta] %>
     <link rel="stylesheet" type="text/css" href="<%= css_url %>/screen.css">
@@ -75,6 +75,19 @@
 %>		<%= render('_languages_nav') %>
 <% else
 %>
+        <!-- Start Google Search -->
+        <script>
+          (function() {
+            var cx = '013150561779340410118:WMX1205452097';
+            var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+        <!-- End Google Search -->
+
         <div class="breadcrumbs">
         <% breadcrumbs_trail.each do |item|
            if @item == item %>
@@ -105,6 +118,7 @@
 	</div>
 <% end
  %>
+
 <% if @item[:series]
 %>		<%= render('_items_nav', :series => @item[:series], :item => @item) %>
 <% end
@@ -130,15 +144,18 @@
         <% if false %><%= link_to('Contact Us', '/contactus/') %> &bull;<% end %>
         <%= link_to('Privacy', '/privacy/') %> &bull;
         <%= link_to('HTML Validation', 'http://validator.w3.org/check/referer') %> &bull;
-        Generated with <%= link_to('nanoc', 'http://nanoc.stoneship.org') %>
+        Generated with <%= link_to('nanoc', 'http://nanoc.ws') %>
       </p>
 
     </div><!--#container -->
    
     </div><!--#header-wrap -->
-<% if @config[:google_analytics] == true %>
-    <script type="text/javascript" src="/javascript/jquery.google-analytics.js"></script>
+<% if @config[:google_analytics] == true
+%>    <script type="text/javascript" src="/javascript/jquery.google-analytics.js"></script>
     <script type="text/javascript" src="/javascript/ebible.google-analytics.js"></script>
+<% end %>
+<% if @config[:spinnakr_analytics] == true
+%>    <script>var _spinnakr_site_id='760179976';(function(d,t,a){var g=d.createElement(t), s=d.getElementsByTagName(t)[0];g[a]=a;g.src='//s5.spn.ee/js/so.js'; s.parentNode.insertBefore(g,s)}(document,'script','async'));</script>
 <% end %>
     <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
     <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4b7df40f6e87cc94"></script>

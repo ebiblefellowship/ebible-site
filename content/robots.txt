@@ -1,0 +1,10 @@
+---
+is_hidden: true
+---
+User-agent: *
+Crawl-delay: 10
+Disallow: /generated/
+Disallow: /gallery/
+Disallow: /oldsite/
+Sitemap: <%= base_url %>/sitemap.xml
+

@@ -2,10 +2,39 @@
 title: Messages and Studies
 nav: Studies
 ---
-      <h1 class="center-bottom">Bible Studies by Category and Topic</h1>
+      <h1 class="center-bottom">Bible Studies</h1>
 
       <div class="contentbar-top"></div>
       <div class="contentbar-mid">
+
+      <h2>Recent Study Series</h2>
+
+<% [ %w[studies.revelation.chapter-7 1],
+     %w[studies.2-thessalonians.chapter-2 1],
+     %w[studies.revelation.chapter-6 1],
+     %w[studies.2-thessalonians.chapter-1 1],
+     %w[studies.jeremiah.chapter-50 1],
+     %w[studies.sunday 3],
+     %w[studies.job.chapter-1 1],
+     %w[studies.revelation.chapter-5 1],
+     %w[studies.psalm-37 1],
+     %w[studies.revelation.chapter-4 1],
+     %w[studies.revelation.chapter-3 1],
+     %w[studies.revelation.chapter-2 1],
+     %w[studies.revelation.chapter-1 1],
+     %w[studies.3-john 1],
+     %w[studies.2-john 1], %w[studies.1-samuel 1] ].each do|category|
+     sorted_articles_for_category(category[0], category[1].to_i).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true, :show_media => false) %>
+<% end; end %>
+
+      </div>
+      <div class="contentbar-bottom"></div>
+
+      <div class="contentbar-top"></div>
+      <div class="contentbar-mid">
+
+      <h2>Bible Studies by Category and Topic</h2>
 
       <ul id="icon-list">
         <li id="devotionals">
