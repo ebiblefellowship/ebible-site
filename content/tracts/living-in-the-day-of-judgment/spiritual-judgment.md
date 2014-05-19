@@ -287,7 +287,7 @@ Judgment”.
 Short link to this tract: [bit.ly/spiritjudge](http://bit.ly/spiritjudge)
 
 QR Code for this tract:\\
-![QR Code](http://bit.ly/spiritjudge.qrcode?s=150)
+![QR Code](<%= images_url %>/qrcodes/bit.ly-spiritjudge-qrcode-300px.png)
 
 For more information visit:\\
 <http://www.ebiblefellowship.com>\\
