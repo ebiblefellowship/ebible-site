@@ -1015,6 +1015,18 @@ em.verse {
   font-weight: bold;
 }
 
+/* used to make a part of a verse stand out (bold) */
+.verse strong {
+  background-color: #ddd;
+  color: #000;
+  font-weight: bold;
+}
+
+/* used for added words (italics in text) */
+.verse em {
+  color: #999;
+}
+
 /* used in tracts, etc. */
 blockquote.verse {
   margin-left: 2em;
