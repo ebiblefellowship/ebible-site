@@ -63,7 +63,14 @@ preprocess do
   def initialize_item_attributes
     # select all items ...
     @items.each do |i|
+      i[:is_hidden] = true if i[:published] == false
       next if i[:is_hidden] == true
+      # Set a default canonical identifier if not set already by stripping off
+      # a two letter country prefix if it exists.
+      # /zh/studies/revelation/chapter-1/2010.11.14.../ => /studies/revelation/chapter-1/2010.11.14.../
+      i[:canonical_identifier] = i.identifier.sub(%r{^/[a-z]{2}/}, '/') unless 
+          i[:canonical_identifier]
+      # Any logic after this only applies to articles with a date based identifier
       next unless i.identifier =~ %r{(\d\d\d\d\.\d\d\.\d\d)}
       # Set the :created_at attribute for date-based content if not set
       i[:created_at] = $1.tr('.','-') if i[:created_at].nil?
@@ -71,11 +78,20 @@ preprocess do
       # Find an associated /audio item and save its attributes to the item
       audio_item = @items.find { |a| a.identifier == '/audio' + i.identifier }
       i[:audio] = audio_item.attributes unless audio_item.nil?
-      # Set category unless already defined
-      # /studies/bc2/2010.11.14.../ => studies.bc2
+      # Set category unless already defined.  Categories must be unique among all languages.
+      # /studies/revelation/chapter-1/2010.11.14.../ => studies.revelation.chapter-1
+      # /zh/studies/revelation/chapter-1/2010.11.14.../ => zh.studies.revelation.chapter-1
       i[:category] = i.identifier.split('/')[1..-2].join('.') unless i[:category]
-      # If part of a series, append item to an Array stored in a Hash by series name
-      @site.item_groups[i[:series]] = i if i[:series]
+      # If part of a series, 
+      if i[:series]
+        # Adjust series name to be the category if it has a value of 'true'.  
+        # Otherwise leave it as is for backward compatibility where :series
+        # was specified explicitly as a type of category.
+        i[:series] = i[:category] if i[:series] == true
+        # Store the item as the key for a group of studies appending to an 
+        # Array stored in a Hash by series name.
+        @site.item_groups[i[:series]] = i
+      end
       # Extract slug for news items so routing can be shared
       if i.identifier =~ %r{^/news/.+} and i[:slug].nil?
         # Extract basename from identifier and strip any date from the front
@@ -160,6 +176,7 @@ compile '/free*/*' do
 end
 
 compile '*' do
+  next if item[:published] == false
   # Flag to perform filtering if extension is html or md, 
   perform_filtering = mapped_extensions.include?(item[:extension])
   filter :erb if perform_filtering
@@ -221,7 +238,7 @@ route '/audio/*' do
   nil
 end
 
-# route rest of assets preserving the current file extersion
+# route rest of assets preserving the current file extension
 route '/assets/*/' do
   item.identifier.chop + '.' + item[:extension]
 end
@@ -233,7 +250,11 @@ route '*' do
   elsif item[:is_partial] # || item[:kind] == 'article' # why this check?
     nil  # Don’t output partial items (e.g. sub-stylesheets)
   elsif item.identifier =~ %r{(\d\d\d\d\.\d\d\.\d\d)} and item[:slug]
-    "/archives/#{$1.tr('.','/')}/#{item[:slug]}/index.html"
+    # Calculate the language prefix where English is blank and other languages use their two letter code
+    lang_prefix = language_code_of(item)
+    lang_prefix = '' if lang_prefix == 'en'
+    lang_prefix += '/' if lang_prefix.length > 0
+    "/#{lang_prefix}archives/#{$1.tr('.','/')}/#{item[:slug]}/index.html"
   else
     # Place each file in its own directory
     rep.item.identifier + 'index.html'

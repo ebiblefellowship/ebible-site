@@ -2,6 +2,8 @@
 class ItemNavigation
   attr_reader :curr_index, :prev_index, :next_index
   def initialize(item_group, current_item)
+    raise "item #{current_item.identifier} has a nil item_group" if
+	  item_group.nil?
 	@items = item_group
 	# find index of the current item in the item_group
 	@curr_index = @items.index(current_item)
