@@ -123,24 +123,37 @@ def articles_by_year_month(relevant_articles)
 end
 
 # Multilingual support
-# see http://nanoc.stoneship.org/docs/6-guides/#creating-multilingual-sites
+# see http://nanoc.ws/docs/guides/creating-multilingual-sites/
 
 # Determine if the item is the home page for a language by comparing
 # the item identifier with the language code of the identifier.  If
 # they are the same, the current item is the home page for that language.
 def language_home_page?
-  @item.identifier[1..-2].eql?(language_code_of(@item) || '')
+  @item.identifier == '/' or @item.identifier[1..-2] == language_code_of(@item)
 end
 
 # Examine the item path and return the two letter language code.
+# If there's no code, default to English (en).
+# /studies/revelation/...    => en
+# /zh/studies/revelation/... => zh
 def language_code_of(item)
-  # "/en/foo/" becomes "en"
-  (item.identifier.match(/^\/([a-z]{2})\//) || [])[1]
+  (item.identifier.match(/^\/([a-z]{2})\//) || ['','en'])[1]
 end
 
 # Find all items that are translations of the current item
 def translations_of(item)
   @items.select do |i| 
-    i[:canonical_identifier] == item[:canonical_identifier]
-  end
+    #i[:canonical_identifier] == item[:canonical_identifier]
+    canonical_identifier_of(i) &&
+      canonical_identifier_of(i) == canonical_identifier_of(item)
+  end #if canonical_identifier_of(item)
+end
+
+# Determine the canonical identifier of a given item by first 
+# checking for the attribute and if not found, stripping off the
+# two letter language code from the start of the identifier.
+# /studies/revelation/...    => /studies/revelation/...
+# /zh/studies/revelation/... => /studies/revelation/...
+def canonical_identifier_of(item)
+  item[:canonical_identifier] #|| item.identifier.sub(%r{^/[a-z]{2}/}, '/')
 end
