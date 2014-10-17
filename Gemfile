@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'nanoc',      '~>3.2'
 gem 'compass'
@@ -27,6 +27,6 @@ end
 # Audio related gems including mp3 tagging and deployment
 group :audio do
   gem 'ruby-mp3info'
-  gem 'cloudfiles'
+  gem 'fog'
 end
 

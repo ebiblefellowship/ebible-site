@@ -3,9 +3,13 @@ namespace :deploy do
   desc "Deploy audio files, generate metadata and stub files"
   task :audio do
     require 'fileutils'
-    require 'cloud_utils'
-    cloud_utils = CloudUtils.new(:username => 'ebiblefellowship',
-                                 :api_key => ENV['RACKSPACE_API_KEY'], :container => 'audio')
+    require 'fog'
+    service = Fog::Storage.new(provider: 'Rackspace',
+                               rackspace_username: 'ebiblefellowship',
+                               rackspace_api_key: ENV['RACKSPACE_API_KEY'],
+                               rackspace_region: :ord,
+                               rackspace_servicenet: true)
+    cloud_dir = service.directories.get('audio')
     Dir.chdir(AUDIO_ROOT) do
       Dir.glob('**/*.mp3').each do |mp3_file|
         puts "** processing #{mp3_file} ..."
@@ -14,7 +18,8 @@ namespace :deploy do
         # Relative directory
         base_dir = File.dirname(base_path)
         # Upload file to Cloud Files
-        object = cloud_utils.upload(mp3_file, base_dir)
+        object = cloud_dir.files.create(key: mp3_file, body: File.open(mp3_file, 'rb'))
+        puts "* uploaded with content_length=#{object.content_length}; content_type=#{object.content_type}"
         # Create or update audio metadata file
         meta_file = update_meta_from_mp3(mp3_file, :url => object.public_url)
         # Generate Markdown stub
