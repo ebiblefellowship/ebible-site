@@ -1,7 +1,10 @@
-﻿title: The Electronic Bible Fellowship in 中文
+﻿title: 首页
+title_en: Home
 description: The Electronic Bible Fellowship Chinese Home Page
+description_en: The Electronic Bible Fellowship Chinese Home Page
 head_links: |
   <link rel="stylesheet" type="text/css" href="/generated/css/languages.css">
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 head_meta: |
   <!-- "The Bible, Church Age, Depart Out" -->
   <meta name="keywords" content="中文, 教会年龄, 圣经, 会在2011年5月21日看到主的回归, 而在2011年10月21日，世界末日将会">
