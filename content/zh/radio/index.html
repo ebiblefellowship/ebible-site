@@ -72,10 +72,11 @@ head_scripts: |
     </tr>
   </thead>
   <tbody>
-<% sorted_articles_for_category(/^zh\.radio$/).reverse.each do |item|
+<% sorted_articles_for_category(/^zh\.radio$/).each do |item|
    if item[:audio] and item[:audio][:url]
      created_at = item[:created_at]
      created_at = created_at.is_a?(String) ? Date.parse(created_at) : created_at
+     next if created_at > Date.today
  %>
     <tr>
       <td style="text-align: center"><%= created_at.strftime('%Y年%-m月%-d日') %></td>
