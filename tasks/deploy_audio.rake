@@ -4,6 +4,7 @@ namespace :deploy do
   task :audio do
     require 'fileutils'
     require 'fog'
+    require 'uri'
     service = Fog::Storage.new(provider: 'Rackspace',
                                rackspace_username: 'ebiblefellowship',
                                rackspace_api_key: ENV['RACKSPACE_API_KEY'],
@@ -20,8 +21,11 @@ namespace :deploy do
         # Upload file to Cloud Files
         object = cloud_dir.files.create(key: mp3_file, body: File.open(mp3_file, 'rb'))
         puts "* uploaded with content_length=#{object.content_length}; content_type=#{object.content_type}"
+        # Update MP3 URI with DNS alias hostname
+        mp3_uri = URI(object.public_url)
+        mp3_uri.host = 'audiocdn.ebiblefellowship.com'
         # Create or update audio metadata file
-        meta_file = update_meta_from_mp3(mp3_file, :url => object.public_url)
+        meta_file = update_meta_from_mp3(mp3_file, :url => mp3_uri.to_s)
         # Generate Markdown stub
         stub_file = generate_markdown_stub(base_path, meta_file)
         # Move processed .mp3 file from incoming to processed folder
