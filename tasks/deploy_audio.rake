@@ -32,8 +32,6 @@ namespace :deploy do
         FileUtils.mkdir_p(File.join(AUDIO_PROCESSED_ROOT, base_dir))
         FileUtils.mv(mp3_file, File.join(AUDIO_PROCESSED_ROOT, mp3_file),
                      :force => true, :verbose => true, :noop => false)
-        # Git add meta file.  Stub is not added because it requires editing.
-        system("cd #{CONTENT_ROOT}; git add #{meta_file}")
       end
     end
   end
@@ -75,6 +73,7 @@ def update_meta_from_mp3(mp3_file, options = {})
   File.open(meta_file, 'w') { |io| io.write(YAML.dump(metadata)) }
   # Set the mtime to the same value as the mp3 file
   #File.mtime(meta_file) = mp3_mtime
+  git_add meta_file
   meta_file
 end
 
@@ -116,6 +115,7 @@ def generate_markdown_stub(base_path, meta_file)
     io.write(YAML.dump(metadata))
     io.puts("---")
   end
+  git_add stub_file
   stub_file
 end
 
@@ -142,5 +142,10 @@ def parse_dated_file(file)
     meta['slug'] = meta['title'].to_slug
   end
   meta
+end
+
+# Perform a git add on the specified file
+def git_add(file)
+  system("cd #{CONTENT_ROOT}; git add -v #{file}")
 end
 
