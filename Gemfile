@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'nanoc',      '~>3.2'
+gem 'nanoc'
+gem 'rake'
 gem 'compass'
 gem 'sass'
 gem 'susy'
