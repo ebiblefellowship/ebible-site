@@ -106,8 +106,25 @@ def generate_markdown_stub(base_path, meta_file)
     'description' => 'Write a brief description',
     'audio' => [ meta_file.sub(%r{^#{META_ROOT.sub(%r{/audio$},'')}}, '') ]
   }
-  metadata['description'] = 'Various questions and answers from the Bible' if
-    metadata['title'] =~ /Question|Open Forum|Fellowship Hour/
+
+  # Override metadata defaults depending on file location and day of week
+  created_at = Date.parse(metadata['created_at'])
+  if base_path =~ %r{^zh/radio}
+    # Broadcast to China is at 14:00:00 UTC (10 PM Beijing time)
+    metadata['created_at'] << ' 14:00:00 UTC'
+  elsif base_path =~ %r{^studies/}
+    # Sunday studies at about 12:25 PM, weeknight studies at 9 PM
+    metadata['created_at'] << (created_at.sunday? ? ' 12:25' : ' 21:00')
+    # Most studies are part of a series
+    metadata['series'] = true
+  elsif base_path =~ %r{^questions/sessions}
+    # Sunday Q&A's at about 1:30 PM, Monday and Friday Q&A's at 9:30 PM
+    metadata['created_at'] << (created_at.sunday? ? ' 13:30' : ' 21:30')
+    metadata['description'] = 'Various questions and answers from the Bible'
+  else
+    metadata['description'] = 'Various questions and answers from the Bible' if
+      metadata['title'] =~ /Question|Open Forum|Fellowship Hour/
+  end
 
   # write out .html file
   FileUtils.mkdir_p(File.dirname(stub_file))
