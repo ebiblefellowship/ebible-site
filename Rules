@@ -74,10 +74,20 @@ preprocess do
       next unless i.identifier =~ %r{(\d\d\d\d\.\d\d\.\d\d)}
       # Set the :created_at attribute for date-based content if not set
       i[:created_at] = $1.tr('.','-') if i[:created_at].nil?
-      # TODO: test for :audio attribute first before doing logic below
-      # Find an associated /audio item and save its attributes to the item
-      audio_item = @items.find { |a| a.identifier == '/audio' + i.identifier }
-      i[:audio] = audio_item.attributes unless audio_item.nil?
+      # If there's an audio attribute merge or load audio detail attributes
+      if i[:audio]
+        # First check for audio attributes embedded in the stub file
+	if i[:audio].is_a?(Hash) and i[:audio][:mp3_low]
+	  # Copy attributes from under :mp3_low to directly under :audio. This
+	  # is done temporarily to avoid changing all templates.
+	  i[:audio].merge!(i[:audio][:mp3_low])
+        else
+          # Else, find an associated /audio item and save its attributes to the item
+          # TODO: should get the audio identifier from File.basename(i[:audio][0], '.yaml')
+          audio_item = @items.find { |a| a.identifier == '/audio' + i.identifier }
+          i[:audio] = audio_item.attributes unless audio_item.nil?
+	end
+      end
       # Set category unless already defined.  Categories must be unique among all languages.
       # /studies/revelation/chapter-1/2010.11.14.../ => studies.revelation.chapter-1
       # /zh/studies/revelation/chapter-1/2010.11.14.../ => zh.studies.revelation.chapter-1
