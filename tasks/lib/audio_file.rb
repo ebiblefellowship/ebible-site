@@ -48,8 +48,9 @@ class AudioFile
           @title = mp3.tag.title
           @artist = mp3.tag.artist
           @album = mp3.tag.album
-          @genre = mp3.tag.genre
-          @comment = mp3.tag.comment
+          @genre = mp3.tag.genre || mp3.tag2.TCON
+          #@comment = mp3.tag.comment
+          @comment = mp3.tag2.COMM
         end
         @length = mp3.length.round
         @bitrate = mp3.bitrate
