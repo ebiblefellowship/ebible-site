@@ -74,6 +74,9 @@ preprocess do
       next unless i.identifier =~ %r{(\d\d\d\d\.\d\d\.\d\d)}
       # Set the :created_at attribute for date-based content if not set
       i[:created_at] = $1.tr('.','-') if i[:created_at].nil?
+      # Convert created_at to a Time object but just for Chinese radio files
+      # for now as it's too problematic to update for all items.
+      i[:created_at] = Time.parse(i[:created_at]) if i.identifier =~ %r{^/zh/radio/}
       # If there's an audio attribute merge or load audio detail attributes
       if i[:audio]
         # First check for audio attributes embedded in the stub file
