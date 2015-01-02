@@ -94,7 +94,7 @@
            # We don't want the "Home" link displayed unless the page is an English one.
            # This is the problem with English being the default at the top level as
            # all other languages are one level below English.
-           next unless language_code_of(@item) == 'en' and idx == 0
+           next if language_code_of(@item) != 'en' and idx == 0
            if @item == item %>
          <p><%= @item[:nav] || @item[:title] %></p><%
            else
