@@ -9,25 +9,30 @@ nav: Studies
 
       <h2>Recent Study Series</h2>
 
-<% [ %w[studies.revelation.chapter-11 1],
-     %w[studies.revelation.chapter-10 1],
-     %w[studies.revelation.chapter-9 1],
-     %w[studies.revelation.chapter-8 1],
-     %w[studies.2-thessalonians.chapter-2 1],
-     %w[studies.revelation.chapter-7 1],
-     %w[studies.revelation.chapter-6 1],
-     %w[studies.2-thessalonians.chapter-1 1],
-     %w[studies.jeremiah.chapter-50 1],
-     %w[studies.sunday 3],
-     %w[studies.job.chapter-1 1],
-     %w[studies.revelation.chapter-5 1],
-     %w[studies.psalm-37 1],
-     %w[studies.revelation.chapter-4 1],
-     %w[studies.revelation.chapter-3 1],
-     %w[studies.revelation.chapter-2 1],
-     %w[studies.revelation.chapter-1 1],
-     %w[studies.3-john 1],
-     %w[studies.2-john 1], %w[studies.1-samuel 1] ].each do|category|
+<ul id="icon-list">
+<% [
+     '/studies/revelation/',
+     '/studies/2-thessalonians/',
+     '/studies/jeremiah/',
+     '/studies/psalm-37/',
+     '/studies/3-john/',
+     '/studies/2-john/',
+     '/studies/1-samuel/' ].each do |s|
+     item = @items[s]
+%>  <li id="study"><p class="menu"><%= link_to(item[:title], item.path) %> &mdash; <%= h item[:status] %></p></li>
+<% end
+%>
+</ul>
+
+      </div>
+      <div class="contentbar-bottom"></div>
+
+      <div class="contentbar-top"></div>
+      <div class="contentbar-mid">
+
+<h2>Recent Individual Studies</h2>
+
+<% [ %w[studies.sunday 3] ].each do|category|
      sorted_articles_for_category(category[0], category[1].to_i).each do |item| %>
   <%= render('_media_bar', :item => item, :list => true, :show_media => false) %>
 <% end; end %>

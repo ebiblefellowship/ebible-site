@@ -1,23 +1,10 @@
 ---
 title: Revelation Chapter 11 Series
 nav: Chapter 11
+nav2: 11
 description: A verse by verse study of Revelation chapter 11
-series-tag: revelation-11
-category-tag: studies.revelation.chapter-11
-status: Complete
+status: Completed
+created_at: 2014-03-31
+completed_at: 2014-05-29
 ---
-<div class="contentbar-top"></div>
-<div class="contentbar-mid">
-
-<h1><%= h(@item[:title]) %></h1>
-
-<h2><%= h(@item[:description]) %></h2>
-
-<h3>Status: <%= @item[:status] %></h3>
-
-</div>
-<div class="contentbar-bottom"></div>
-
-<% sorted_articles_for_category(/^studies\.revelation\.chapter-11$/).reverse.each do |item| %>
-  <%= render('_media_bar', :item => item, :list => true, :show_media => false) %>
-<% end %>
+<%= render('_study_parts', :item => @item) %>
