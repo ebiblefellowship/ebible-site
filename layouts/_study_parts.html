@@ -1,0 +1,21 @@
+<%
+ # partial: _study_parts
+ # Call from an index.html in the same folder as all the studies.
+ # usage: render('_study_parts', :item => @item)
+%>
+<div class="contentbar-top"></div>
+<div class="contentbar-mid">
+
+<h1><%= h(item[:title]) %></h1>
+
+<h2><%= h(item[:description]) %></h2>
+
+<h3>Status: <%= item[:status] %> <%= (item[:completed_at] ? 'on ' + item[:completed_at].to_s : '') %></h3>
+
+</div>
+<div class="contentbar-bottom"></div>
+
+<% sorted_articles(item.children, 200).reverse.each do |i|
+%>  <%= render('_media_bar', :item => i, :list => true, :show_media => true) %>
+<% end
+%>

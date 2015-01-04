@@ -1,0 +1,23 @@
+<%
+ # partial: _study_chapters
+ # Call from an index.html in the same folder as all the chapter folders.
+ # usage: render('_study_chapters', :item => @item)
+%>
+<div class="contentbar-top"></div>
+<div class="contentbar-mid">
+
+<h1><%= h(item[:title]) %></h1>
+
+<h2><%= h(item[:description]) %></h2>
+
+<h3>Status: <%= item[:status] %> <%= (item[:completed_at] ? 'on ' + item[:completed_at].to_s : '') %></h3>
+
+</div>
+<div class="contentbar-bottom"></div>
+
+<ul>
+<% sorted_articles(item.children).reverse.each do |i|
+%>  <li><%= link_to(i[:nav], i.path) %></li>
+<%  end
+%>
+</ul>
