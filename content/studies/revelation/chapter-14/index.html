@@ -1,0 +1,35 @@
+---
+title: Revelation Chapter 14 Series
+nav: Chapter 14
+nav2: 14
+description: A verse by verse study of Revelation chapter 14 given in 2014.
+status: Completed
+created_at: 2014-08-12
+completed_at: 2014-10-29
+---
+<div class="contentbar-top"></div>
+<div class="contentbar-mid">
+
+	<h1>Revelation Chapter 14 Series</h1>
+
+	<h2>A verse by verse study of Revelation chapter 14 given from 2012 to 2013.</h2>
+
+	<h3>Status: Completed on 2013-01-27</h3>
+
+	<h3>Note: These studies are superceded by the ones given in 2014 below.</h3>
+</div>
+<div class="contentbar-bottom"></div>
+
+<%
+  %w[ /studies/revelation/chapter-14/2012.09.23_McCann_-_Revelation_14_Series_Part_1/
+      /studies/revelation/chapter-14/2012.09.23_McCann_-_Revelation_14_Series_Part_2/
+      /studies/revelation/chapter-14/2012.10.28_McCann_-_Revelation_14_Series_Part_3/
+      /studies/revelation/chapter-14/2012.10.28_McCann_-_Revelation_14_Series_Part_4/
+      /studies/revelation/chapter-14/2012.12.23_McCann_-_Revelation_14_Series_Part_5/
+      /studies/revelation/chapter-14/2013.01.27_McCann_-_Revelation_14_Series_Part_6/ ].each do |i|
+%>  <%= render('_media_bar', :item => @items[i], :list => true, :show_media => true) %>
+<% end
+%>
+
+<%= render('_study_parts', :item => @item,
+    :selection => @item.children.select { |i| i.identifier =~ /2014/ }) %>

@@ -1,7 +1,12 @@
 <%
  # partial: _study_parts
  # Call from an index.html in the same folder as all the studies.
- # usage: render('_study_parts', :item => @item)
+ # Using :selection is optional but if used, can filter what is
+ # returned such as for the Revelation 14 series as there are
+ # two sets of studies in the same folder.
+ # usage 1: render('_study_parts', :item => @item)
+ # usage 2: render('_study_parts', :item => @item,
+ #                 :selection => @item.children.select { |i| i.identifier ~= /(2012|2013)/ })
 %>
 <div class="contentbar-top"></div>
 <div class="contentbar-mid">
@@ -15,7 +20,7 @@
 </div>
 <div class="contentbar-bottom"></div>
 
-<% sorted_articles(item.children, 200).reverse.each do |i|
+<% sorted_articles(defined?(selection) ? selection : item.children, 200).reverse.each do |i|
 %>  <%= render('_media_bar', :item => i, :list => true, :show_media => true) %>
 <% end
 %>
