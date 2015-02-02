@@ -71,10 +71,11 @@ class ItemGroups
   def to_s
 	result = ''
 	@item_groups.each do |name, group|
-	  result << "Item group: #{name}:\n"
-	  group.each do |item|
-	    result << "  (#{item[:created_at]} - #{item.identifier})\n"
-	  end
+	  result << "Item group: #{name}; size: #{group.size}\n"
+	  # much too verbose to show every item in every group
+	  #group.each do |item|
+	  #  result << "  (#{item[:created_at]} - #{item.identifier})\n"
+	  #end
 	end
 	result
   end
