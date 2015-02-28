@@ -586,28 +586,31 @@ li#phone {
 }
 
 /* Q&A Sprite */
-#icon-list-questions {
+.icon-list-questions {
   list-style:none;
   margin: 0;
   width: 800px;
 }
 
-#icon-list-questions li {
+.icon-list-questions li {
   margin: 0 0 35px 40px;
   height: 40px;
   padding-left: 65px;
   background: url(<%= images_url %>/questions_sprite.jpg) no-repeat;
 }
 
-li#fellowship {
+li.fellowship,
+li.people {
   background-position: 0 -1px;
 }
 
-li#open-forum {
+li.open-forum,
+li.microphone {
   background-position: 0 -73px;
 }
 
-li#web {
+li.web,
+li.question-mark {
   background-position: 0 -145px;
 }
 

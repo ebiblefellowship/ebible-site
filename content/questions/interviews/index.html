@@ -1,0 +1,20 @@
+---
+title: Interviews
+nav: Interviews
+description: Various interviews over radio and other media
+created_at: 2015-02-28
+---
+<div class="contentbar-top"></div>
+<div class="contentbar-mid">
+
+<h1><%= h(item[:title]) %></h1>
+
+<h2><%= h(item[:description]) %></h2>
+
+</div>
+<div class="contentbar-bottom"></div>
+
+<% sorted_articles(@item.children, 200).each do |i|
+%>  <%= render('_media_bar', :item => i, :list => true, :show_media => true) %>
+<% end
+%>
