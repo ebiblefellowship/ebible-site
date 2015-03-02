@@ -1,0 +1,26 @@
+<%
+ # partial: _zh_radio_archives
+ #
+ # Outputs years and months from the current year down to 2014.
+ # Within each year, outputs a month if the item exists.
+ #
+ # usage: render('_zh_radio_archives')
+%>
+<h2>节目索引</h2>
+<% Date.today.year.downto(2014).each do |year|
+%><p>
+<% month_links = []
+  ('01'..'12').each do |month|
+    item = @items["/zh/radio/#{year}/#{month}/"]
+    if item
+      if item == @item
+        month_links << "#{year}年#{month}月"
+      else
+        month_links << link_to("#{year}年#{month}月", item.identifier)
+      end  # if item == @item
+    end  # if item
+  end  # each month
+%>  <%= month_links.join(" &middot\n  ") %>
+</p>
+<% end  # each year
+%>
