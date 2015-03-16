@@ -112,12 +112,7 @@
 	<div style="overflow: auto">
 	  <div class="share-links">
 	    <!-- AddThis Button BEGIN -->
-	    <div class="addthis_toolbox addthis_default_style" addthis:title="<%= @item[:title] %>">
-	      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-	      <a class="addthis_button_tweet" tw:via="EBibleFellowshp"></a>
-	      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-	      <a class="addthis_counter addthis_pill_style"></a>
-	    </div>
+	    <div class="addthis_sharing_toolbox"></div>
 	    <!-- AddThis Button END -->
 	  </div>
 	</div>
@@ -162,8 +157,8 @@
 <% if @config[:spinnakr_analytics] == true
 %>    <script>var _spinnakr_site_id='760179976';(function(d,t,a){var g=d.createElement(t), s=d.getElementsByTagName(t)[0];g[a]=a;g.src='//s5.spn.ee/js/so.js'; s.parentNode.insertBefore(g,s)}(document,'script','async'));</script>
 <% end %>
-    <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
-    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4b7df40f6e87cc94"></script>
+    <script type="text/javascript">var addthis_config = { data_track_clickback: true };</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d8c50eb4764a1f4" async="async"></script>
   </body>
 </html>
 
