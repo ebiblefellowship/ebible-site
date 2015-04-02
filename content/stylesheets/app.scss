@@ -1,0 +1,13 @@
+// compass configuration
+@function image-url($uri) {
+  @return url(http://imagescdn.ebiblefellowship.com#{$uri})
+}
+
+@import "screen";
+@import "defaults";
+@import "homecontent";
+@import "form";
+@import "languages";
+@import "may212011";
+@import "features";
+

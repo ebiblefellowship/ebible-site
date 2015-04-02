@@ -12,7 +12,7 @@
 #billboard-background {  
   border-left: 1px solid #003366;
   border-right: 1px solid #003366;
-  background: url(<%= images_url %>/billboard_bground.jpg) repeat-x;
+  background: image-url('/billboard_bground.jpg') repeat-x;
   opacity: 0.7;
   filter: alpha(opacity=70);
   position: absolute;
@@ -186,7 +186,7 @@ div#tabs-wrap {
 
 .tabs {
   position: relative;
-  background: url(<%= images_url %>/billboard_tabs.png) no-repeat;
+  background: image-url('/billboard_tabs.png') no-repeat;
   margin-left: 11px;
   list-style: none;
 }
@@ -195,7 +195,7 @@ div#tabs-wrap {
   position: absolute;
   height: 75px;
   width: 22px; 
-  background: url(<%= images_url %>/billboard_tabs.png) no-repeat;
+  background: image-url('/billboard_tabs.png') no-repeat;
 }
 
 li#features a {
@@ -240,14 +240,14 @@ div#billboard-sprite-wrap {
 
 .billboard-sprite {
   position: relative;
-  background: url(<%= images_url %>/billboard_sprite.png) no-repeat;
+  background: image-url('/billboard_sprite.png') no-repeat;
   margin: -247px 0 0 715px;
 }
 
 .billboard-sprite li a { 
   position: absolute;
   height: 22px;
-  background: url(<%= images_url %>/billboard_sprite.png) no-repeat;
+  background: image-url('/billboard_sprite.png') no-repeat;
 }
 
 li#back-button a {
@@ -312,7 +312,7 @@ li#forward-button a:active {
   margin: 0 0 4px 0;
   height: 60px;
   float: left;
-  background: transparent url(<%= images_url %>/location_bar.png) no-repeat;
+  background: transparent image-url('/location_bar.png') no-repeat;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */     
   zoom: 1;
@@ -383,7 +383,7 @@ li.oceania-glow {
   padding: 0;
   width: 21px;
   height: 13px;
-  background: url(<%= images_url %>/flags_sprite.png) no-repeat;
+  background: image-url('/flags_sprite.png') no-repeat;
 }
 
 .billboard-flags p {

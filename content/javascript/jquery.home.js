@@ -4,7 +4,7 @@
   var active = [false, false];  
   var langIndex = 0;
   var pubIndex = 1;
-  var isPanelEnabled = true;
+  var isPanelEnabled = false;
 
   $(document).ready(function(){     
     
@@ -38,19 +38,6 @@
       return false;
     });
     */
-    
-    var verseIndex = Math.floor((Math.random()%1) * 7) + 1; // adjust if the number of verse images changes
-    var img = $("#verse-home-wrap>img");
-    var src = img.attr("src");    
-    src = src.substring(0, src.lastIndexOf('/')+1) + 'verse' + verseIndex + ".png";    
-    img.attr("src", src);
-    $("#verse-home-wrap").onImagesLoad({
-        callbackIfNoImagesExist: true,
-        selectorCallback: function() {
-          //$("#verse-home-wrap").show();
-          $("#verse-home-wrap").css("visibility", "visible");
-        }
-      });    
     
   if (isPanelEnabled) {
     $("#first-pub").hide();

@@ -155,14 +155,16 @@ end
 compile '/javascript/*' do
 end
 
-compile '/stylesheets/_*/' do
-  # Don't compile partials
+# don't filter SASS partials
+compile %r{/_.+/$} do
+  nil
 end
 
 compile '/stylesheets/*/' do
-  # compile scss or sass unless it's a .css file
-  filter :sass, Compass.sass_engine_options unless
-         item[:extension] == 'css'
+  # compile scss or sass to css if it's one of those extensions
+  filter :sass, Compass.sass_engine_options
+    .merge(:syntax => item[:extension].to_sym) if
+           %w[scss sass].include?item[:extension]
 end
 
 # compile audio with no layout
@@ -231,15 +233,15 @@ route %r{^/rewrites\.conf} do
   '/rewrites.conf'
 end
 
-route '/stylesheets/_*/' do
-  nil  # Don't output partials
+# don't route SASS partials
+route %r{/_.+/$} do
+  nil
 end
 
 route '/stylesheets/*/' do
   item.identifier.chop + '.css'
   # path with version for cache busting
   #'/assets/style/style' + '-v' + rep.item[:version].to_s + '.css'
-  nil  # not using scss/compass
 end
 
 route '/javascript/*' do

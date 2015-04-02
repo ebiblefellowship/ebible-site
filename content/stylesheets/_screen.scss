@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   height: 151px;
-  background: url(<%= images_url %>/colored_bars.jpg) repeat-x left bottom;
+  background: image-url('/colored_bars.jpg') repeat-x left bottom;
 }
 
 #header-wrap-home {
@@ -26,7 +26,7 @@ body {
   left: 0;
   width: 100%;
   height: 440px;
-  background: url(<%= images_url %>/colored_bars_home.jpg) repeat-x left bottom;
+  background: image-url('/colored_bars_home.jpg') repeat-x left bottom;
 }
 
 #logo { 
@@ -42,13 +42,13 @@ body {
   position: relative;
   margin-right: 15px;
   z-index: 1;    
-  visibility: hidden;
+  display: none;
 }
 
 /* Begin Menu Bar */
 #menu  { 
   height: 47px;
-  margin-top: 19px;
+  margin-top: 13px;
   margin-left: 10px;
   position: relative;
   z-index: 1; 
@@ -89,11 +89,11 @@ body {
       /* why doesn't zero work? */
       /*padding-left: 1.9em;
       padding-right: 1.9em; */
-      background: url(<%= images_url %>/menu_gradient.png) repeat-x; }
+      background: image-url('/menu_gradient.png') repeat-x; }
       /* line 139, content/stylesheets/screen.scss */
       #menu-home > ul > li:hover, #menu > ul > li:hover {
         background-color: #46A4C3;
-        background: url('<%= images_url %>/button_base1.png?1283907218') repeat-x top right; }
+        background: image-url('/button_base1.png?1283907218') repeat-x top right; }
       /* line 146, content/stylesheets/screen.scss */
       #menu-home > ul > li a, #menu > ul > li a {
         color: #fff;
@@ -175,27 +175,27 @@ li.free {
 }
 
 #shadow-left { 
-  background: url("<%= images_url %>/drop_shadow.png") repeat-y 0px 0; 
+  background: image-url('/drop_shadow.png') repeat-y 0px 0; 
 }
 
 #shadow-right { 
-  background: url("<%= images_url %>/drop_shadow.png") repeat-y 870px 0;
+  background: image-url('/drop_shadow.png') repeat-y 870px 0;
 }
 #shadow-bottom { 
-  background: url("<%= images_url %>/drop_shadow_bottom.png") no-repeat;
+  background: image-url('/drop_shadow_bottom.png') no-repeat;
   padding-top: 5px;
   width: 894px
 }
 
 #footer-border {
-  background: url(<%= images_url %>/footer_border_crop.png) no-repeat; 
+  background: image-url('/footer_border_crop.png') no-repeat; 
   padding-top: 40px;
   margin-top: -5px;
   margin-left: 10px;
 }
 
 #footer-border-mid {
-  background: url(<%= images_url %>/footer_mid.gif) repeat-y; 
+  background: image-url('/footer_mid.gif') repeat-y; 
   margin-left: 10px;
 }
 
@@ -205,7 +205,7 @@ li.free {
   font-size: 18pt; 
   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; 
   font-weight: bold; 
-  background-image: url(<%= images_url %>/homegradient_top.gif); 
+  background-image: image-url('/homegradient_top.gif'); 
   margin: auto; 
   padding: 10px 0 10px 20px; 
   border-top: 1px solid #c0c0c0; 
@@ -221,7 +221,7 @@ li.free {
 }
 
 .container-mid  { 
-  background-image: url(<%= images_url %>/homegradient_mid.gif); 
+  background-image: image-url('/homegradient_mid.gif'); 
   margin: auto; 
   border-right: 1px solid #c0c0c0; 
   border-left: 1px solid #c0c0c0;
@@ -229,7 +229,7 @@ li.free {
 }
 
 .container-bottom  { 
-  background-image: url(<%= images_url %>/homegradient_bottom.gif); 
+  background-image: image-url('/homegradient_bottom.gif'); 
   margin: auto; 
   padding-bottom: 18px; 
   border-right: 1px solid #c0c0c0; 
@@ -244,7 +244,7 @@ li.free {
 }
 
 .follow-links { 
-  background-image: url(<%= images_url %>/breadcrumbs.png) repeat-x; 
+  background-image: image-url('/breadcrumbs.png') repeat-x; 
   width: 40%;
   float: left;
   margin-top: 3px;
@@ -261,7 +261,7 @@ li.free {
 }
 
 .breadcrumbs {    
-  background: url(<%= images_url %>/breadcrumbs.png) repeat-x;
+  background: image-url('/breadcrumbs.png') repeat-x;
   border-bottom: 1px solid #CCCCCC;   
 }
 
@@ -322,7 +322,7 @@ li.free {
 }
 
 #date-bar .years {  
-  background: url(<%= images_url %>/homegradient_top.gif) repeat-x;
+  background: image-url('/homegradient_top.gif') repeat-x;
 }
 
 #date-bar .years p { 
@@ -334,7 +334,7 @@ li.free {
 
 #date-bar .months,
 #date-bar .days {
-  background: url(<%= images_url %>/homegradient_top.gif) repeat-x 0 -8px;
+  background: image-url('/homegradient_top.gif') repeat-x 0 -8px;
   border-top: 1px solid #CCCCCC;
   line-height: 35px;
 }
@@ -353,7 +353,7 @@ li.free {
 }
 
 .contentbar-top    { 
-  background: url(<%= images_url %>/roundframe_top.png) no-repeat;  
+  background: image-url('/roundframe_top.png') no-repeat;  
   margin-left: 10px;
   position: relative;
   top: 15px; 
@@ -361,7 +361,7 @@ li.free {
 }
 
 .contentbar-mid { 
-  background-image: url(<%= images_url %>/roundframe_mid.gif); 
+  background-image: image-url('/roundframe_mid.gif'); 
   margin: 15px 10px 0 10px;
   overflow: hidden; 
 }
@@ -414,7 +414,7 @@ h2.large {
 }
 
 .contentbar-bottom {
-  background: url(<%= images_url %>/roundframe_bottom.png) no-repeat; 
+  background: image-url('/roundframe_bottom.png') no-repeat; 
   margin: 0 0 30px 10px; 
   height: 33px;
 }
@@ -446,7 +446,7 @@ h2.large {
 .media-sprite li a { 
   position: absolute;
   height: 50px;
-  background: url(<%= images_url %>/media_sprite.jpg) no-repeat;
+  background: image-url('/media_sprite.jpg') no-repeat;
 }
 
 .homemedia-sprite {
@@ -461,7 +461,7 @@ h2.large {
 .homemedia-sprite li a { 
   position: absolute;
   height: 50px;
-  background: url(<%= images_url %>/media_sprite.jpg) no-repeat;
+  background: image-url('/media_sprite.jpg') no-repeat;
 }
 
 li.hphones a {
@@ -515,7 +515,7 @@ li.video a:hover {
   margin: 0 0 35px 30px;
   height: 40px;
   padding-left: 65px;
-  background: url(<%= images_url %>/messages_sprite.jpg) no-repeat;
+  background: image-url('/messages_sprite.jpg') no-repeat;
 }
 
 li#message {
@@ -557,7 +557,7 @@ li#timeline {
   margin: 0 0 35px 20px;
   height: 40px;
   padding-left: 65px;
-  background: url(<%= images_url %>/join_sprite.jpg) no-repeat;
+  background: image-url('/join_sprite.jpg') no-repeat;
 }
 
 li#fellowship-schedule {
@@ -595,7 +595,7 @@ li#phone {
   margin: 0 0 35px 40px;
   height: 40px;
   padding-left: 65px;
-  background: url(<%= images_url %>/questions_sprite.jpg) no-repeat;
+  background: image-url('/questions_sprite.jpg') no-repeat;
 }
 
 li.fellowship,
@@ -624,7 +624,7 @@ li.question-mark {
   margin: 0 0 35px 40px;
   height: 40px;
   padding-left: 65px;
-  background: url(<%= images_url %>/outreach_sprite.jpg) no-repeat;
+  background: image-url('/outreach_sprite.jpg') no-repeat;
 }
 
 li#tracts {
@@ -658,7 +658,7 @@ li#plane {
   margin: 0 0 35px 20px;
   height: 40px;
   padding-left: 65px;
-  background: url(<%= images_url %>/free_materials_sprite.jpg) no-repeat;
+  background: image-url('/free_materials_sprite.jpg') no-repeat;
 }
 
 li#free-tracts {
@@ -682,7 +682,7 @@ li#request {
   width: 60px;
   height: 25px;
   position: relative;
-  background: url(<%= images_url %>/more_sprite.png) no-repeat;
+  background: image-url('/more_sprite.png') no-repeat;
   margin-left: 115px;
   padding: 0; 
 }
@@ -691,14 +691,14 @@ li#request {
   width: 60px;
   height: 25px;
   position: relative;
-  background: url(<%= images_url %>/more_sprite.png) no-repeat;
+  background: image-url('/more_sprite.png') no-repeat;
   margin: 15px 0 0 75px;
   padding: 0; 
 }
 
 .more-sprite a, .more-sprite-margin a { 
   position: absolute;
-  background: url(<%= images_url %>/more_sprite.png) no-repeat;
+  background: image-url('/more_sprite.png') no-repeat;
 }
 
 div.more-icon a {
@@ -746,16 +746,16 @@ h2.transcript {
 
 /* Outreach Map */
 #map-corner-top div {
-   background: url(<%= images_url %>/map_rounded_corder_tl.png) no-repeat top left;   
+   background: image-url('/map_rounded_corder_tl.png') no-repeat top left;   
 }
 #map-corner-top {
-   background: url(<%= images_url %>/map_rounded_corder_tr.png) no-repeat top right;   
+   background: image-url('/map_rounded_corder_tr.png') no-repeat top right;   
 }
 #map-corner-bottom div {
-   background: url(<%= images_url %>/map_rounded_corder_bl.png) no-repeat bottom left;   
+   background: image-url('/map_rounded_corder_bl.png') no-repeat bottom left;   
 }
 #map-corner-bottom {
-   background: url(<%= images_url %>/map_rounded_corder_br.png) no-repeat bottom right;   
+   background: image-url('/map_rounded_corder_br.png') no-repeat bottom right;   
 }
 #map-corner-top div, #map-corner-top, #map-corner-bottom div, #map-corner-bottom {
    width: 100%;

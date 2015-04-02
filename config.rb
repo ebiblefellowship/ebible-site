@@ -9,27 +9,22 @@
 require 'bundler/setup'
 
 # Load Compass plugins
-require 'susy'
+##require 'normalize-scss'
 
 #
 # Compass configuration properties
 #
-# As nanoc utilizes has content (source) and output (target) directories,
-# configuring the options below needs to take this into account.  The
-# current version of compass (0.15.5) does not support source and target
-# project paths.
+# To view the resolved value of any property below, use:
+#   compass config -p PROPERTY
 #
-
-# Not needed in :stand_alone mode where it can be inferred by context. 
-# Sets the path to the root of the project.
-##project_path = File.dirname(__FILE__)
 
 # http_path - The path to the project when running within the web
 http_path    = '/generated'
 
 # environment - The environment mode. Defaults to :production, can 
-# also be :development
-##environment  = :development
+# also be :development.  To override, when compiling run:
+#   compass compile -e development --output-style nested
+environment  = :production
 
 # The target directory where the css stylesheets are kept. 
 # Relative to the project_path.
@@ -57,7 +52,10 @@ http_images_path = "#{http_path}/images"
 #   :compressed - Minimum amount of space with almost no whitespace
 # For more details, on sass output styles, see
 #   http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#output_style
-output_style = :nested
+# To override, when compiling run:
+#   compass compile -s nested [-e development]
+##output_style = :nested
+output_style = :compact
 
 # Indicates whether the compass helper functions should generate 
 # relative urls from the generated css to assets, or absolute urls 
@@ -69,8 +67,12 @@ relative_assets = false
 # For more details on the sass options, see 
 #   http://sass-lang.com/docs/yardoc/SASS_REFERENCE.md.html#options
 sass_options = {
-  :syntax => :scss,  # use SCSS syntax
-  :full_exception => true,
-  :line_numbers => true
+  :syntax => :scss  # use SCSS syntax
+  #:full_exception => true,
+  #:line_numbers => true
+  #:trace_selectors => false
+  # The debug_info option generates copious output to support the Firebug 
+  # FireSass extension for Firefox which shows the associated Sass line number.
+  #:debug_info => true
 }
 

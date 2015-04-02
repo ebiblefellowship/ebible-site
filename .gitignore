@@ -17,7 +17,6 @@ nanoc_compile.log
 # vi/vim temp files
 .*.swp
 # other
-content/stylesheets
 _3rdparty
 *_save*
 Thumbs.db
