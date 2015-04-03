@@ -1,0 +1,42 @@
+    <div id="recent-container">
+      <div class="container-top">Recent Bible Studies, Questions and Answers</div>
+      <div class="container-mid-recent">
+<% [
+     %w[studies.revelation.chapter-19 1], 
+     %w[studies.why-october-7-2015-is-the-likely-end-of-the-world 1], 
+     %w[studies.sunday 3], 
+     %w[studies.revelation.chapter-18 1], 
+     %w[studies.joel.chapter-2 1], 
+     %w[studies.revelation.chapter-17 1], 
+     %w[studies.revelation.chapter-16 1], 
+     %w[studies.joel.chapter-1 1], 
+     %w[studies.revelation.chapter-15 1], 
+     %w[studies.revelation.chapter-14 1], 
+     %w[studies.jeremiah.chapter-50 1], 
+     %w[studies.revelation.chapter-13 1], 
+     %w[studies.revelation.chapter-12 1], 
+     %w[studies.revelation.chapter-11 1], 
+     %w[studies.revelation.chapter-10 1], 
+     %w[studies.revelation.chapter-9 1], 
+     %w[studies.revelation.chapter-8 1], 
+     %w[studies.2-thessalonians.chapter-2 1], 
+     %w[studies.revelation.chapter-7 1], 
+     %w[studies.revelation.chapter-6 1], 
+     %w[studies.2-thessalonians.chapter-1 1], 
+     %w[studies.job.chapter-1 1],
+     %w[questions.sessions 1],
+     %w[studies.revelation.chapter-5 1], 
+     %w[studies.psalm-37 1], 
+     %w[studies.revelation.chapter-4 1], 
+     %w[studies.revelation.chapter-3 1], 
+     %w[studies.revelation.chapter-2 1], 
+     %w[studies.revelation.chapter-1 1], 
+     %w[studies.3-john 1], 
+     %w[studies.2-john 1], %w[studies.1-samuel 1] ].each do|category|
+     sorted_articles_for_category(category[0], category[1].to_i).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true, :show_media => false) %>
+<% end; end %>
+      </div>
+      <div class="container-bottom"></div>
+    </div>
+

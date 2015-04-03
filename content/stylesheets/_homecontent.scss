@@ -1,3 +1,7 @@
+// constants
+$panel-row-1-height: 500px;
+$panel-row-2-height: 291px;
+
 /* Home page main content */
 .height {
   height: 250px;
@@ -62,25 +66,31 @@ background-clip: padding-box;
 #news-container {
   width: 72%;
   float: left;
+  margin-top: 15px;
   margin-left: 10px;
 }
 
 #recent-container {
   width: 72%;
   float: left;
-  margin-top: 15px;
+  margin-top: 0;
   margin-left: 10px;
 }
 
 .container-mid-news, .container-mid-recent { 
   background-image: image-url('/homegradient_mid.gif'); 
   margin: auto;
-  height: 250px; 
   border-right: 1px solid #c0c0c0; 
   border-left: 1px solid #c0c0c0;
   overflow: auto; 
 }
 
+.container-mid-news {
+  height: $panel-row-2-height;
+}
+.container-mid-recent { 
+  height: $panel-row-1-height;
+}
 #news {  
   padding-left: 1.5em;
   padding-right: 1em;
@@ -114,7 +124,10 @@ background-clip: padding-box;
 #twitter-container {
   width: 24%;
   float: right;
-  margin-right: 10px
+  margin-right: 10px;
+}
+.twitter-timeline {
+  height: $panel-row-1-height - 3px;
 }
 .twtr-hd, .twtr-ft { display: none; }
 .twtr-tweet-text p { text-align: left; }
@@ -206,6 +219,7 @@ li#forward-arrow a:hover {
 /* Bible Study Section: Right Sidebar */
 #study-container {
   width: 24%;
+  height: $panel-row-2-height;
   float: right;
   margin-right: 10px;
   margin-top: 15px;
@@ -246,7 +260,7 @@ li#forward-arrow a:hover {
 }
 
 .study-height {
-  height: 291px;
+//  height: $panel-row-2-height;
 }
 
 /* Free Materials Section */

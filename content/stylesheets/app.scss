@@ -3,6 +3,13 @@
   @return url(http://imagescdn.ebiblefellowship.com#{$uri})
 }
 
+@import "compass/utilities/general/clearfix";
+
+// used on home page as a start to emulate the Foundation grid
+.row {
+  @include clearfix;
+}
+
 @import "screen";
 @import "defaults";
 @import "homecontent";
