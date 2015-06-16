@@ -61,9 +61,9 @@ def to_month_full_s(month)
 end
 
 def sorted_articles(relevant_articles, limit = 100)
-  sorted_relevant_articles = relevant_articles.sort_by do |a|
-    time = a[:created_at]
-    time.is_a?(String) ? Time.parse(time) : time
+  # Assume preprocess block has already parsed all :created_at attributes into a Time class.
+  relevant_articles.select { |i| not i[:created_at].nil? }.sort_by do |a|
+    a[:created_at]
   end.reverse.first(limit)
 end
 

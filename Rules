@@ -74,9 +74,16 @@ preprocess do
       next unless i.identifier =~ %r{(\d\d\d\d\.\d\d\.\d\d)}
       # Set the :created_at attribute for date-based content if not set
       i[:created_at] = $1.tr('.','-') if i[:created_at].nil?
-      # Convert created_at to a Time object but just for Chinese radio files
-      # for now as it's too problematic to update for all items.
-      i[:created_at] = Time.parse(i[:created_at]) if i.identifier =~ %r{^/zh/radio/}
+      # Ensure :kind attribute is set to 'article' if not set
+      i[:kind] = 'article' if i[:kind].nil?
+      # Convert created_at to a Time object which makes for consistent
+      # output and sorting, etc.
+      begin
+        created_at = Time.parse(i[:created_at])
+        i[:created_at] = created_at
+      rescue ArgumentError => ae
+        raise ae, "Invalid timestamp in :created_at '#{created_at}' for #{i.identifier}"
+      end
       # If there's an audio attribute merge or load audio detail attributes
       if i[:audio]
         # First check for audio attributes embedded in the stub file
@@ -130,7 +137,7 @@ end
 ### Compilation ##############################################################
 
 # Sitemap and htaccess do get filtered with erb, but get no layout.
-compile %r{^/(atom|sitemap|htaccess|panels|rewrites|robots)/$} do
+compile %r{^/(atom|sitemap|htaccess|panels|rewrites|robots|studies/podcast)/$} do
   filter :erb
 end
 
@@ -162,9 +169,10 @@ end
 
 compile '/stylesheets/*/' do
   # compile scss or sass to css if it's one of those extensions
+  # Only filter the main Sass item as otherwise, compilation is VERY slow.
   filter :sass, Compass.sass_engine_options
     .merge(:syntax => item[:extension].to_sym) if
-           %w[scss sass].include?item[:extension]
+           %w[scss sass].include?(item[:extension]) and item.identifier == '/stylsheets/app/'
 end
 
 # compile audio with no layout

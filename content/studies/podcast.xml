@@ -1,0 +1,81 @@
+---
+title: eBible Fellowship Bible Studies (MP3)
+url: /studies/
+description: Bible Studies in MP3 format
+language: en
+itunes_subtitle:
+itunes_author: eBible Fellowship
+itunes_owner:
+  name: eBible Fellowship
+  email: contact@ebiblefellowship.com
+itunes_image_url: http://imagescdn.ebiblefellowship.com/ebible_icon_square.jpg
+itunes_categories:
+  - [Religion & Spirituality, Christianity]
+itunes_explicit: clean
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title><%= h @item[:title] %></title>
+    <link><%= base_url + @item[:url] %></link>
+    <atom:link href="<%= base_url + @item.path.to_s %>" rel="self" type="application/rss+xml" />
+    <description><%= h @item[:description] %></description>
+    <itunes:summary><%= h @item[:description] %></itunes:summary>
+<% unless @item[:language].nil?
+%>    <language><%= @item[:language] %></language>
+<% end
+   unless @item[:copyright].nil?
+%>    <copyright><%= h @item[:copyright] %></copyright>
+<% end
+   unless @item[:itunes_subtitle].nil?
+%>    <itunes:subtitle><%= h @item[:itunes_subtitle] %></itunes:subtitle>
+<% end
+unless @item[:itunes_author].nil?
+%>    <itunes:author><%= h @item[:itunes_author] %></itunes:author><% end %>
+<% unless @item[:itunes_owner].nil?
+%>    <itunes:owner>
+      <itunes:name><%= h @item[:itunes_owner][:name] %></itunes:name>
+      <itunes:email><%= h @item[:itunes_owner][:email] %></itunes:email>
+    </itunes:owner>
+<% end
+   unless @item[:itunes_image_url].nil?
+%>    <itunes:image href="<%= @item[:itunes_image_url] %>"/>
+<% end
+   @item[:itunes_categories].each { |category|
+   if category.respond_to?(:each_line)
+%>    <itunes:category text="<%= h category %>"/>
+<% else
+%>    <itunes:category text="<%= h category.first %>">
+      <itunes:category text="<%= h category.last %>"/>
+    </itunes:category>
+<% end
+   } unless @item[:itunes_categories].nil?
+   unless @item[:itunes_explicit].nil?
+%>    <itunes:explicit><%= h @item[:itunes_explicit] %></itunes:explicit>
+<% end
+%>    <generator>nanoc <%= Nanoc::VERSION %></generator>
+<% sorted_articles_for_category(/^studies/, 1000)
+     .select { |i| i[:audio] and i[:audio][:mp3_low] }.each do |item|
+     created_at = item[:created_at]
+     next if created_at > Time.now
+%>    <item>
+      <title><%= h item[:title] %></title>
+      <itunes:author><%= h item[:speaker] %></itunes:author>
+<% unless item[:subtitle].nil?
+%>      <itunes:subtitle><%= h item[:subtitle] %></itunes:subtitle>
+<% end
+   unless item[:description].nil?
+%>      <itunes:summary><%= h item[:description] %></itunes:summary>
+<% end
+%>      <itunes:image href="<%= @item[:itunes_image_url] %>"/>
+      <enclosure url="<%= item[:audio][:mp3_low][:url] %>" length="<%= item[:audio][:mp3_low][:size_bytes] %>" type="audio/mp3"/>
+      <guid isPermaLink="false"><%= item[:audio][:mp3_low][:url] %></guid>
+      <pubDate><%= h created_at.rfc822 %></pubDate>
+      <itunes:duration><%= item[:audio][:mp3_low][:length] %></itunes:duration>
+<% unless item[:keywords].nil?
+%>      <itunes:keywords><%= h item[:keywords] %></itunes:keywords>
+<% end
+%>    </item>
+<% end
+%>  </channel>
+</rss>
