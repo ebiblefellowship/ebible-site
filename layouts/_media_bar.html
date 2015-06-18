@@ -10,7 +10,7 @@
 <% if not defined?(show_media) or show_media %>
         <ul class="media-sprite">
           <% if item[:audio] %><li class="hphones"><a href="<%= m3u_url(item[:audio][:url]) %>" title="Listen"></a></li>
-          <li class="download"><a href="<%= item[:audio][:url] %>" title="Download"></a></li>
+          <li class="download"><a href="<%= mp3_stats_url(item[:audio][:url]) %>" title="Download"></a></li>
           <% end %><% if list and item.raw_content.length > 40 %><li class="transcript"><a href="<%= item.path %>" title="Transcript"></a></li><% end %>
           <% if item[:video] %><li class="video"><% if item[:video][:url] %><a href="<%= item[:video][:url] %>" title="Video"></a><% end %></li><% end %>
         </ul>

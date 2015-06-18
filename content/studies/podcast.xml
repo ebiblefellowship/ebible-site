@@ -8,7 +8,7 @@ itunes_author: eBible Fellowship
 itunes_owner:
   name: eBible Fellowship
   email: contact@ebiblefellowship.com
-itunes_image_url: http://imagescdn.ebiblefellowship.com/ebible_icon_square.jpg
+itunes_image_url: http://imagescdn.ebiblefellowship.com/ebible_icon_itunes.jpg
 itunes_categories:
   - [Religion & Spirituality, Christianity]
 itunes_explicit: clean
@@ -68,7 +68,7 @@ unless @item[:itunes_author].nil?
 %>      <itunes:summary><%= h item[:description] %></itunes:summary>
 <% end
 %>      <itunes:image href="<%= @item[:itunes_image_url] %>"/>
-      <enclosure url="<%= item[:audio][:mp3_low][:url] %>" length="<%= item[:audio][:mp3_low][:size_bytes] %>" type="audio/mp3"/>
+      <enclosure url="<%= mp3_stats_url(item[:audio][:mp3_low][:url]) %>" length="<%= item[:audio][:mp3_low][:size_bytes] %>" type="audio/mp3"/>
       <guid isPermaLink="false"><%= item[:audio][:mp3_low][:url] %></guid>
       <pubDate><%= h created_at.rfc822 %></pubDate>
       <itunes:duration><%= item[:audio][:mp3_low][:length] %></itunes:duration>

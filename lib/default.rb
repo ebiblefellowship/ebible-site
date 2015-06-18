@@ -20,6 +20,11 @@ def images_url
   @site.config[:images_url]
 end
 
+# Given an MP3 URL, prefix with tracking URL
+def mp3_stats_url(mp3_url)
+  'http://media.blubrry.com/ebible_fellowship_studies_mp3/' + mp3_url.sub(%r{^http://},'')
+end
+
 # Given an MP3 URI, convert to an .m3u URL
 def m3u_url(mp3_uri)
   # if parameter starts with a '/', the mp3 is on www.ebiblefellowship.com
