@@ -74,15 +74,13 @@ preprocess do
       next unless i.identifier =~ %r{(\d\d\d\d\.\d\d\.\d\d)}
       # Set the :created_at attribute for date-based content if not set
       i[:created_at] = $1.tr('.','-') if i[:created_at].nil?
-      # Ensure :kind attribute is set to 'article' if not set
-      i[:kind] = 'article' if i[:kind].nil?
       # Convert created_at to a Time object which makes for consistent
       # output and sorting, etc.
       begin
         created_at = Time.parse(i[:created_at])
         i[:created_at] = created_at
       rescue ArgumentError => ae
-        raise ae, "Invalid timestamp in :created_at '#{created_at}' for #{i.identifier}"
+        raise ae, "Invalid timestamp in :created_at '#{i[:created_at]}' for #{i.identifier}"
       end
       # If there's an audio attribute merge or load audio detail attributes
       if i[:audio]
