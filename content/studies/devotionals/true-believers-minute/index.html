@@ -1,0 +1,24 @@
+---
+title: True Believer's Minute
+description: Short devotional Bible studies that address a variety of topics
+---
+<h1 class="center-bottom"><%= h @item[:title] %></h1>
+
+<div class="contentbar-top"></div>
+<div class="contentbar-mid">
+
+<p><%= h @item[:description] %></p>
+
+<p>Click or tap <strong>PLAYLIST</strong> below to list all videos.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLHzgJdXDJrhR9IKVZH1bTNuuCwjCmNB90" frameborder="0" allowfullscreen></iframe>
+
+<!-- <p>Click on the study title for more information or to see related studies.</p> -->
+
+</div>
+<div class="contentbar-bottom"></div>
+
+<% sorted_articles_for_category('studies.devotionals.true-believers-minute', 500).each do |item| %>
+  <%= render('_media_bar', :item => item, :list => true) %>
+<% end %>
+
