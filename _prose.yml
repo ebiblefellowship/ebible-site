@@ -1,0 +1,30 @@
+prose:
+  rooturl: 'content'
+  siteurl: 'http://www.ebiblefellowship.com/'
+  ignore:
+    - /config.yaml
+    - /layouts
+  metadata:
+    content:
+      news:
+        - name: "title"
+          field:
+            element: "text"
+            label: "Title"
+            value: ""
+        - name: "slug"
+          field:
+            element: "text"
+            label: "Slug"
+            value: ""
+        - name: "kind"
+          field:
+            element: "text"
+            label: "Kind"
+            value: "article"
+            alterable: false
+        - name: "created_at"
+          field:
+            element: "text"
+            label: "Created Date (YYYY-MM-DD HH:MM:SS)"
+            value: "CURRENT_DATETIME"
