@@ -1,0 +1,32 @@
+<h1>电子圣经团契 &mdash; <%= h @item[:title] %></h1>
+
+<h2><%= h @item[:description] %></h2>
+
+<!-- All files are 32 Kbps MP3 and are about 14 MB in size. -->
+<p>所有文件都是32千比特/秒的MP3文件，文件的大小大约14兆。</p>
+
+<table style="margin-left: 4em;">
+  <thead>
+    <tr>
+      <th style="text-align: center">日期 (Date)</th>
+      <th style="text-align: center">标题 (Title)</th>
+      <th style="text-align: center">播放 (Play)</th>
+      <th style="text-align: center">下载 (Download)</th>
+    </tr>
+  </thead>
+  <tbody>
+<% # Extract the year and month from identifier
+   (year, month) = (@item.identifier =~ %r{(\d\d\d\d)/(\d\d)/}) ? [ $1, $2 ] : [ nil, nil ]
+   sorted_articles_for_category(/^zh\.radio/).select { |i|
+     i.identifier =~ %r{#{year}\.#{month}\.} and
+     i[:audio] and i[:audio][:url] }.reverse.each do |item| %>
+    <tr>
+      <td style="text-align: center"><%= item[:created_at].strftime('%Y年%-m月%-d日') %></td>
+      <td style="text-align: center"><%= h item[:title] %></td>
+      <td style="text-align: center"><audio controls="control" preload="metadata" src="<%= mp3_stats_url(item[:audio][:mp3_low][:url]) %>" type="audio/mp3"></audio></td>
+      <td style="text-align: center"><a href="<%= mp3_stats_url(item[:audio][:mp3_low][:url]) %>"><i class="fa fa-download fa-lg" /></a></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
