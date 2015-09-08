@@ -17,7 +17,7 @@
   <tbody>
 <% # Extract the year and month from identifier
    (year, month) = (@item.identifier =~ %r{(\d\d\d\d)/(\d\d)/}) ? [ $1, $2 ] : [ nil, nil ]
-   sorted_articles_for_category(/^zh\.radio/).select { |i|
+   sorted_articles_for_category(/^zh\.radio/, 9999).select { |i|
      i.identifier =~ %r{#{year}\.#{month}\.} and
      i[:audio] and i[:audio][:url] }.reverse.each do |item| %>
     <tr>
