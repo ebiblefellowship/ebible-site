@@ -14,11 +14,40 @@ head_scripts: |
 ---
 <h1>电子圣经团契 &mdash; <%= h @item[:title] %></h1>
 
-<!-- Recent Broadcasts -->
-<h2>近期节目</h2>
-
 <!-- All files are 32 Kbps MP3 and are about 14 MB in size. -->
 <p>所有文件都是32千比特/秒的MP3文件，文件的大小大约14兆。</p>
+
+<!-- October 7, 2015 is the end of the world -->
+<h2>为何2015年10月7日为末日</h2>
+
+<table style="margin-left: 4em;">
+  <thead>
+    <tr>
+      <th style="text-align: center">日期 (Date)</th>
+      <th style="text-align: center">标题 (Title)</th>
+      <th style="text-align: center">播放 (Play)</th>
+      <th style="text-align: center">下载 (Download)</th>
+    </tr>
+  </thead>
+  <tbody>
+<% [ '/zh/radio/2015/2015.08.11_EBF_-_Why_October_7_2015_Part_1/',
+     '/zh/radio/2015/2015.08.12_EBF_-_Why_October_7_2015_Part_2/',
+     '/zh/radio/2015/2015.08.13_EBF_-_Why_October_7_2015_Part_3/',
+     '/zh/radio/2015/2015.08.14_EBF_-_Why_October_7_2015_Part_4/',
+     '/zh/radio/2015/2015.08.15_EBF_-_Why_October_7_2015_Part_5/'
+     ].map {|i| @items[i] }.each do |item| %>
+    <tr>
+      <td style="text-align: center"><%= item[:created_at].strftime('%Y年%-m月%-d日') %></td>
+      <td style="text-align: center"><%= h item[:title] %></td>
+      <td style="text-align: center"><audio controls="control" preload="metadata" src="<%= mp3_stats_url(item[:audio][:mp3_low][:url]) %>" type="audio/mp3"></audio></td>
+      <td style="text-align: center"><a href="<%= mp3_stats_url(item[:audio][:mp3_low][:url]) %>"><i class="fa fa-download fa-lg" /></a></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<!-- Recent Broadcasts -->
+<h2>近期节目</h2>
 
 <!-- Subscribe to podcast: _RSS_ (copy link and paste into podcast software)(copy link and paste into podcast software) -->
 <p>播客用户：<a href="podcast.xml">RSS</a> （复制链接，粘贴到播客软件上）。</p>
