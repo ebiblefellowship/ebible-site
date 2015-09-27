@@ -237,6 +237,31 @@ li.free {
   border-left: 1px solid #c0c0c0 
 }
 
+// Translation and Search: start
+#translate-search {
+  @include clearfix;
+  padding-left: 0.75em;
+}
+
+#google_translate_element {
+  float: left;
+  width: 45%;
+  margin: 0;
+  padding-top: 0.5em;
+}
+
+#search-form {
+  float: right;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+div.gsc-control-cse {
+  padding-bottom: 0;
+}
+// Translation and search: end
+
 #social-container {
   overflow: auto;  /* clear floats */
   padding-left: 10px;
@@ -937,7 +962,7 @@ h2.transcript {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#E6E6E6'); /* for IE */
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E6E6E6)); /* for webkit browsers */
   background: -moz-linear-gradient(top,  #FFFFFF,  #E6E6E6); /* for firefox 3.6+ */
-  border-top: 1px solid #c0c0c0;
+  //border-top: 1px solid #c0c0c0;
 }
 
 .blue-gradient {

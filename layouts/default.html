@@ -68,23 +68,24 @@
         
         <%= render('_social_bar') if home_page? %>
 
+        <div id="translate-search">
+<% if language_code_of(@item) == 'en' %>
+          <!-- Google Translate: start -->
+          <div id="google_translate_element"></div>
+          <!-- Google Translate: end -->
+<% end %>
+          <div id="search-form">
+            <!-- Start Google Search -->
+            <gcse:searchbox></gcse:searchbox>
+            <!-- End Google Search -->
+          </div>
+          <gcse:searchresults></gcse:searchresults>
+        </div>
+
 <% if home_page? or language_home_page?
 %>		<%= render('_languages_nav') %>
 <% else
 %>
-
-        <!-- Start Google Search -->
-        <script>
-          (function() {
-            var cx = '013150561779340410118:WMX1205452097';
-            var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                '//www.google.com/cse/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
-        <!-- End Google Search -->
 
         <div class="breadcrumbs">
         <% breadcrumbs_trail.each_with_index do |item, idx|
@@ -147,6 +148,30 @@
     </div><!--#container -->
    
     </div><!--#header-wrap -->
+
+<% if language_code_of(@item) == 'en' %>
+    <!-- Google Translate: start -->
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, gaTrack: true, gaId: 'UA-11909859-1'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- Google Translate: end -->
+<% end %>
+
+    <!-- Start Google Search -->
+    <script>
+      (function() {
+        var cx = '013150561779340410118:WMX1205452097';
+        var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <!-- End Google Search -->
+
 <% if @config[:google_analytics] == true
 %>    <script type="text/javascript" src="/javascript/jquery.google-analytics.js"></script>
     <script type="text/javascript" src="/javascript/ebible.google-analytics.js"></script>
