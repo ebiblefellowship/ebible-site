@@ -2,15 +2,22 @@
 title: No More Salvation—God stopped saving people on May 21, 2011
 description: |
   How God has shut the door on salvation as he shut Noah in the ark.
-head_meta: |
-  <style type="text/css">
-  #tract-address { width: 500px; margin-left: auto; margin-right: auto; }
-  #tract-address p { font-size: 120%; font-weight: bold; text-align: center; }
-  </style>
 ---
+<article class="tract" markdown="1">
+
 # NO MORE SALVATION---God stopped saving people on May 21, 2011
 
 ## LIVING IN THE DAY OF JUDGMENT TRACT SERIES #2
+
+### Video With Text
+
+{::nomarkdown}
+<div style="margin-left: 5em;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLHzgJdXDJrhSicPlpwIzAtKR-JVvW3L37" frameborder="0" allowfullscreen></iframe>
+</div>
+{:/nomarkdown}
+
+### Complete Text
 
 Upon saving the last one of His elect, God ended the possibility of salvation for the unsaved people of the world by shutting the door of heaven on May 21, 2011. From that point forward, not one person anywhere in the world has become saved.  Once God shut the door of heaven (a spiritual door that no man could ever see while it was open: nor could they see once it was shut) each person's spiritual condition was permanently fixed and established.  The following Scriptures have now taken effect:
 
@@ -170,7 +177,7 @@ First, God commands us to feed His sheep—that is—the majority of those elect
 > Jeremiah 50:2 Declare ye among the nations, and publish, and set up a standard; publish, and conceal not: say, Babylon is taken,
 {:.verse}
 
-<div markdown="1" id="tract-address">
+<address markdown="1">
 
 Short link to this tract: [bit.ly/nosalvation](http://bit.ly/nosalvation)
 
@@ -195,7 +202,9 @@ P.O. Box 1393\\
 Sharon Hill, PA 19079\\
 USA
 
-</div>
+</address>
 
 <span style="font-size: 80%; color: #999;">Revised on 2014-04-28</span>
+
+</article>
 
