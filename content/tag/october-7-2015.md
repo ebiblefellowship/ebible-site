@@ -12,6 +12,9 @@ A tract that summarizes the reasons for the October 7, 2015 date.
 * [The End Will Not Come on Just Any Old Day](/archives/2015/10/01/the-end-will-not-come-on-just-any-old-day/) --- \\
 How the Bible teaches that the end must come according to God's prescribed plan which aligns with the Old Testament feasts.
 
+* [Interviews Related to October 7th](/questions/interviews/) --- \\
+Various interviews over radio and other media.
+
 ## Studies in text and audio that highlight different aspects of October 7th
 
 * [Why October 7, 2015 is the Likely End of the World](/studies/why-october-7-2015-is-the-likely-end-of-the-world/) --- \\
