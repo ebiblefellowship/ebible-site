@@ -3,7 +3,14 @@ title: Posts related to October 7, 2015
 nav: October 7th
 description: A listing of posts related to October 7, 2015
 created_at: 2015-08-31
+updated_at: 2015-10-08 12:00
 ---
+## October 8<sup>th</sup>
+
+[A response](/archives/2015/10/08/october-8th/)
+to being incorrect with the prediction that in all likelihood,
+the world would end on October 7<sup>th</sup>.
+
 ## Material that summarizes October 7, 2015
 
 * [A Strong Likelihood That October 7, 2015 Will be the End of the World](http://ebible2.com/wp-content/uploads/2015/03/strong-likelihood-tract2.pdf) (PDF) --- \\
