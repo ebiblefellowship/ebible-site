@@ -3,9 +3,13 @@ title: Posts related to October 7, 2015
 nav: October 7th
 description: A listing of posts related to October 7, 2015
 created_at: 2015-08-31
-updated_at: 2015-10-08 12:00
+updated_at: 2015-10-19 21:00
 ---
-## October 8<sup>th</sup>
+## October 8<sup>th</sup> and After
+
+A plan for *EBible Fellowship* going forward outlined in Questions and Answers sessions
+on [9-Oct-2015](/archives/2015/10/09/questions-and-answers/)
+and [11-Oct-2015](/archives/2015/10/11/questions-and-answers/).
 
 [A response](/archives/2015/10/08/october-8th/)
 to being incorrect with the prediction that in all likelihood,
