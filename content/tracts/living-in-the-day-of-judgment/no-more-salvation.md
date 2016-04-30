@@ -24,7 +24,7 @@ Upon saving the last one of His elect, God ended the possibility of salvation fo
 > Revelation 22:10-11 And he saith unto me, Seal not the sayings of the prophecy of this book: for the time is at hand. He that is unjust, let him be unjust still: and he which is filthy, let him be filthy still: and he that is righteous, let him be righteous still: and he that is holy, let him be holy still.
 {:.verse}
 
-Never again will a sinner be taken out of a life of spiritual darkness and be translated into God's kingdom of light.  After thousands of years of sending forth the gospel into the world to find and save lost sinners God's plan was now finally accomplished.  The time of judgment had now come upon the world.  And the judgment was that there would be no more salvation for mankind.  Throughout the Day of Judgment (which is a prolonged period of time beginning on May 21, 2011, and in all likelihood concluding 1600 days later on October 7, 2015) the unsaved will remain unsaved and the saved will remain saved.  No one's spiritual condition can be altered.  
+Never again will a sinner be taken out of a life of spiritual darkness and be translated into God's kingdom of light. After thousands of years of sending forth the gospel into the world to find and save lost sinners God's plan was now finally accomplished. The time of judgment had now come upon the world. And the judgment was that there would be no more salvation for mankind. Throughout the Day of Judgment (which is a prolonged period of time beginning on May 21, 2011, for an as yet undisclosed duration) the unsaved will remain unsaved and the saved will remain saved. No one's spiritual condition can be altered. 
 
 **Q?** How can you say that God stopped saving people on that date of May 21, 2011? I thought as long as the world continued God would always save people? 
 
@@ -59,7 +59,9 @@ Before either of the twin boys had done any good or evil God determined to love 
 
 The Bible's teaching of election reveals God as a sovereign King in the matter of exactly whom He foreordained to become saved. God makes no apologies for electing certain ones to become saved.  After all, if all men received their due reward, then none would become saved; we all would perish and be destroyed by God's wrath.  
 
-Human history can rightfully be understood as the period of time God granted life on earth to exist for the sole purpose of God working out His plan of salvation (for the elect) and His plan of judgment (for all non elect).  The period of time God gave mankind in which to become saved came to a close on May 21, 2011.  It was by that point in time that the Lord had found each and every one of His elect people: all those predestinated to obtain salvation before the world began.  Since May 21, 2011 we have entered into the period of God's judgment upon this world due to our sins against Him. We are all presently living in this Day of Judgment.  However, the elect child of God is not being punished as the unsaved people are being punished for their sins.  The elect child of God is still alive and remaining upon the earth during this present Day of Judgment only to have his faith severely tried before finally entering into the kingdom of God:
+Human history can rightfully be understood as the period of time God granted life on earth to exist for the sole purpose of God working out His plan of salvation (for the elect) and His plan of judgment (for all non elect). The period of time God gave mankind in which to become saved came to a close on May 21, 2011. It was by that point in time that the Lord had found each and every one of His elect people: all those predestinated to obtain salvation before the world began. Since May 21, 2011 we have entered into the period of God's judgment upon this world due to our sins against Him. We are all presently living in this Day of Judgment. 
+
+However, the elect child of God is not being punished as the unsaved people are being punished for their sins.  The elect child of God is still alive and remaining upon the earth during this present Day of Judgment only to have his faith severely tried before finally entering into the kingdom of God:
 
 > Zechariah 13:9 And I will bring the third part through the fire, and will refine them as silver is refined, and will try them as gold is tried: they shall call on my name, and I will hear them: I will say, It *is* my people: and they shall say, The LORD *is* my God.
 {:.verse}
@@ -119,9 +121,7 @@ We see from this account that once the Master rose up to shut the door He never 
 > Revelation 22:14-15 Blessed *are* they that do his commandments, that they may have right to the tree of life, and may enter in through the gates into the city. For without *are* dogs, and sorcerers, and whoremongers, and murderers, and idolaters, and whosoever loveth and maketh a lie.
 {:.verse}
 
-Again, it was on May 21, 2011, that God shut the door of heaven. He could now do this since all the people Christ obligated Himself to save (by dying for their sins from the foundation of the world) had now become saved.  Once all the elect were safely in the kingdom of God, the door was shut! 
-
-Therefore, they were as safe in God's kingdom through salvation as Noah and his family were safe inside the ark in the day that the flood began.  
+Again, it was on May 21, 2011, that God shut the door of heaven. He could now do this since all the people Christ obligated Himself to save (by dying for their sins from the foundation of the world) had now become saved. Once all the elect were safely in the kingdom of God, the door was shut! Therefore, they were as safe in God's kingdom through salvation as Noah and his family were safe inside the ark in the day that the flood began.
 
 > Genesis 7:11,13,16 In the six hundredth year of Noah's life, in the second month, the **seventeenth day of the month**, the same day were all the fountains of the great deep broken up, and the windows of heaven were opened. … 13) In the selfsame day entered Noah, and Shem, and Ham, and Japheth, the sons of Noah, and Noah's wife, and the three wives of his sons with them, into the ark; … 16) And they that went in, went in male and female of all flesh, as God had commanded him: and **the LORD shut him in**.
 {:.verse}
@@ -142,15 +142,13 @@ True believers are only humble servants. We are not the ones that determine the 
 
 The Bible reveals that God is the only One possessing the necessary power and authority to make these types of awesome decrees.  It is the Bible that insists that heaven's door is now shut to all the unsaved inhabitants of the earth. Therefore, this teaching comes from the One that issues the decrees to the doorkeepers and not the lowly doorkeepers themselves. 
 
-The child of God, alive and remaining on the earth in the Day of Judgment can only fulfill his role of a humble doorkeeper as he receives instructions from the Word of God, the Bible. It is the Bible that indicates and confirms God's salvation plan ended on May 21, 2011. It is the Bible that declares God brought to pass on that day an awful and terrible judgment, the judgment of shutting heaven's door. This judgment ended Christ's work of saving sinners: a judgment that man could not see with his physical eyes and, therefore, it is a spiritual judgment. There is a strong likelihood that the spiritual judgment now upon the world will continue for 1600 days and then conclude with the literal destruction of all unsaved people and the end of the world on October 7, 2015.
+The child of God, alive and remaining on the earth in the Day of Judgment can only fulfill his role of a humble doorkeeper as he receives instructions from the Word of God, the Bible. It is the Bible that indicates and confirms God's salvation plan ended on May 21, 2011. It is the Bible that declares God brought to pass on that day an awful and terrible judgment, the judgment of shutting heaven's door. This judgment ended Christ's work of saving sinners: a judgment that man could not see with his physical eyes and, therefore, it is a spiritual judgment.
 
 ## THE HOPE GOD ALLOWS FOR MANKIND IN THE TIME OF THE FINAL JUDGMENT
 
 **Q?** Are you saying then, that there's no more hope for people to be saved?
 
-**A.** Again, we must be very clear that God is no longer actively saving sinners. He has finished that work.
-
-Remember John 9:4 states, "the night comes when no man can work." Christ will not save someone today that is presently unsaved. The Bible indicates that each person's spiritual condition is now eternally fixed.
+**A.** Again, we must be very clear that God is no longer actively saving sinners. He has finished that work. Remember John 9:4 states, "the night comes when no man can work." Christ will not save someone today that is presently unsaved. The Bible indicates that each person's spiritual condition is now eternally fixed.
 
 > Luke 16:26 And beside all this, between us and you there is a great gulf fixed: so that they which would pass from hence to you cannot; neither can they pass to us, that *would come* from thence.
 {:.verse}
@@ -170,9 +168,7 @@ Remember John 9:4 states, "the night comes when no man can work." Christ will no
 
 **Q?** This is very troubling information, if God isn't saving anyone any longer then why are you sharing it with people?
 
-**A.** You are asking a good question. There are at least three reasons why a true believer desires to share these things with others:
-
-First, God commands us to feed His sheep—that is—the majority of those elect people that God saved during the Great Tribulation period (the great multitude) are still alive and living on the earth in this time of judgment. Since we have no idea who these people are, we must share the Bible's teaching openly with all. The things we are sharing are true to God's Word, and it is the sharing of truth that spiritually nourishes and feeds the sheep of God.  Secondly, the last thing many of these people heard from the Bible was that May 21, 2011 would be the Day of Judgment on the world. We want the elect to know that that day, indeed, was Judgment Day—exactly as the Bible revealed.  Thirdly, God commands His people to not be silent but to publish these things. The Lord uses Babylon as a picture of the world under His wrath. It says in Jeremiah 50:
+**A.** You are asking a good question. There are at least three reasons why a true believer desires to share these things with others: First, God commands us to feed His sheep—that is—the majority of those elect people that God saved during the Great Tribulation period (the great multitude) are still alive and living on the earth in this time of judgment. Since we have no idea who these people are, we must share the Bible's teaching openly with all. The things we are sharing are true to God's Word, and it is the sharing of truth that spiritually nourishes and feeds the sheep of God.  Secondly, the last thing many of these people heard from the Bible was that May 21, 2011 would be the Day of Judgment on the world. We want the elect to know that that day, indeed, was Judgment Day—exactly as the Bible revealed.  Thirdly, God commands His people to not be silent but to publish these things. The Lord uses Babylon as a picture of the world under His wrath. It says in Jeremiah 50:
 
 > Jeremiah 50:2 Declare ye among the nations, and publish, and set up a standard; publish, and conceal not: say, Babylon is taken,
 {:.verse}
@@ -204,7 +200,7 @@ USA
 
 </address>
 
-<span style="font-size: 80%; color: #999;">Revised on 2014-04-28</span>
+<span style="font-size: 80%; color: #999;">Revised on 2016-02-26</span>
 
 </article>
 
