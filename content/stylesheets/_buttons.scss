@@ -1,0 +1,62 @@
+/* Adapted from http://codepen.io/Treehouse/pen/vEkit */
+
+@import "compass/css3";
+
+/* Color Themes - Variables */
+
+$button-purple: #9A68C7;
+$button-blue: #3BA9E4;
+$button-green: #75B343;
+$button-orange: #FF6A42;
+
+/* Common Colors - Variables */
+
+$off-wht: rgba(white,.4);
+
+/* Mixins */
+
+@mixin btn-theme($btn-color) {
+	border-color: darken($btn-color, 20%);
+	background-color: $btn-color;
+	&:hover {
+		background-color: darken($btn-color, 6%);
+		box-shadow: 0 .125em $off-wht, inset 0 .063em $off-wht, inset 0 -.188em lighten($btn-color, 2%);
+	}
+	&:active {
+		box-shadow: 0 .063em $off-wht, inset 0 0 1.094em darken($btn-color, 40%), inset 0 .063em darken($btn-color, 20%),inset 0 -0.188em darken($btn-color, 20%); 
+	}
+}
+
+@mixin trans($val...) {
+	-webkit-transition: $val;
+	-moz-transition: $val; 
+	-o-transition: $val; 
+	transition: $val; 
+}
+
+/* Button Global */
+
+.btn-cta {
+	display: inline-block;
+	margin: 0.5rem; 
+	padding: .638em 1.275em;
+	border: .094em solid;
+	border-radius: .425em;
+	box-shadow: 0 .375em .313em -.313em rgba(black,.8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black,.15);
+	color: #FFF;
+	font: bold 1.2rem sans-serif;
+	@include trans(0.2s ease-in-out); 
+	text: {
+		transform: uppercase;
+		decoration: none;
+		shadow: 0 .063em rgba(black,.3);
+	}
+	cursor:pointer;
+}
+
+/* Themes */
+
+.btn-cta-theme {
+	@include btn-theme($button-orange);
+}
+
