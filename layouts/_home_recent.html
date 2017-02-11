@@ -1,8 +1,13 @@
     <div id="recent-container">
       <div class="container-top">Recent Bible Studies, Questions and Answers</div>
       <div class="container-mid-recent">
+
+	<div style="margin: 0 1em">
+	  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/299092505&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=true"></iframe>
+	</div>
+
 <% [
-     %w[questions.sessions 4],
+     %w[questions.sessions 2],
      %w[studies.genesis.chapter-9 1], 
      %w[studies.genesis.chapter-8 1], 
      %w[studies.genesis.chapter-7 1], 
@@ -53,7 +58,8 @@
      %w[studies.revelation.chapter-2 1], 
      %w[studies.revelation.chapter-1 1], 
      %w[studies.3-john 1], 
-     %w[studies.2-john 1], %w[studies.1-samuel 1] ].each do|category|
+     %w[studies.2-john 1],
+     %w[studies.1-samuel 1] ].each do|category|
      sorted_articles_for_category(category[0], category[1].to_i).each do |item| %>
   <%= render('_media_bar', :item => item, :list => true, :show_media => false) %>
 <% end; end %>
