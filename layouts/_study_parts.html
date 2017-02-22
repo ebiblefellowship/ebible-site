@@ -20,6 +20,10 @@
 </div>
 <div class="contentbar-bottom"></div>
 
+<% if item[:soundcloud_playlist_id]
+%><%= render('_soundcloud_playlist', playlist_id: item[:soundcloud_playlist_id]) %><%
+end %>
+
 <% sorted_articles(defined?(selection) ? selection : item.children, 200).reverse.each do |i|
 %>  <%= render('_media_bar', :item => i, :list => true, :show_media => true) %>
 <% end

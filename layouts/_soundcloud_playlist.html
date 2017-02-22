@@ -1,0 +1,14 @@
+<% 
+ # partial: _soundcloud_playlist
+ # usage: render('_soundcloud_playlist', :playlist_id => 123456789, :visible_tracks => 2)
+ # The visible_tracks parameter is optional and defaults to six tracks.
+ # The <iframe> embed is pasted in from the SoundCloud Embed option with 
+ # comments turned off then replacing height and track id with Erb expressions.
+playlist_fixed_height = 240
+playlist_default_tracks = 7
+playlist_track_height = (450 - playlist_fixed_height) / playlist_default_tracks  # (450-240) / 7 = 30
+playlist_height = (defined?(visible_tracks) ? visible_tracks : playlist_default_tracks) * playlist_track_height + playlist_fixed_height
+%><div style="margin: 0 1em 1em 1em">
+  <iframe width="100%" height="<%= playlist_height %>" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/<%= playlist_id %>&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+</div>
+
